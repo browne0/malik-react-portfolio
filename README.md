@@ -14,8 +14,8 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 I'm a firm believer that nothing amazing was ever created from scratch. Innovation is combination is history and creativity.
 
-***Good artists copy; great artists steal.
-- **Pablo Picasso**
+***Good artists copy; great artists steal.***
+**Pablo Picasso**
 
 The design for my new portfolio stemmed from several different sources and influences:
 
