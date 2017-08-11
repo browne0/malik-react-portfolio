@@ -2,8 +2,41 @@
 @import "reset";
 
 // Import base stylesheets for all scenes
-@import "scenes/Home/base";
+@import "./scenes/Home/base";
 @import "scenes/About/base";
 @import "scenes/NotFound/base";
 @import "scenes/BlogList/base";
 @import "scenes/BlogPost/base";
+
+// Import base stylesheets for all components
+@import "components/Navbar/base";
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.75em;
+  margin: 20px 0;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
