@@ -3,10 +3,12 @@ import {BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import About from './scenes/About';
 import BlogList from './scenes/BlogList';
+import Contact from './scenes/Contact';
 import Home from './scenes/Home';
 import NotFound from './scenes/NotFound';
-import Portfolio from './scenes/Portfolio';
+
 import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -18,9 +20,10 @@ class App extends Component {
             <Route exact path="/" component={Home} />
             <Route path="/blog" component={BlogList} />
             <Route path="/about" component={About} />
-            <Route path="/portfolio" component={Portfolio} />
+            <Route path="/contact" component={Contact} />
             <Route path="*" component={NotFound} />
           </Switch>
+          <Footer />
         </div>
       </Router>
     );

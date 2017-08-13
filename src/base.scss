@@ -7,42 +7,24 @@
 @import "scenes/NotFound/base";
 @import "scenes/BlogList/base";
 @import "scenes/BlogPost/base";
+@import "scenes/Contact/base";
 
 // Import base stylesheets for all components
 @import "components/Navbar/base";
+@import "components/Footer/base";
 
-.site {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  // grid-template-rows: auto 1fr 3fr;
-  font-family: 'Roboto', sans-serif;
-  h1 {
-    font-size: 3em;
-  }
+body {
+	.site {
+	  font-family: 'Roboto', sans-serif;
+		
 
-  h2 {
-    font-size: 2.5em;
-  }
-
-  h3 {
-    font-size: 2em;
-  }
-
-  h4 {
-    font-size: 1.75em;
-    margin: 20px 0;
-  }
-
-  p {
-    line-height: 1.6em;
-  }
-
-  .no-select {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
+	  .no-select {
+	    -webkit-touch-callout: none;
+	    -webkit-user-select: none;
+	    -khtml-user-select: none;
+	    -moz-user-select: none;
+	    -ms-user-select: none;
+	    user-select: none;
+	  }
+	}	
 }

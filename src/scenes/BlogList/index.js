@@ -11,13 +11,15 @@ const blogRoutes = [...blogs.keys()].map(path => <Route key={path} path={'/blog/
 const blogList = (blogs) => ({match}) => 
 	<Switch>
 		<Route exact path={match.url} render={() => (
-			<ul>
-				{[...blogs.keys()].map(path => 
-					<li key={path}>
-						<Link to={`/blog/${path}`}>{blogs.get(path).title || path}</Link>
-						</li>
-				)}
-			</ul>
+			<div className="blog">
+				<ul>
+					{[...blogs.keys()].map(path => 
+						<li key={path}>
+							<Link to={`/blog/${path}`}>{blogs.get(path).title || path}</Link>
+							</li>
+					)}
+				</ul>
+			</div>
 		)}/>
 		{blogRoutes}
 	</Switch>

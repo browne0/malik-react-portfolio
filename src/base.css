@@ -3,36 +3,154 @@ html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%; }
 
-body {
+* {
   margin: 0;
   padding: 0; }
 
-img {
-  display: block;
-  border: 0;
+.Home {
+  padding-top: 64px; }
+  .Home .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    .Home .container h2 {
+      font-size: 1.3em; }
+    .Home .container .bigPicture {
+      grid-column: span 2;
+      grid-row: span 2;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      position: relative; }
+      .Home .container .bigPicture > img {
+        width: 100%;
+        transition: transform .45s ease; }
+      .Home .container .bigPicture .overlay {
+        background: rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition: background .25s ease, opacity .25s ease; }
+        .Home .container .bigPicture .overlay .project-information {
+          position: absolute;
+          bottom: 0px;
+          padding-bottom: 15px;
+          color: #fff;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          align-items: end;
+          transform: translateY(59px);
+          transition: transform .55s ease;
+          background: linear-gradient(0deg, rgba(51, 51, 51, 0.25), transparent); }
+          .Home .container .bigPicture .overlay .project-information .description {
+            grid-column: 1;
+            padding-left: 15px; }
+          .Home .container .bigPicture .overlay .project-information .technology {
+            text-align: right;
+            grid-column: 2;
+            padding-right: 15px; }
+      .Home .container .bigPicture:hover img {
+        transform: scale(1.025, 1.025); }
+      .Home .container .bigPicture:hover .overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.45); }
+        .Home .container .bigPicture:hover .overlay .project-information {
+          transform: translateY(0px); }
+    .Home .container .icon {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      overflow: hidden;
+      position: relative;
+      box-shadow: inset -4px -5px 11px 0px rgba(0, 0, 0, 0.1); }
+      .Home .container .icon > img {
+        max-width: 150px;
+        transition: transform .45s ease; }
+      .Home .container .icon .overlay {
+        background: rgba(0, 0, 0, 0.25);
+        opacity: 0;
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        transition: background .25s ease, opacity .25s ease; }
+        .Home .container .icon .overlay .project-information {
+          position: absolute;
+          bottom: 0px;
+          padding-bottom: 15px;
+          color: #fff;
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          width: 100%;
+          align-items: end;
+          transform: translateY(100px);
+          transition: transform .55s ease;
+          background: linear-gradient(0deg, rgba(51, 51, 51, 0.45), transparent); }
+          .Home .container .icon .overlay .project-information .description {
+            grid-column: 1;
+            padding-left: 15px; }
+          .Home .container .icon .overlay .project-information .technology {
+            text-align: right;
+            grid-column: 2;
+            padding-right: 15px; }
+      .Home .container .icon:hover img {
+        transform: scale(1.5, 1.5); }
+      .Home .container .icon:hover .overlay {
+        opacity: 1;
+        background: rgba(0, 0, 0, 0.35); }
+        .Home .container .icon:hover .overlay .project-information {
+          transform: translateY(0px); }
+
+.About {
+  padding-top: 64px; }
+
+.blog {
+  padding-top: 64px; }
+
+.blog-post {
+  padding-top: 64px; }
+
+.contact {
+  padding-top: 64px; }
+
+header {
+  position: fixed;
   width: 100%;
-  height: auto; }
+  z-index: 2; }
+  header .logo-wrapper {
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-template-rows: 32px 32px;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.7);
+    width: 360px; }
+    header .logo-wrapper .logo {
+      width: 48px;
+      grid-row: span 2; }
+    header .logo-wrapper h1 {
+      font-size: 1em;
+      margin-top: 7.5px;
+      padding-left: 15px;
+      grid-column: 2; }
+    header .logo-wrapper h2 {
+      font-size: .65em;
+      padding-left: 15px;
+      grid-column: 2;
+      margin-bottom: 5px; }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
+.footer {
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.7);
+  background-color: #333; }
+  .footer p {
+    padding: 15px; }
 
-.site {
+body .site {
   font-family: 'Roboto', sans-serif; }
-  .site h1 {
-    font-size: 3em; }
-  .site h2 {
-    font-size: 2.5em; }
-  .site h3 {
-    font-size: 2em; }
-  .site h4 {
-    font-size: 1.75em;
-    margin: 20px 0; }
-  .site p {
-    line-height: 1.6em; }
-  .site .no-select {
+  body .site .no-select {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
     -khtml-user-select: none;

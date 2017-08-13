@@ -4,16 +4,14 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './base.css';
 
-import theme from './assets/react-toolbox/theme';
-import './assets/react-toolbox/theme.css';
-import ThemeProvider from 'react-toolbox/lib/ThemeProvider';
-
 import 'github-markdown-css';
-// import registerServiceWorker from './registerServiceWorker';
+
+import injectTapEventPlugin from 'react-tap-event-plugin';
+import ThemeProvider from 'material-ui/styles/MuiThemeProvider';
+injectTapEventPlugin();
 
 ReactDOM.render(
-	<ThemeProvider theme={theme}>
+	<ThemeProvider>
 		<App />
 	</ThemeProvider>
 	, document.getElementById('root'));
-// registerServiceWorker();
