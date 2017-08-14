@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { projects } from '../../data/projects.json';
+import { projects } from '../../data/featured_projects.json';
 
 class Home extends Component {
 	render() {
