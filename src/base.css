@@ -120,12 +120,14 @@ svg {
       height: 100%;
       background-size: cover;
       background-position: top;
+      transition: transform .55s ease;
       min-height: 40vh; }
     .Home .container .bigPicture .overlay {
       background: rgba(0, 0, 0, 0.25);
       opacity: 0;
       position: absolute;
-      bottom: 0px;
+      bottom: 0;
+      left: 0;
       height: 100%;
       width: 100%;
       transition: background .25s ease, opacity .25s ease; }
@@ -144,11 +146,11 @@ svg {
         .Home .container .bigPicture .overlay .project-information .description {
           grid-column: span 2;
           padding: 0px 15px; }
-    .Home .container .bigPicture:hover img {
-      transform: scale(1.025, 1.025); }
+    .Home .container .bigPicture:hover > div .img {
+      transform: scale(1.02); }
     .Home .container .bigPicture:hover .overlay {
       opacity: 1;
-      background: rgba(0, 0, 0, 0.45); }
+      background: rgba(0, 0, 0, 0.35); }
       .Home .container .bigPicture:hover .overlay .project-information {
         transform: translateY(0px); }
   .Home .container .icon {

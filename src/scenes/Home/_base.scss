@@ -15,13 +15,15 @@
 				height: 100%;
 				background-size: cover;
 				background-position: top;
+				transition: transform .55s ease;
 				min-height: 40vh;
 			}
 			.overlay {
 				background: rgba(0, 0, 0, 0.25);
 				opacity: 0;
 				position: absolute;
-				bottom: 0px;
+				bottom: 0;
+				left: 0;
 				height: 100%;
 				width: 100%;
 				transition: background .25s ease, opacity .25s ease;
@@ -49,12 +51,12 @@
 				}
 			}
 			&:hover {
-				img {
-					transform: scale(1.025, 1.025);
+				> div .img {
+					transform: scale(1.02);
 				}
 				.overlay {
 					opacity: 1;
-					background: rgba(0, 0, 0, .45);
+					background: rgba(0, 0, 0, .35);
 					.project-information {
 						transform: translateY(0px);
 					}
