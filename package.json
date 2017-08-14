@@ -1,6 +1,7 @@
 {
   "name": "malik-react-portfolio",
   "version": "0.1.0",
+  "homepage": "http://dev.beesdesign.net/malikbrowne",
   "private": true,
   "devDependencies": {
     "react-scripts": "1.0.11"
@@ -15,7 +16,8 @@
     "react-dom": "^15.6.1",
     "react-grid-gallery": "^0.4.2",
     "react-router-dom": "^4.1.2",
-    "react-tap-event-plugin": "^2.0.1"
+    "react-tap-event-plugin": "^2.0.1",
+    "react-transition-group": "^2.2.0"
   },
   "scripts": {
     "build-css": "node-sass-chokidar --include-path ./src src/ -o src/",

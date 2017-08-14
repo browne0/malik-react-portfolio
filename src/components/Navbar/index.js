@@ -15,6 +15,10 @@ class Navbar extends Component {
 	
 	onTabClick(tab) {
 		let lowerCaseRoute = tab.props.label.toLowerCase();
+		if (lowerCaseRoute === 'home') {
+			this.props.history.push('/');
+			return;
+		}
 		this.props.history.push(`/${lowerCaseRoute}`);
 	}
 
@@ -23,20 +27,25 @@ class Navbar extends Component {
 	}
 	
 	render () {
+		let { location } = this.props;
 		const styles = {
 			tabs: {
 				backgroundColor: '#333',
 				boxShadow: 'rgba(0, 0, 0, 0.24) 0px 1px 6px, rgba(0, 0, 0, 0.24) 0px 1px 4px',
+				display: 'grid',
+				gridTemplateColumns: 'min-content 1fr',
+				'justifyItems': 'end',
+				overflow: 'hidden',
 				title: {
-					
+					width: '400px'
 				},
 				tab: {
+					gridColumn: '',
 					height: '100%',
-					width: '300px',
 					backgroundColor: '#333'
 				},
 				inkBar: {
-					backgroundColor: 'rgba(255, 132, 13, .75)'
+					backgroundColor: '#e94a23'
 				}
 			}
 		}
@@ -54,23 +63,33 @@ class Navbar extends Component {
 					onTitleTouchTap={this.onTitleClick} 
 					title={title}
 					style={styles.tabs}
-					showMenuIconButton={false}>
+					titleStyle={styles.title}
+					showMenuIconButton={false}
+					className="navbar">
 					<Tabs 
 						tabItemContainerStyle={styles.tabs.tab}
 					 	inkBarStyle={styles.tabs.inkBar}
-					 	value={this.props.location.pathname}>
+					 	value={location.pathname}
+					 	className="nav-items">
 						<Tab 
+							label="Home" 
+							onActive={this.onTabClick}
+							value="/"
+							className="nav-item" /><Tab 
 							label="About" 
 							onActive={this.onTabClick}
-							value="/about" />
+							value="/about"
+							className="nav-item" />
 						<Tab 
 							label="Blog" 
 							onActive={this.onTabClick}
-							value="/blog" />
+							value="/blog"
+							className="nav-item" />
 						<Tab 
 							label="Contact" 
 							onActive={this.onTabClick}
-							value="/contact" />
+							value="/contact"
+							className="nav-item" />
 					</Tabs>
 				</AppBar>
 			</header>

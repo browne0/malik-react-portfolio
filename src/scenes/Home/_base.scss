@@ -1,26 +1,27 @@
 .Home {
-	padding-top: 64px;
 	.container {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: 1fr;
 		h2 {
 			font-size: 1.3em;
 		}
 		.bigPicture {
-			grid-column: span 2;
-			grid-row: span 2;
 			overflow: hidden;
 			display: flex;
 			align-items: center;
 			position: relative;
-			> img {
+			> div .img {
 				width: 100%;
-				transition: transform .45s ease;
+				height: 100%;
+				background-size: cover;
+				background-position: top;
+				min-height: 40vh;
 			}
 			.overlay {
 				background: rgba(0, 0, 0, 0.25);
 				opacity: 0;
 				position: absolute;
+				bottom: 0px;
 				height: 100%;
 				width: 100%;
 				transition: background .25s ease, opacity .25s ease;
@@ -37,14 +38,14 @@
 					transition: transform .55s ease;
 					background: linear-gradient(0deg, rgba(51, 51, 51, .25), transparent);
 					.description {
-						grid-column: 1;
-						padding-left: 15px;
+						grid-column: span 2;
+						padding: 0px 15px;
 					}
-					.technology {
-						text-align: right;
-						grid-column: 2;
-						padding-right: 15px;
-					}
+					// .technology {
+					// 	text-align: right;
+					// 	grid-column: 2;
+					// 	padding-right: 15px;
+					// }
 				}
 			}
 			&:hover {
@@ -67,13 +68,17 @@
 			overflow: hidden;
 			position: relative;
 			box-shadow: inset -4px -5px 11px 0px rgba(0,0,0,0.1);
+			min-height: 40vh;
 			> img {
 				max-width: 150px;
+				width: auto;
 				transition: transform .45s ease;
 			}
 			.overlay {
 				background: rgba(0, 0, 0, .25);
 				opacity: 0;
+				bottom: 0;
+				left: 0;
 				position: absolute;
 				height: 100%;
 				width: 100%;
@@ -84,32 +89,285 @@
 					padding-bottom: 15px;
 					color: #fff;
 					display: grid;
-					grid-template-columns: repeat(2, 1fr);
+					grid-template-columns: 1fr;
 					width: 100%;
 					align-items: end;
 					transform: translateY(100px);
 					transition: transform .55s ease;
 					background: linear-gradient(0deg, rgba(51, 51, 51, .45), transparent);
 					.description {
-						grid-column: 1;
-						padding-left: 15px;
+						grid-column: span 2;
+						padding: 0px 15px;
 					}
-					.technology {
-						text-align: right;
-						grid-column: 2;
-						padding-right: 15px;
-					}
+					// .technology {
+					// 	text-align: right;
+					// 	grid-column: 2;
+					// 	padding-right: 15px;
+					// }
 				}
 			}
 			&:hover {
 				img {
-					transform: scale(1.5, 1.5);
+					transform: scale(1.35, 1.35);
 				}
 				.overlay {
 					opacity: 1;
 					background: rgba(0, 0, 0, .35);
 					.project-information {
 						transform: translateY(0px);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 768px) {
+	.Home {
+		.container {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			h2 {
+				font-size: 1.3em;
+			}
+			.bigPicture {
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				position: relative;
+				> .img {
+					width: 100%;
+					height: 100%;
+					background-size: cover;
+					background-position: top;
+				}
+				.overlay {
+					background: rgba(0, 0, 0, 0.25);
+					opacity: 0;
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					transition: background .25s ease, opacity .25s ease;
+					.project-information {
+						position: absolute;
+						bottom: 0px;
+						padding-bottom: 15px;
+						color: #fff;
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						width: 100%;
+						align-items: end;
+						transform: translateY(59px);
+						transition: transform .55s ease;
+						background: linear-gradient(0deg, rgba(51, 51, 51, .25), transparent);
+						.description {
+							grid-column: span 2;
+							padding: 0px 15px;
+						}
+						// .technology {
+						// 	text-align: right;
+						// 	grid-column: 2;
+						// 	padding-right: 15px;
+						// }
+					}
+				}
+				&:hover {
+					img {
+						transform: scale(1.325, 1.325);
+					}
+					.overlay {
+						opacity: 1;
+						background: rgba(0, 0, 0, .45);
+						.project-information {
+							transform: translateY(0px);
+						}
+					}
+				}
+			}
+			.icon {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				overflow: hidden;
+				position: relative;
+				box-shadow: inset -4px -5px 11px 0px rgba(0,0,0,0.1);
+				min-height: 37.5vh;
+				> img {
+					max-width: 150px;
+					width: auto;
+					transition: transform .45s ease;
+				}
+				.overlay {
+					background: rgba(0, 0, 0, .25);
+					opacity: 0;
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					transition: background .25s ease, opacity .25s ease;
+					.project-information {
+						position: absolute;
+						bottom: 0px;
+						padding-bottom: 15px;
+						color: #fff;
+						display: grid;
+						grid-template-columns: 1fr;
+						width: 100%;
+						align-items: end;
+						transform: translateY(100px);
+						transition: transform .55s ease;
+						background: linear-gradient(0deg, rgba(51, 51, 51, .45), transparent);
+						.description {
+							grid-column: span 2;
+							padding: 0px 15px;
+						}
+						// .technology {
+						// 	text-align: right;
+						// 	grid-column: 2;
+						// 	padding-right: 15px;
+						// }
+					}
+				}
+				&:hover {
+					img {
+						transform: scale(1.35, 1.35);
+					}
+					.overlay {
+						opacity: 1;
+						background: rgba(0, 0, 0, .35);
+						.project-information {
+							transform: translateY(0px);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media(min-width: 1200px) {
+	.Home {
+		.container {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			h2 {
+				font-size: 1.5em;
+			}
+			.bigPicture {
+				grid-column: span 2;
+				grid-row: span 2;
+				overflow: hidden;
+				display: flex;
+				align-items: center;
+				position: relative;
+				min-height: auto;
+				filter: saturate(0%);
+				> div .img {
+					width: 100%;
+					height: 100%;
+					background-size: cover;
+					background-position: top;
+					transition: transform .55s ease;
+					background-repeat: no-repeat;
+				}
+				.overlay {
+					background: rgba(0, 0, 0, 0.25);
+					opacity: 0;
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					transition: background .25s ease, opacity .25s ease;
+					.project-information {
+						position: absolute;
+						bottom: 0px;
+						padding-bottom: 15px;
+						color: #fff;
+						display: grid;
+						grid-template-columns: repeat(2, 1fr);
+						width: 100%;
+						align-items: end;
+						transform: translateY(59px);
+						transition: transform .55s ease;
+						background: linear-gradient(0deg, rgba(51, 51, 51, .75), transparent);
+						.description {
+							grid-column: span 2;
+							padding: 0px 15px;
+						}
+						// .technology {
+						// 	text-align: right;
+						// 	grid-column: 2;
+						// 	padding-right: 15px;
+						// }
+					}
+				}
+				&:hover {
+					filter: saturate(100%);
+					> div .img {
+						transform: scale(1.02);
+					}
+					.overlay {
+						opacity: 1;
+						background: rgba(0, 0, 0, .125);
+						.project-information {
+							transform: translateY(0px);
+						}
+					}
+				}
+			}
+			.icon {
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+				overflow: hidden;
+				position: relative;
+				box-shadow: inset -4px -5px 11px 0px rgba(0,0,0,0.1);
+				min-height: 33vh;
+				filter: saturate(0%);
+				> img {
+					max-width: 150px;
+					width: auto;
+					transition: transform .45s ease;
+				}
+				.overlay {
+					background: rgba(0, 0, 0, .25);
+					opacity: 0;
+					position: absolute;
+					height: 100%;
+					width: 100%;
+					transition: background .25s ease, opacity .25s ease;
+					.project-information {
+						position: absolute;
+						bottom: 0px;
+						padding-bottom: 15px;
+						color: #fff;
+						display: grid;
+						grid-template-columns: 1fr;
+						width: 100%;
+						align-items: end;
+						transform: translateY(100px);
+						transition: transform .55s ease;
+						background: linear-gradient(0deg, rgba(51, 51, 51, .45), transparent);
+						.description {
+							grid-column: span 2;
+							padding: 0px 15px;
+						}
+						// .technology {
+						// 	text-align: right;
+						// 	grid-column: 2;
+						// 	padding-right: 15px;
+						// }
+					}
+				}
+				&:hover {
+					filter: saturate(100%);
+					img {
+						transform: scale(1.25, 1.25);
+					}
+					.overlay {
+						opacity: 1;
+						background: rgba(0, 0, 0, .125);
+						.project-information {
+							transform: translateY(0px);
+						}
 					}
 				}
 			}

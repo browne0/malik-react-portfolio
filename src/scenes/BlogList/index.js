@@ -6,6 +6,7 @@ import BlogPost from '../BlogPost';
 const webpackRequireContext = require.context('!markdown-with-front-matter-loader!../../_posts', false, /.md$/);
 const blogs = webpackRequireContext.keys().reduce((memo, fileName) => memo.set(fileName.match(/.\/([^.]+).*/)[1], webpackRequireContext(fileName)), new Map());
 
+console.log(blogs);
 const blogRoutes = [...blogs.keys()].map(path => <Route key={path} path={'/blog/' + path} component={BlogPost(blogs.get(path))} />);
 
 const blogList = (blogs) => ({match}) => 

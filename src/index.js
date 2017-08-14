@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
+
 
 import App from './App';
 import './base.css';
@@ -11,7 +13,9 @@ import ThemeProvider from 'material-ui/styles/MuiThemeProvider';
 injectTapEventPlugin();
 
 ReactDOM.render(
-	<ThemeProvider>
-		<App />
-	</ThemeProvider>
+  <Router basename="/malikbrowne">
+  	<ThemeProvider>
+  		<App />
+  	</ThemeProvider>
+  </Router>
 	, document.getElementById('root'));
