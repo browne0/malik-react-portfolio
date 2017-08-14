@@ -72,10 +72,6 @@ class Navbar extends Component {
 					 	value={location.pathname}
 					 	className="nav-items">
 						<Tab 
-							label="Home" 
-							onActive={this.onTabClick}
-							value="/"
-							className="nav-item" /><Tab 
 							label="About" 
 							onActive={this.onTabClick}
 							value="/about"

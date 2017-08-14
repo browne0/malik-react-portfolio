@@ -413,7 +413,7 @@ header {
       margin-bottom: 4px;
       display: none; }
   header .nav-items > div:first-child {
-    width: 300px !important; }
+    width: 250px !important; }
   header .nav-item div:first-child {
     display: flex;
     align-items: center;
@@ -433,7 +433,7 @@ header {
       grid-template-rows: 32px 32px;
       align-items: center;
       color: rgba(255, 255, 255, 0.7);
-      width: 360px; }
+      width: 370px; }
       header .logo-wrapper .logo {
         max-width: 48px;
         width: 48px;
@@ -441,15 +441,15 @@ header {
       header .logo-wrapper h1 {
         font-size: 1em;
         margin-top: 7.5px;
-        padding-left: 15px;
         grid-column: 2;
-        display: block; }
+        display: block;
+        line-height: 1em; }
       header .logo-wrapper h2 {
         font-size: .65em;
-        padding-left: 15px;
         grid-column: 2;
         margin-bottom: 5px;
-        display: block; }
+        display: block;
+        line-height: 1em; }
   .nav-items {
     width: auto !important; }
     .nav-items .nav-item div:first-child {
