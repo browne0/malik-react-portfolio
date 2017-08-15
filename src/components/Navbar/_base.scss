@@ -4,6 +4,7 @@ header {
 	z-index: 2;
 	.navbar {
 		height: 64px;
+		padding-left: 20px !important;
 		> div:first-child {
 			height: 64px !important;
 			flex: none;
@@ -15,7 +16,7 @@ header {
 		grid-template-columns: min-content 1fr;
 		grid-template-rows: 32px 32px;
 		align-items: center;
-		color: rgba(255, 255, 255, .7);
+		color: rgba(255, 255, 255, .85);
 		.logo {
 			max-width: 36px;
 			width: 36px;
@@ -38,7 +39,7 @@ header {
 	}
 	.nav-items {
 		> div:first-child {
-			width: 250px !important;
+			width: 225px !important;
 		}
 	}
 
@@ -65,7 +66,7 @@ header {
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 32px 32px;
 			align-items: center;
-			color: rgba(255, 255, 255, .7);
+			color: rgba(255, 255, 255, .85);
 			width: 370px;
 			.logo {
 				max-width: 48px;
@@ -91,6 +92,7 @@ header {
 	.nav-items {
 		width: auto !important;	
 		.nav-item {
+			color: rgba(255, 255, 255, .85) !important;
 			div:first-child {
 				display: flex;
 				align-items: center;

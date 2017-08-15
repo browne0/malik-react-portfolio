@@ -30,7 +30,7 @@ class Navbar extends Component {
 		let { location } = this.props;
 		const styles = {
 			tabs: {
-				backgroundColor: '#333',
+				backgroundColor: '#2B2B2B',
 				boxShadow: 'rgba(0, 0, 0, 0.24) 0px 1px 6px, rgba(0, 0, 0, 0.24) 0px 1px 4px',
 				display: 'grid',
 				gridTemplateColumns: 'min-content 1fr',
@@ -42,7 +42,7 @@ class Navbar extends Component {
 				tab: {
 					gridColumn: '',
 					height: '100%',
-					backgroundColor: '#333'
+					backgroundColor: '#2B2B2B'
 				},
 				inkBar: {
 					backgroundColor: '#c24d01'
@@ -52,7 +52,7 @@ class Navbar extends Component {
 
 		const title = 
 		<div className="logo-wrapper">
-			<img className="logo" src="http://malikbrowne.com/assets/logos/new_portfolio_logo.png" alt=""/>
+			<img className="logo" src="http://malikbrowne.com/assets/logos/malikbrowne_logo.png" alt=""/>
 			<h1>MALIK BROWNE</h1>
 			<h2>FRONT END ENGINEER &amp; UX ENTHUSIAST</h2>
 		</div>;

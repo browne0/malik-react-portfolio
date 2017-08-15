@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { projects } from '../../data/featured_projects.json';
+import { projects } from '../../data/projects.json';
 
 class Home extends Component {
 	render() {
@@ -66,6 +66,9 @@ class Home extends Component {
 		}
 		return (
 			<div className="Home">
+				<div className="hero">
+					<h1>I create <span>intuitive</span> and <span>interactive</span> websites and applications.</h1>
+				</div>
 				<div className="container">
 					{projectList}
 				</div>

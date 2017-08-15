@@ -13,7 +13,7 @@
 			},
 			"github_url": "https://github.com/browne0/Spotter",
 			"live_url": "http://dev.beesdesign.net/spotter",
-			"path": "/projects/spotter"
+			"path": "/spotter"
 		},
 		{
 			"name": "Mood.gg",
@@ -30,8 +30,8 @@
 			},
 			"github_url": "https://github.com/TeamMoodGitHub",
 			"live_url": "http://mood.gg",
-			"background_color": "#333",
-			"path": "/projects/moodgg"
+			"background_color": "#444",
+			"path": "/moodgg"
 		},
 		{
 			"name": "Spotify Mixmax Integration",
@@ -47,7 +47,7 @@
 			},
 			"github_url": "https://github.com/browne0/spotify-mixmax-slash-command",
 			"background_color": "#2F2462",
-			"path": "/projects/mixmax"
+			"path": "/mixmax"
 		},
 		{
 			"name": "AngularJS Shopping Cart",
@@ -63,7 +63,7 @@
 			"github_url": "https://github.com/browne0/shoppingCart",
 			"live_url": "http://malikbrowne.com/dev/shoppingCart",
 			"background_color": "#337ab7",
-			"path": "/projects/shoppingcart"
+			"path": "/shopping-cart"
 		},
 		{
 			"name": "myChef",
@@ -77,7 +77,7 @@
 			},
 			"github_url": "https://github.com/browne0/myChef",
 			"live_url": "http://dev.beesdesign.net/mychef",
-			"path": "/projects/mychef"
+			"path": "/mychef"
 		},
 		{
 			"name": "MedxPort",
@@ -94,8 +94,8 @@
 				]
 			},
 			"github_url": "https://github.com/browne0/MedxPort",
-			"background_color": "#222",
-			"path": "/projects/medxport"
+			"background_color": "#fff",
+			"path": "/medxport"
 		},
 		{
 			"name": "My Old Portfolio",
@@ -111,7 +111,7 @@
 			},
 			"github_url": "https://github.com/browne0/browne0.github.io",
 			"live_url": "https://browne0.github.io",
-			"path": "/projects/old_portfolio"
+			"path": "/old-portfolio"
 		},
 		{
 			"name": "Bee's Design",
@@ -127,7 +127,7 @@
 			"github_url": "",
 			"live_url": "http://beesdesign.net",
 			"background_color": "#52B702",
-			"path": "/projects/beesdesign"
+			"path": "/beesdesign"
 		},
 		{
 			"name": "Milkstarz: My YouTube Channel",
@@ -139,7 +139,7 @@
 				"screenshots": []
 			},
 			"github_url": "",
-			"background_color": "#333",
+			"background_color": "#444",
 			"path": "https://youtube.com/Milkstarz"
 		}
 	]

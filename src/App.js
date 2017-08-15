@@ -7,6 +7,15 @@ import Contact from './scenes/Contact';
 import Home from './scenes/Home';
 import NotFound from './scenes/NotFound';
 
+import Spotter from './scenes/Projects/Spotter';
+import ShoppingCart from './scenes/Projects/ShoppingCart';
+import OldPortfolio from './scenes/Projects/OldPortfolio';
+import MyChef from './scenes/Projects/MyChef';
+import MoodGG from './scenes/Projects/MoodGG';
+import Mixmax from './scenes/Projects/Mixmax';
+import MedXPort from './scenes/Projects/MedXPort';
+import BeesDesign from './scenes/Projects/BeesDesign';
+
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 import Navbar from './components/Navbar';
@@ -26,6 +35,14 @@ class App extends Component {
               <Route path="/blog" component={BlogList} />
               <Route path="/about" component={About} />
               <Route path="/contact" component={Contact} />
+              <Route path="/spotter" component={Spotter} />
+              <Route path="/shopping-cart" component={ShoppingCart} />
+              <Route path="/old-portfolio" component={OldPortfolio} />
+              <Route path="/mychef" component={MyChef} />
+              <Route path="/moodgg" component={MoodGG} />
+              <Route path="/mixmax" component={Mixmax} />
+              <Route path="/medxport" component={MedXPort} />
+              <Route path="/beesdesign" component={BeesDesign} />
               <Route component={NotFound} />
             </Switch>
           </CSSTransition>
