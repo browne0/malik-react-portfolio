@@ -517,7 +517,8 @@ svg {
     width: calc(100vw - 15px);
     font-size: .85em;
     margin: auto;
-    padding-bottom: 15px; }
+    padding-bottom: 15px;
+    font-family: Lora; }
 
 @media (min-width: 800px) {
   .blog-post {
@@ -530,7 +531,9 @@ svg {
         color: #c24d01; }
     .blog-post .markdown-body {
       width: calc(80vw);
-      margin: auto; } }
+      margin: auto;
+      font-size: 1.2em;
+      font-family: Lora; } }
 
 header {
   position: fixed;
