@@ -1,3 +1,35 @@
 .blog-post {
+  a {
+    display: inline-block;
+    padding-left: 7.5px;
+    transition: color .25s ease;
+    &:hover {
+      color: rgb(194, 77, 1);
+    }
+  }
+  padding-top: 7.5px;
+  .markdown-body {
+    width: calc(100vw - 15px);
+    font-size: .85em;
+    margin: auto;
+    padding-bottom: 15px;
+  }
+}
 
+@media(min-width: 800px) {
+  .blog-post {
+    a {
+      display: inline-block;
+      padding-left: 7.5px;
+      transition: color .25s ease;
+      &:hover {
+        color: rgb(194, 77, 1);
+      }
+    }
+    padding-top: 7.5px;
+    .markdown-body {
+      width: calc(80vw);
+      margin: auto;
+    }
+  }
 }

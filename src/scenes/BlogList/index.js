@@ -1,106 +1,134 @@
-import React from "react";
-import { Link, Route, Switch } from "react-router-dom";
+import React, { Component } from "react";
+import { Link, Route, Switch, withRouter } from "react-router-dom";
 import BlogPost from "../BlogPost";
 import Moment from "react-moment";
-
+import { TextField } from 'material-ui';
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const webpackRequireContext = require.context(
   "!markdown-with-front-matter-loader!../../_posts",
   false,
   /.md$/
 );
+
 const blogs = webpackRequireContext
   .keys()
   .reduce(
-    (memo, fileName) =>
-      memo.set(
-        fileName.match(/.\/([^.]+).*/)[1],
-        webpackRequireContext(fileName)
-      ),
-    new Map()
+  (memo, fileName) =>
+    memo.concat(
+      {
+        path: fileName.match(/.\/([^.]+).*/)[1],
+        postData: webpackRequireContext(fileName)
+      }
+    ),
+  []
   );
 
-const blogRoutes = [...blogs.keys()].map(path =>
+const blogRoutes = blogs.map(blog =>
   <Route
-    key={path}
-    path={"/blog/" + path}
-    component={BlogPost(blogs.get(path))}
+    key={blog.path}
+    path={"/blog/" + blog.path}
+    component={() => <BlogPost blog={blog} />}
   />
 );
 
-console.log(blogs);
+class blogList extends Component {
+  constructor() {
+    super();
 
-const blogList = blogs => ({ match }) =>
-  <Switch>
-    <Route
-      exact
-      path={match.url}
-      render={() =>
-        <div className="blog">
-          <div>
-            {[...blogs.keys()].map(path =>
-              <Link key={path} to={`/blog/${path}`} className="post">
-                <img
-                  src="http://placekitten.com/36"
-                  alt=""
-                  className="avatar"
-                />
+    this.state = {
+      blogs: blogs,
+      filteredBlogs: blogs,
+      search: ''
+    }
+    this.onFilterChange = this.onFilterChange.bind(this);
+    this.filterBlogs = this.filterBlogs.bind(this);
+  }
 
-                <a className="author" href={blogs.get(path).twitter_author}>
-                  {blogs.get(path).author}
-                </a>
-                <p className="date">
-                  <Moment parse="YYYY-MM-DD" format="MMM D">
-                    {blogs.get(path).date_published}
-                  </Moment>
-                  <span>&middot;</span>
-                  {Number(
-                    blogs
-                      .get(path)
-                      .__content.replace(/<[^>]*>/g, " ")
-                      .replace("/s+/g", " ")
-                      .trim()
-                      .split(" ").length
-                  ) /
-                    275 <
-                  1
-                    ? Number(
-                        String(
-                          Number(
-                            blogs
-                              .get(path)
-                              .__content.replace(/<[^>]*>/g, " ")
-                              .replace("/s+/g", " ")
-                              .trim()
-                              .split(" ").length
-                          ) /
-                            275 *
-                            60
-                        )
-                      )
-                        .toFixed()
-                        .toString() + " sec read"
-                    : Number(
-                        String(
-                          Number(
-                            blogs
-                              .get(path)
-                              .__content.replace(/<[^>]*>/g, " ")
-                              .replace("/s+/g", " ")
-                              .trim()
-                              .split(" ").length
-                          ) / 275
-                        )
-                      )
-                        .toFixed()
-                        .toString() + " min read"}
-                </p>
-              </Link>
-            )}
-          </div>
-        </div>}
-    />
-    {blogRoutes}
-  </Switch>;
+  filterBlogs() {
+    let blogs = this.state.blogs;
+    let query = this.state.search;
 
-export default blogList(blogs);
+    blogs = blogs.filter(blog => {
+      return blog.postData.title.toLowerCase().includes(query);
+    });
+    this.setState({ filteredBlogs: blogs });
+  }
+
+  onFilterChange(e) {
+    let search = e.target.value.toLowerCase();
+    this.setState({ search }, () => this.filterBlogs());
+  }
+  render() {
+    let { match } = this.props;
+    let style = {
+      blogFilter: {
+        width: '60vw',
+        margin: 'auto',
+        color: {
+          color: '#FF6600'
+        },
+        bgcolor: {
+          borderColor: '#FF6600'
+        }
+      }
+    }
+
+    const blogPosts = this.state.filteredBlogs.map((blog, index) => {
+      let blogLength = blog.postData.__content.replace(/<[^>]*>/g, " ").replace("/s+/g", " ").replace("/+/g").trim().split(" ").length;
+      if (Number(blogLength) < 1) {
+        blogLength = (blogLength / 275 * 60).toFixed() + ' sec read';
+      } else {
+        blogLength = (blogLength / 275).toFixed() + ' min read';
+      }
+      return (
+        <div key={blog.path} to={`/blog/${blog.path}`} className="post">
+          <img
+            src="http://placekitten.com/36"
+            alt=""
+            className="avatar"
+          />
+
+          <span className="author">
+            {blog.postData.author}
+          </span>
+          <p className="date">
+            <Moment parse="YYYY-MM-DD" format="MMM D">
+              {blog.postData.date_published}
+            </Moment>
+            <span>&middot;</span>
+            {blogLength}
+          </p>
+          <Link to={`/blog/${blog.path}`} className="title"><h2>{blog.postData.title}</h2></Link>
+          <p className="summary">{blog.postData.summary}</p>
+        </div>
+      );
+    });
+    return (
+      <Switch>
+        <Route
+          exact
+          path={match.url}
+          render={() =>
+            <div className="blog-wrapper">
+              <TextField
+                hintText="Enter a blog post title"
+                floatingLabelText="Search"
+                className="blog-filter"
+                style={style.blogFilter}
+                floatingLabelFocusStyle={style.blogFilter.color}
+                underlineFocusStyle={style.blogFilter.bgcolor}
+                onChange={this.onFilterChange}
+                value={this.state.search} />
+              <div className="blog">
+                {blogPosts}
+              </div>
+            </div>
+          }
+        />
+        {blogRoutes}
+      </Switch>
+    );
+  }
+}
+
+export default withRouter(blogList);

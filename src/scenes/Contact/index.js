@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
 
 class Contact extends Component {
-	render() {
-		return (
-			<div className="contact">contact page</div>
-		);
-	}
+  render() {
+    return (
+      <div className="contact">contact page</div>
+    );
+  }
 }
 
 export default Contact

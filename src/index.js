@@ -4,7 +4,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 
 import App from './App';
-import './base.css';
+import './styles/base.css';
 
 import 'github-markdown-css';
 
@@ -14,8 +14,8 @@ injectTapEventPlugin();
 
 ReactDOM.render(
   <Router basename="/malikbrowne">
-  	<ThemeProvider>
-  		<App />
-  	</ThemeProvider>
+    <ThemeProvider>
+      <App />
+    </ThemeProvider>
   </Router>
-	, document.getElementById('root'));
+  , document.getElementById('root'));
