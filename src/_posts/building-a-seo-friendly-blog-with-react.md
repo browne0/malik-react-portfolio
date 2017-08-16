@@ -2,7 +2,7 @@
 title: Building a SEO friendly blog with React!
 author: Malik Browne
 date_published: 2017-08-15
-summary: Creating a blog can be a pretty complex task. In this article, I go over how I was able to use it using React, YAML, and Markdown.
+summary: Creating a blog can be a pretty complex task. In this post, I go over how I was able to use it using React, YAML, and Markdown.
 ---
 
 # Hello world
@@ -20,6 +20,5 @@ In felis suspendisse suscipit eleifend fermentum pellentesque, consectetuer enim
 Vulputate ligula justo feugiat, justo ac quisque ipsum velit, leo convallis, nulla id ut pede. Nec pellentesque odio justo nec at mattis, diam consectetuer risus. Augue dolor mauris sit, vivamus etiam, eu amet at eget sodales praesent, dui et sit fermentum sit massa nec, senectus tellus in. Sollicitudin quis vestibulum fringilla lorem justo. Nam amet urna nec, a feugiat quis mauris vestibulum neque. Lobortis id. Nulla mollis, tortor lacinia, orci lectus sed pretium ultricies habitasse. Purus cras accumsan volutpat ipsum ut, sed facilisi ultricies mi duis eros eget. Nunc in aenean, vulputate sem. Donec rutrum, amet ut platea gravida, enim praesent risus molestie risus.
 
 Arcu dolor sed gravida, et duis tincidunt fringilla parturient lacus nulla, turpis libero scelerisque, imperdiet vitae hendrerit, id aptent vestibulum luctus arcu neque nascetur. Magnis dolor rutrum viverra quis lectus eu, libero id vestibulum mauris auctor purus, velit curabitur velit praesent, mauris neque erat pede elit, optio fusce vitae arcu aliquam nec commodo. Ante blandit, sunt maecenas neque. Ultrices vitae et wisi commodo, amet taciti ut duis. Mauris dui, dis ullamcorper fringilla aliquam est in non, et et placerat.
-+
 
 

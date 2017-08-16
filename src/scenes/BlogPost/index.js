@@ -1,16 +1,23 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-const blogPost = (props) => {
-  console.log(props);
+const blogPost = props => {
   return (
     <div className="blog-post">
-      <Link to='/blog'>« Back to blog</Link>
-      <hr />
-      <div className='markdown-body' dangerouslySetInnerHTML={{ __html: props.blog.postData.__content }}></div>
+      <div className="back-to-blog">
+        <Link to="/blog">
+          <i className="material-icons">arrow_back</i>
+          <span>Back to blog</span>
+        </Link>
+      </div>
+      <div className="container">
+        <div
+          className="markdown-body"
+          dangerouslySetInnerHTML={{ __html: props.blog.postData.__content }}
+        />
+      </div>
     </div>
   );
-}
+};
 
-
-export default blogPost
+export default blogPost;

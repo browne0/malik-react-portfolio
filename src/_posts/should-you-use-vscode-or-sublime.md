@@ -2,7 +2,7 @@
 title: Should you use Visual Studio Code or Sublime?
 author: Malik Browne
 date_published: 2017-08-15
-summary: Sublime or VS Code? It's a question that still doesn't have a good answer. In this article, I go over the pros and cons of two power house editors in the web industry.
+summary: Sublime or VS Code? It's a question that still doesn't have a good answer. In this post, I go over the pros and cons of two power house editors in the web industry.
 ---
 
 # Hello world

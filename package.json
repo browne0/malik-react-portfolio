@@ -9,6 +9,7 @@
   "dependencies": {
     "github-markdown-css": "^2.8.0",
     "markdown-with-front-matter-loader": "^0.1.0",
+    "material-design-icons-iconfont": "^3.0.3",
     "material-ui": "^0.18.7",
     "moment": "^2.18.1",
     "node-sass": "^4.5.3",
@@ -22,8 +23,8 @@
     "react-transition-group": "^2.2.0"
   },
   "scripts": {
-    "build-css": "node-sass --include-path ./src src/base.scss -o src/styles/",
-    "watch-css": "npm run build-css && node-sass --include-path ./src src/base.scss -o src/styles/ --watch --recursive",
+    "build-css": "node-sass src/base.scss -o src/styles/",
+    "watch-css": "npm run build-css && node-sass src/base.scss -o src/styles/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build",

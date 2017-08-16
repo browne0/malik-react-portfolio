@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link, Route, Switch, withRouter } from "react-router-dom";
 import BlogPost from "../BlogPost";
 import Moment from "react-moment";
-import { TextField } from 'material-ui';
+import { TextField } from "material-ui";
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const webpackRequireContext = require.context(
   "!markdown-with-front-matter-loader!../../_posts",
@@ -10,18 +10,14 @@ const webpackRequireContext = require.context(
   /.md$/
 );
 
-const blogs = webpackRequireContext
-  .keys()
-  .reduce(
+const blogs = webpackRequireContext.keys().reduce(
   (memo, fileName) =>
-    memo.concat(
-      {
-        path: fileName.match(/.\/([^.]+).*/)[1],
-        postData: webpackRequireContext(fileName)
-      }
-    ),
+    memo.concat({
+      path: fileName.match(/.\/([^.]+).*/)[1],
+      postData: webpackRequireContext(fileName)
+    }),
   []
-  );
+);
 
 const blogRoutes = blogs.map(blog =>
   <Route
@@ -38,8 +34,8 @@ class blogList extends Component {
     this.state = {
       blogs: blogs,
       filteredBlogs: blogs,
-      search: ''
-    }
+      search: ""
+    };
     this.onFilterChange = this.onFilterChange.bind(this);
     this.filterBlogs = this.filterBlogs.bind(this);
   }
@@ -62,31 +58,31 @@ class blogList extends Component {
     let { match } = this.props;
     let style = {
       blogFilter: {
-        width: '60vw',
-        margin: 'auto',
+        margin: "auto",
         color: {
-          color: '#FF6600'
+          color: "#FF6600"
         },
         bgcolor: {
-          borderColor: '#FF6600'
+          borderColor: "#FF6600"
         }
       }
-    }
+    };
 
     const blogPosts = this.state.filteredBlogs.map((blog, index) => {
-      let blogLength = blog.postData.__content.replace(/<[^>]*>/g, " ").replace("/s+/g", " ").replace("/+/g").trim().split(" ").length;
-      if (Number(blogLength) < 1) {
-        blogLength = (blogLength / 275 * 60).toFixed() + ' sec read';
-      } else {
-        blogLength = (blogLength / 275).toFixed() + ' min read';
-      }
+      let blogLength = blog.postData.__content
+        .replace(/<[^>]*>/g, " ")
+        .replace("/s+/g", " ")
+        .replace("/+/g")
+        .trim()
+        .split(" ").length;
+
+      let blogLengthString =
+        blogLength / 275 < 1
+          ? (blogLength / 275 * 60).toFixed() + " sec read"
+          : (blogLength / 275).toFixed() + " min read";
       return (
         <div key={blog.path} to={`/blog/${blog.path}`} className="post">
-          <img
-            src="http://placekitten.com/36"
-            alt=""
-            className="avatar"
-          />
+          <img src="http://placekitten.com/36" alt="" className="avatar" />
 
           <span className="author">
             {blog.postData.author}
@@ -96,10 +92,16 @@ class blogList extends Component {
               {blog.postData.date_published}
             </Moment>
             <span>&middot;</span>
-            {blogLength}
+            {blogLengthString}
           </p>
-          <Link to={`/blog/${blog.path}`} className="title"><h2>{blog.postData.title}</h2></Link>
-          <p className="summary">{blog.postData.summary}</p>
+          <Link to={`/blog/${blog.path}`} className="title">
+            <h2>
+              {blog.postData.title}
+            </h2>
+          </Link>
+          <p className="summary">
+            {blog.postData.summary}
+          </p>
         </div>
       );
     });
@@ -112,18 +114,18 @@ class blogList extends Component {
             <div className="blog-wrapper">
               <TextField
                 hintText="Enter a blog post title"
-                floatingLabelText="Search"
+                floatingLabelText="Search my blog"
                 className="blog-filter"
                 style={style.blogFilter}
                 floatingLabelFocusStyle={style.blogFilter.color}
                 underlineFocusStyle={style.blogFilter.bgcolor}
                 onChange={this.onFilterChange}
-                value={this.state.search} />
+                value={this.state.search}
+              />
               <div className="blog">
                 {blogPosts}
               </div>
-            </div>
-          }
+            </div>}
         />
         {blogRoutes}
       </Switch>

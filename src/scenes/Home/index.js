@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import { projects } from '../../data/projects.json';
+import { projects } from "../../data/projects.json";
 
 class Home extends Component {
   render() {
@@ -10,19 +10,28 @@ class Home extends Component {
       let project = projects[i];
       if (project.big_picture) {
         let path = {
-          "pathname": project.path,
-          "state": project
-        }
+          pathname: project.path,
+          state: project
+        };
         projectList.push(
           <Link key={i} to={path} className="bigPicture">
-            <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
-              <div className="img" style={{ backgroundImage: `url(${project.image_urls.screenshots[0]})` }} />
+            <div style={{ width: "100%", height: "100%", overflow: "hidden" }}>
+              <div
+                className="img"
+                style={{
+                  backgroundImage: `url(${project.image_urls.screenshots[0]})`
+                }}
+              />
             </div>
             <div className="overlay">
               <div className="project-information">
                 <div className="description">
-                  <h2>{project.name}</h2>
-                  <p>{project.description}</p>
+                  <h2>
+                    {project.name}
+                  </h2>
+                  <p>
+                    {project.description}
+                  </p>
                 </div>
               </div>
             </div>
@@ -31,13 +40,23 @@ class Home extends Component {
       } else {
         if (project.name === "Milkstarz: My YouTube Channel") {
           projectList.push(
-            <a key={i} target="_blank" href={project.path} className="icon" style={{ backgroundColor: project.background_color }}>
+            <a
+              key={i}
+              target="_blank"
+              href={project.path}
+              className="icon"
+              style={{ backgroundColor: project.background_color }}
+            >
               <img src={project.image_urls.logo} alt={project.name} />
               <div className="overlay">
                 <div className="project-information">
                   <div className="description">
-                    <h2>{project.name}</h2>
-                    <p>{project.description}</p>
+                    <h2>
+                      {project.name}
+                    </h2>
+                    <p>
+                      {project.description}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -45,17 +64,26 @@ class Home extends Component {
           );
         } else {
           let path = {
-            "pathname": project.path,
-            "state": project
-          }
+            pathname: project.path,
+            state: project
+          };
           projectList.push(
-            <Link key={i} to={path} className="icon" style={{ backgroundColor: project.background_color }}>
+            <Link
+              key={i}
+              to={path}
+              className="icon"
+              style={{ backgroundColor: project.background_color }}
+            >
               <img src={project.image_urls.logo} alt={project.name} />
               <div className="overlay">
                 <div className="project-information">
                   <div className="description">
-                    <h2>{project.name}</h2>
-                    <p>{project.description}</p>
+                    <h2>
+                      {project.name}
+                    </h2>
+                    <p>
+                      {project.description}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -67,7 +95,10 @@ class Home extends Component {
     return (
       <div className="Home">
         <div className="hero">
-          <h1>I create <span>intuitive</span> and <span>interactive</span> websites and applications.</h1>
+          <h1>
+            I create <span>beautiful</span> and <span>intuitive</span> websites
+            and applications.
+          </h1>
         </div>
         <div className="container">
           {projectList}
