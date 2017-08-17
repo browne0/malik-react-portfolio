@@ -1,10 +1,25 @@
 import React, { Component } from "react";
 
 class About extends Component {
+  componentDidMount() {
+    let hero = this.blurredEl;
+    console.log(hero);
+
+    let fullResImg = "http://malikbrowne.com/assets/selfie/about_bg3.jpg";
+
+    let img = new Image();
+
+    img.src = fullResImg;
+    img.onload = () => {
+      hero.style.backgroundImage = `url(${fullResImg})`;
+      hero.style.filter = "none";
+    };
+  }
+
   render() {
     return (
       <div className="About">
-        <div className="hero">
+        <div className="hero" ref={elem => (this.blurredEl = elem)}>
           <div className="hero-text">
             <h1>
               Hi, I'm <span>Malik.</span>

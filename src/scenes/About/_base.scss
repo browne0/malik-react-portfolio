@@ -1,25 +1,18 @@
 .About {
+  background-color: #1c1c1c;
   .hero {
-    background: linear-gradient(
-        to bottom,
-        #323232 0%,
-        #3f3f3f 40%,
-        #1c1c1c 150%
-      ),
-      linear-gradient(
-        to top,
-        rgba(255, 255, 255, 0.40) 0%,
-        rgba(0, 0, 0, 0.25) 200%
-      );
-    background-blend-mode: multiply;
+    background-image: url('../scenes/About/blurred_bg.jpg');
+    filter: blur(10px);
+    background-position-x: -450px;
     height: calc(100vh - 116px);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
+    transition: filter .65s ease-out;
     .hero-text {
       align-self: flex-end;
       justify-self: center;
-      grid-row: 2 / 4;
+      grid-row: 4;
       padding-right: 7vw;
       color: rgba(255, 255, 255, .9);
       text-align: center;
@@ -28,11 +21,11 @@
       color: #ff6000;
     }
     h1 {
-      font-size: 2.5em;
+      font-size: 2.25em;
       line-height: 1.25em;
     }
     h2 {
-      font-size: 2em;
+      font-size: 1.8em;
       &::last-child {
         display: none;
       }
@@ -41,14 +34,17 @@
 }
 @media (min-width: 381px) {
   .About {
+    background-color: #1c1c1c;
     .hero {
-      background-image: url(http://malikbrowne.com/assets/selfie/about_bg3.jpg);
+      background-image: url('../scenes/About/blurred_bg.jpg');
+      filter: blur(10px);
       height: calc(100vh - 116px);
       background-position-x: -255px;
       background-size: cover;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
+      transition: filter .65s ease-out;
       .hero-text {
         align-self: flex-end;
         justify-self: center;
@@ -75,14 +71,17 @@
 }
 @media (min-width: 617px) {
   .About {
+    background-color: #1c1c1c;
     .hero {
-      background-image: url(http://malikbrowne.com/assets/selfie/about_bg3.jpg);
+      background-image: url('../scenes/About/blurred_bg.jpg');
+      filter: blur(10px);
       height: calc(100vh - 116px);
       background-position-x: -110px;
       background-size: cover;
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
+      transition: filter .65s ease-out;
       .hero-text {
         align-self: flex-end;
         justify-self: center;
@@ -104,16 +103,19 @@
     }
   }
 }
-@media (min-width: 915px) {
+@media (min-width: 1054px) {
   .About {
+    background-color: #1c1c1c;
     .hero {
-      background-image: url(http://malikbrowne.com/assets/selfie/about_bg3.jpg);
+      background-image: url('../scenes/About/blurred_bg.jpg');
+      filter: blur(10px);
       height: calc(100vh - 116px);
-      background-position-x: -275px;
+      background-position-x: -150px;
       background-size: stretch;
       display: grid;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
+      transition: filter .65s ease-out;
       .hero-text {
         grid-column: 4;
         grid-row: 2 / 4;
@@ -125,28 +127,32 @@
         color: #ff6000;
       }
       h1 {
-        font-size: 3.5em;
+        font-size: 3.6em;
         line-height: 1.25em;
       }
       h2 {
-        font-size: 1.75em;
+        font-size: 1.85em;
       }
     }
   }
 }
-@media (min-width: 1253px) {
+@media (min-width: 1270px) {
   .About {
+    background-color: #1c1c1c;
     .hero {
-      background-image: url(http://malikbrowne.com/assets/selfie/about_bg3.jpg);
+      background-image: url('../scenes/About/blurred_bg.jpg');
+      filter: blur(10px);
       height: calc(100vh - 116px);
-      background-position-x: -200px;
+      background-position-x: -150px;
       background-size: stretch;
       display: grid;
+      background-repeat: no-repeat;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
+      transition: filter .65s ease-out;
       .hero-text {
         grid-column: 4;
-        grid-row: 2 / 4;
+        grid-row: 3 / 2;
         padding-right: 7vw;
         color: rgba(255, 255, 255, .9);
         text-align: left;
@@ -164,19 +170,22 @@
     }
   }
 }
-@media (min-width: 1467px) {
+@media (min-width: 1358px) {
   .About {
+    background-color: #1c1c1c;
     .hero {
-      background-image: url(http://malikbrowne.com/assets/selfie/about_bg3.jpg);
+      background-image: url('../scenes/About/blurred_bg.jpg');
+      filter: blur(10px);
       height: calc(100vh - 116px);
       background-size: stretch;
       background-position-x: 0px;
       display: grid;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
+      transition: filter .65s ease-out;
       .hero-text {
         grid-column: 4;
-        grid-row: 2 / 4;
+        grid-row: 3 / 2;
         padding-right: 7vw;
         color: rgba(255, 255, 255, .9);
         text-align: left;
