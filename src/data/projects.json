@@ -2,7 +2,7 @@
   "projects": [
     {
       "name": "Spotter",
-      "description": "A landing page crafted for a Indiana based startup called Spotter.",
+      "description": "A landing page crafted for an Indiana based startup called Spotter.",
       "technologies": ["HTML5/CSS3", "JavaScript", "jQuery", "PHP"],
       "big_picture": true,
       "image_urls": {
@@ -15,7 +15,7 @@
     },
     {
       "name": "Mood.gg",
-      "description": "A popular gaming web app that plays thematic playlists based on the champion/hero a user is playing.",
+      "description": "A popular gaming web app that plays thematic playlists based on the champion or hero a user is playing.",
       "technologies": ["NodeJS", "React", "Bootstrap", "AWS", "Sass"],
       "big_picture": false,
       "image_urls": {
@@ -100,8 +100,8 @@
       "path": "/medxport"
     },
     {
-      "name": "My Old Portfolio",
-      "description": "My previous front facing portfolio.",
+      "name": "My Post Grad Website",
+      "description": "",
       "technologies": ["HTML5/CSS3", "AngularJS", "jQuery"],
       "big_picture": true,
       "image_urls": {

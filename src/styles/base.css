@@ -168,7 +168,6 @@ svg {
     justify-content: space-around;
     overflow: hidden;
     position: relative;
-    box-shadow: inset -4px -5px 11px 0px rgba(0, 0, 0, 0.1);
     min-height: 40vh; }
     .Home .container .icon > img {
       max-width: 150px;
@@ -268,7 +267,6 @@ svg {
       justify-content: space-around;
       overflow: hidden;
       position: relative;
-      box-shadow: inset -4px -5px 11px 0px rgba(0, 0, 0, 0.1);
       min-height: 37.5vh; }
       .Home .container .icon > img {
         max-width: 150px;
@@ -374,7 +372,6 @@ svg {
       justify-content: space-around;
       overflow: hidden;
       position: relative;
-      box-shadow: inset -4px -5px 11px 0px rgba(0, 0, 0, 0.1);
       min-height: 33vh; }
       .Home .container .icon > img {
         max-width: 150px;

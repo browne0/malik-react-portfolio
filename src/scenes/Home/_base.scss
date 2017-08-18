@@ -84,7 +84,6 @@
       justify-content: space-around;
       overflow: hidden;
       position: relative;
-      box-shadow: inset -4px -5px 11px 0px rgba(0, 0, 0, 0.1);
       min-height: 40vh;
       > img {
         max-width: 150px;
@@ -116,11 +115,6 @@
             grid-column: span 2;
             padding: 0px 15px;
           }
-          // .technology {
-          // 	text-align: right;
-          // 	grid-column: 2;
-          // 	padding-right: 15px;
-          // }
         }
       }
       &:hover {
@@ -199,11 +193,6 @@
               grid-column: span 2;
               padding: 0px 15px;
             }
-            // .technology {
-            // 	text-align: right;
-            // 	grid-column: 2;
-            // 	padding-right: 15px;
-            // }
           }
         }
         &:hover {
@@ -225,7 +214,6 @@
         justify-content: space-around;
         overflow: hidden;
         position: relative;
-        box-shadow: inset -4px -5px 11px 0px rgba(0, 0, 0, 0.1);
         min-height: 37.5vh;
         > img {
           max-width: 150px;
@@ -259,11 +247,6 @@
               grid-column: span 2;
               padding: 0px 15px;
             }
-            // .technology {
-            // 	text-align: right;
-            // 	grid-column: 2;
-            // 	padding-right: 15px;
-            // }
           }
         }
         &:hover {
@@ -357,11 +340,6 @@
               grid-column: span 2;
               padding: 0px 15px;
             }
-            // .technology {
-            // 	text-align: right;
-            // 	grid-column: 2;
-            // 	padding-right: 15px;
-            // }
           }
         }
         &:hover {
@@ -383,7 +361,6 @@
         justify-content: space-around;
         overflow: hidden;
         position: relative;
-        box-shadow: inset -4px -5px 11px 0px rgba(0, 0, 0, 0.1);
         min-height: 33vh;
         > img {
           max-width: 150px;
@@ -414,11 +391,6 @@
               grid-column: span 2;
               padding: 0px 15px;
             }
-            // .technology {
-            // 	text-align: right;
-            // 	grid-column: 2;
-            // 	padding-right: 15px;
-            // }
           }
         }
         &:hover {
