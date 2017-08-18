@@ -96,8 +96,8 @@ class Home extends Component {
       <div className="Home">
         <div className="hero">
           <h1>
-            I create <span>beautiful</span> and <span>intuitive</span> websites
-            and applications.
+            I create <span>simple</span> and <span>intuitive</span> websites and
+            applications.
           </h1>
         </div>
         <div className="container">
