@@ -3,7 +3,6 @@ import React, { Component } from "react";
 class About extends Component {
   componentDidMount() {
     let hero = this.blurredEl;
-    console.log(hero);
 
     let fullResImg = "http://malikbrowne.com/assets/selfie/about_bg3.jpg";
 
