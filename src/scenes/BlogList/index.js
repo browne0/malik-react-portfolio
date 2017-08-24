@@ -84,9 +84,9 @@ class blogList extends Component {
         <div key={blog.path} to={`/blog/${blog.path}`} className="post">
           <img src="http://placekitten.com/36" alt="" className="avatar" />
 
-          <span className="author">
+          <p className="author">
             {blog.postData.author}
-          </span>
+          </p>
           <p className="date">
             <Moment parse="YYYY-MM-DD" format="MMM D">
               {blog.postData.date_published}

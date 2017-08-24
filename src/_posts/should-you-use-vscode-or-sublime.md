@@ -2,7 +2,7 @@
 title: Should you use Visual Studio Code or Sublime?
 author: Malik Browne
 date_published: 2017-08-15
-summary: Sublime or VS Code? It's a question that still doesn't have a good answer. In this post, I go over the pros and cons of two power house editors in the web industry.
+summary: Sublime or VS Code? It's a question that still doesn't have the clearest answer. In this post, I go over the pros and cons of two power house free text editors in the web industry.
 ---
 
 # Hello world
@@ -13,13 +13,32 @@ function helloWorld() {
 }
 ```
 
-Lorem ipsum dolor sit amet, aenean proin, mi urna bibendum purus commodo vel justo. Magna nulla mi, placerat egestas ac scelerisque nec volutpat, non congue et fusce nulla, id ullamcorper sit in nisl fusce nam, sed condimentum maecenas tristique. Lectus ornare placerat diam. Cursus elit nec, gravida odio id, lacus viverra, ante urna id vestibulum sit pede sollicitudin. Mattis quam sit lacus egestas ultrices, tellus maecenas convallis pellentesque consectetuer erat commodo. Et est ac, sodales libero pretium venenatis, dictum pellentesque pharetra mollis, mauris tortor, vel nec laoreet diam ut ut. Condimentum viverra, nam accumsan laoreet. Aliquet nec integer nibh. Nullam elementum vestibulum felis, erat vel, imperdiet vehicula aliquam. Metus vitae nunc vitae mi laoreet, auctor elit, vivamus magna commodo. Massa nulla proin. Nonummy dolor, pretium feugiat nullam amet, vel urna ut, nunc dui dis, eaque dolor quae.
+Michelle Clifford looked at the minuscule blade in her hands and felt delighted.
 
-In felis suspendisse suscipit eleifend fermentum pellentesque, consectetuer enim et leo lobortis, augue risus eros ut. Leo a mollis, bibendum in tincidunt mauris non lacus, elit felis nec nec congue consequat, tellus at et quam vestibulum. Quis quis, penatibus pellentesque dis phasellus eu. Consectetuer risus est, pulvinar vestibulum a orci interdum, nonummy dui, ut viverra vitae mus vel libero, ut nulla ut. Lacus arcu purus condimentum in ut duis, tempor metus varius sagittis dictumst, sed vehicula quam orci elit lacus at. Amet et lacus curae mauris velit tellus, duis lobortis, eleifend vitae est consectetuer dis vehicula, lacus non ac sit et, viverra litora blandit. A metus. Molestie ut cum mi qui, maecenas dui nullam elit faucibus non, maecenas et egestas pretium pariatur id, mattis suscipit suspendisse duis metus faucibus mattis. Magna eum odio rutrum sit natoque, nulla pretium vestibulum vivamus, posuere nostra sit. Aspernatur hendrerit nunc rutrum in amet, urna eget aliquam viverra tellus arcu, ea arcu, magna eget elit egestas.
+She walked over to the window and reflected on her hilly surroundings. She had always loved rural London with its frantic, flabby fields. It was a place that encouraged her tendency to feel delighted.
 
-Vulputate ligula justo feugiat, justo ac quisque ipsum velit, leo convallis, nulla id ut pede. Nec pellentesque odio justo nec at mattis, diam consectetuer risus. Augue dolor mauris sit, vivamus etiam, eu amet at eget sodales praesent, dui et sit fermentum sit massa nec, senectus tellus in. Sollicitudin quis vestibulum fringilla lorem justo. Nam amet urna nec, a feugiat quis mauris vestibulum neque. Lobortis id. Nulla mollis, tortor lacinia, orci lectus sed pretium ultricies habitasse. Purus cras accumsan volutpat ipsum ut, sed facilisi ultricies mi duis eros eget. Nunc in aenean, vulputate sem. Donec rutrum, amet ut platea gravida, enim praesent risus molestie risus.
+Then she saw something in the distance, or rather someone. It was the figure of Beth Thomas. Beth was a cowardly wally with handsome toenails and fragile warts.
 
-Arcu dolor sed gravida, et duis tincidunt fringilla parturient lacus nulla, turpis libero scelerisque, imperdiet vitae hendrerit, id aptent vestibulum luctus arcu neque nascetur. Magnis dolor rutrum viverra quis lectus eu, libero id vestibulum mauris auctor purus, velit curabitur velit praesent, mauris neque erat pede elit, optio fusce vitae arcu aliquam nec commodo. Ante blandit, sunt maecenas neque. Ultrices vitae et wisi commodo, amet taciti ut duis. Mauris dui, dis ullamcorper fringilla aliquam est in non, et et placerat.
-+
+Michelle gulped. She glanced at her own reflection. She was a wild, gracious, cocoa drinker with tall toenails and chubby warts. Her friends saw her as a melted, mute monster. Once, she had even helped a snotacular blind person cross the road.
 
+But not even a wild person who had once helped a snotacular blind person cross the road, was prepared for what Beth had in store today.
 
+The clouds danced like rampaging foxes, making Michelle calm.
+
+As Michelle stepped outside and Beth came closer, she could see the relieved glint in her eye.
+
+Beth gazed with the affection of 3097 noble giant giraffes. She said, in hushed tones, "I love you and I want affection."
+
+Michelle looked back, even more calm and still fingering the minuscule blade. "Beth, hands up or I'll shoot," she replied.
+
+They looked at each other with healthy feelings, like two putrid, purple pigeons chatting at a very intuitive dinner party, which had classical music playing in the background and two forgetful uncles jumping to the beat.
+
+Michelle studied Beth's handsome toenails and fragile warts. Eventually, she took a deep breath. "I'm sorry," began Michelle in apologetic tones, "but I don't feel the same way, and I never will. I just don't love you Beth."
+
+Beth looked unstable, her emotions raw like a rapid, rotten ruler.
+
+Michelle could actually hear Beth's emotions shatter into 7548 pieces. Then the cowardly wally hurried away into the distance.
+
+Not even a mug of cocoa would calm Michelle's nerves tonight.
+
+THE END 

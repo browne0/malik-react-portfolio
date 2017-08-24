@@ -13,12 +13,30 @@ function helloWorld() {
 }
 ```
 
-Lorem ipsum dolor sit amet, aenean proin, mi urna bibendum purus commodo vel justo. Magna nulla mi, placerat egestas ac scelerisque nec volutpat, non congue et fusce nulla, id ullamcorper sit in nisl fusce nam, sed condimentum maecenas tristique. Lectus ornare placerat diam. Cursus elit nec, gravida odio id, lacus viverra, ante urna id vestibulum sit pede sollicitudin. Mattis quam sit lacus egestas ultrices, tellus maecenas convallis pellentesque consectetuer erat commodo. Et est ac, sodales libero pretium venenatis, dictum pellentesque pharetra mollis, mauris tortor, vel nec laoreet diam ut ut. Condimentum viverra, nam accumsan laoreet. Aliquet nec integer nibh. Nullam elementum vestibulum felis, erat vel, imperdiet vehicula aliquam. Metus vitae nunc vitae mi laoreet, auctor elit, vivamus magna commodo. Massa nulla proin. Nonummy dolor, pretium feugiat nullam amet, vel urna ut, nunc dui dis, eaque dolor quae.
+Simon Bishop had always loved dull New York with its jealous, jittery jungle. It was a place where he felt jumpy.
 
-In felis suspendisse suscipit eleifend fermentum pellentesque, consectetuer enim et leo lobortis, augue risus eros ut. Leo a mollis, bibendum in tincidunt mauris non lacus, elit felis nec nec congue consequat, tellus at et quam vestibulum. Quis quis, penatibus pellentesque dis phasellus eu. Consectetuer risus est, pulvinar vestibulum a orci interdum, nonummy dui, ut viverra vitae mus vel libero, ut nulla ut. Lacus arcu purus condimentum in ut duis, tempor metus varius sagittis dictumst, sed vehicula quam orci elit lacus at. Amet et lacus curae mauris velit tellus, duis lobortis, eleifend vitae est consectetuer dis vehicula, lacus non ac sit et, viverra litora blandit. A metus. Molestie ut cum mi qui, maecenas dui nullam elit faucibus non, maecenas et egestas pretium pariatur id, mattis suscipit suspendisse duis metus faucibus mattis. Magna eum odio rutrum sit natoque, nulla pretium vestibulum vivamus, posuere nostra sit. Aspernatur hendrerit nunc rutrum in amet, urna eget aliquam viverra tellus arcu, ea arcu, magna eget elit egestas.
+He was an intuitive, stable, brandy drinker with grubby ankles and spiky eyelashes. His friends saw him as an arrogant, abundant animal. Once, he had even rescued a perfect baby from a burning building. That's the sort of man he was.
 
-Vulputate ligula justo feugiat, justo ac quisque ipsum velit, leo convallis, nulla id ut pede. Nec pellentesque odio justo nec at mattis, diam consectetuer risus. Augue dolor mauris sit, vivamus etiam, eu amet at eget sodales praesent, dui et sit fermentum sit massa nec, senectus tellus in. Sollicitudin quis vestibulum fringilla lorem justo. Nam amet urna nec, a feugiat quis mauris vestibulum neque. Lobortis id. Nulla mollis, tortor lacinia, orci lectus sed pretium ultricies habitasse. Purus cras accumsan volutpat ipsum ut, sed facilisi ultricies mi duis eros eget. Nunc in aenean, vulputate sem. Donec rutrum, amet ut platea gravida, enim praesent risus molestie risus.
+Simon walked over to the window and reflected on his sunny surroundings. The drizzle rained like smiling kittens.
 
-Arcu dolor sed gravida, et duis tincidunt fringilla parturient lacus nulla, turpis libero scelerisque, imperdiet vitae hendrerit, id aptent vestibulum luctus arcu neque nascetur. Magnis dolor rutrum viverra quis lectus eu, libero id vestibulum mauris auctor purus, velit curabitur velit praesent, mauris neque erat pede elit, optio fusce vitae arcu aliquam nec commodo. Ante blandit, sunt maecenas neque. Ultrices vitae et wisi commodo, amet taciti ut duis. Mauris dui, dis ullamcorper fringilla aliquam est in non, et et placerat.
+Then he saw something in the distance, or rather someone. It was the figure of David Gloop. David was a sympathetic author with solid ankles and scrawny eyelashes.
 
+Simon gulped. He was not prepared for David.
 
+As Simon stepped outside and David came closer, he could see the hard glint in his eye.
+
+"Look Simon," growled David, with a hilarious glare that reminded Simon of sympathetic kittens. "It's not that I don't love you, but I want Internet access. You owe me 9591 pounds."
+
+Simon looked back, even more healthy and still fingering the crumpled guillotine. "David, get out of my house," he replied.
+
+They looked at each other with healthy feelings, like two boiling, brainy badgers shouting at a very ruthless funeral, which had jazz music playing in the background and two predatory uncles cooking to the beat.
+
+Suddenly, David lunged forward and tried to punch Simon in the face. Quickly, Simon grabbed the crumpled guillotine and brought it down on David's skull.
+
+David's solid ankles trembled and his scrawny eyelashes wobbled. He looked sneezy, his wallet raw like a rare, round record.
+
+Then he let out an agonising groan and collapsed onto the ground. Moments later David Gloop was dead.
+
+Simon Bishop went back inside and made himself a nice glass of brandy.
+
+THE END 
