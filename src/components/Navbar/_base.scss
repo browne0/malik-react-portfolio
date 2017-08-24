@@ -12,7 +12,7 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: rgba(255, 255, 255, .85);
+    color: #F5FFFA;
     width: 250px;
     .logo {
       max-width: 48px;
@@ -37,7 +37,7 @@ header {
   display: block;
   float: right;
   .nav-item {
-    color: rgba(255, 255, 255, .85) !important;
+    color: #F5FFFA !important;
     div:first-child {
       display: flex;
       align-items: center;
@@ -61,7 +61,7 @@ header {
       cursor: pointer;
       display: flex;
       align-items: center;
-      color: rgba(255, 255, 255, .85);
+      color: #F5FFFA;
       width: 370px;
       .logo {
         max-width: 48px;
@@ -87,7 +87,7 @@ header {
     float: right;
     overflow: hidden;
     .nav-item {
-      color: rgba(255, 255, 255, .85) !important;
+      color: #F5FFFA !important;
       div:first-child {
         display: flex;
         align-items: center;
@@ -116,7 +116,7 @@ header {
       grid-template-columns: max-content 1fr;
       grid-template-rows: 32px 32px;
       align-items: center;
-      color: rgba(255, 255, 255, .85);
+      color: #F5FFFA;
       width: auto;
       .logo {
         max-width: 36px;
@@ -169,7 +169,7 @@ header {
         grid-template-columns: max-content 1fr;
         grid-template-rows: 32px 32px;
         align-items: center;
-        color: rgba(255, 255, 255, .85);
+        color: #F5FFFA;
         width: 370px;
         .logo {
           max-width: 48px;
@@ -197,7 +197,7 @@ header {
     .nav-items {
       width: auto !important;
       .nav-item {
-        color: rgba(255, 255, 255, .85) !important;
+        color: #F5FFFA !important;
         div:first-child {
           display: flex;
           align-items: center;

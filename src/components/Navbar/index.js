@@ -45,7 +45,7 @@ class Navbar extends Component {
 					backgroundColor: '#2B2B2B'
 				},
 				inkBar: {
-					backgroundColor: '#c24d01'
+					backgroundColor: '#ff6000'
 				}
 			}
 		}

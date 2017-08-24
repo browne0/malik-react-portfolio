@@ -1285,11 +1285,74 @@ svg {
         margin: 48px auto 5px auto;
         font-size: 1.2em;
         font-family: Lora;
-        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22); }
-        .blog-post .container .markdown-body pre {
-          background-color: #ececec;
-          background-image: radial-gradient(at 50% 100%, rgba(255, 255, 255, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(to bottom, rgba(255, 255, 255, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
-          background-blend-mode: screen, overlay; } }
+        box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22); } }
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 116px);
+  color: #222;
+  background-color: #f5fffa;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=); }
+  .contact .hero {
+    display: flex;
+    height: 25vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .contact .hero h2 {
+      font-size: 2em; }
+    .contact .hero h3 {
+      font-size: 1.5em; }
+  .contact .wrapper {
+    display: flex;
+    flex-direction: row; }
+    .contact .wrapper h4 {
+      font-size: 1.3em; }
+    .contact .wrapper p {
+      font-size: 1em;
+      font-weight: 300; }
+    .contact .wrapper .contact-form,
+    .contact .wrapper .other-contact {
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+    .contact .wrapper .form-wrapper {
+      padding: 15px 0px 30px 0px;
+      width: calc(100% / 1.5);
+      margin: auto;
+      display: flex;
+      min-height: 100%;
+      flex-direction: column;
+      align-items: center;
+      background-color: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.27); }
+    .contact .wrapper .contact-form .form-hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+    .contact .wrapper .contact-form .contact-input,
+    .contact .wrapper .contact-form .contact-button {
+      width: 75% !important; }
+    .contact .wrapper .contact-form .contact-button {
+      margin: 14px auto 0px auto; }
+    .contact .wrapper .other-contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .contact .wrapper .other-contact p {
+        text-align: center; }
+      .contact .wrapper .other-contact .other-content p,
+      .contact .wrapper .other-contact .other-content h5,
+      .contact .wrapper .other-contact .other-content .social {
+        margin-top: 10px; }
+      .contact .wrapper .other-contact .other-content h5 {
+        border-bottom: 1px dotted;
+        border-color: #222; }
+        .contact .wrapper .other-contact .other-content h5:hover {
+          color: #c24d01;
+          border-color: #c24c00; }
 
 header {
   position: fixed;
@@ -1303,7 +1366,7 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: rgba(255, 255, 255, 0.85);
+    color: #F5FFFA;
     width: 250px; }
     header .logo-wrapper .logo {
       max-width: 48px;
@@ -1324,7 +1387,7 @@ header {
   display: block;
   float: right; }
   .nav-items .nav-item {
-    color: rgba(255, 255, 255, 0.85) !important; }
+    color: #F5FFFA !important; }
     .nav-items .nav-item div:first-child {
       display: flex;
       align-items: center;
@@ -1343,7 +1406,7 @@ header {
       cursor: pointer;
       display: flex;
       align-items: center;
-      color: rgba(255, 255, 255, 0.85);
+      color: #F5FFFA;
       width: 370px; }
       header .logo-wrapper .logo {
         max-width: 48px;
@@ -1364,7 +1427,7 @@ header {
     float: right;
     overflow: hidden; }
     .nav-items .nav-item {
-      color: rgba(255, 255, 255, 0.85) !important; }
+      color: #F5FFFA !important; }
       .nav-items .nav-item div:first-child {
         display: flex;
         align-items: center;
@@ -1387,7 +1450,7 @@ header {
       grid-template-columns: max-content 1fr;
       grid-template-rows: 32px 32px;
       align-items: center;
-      color: rgba(255, 255, 255, 0.85);
+      color: #F5FFFA;
       width: auto; }
       header .logo-wrapper .logo {
         max-width: 36px;
@@ -1426,7 +1489,7 @@ header {
         grid-template-columns: max-content 1fr;
         grid-template-rows: 32px 32px;
         align-items: center;
-        color: rgba(255, 255, 255, 0.85);
+        color: #F5FFFA;
         width: 370px; }
         header .logo-wrapper .logo {
           max-width: 48px;
@@ -1449,7 +1512,7 @@ header {
     .nav-items {
       width: auto !important; }
       .nav-items .nav-item {
-        color: rgba(255, 255, 255, 0.85) !important; }
+        color: #F5FFFA !important; }
         .nav-items .nav-item div:first-child {
           display: flex;
           align-items: center;
