@@ -5,18 +5,42 @@ class Contact extends Component {
   constructor() {
     super();
     this.state = {
-      name: "",
-      email: "",
-      comment: ""
+      name: "hey",
+      email: "malik.browne3@gmail.com",
+      message: "hey"
     };
 
     this.onChange = this.onChange.bind(this);
+    this.submitForm = this.submitForm.bind(this);
   }
-  componentDidMount() {}
+  componentDidMount() {
+    document.title = "Contact | Malik Browne"
+  }
+
+  submitForm() {
+    if (this.state.name !== '' && this.state.email !== '' && this.state.message !== '') {
+      fetch('http://malikbrowne.com/contact.php', {
+        method: 'POST',
+        body: JSON.stringify({
+          name: this.state.name,
+          email: this.state.email,
+          message: this.state.message
+        })
+      })
+      .then(response => {
+        return response.json()
+      })
+      .then(result => {
+        console.log(result)
+      })
+      .catch(err => {
+        console.log(err);
+      })
+    }
+  }
 
   onChange(e) {
-    let name = e.target.value;
-    this.setState({ name });
+    this.setState({ [e.target.name]: e.target.value });
   }
 
   render() {
@@ -69,11 +93,13 @@ class Contact extends Component {
                 floatingLabelFocusStyle={style.contactFilter.color}
                 underlineFocusStyle={style.contactFilter.bgcolor}
                 onChange={this.onChange}
-                value={this.state.name}
+                value={this.state.email}
                 name="email"
               />
               <TextField
                 floatingLabelFixed
+                multiLine
+                rows={3}
                 hintText="Enter your message"
                 floatingLabelText="Message"
                 className="contact-input"
@@ -81,14 +107,15 @@ class Contact extends Component {
                 floatingLabelFocusStyle={style.contactFilter.color}
                 underlineFocusStyle={style.contactFilter.bgcolor}
                 onChange={this.onChange}
-                value={this.state.name}
-                name="comment"
+                value={this.state.message}
+                name="message"
               />
               <RaisedButton
                 label="Send"
                 backgroundColor="rgb(194, 77, 1)"
                 labelColor="#fff"
                 className="contact-button"
+                onClick={this.submitForm}
               />
             </div>
           </div>
@@ -106,7 +133,13 @@ class Contact extends Component {
                   </a>
                 </h5>
                 <p>Social</p>
-                <div className="social" />
+                <div className="social">
+                  <a href="https://github.com/browne0"><i className="icon ion-social-github"/></a>
+                  <a href="https://twitter.com/milkstarz"><i className="icon ion-social-twitter"/></a>
+                  <a href="https://youtube.com/milkstarz"><i className="icon ion-social-youtube"/></a>
+                  <a href="https://linkedin.com/in/malikbrowne"><i className="icon ion-social-linkedin"/></a>
+                  <a href="https://instagram.com/milkstarz"><i className="icon ion-social-instagram"/></a>
+                </div>
               </div>
             </div>
           </div>

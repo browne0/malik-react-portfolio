@@ -81,7 +81,7 @@ class blogList extends Component {
           ? (blogLength / 275 * 60).toFixed() + " sec read"
           : (blogLength / 275).toFixed() + " min read";
       return (
-        <div key={blog.path} to={`/blog/${blog.path}`} className="post">
+        <article key={blog.path} to={`/blog/${blog.path}`} className="post">
           <img src="http://placekitten.com/36" alt="" className="avatar" />
 
           <p className="author">
@@ -102,7 +102,7 @@ class blogList extends Component {
           <p className="summary">
             {blog.postData.summary}
           </p>
-        </div>
+        </article>
       );
     });
     return (

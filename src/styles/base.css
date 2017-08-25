@@ -1205,6 +1205,7 @@ svg {
               display: inline-block;
               padding: 0px 4px; }
           .blog-wrapper .blog .post .title {
+            margin: 5px 0px;
             grid-column: span 2;
             font-size: 1.65em;
             line-height: 1.25em;
@@ -1292,7 +1293,7 @@ svg {
   flex-direction: column;
   height: calc(100vh - 116px);
   color: #222;
-  background-color: #f5fffa;
+  background-color: #fff;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=); }
   .contact .hero {
     display: flex;
@@ -1319,7 +1320,7 @@ svg {
       flex-direction: column; }
     .contact .wrapper .form-wrapper {
       padding: 15px 0px 30px 0px;
-      width: calc(100% / 1.5);
+      width: calc(100% / 1.35);
       margin: auto;
       display: flex;
       min-height: 100%;
@@ -1334,7 +1335,7 @@ svg {
       align-items: center; }
     .contact .wrapper .contact-form .contact-input,
     .contact .wrapper .contact-form .contact-button {
-      width: 75% !important; }
+      width: 80% !important; }
     .contact .wrapper .contact-form .contact-button {
       margin: 14px auto 0px auto; }
     .contact .wrapper .other-contact {
@@ -1347,12 +1348,39 @@ svg {
       .contact .wrapper .other-contact .other-content h5,
       .contact .wrapper .other-contact .other-content .social {
         margin-top: 10px; }
-      .contact .wrapper .other-contact .other-content h5 {
-        border-bottom: 1px dotted;
-        border-color: #222; }
-        .contact .wrapper .other-contact .other-content h5:hover {
-          color: #c24d01;
-          border-color: #c24c00; }
+      .contact .wrapper .other-contact .other-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 35px; }
+        .contact .wrapper .other-contact .other-content h5 {
+          text-align: center;
+          font-size: 1.2em; }
+          .contact .wrapper .other-contact .other-content h5 a {
+            border-bottom: 1px dotted;
+            border-color: #222;
+            display: inline-block; }
+          .contact .wrapper .other-contact .other-content h5:hover a {
+            color: #c24d01;
+            border-color: #c24c00; }
+        .contact .wrapper .other-contact .other-content .social {
+          display: flex;
+          flex-direction: row;
+          justify-content: center; }
+          .contact .wrapper .other-contact .other-content .social a {
+            background: #222;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: 0px 5px; }
+            .contact .wrapper .other-contact .other-content .social a:hover {
+              background: #c24d01; }
+            .contact .wrapper .other-contact .other-content .social a .icon {
+              font-size: 25px;
+              color: #F5FFFA; }
 
 header {
   position: fixed;

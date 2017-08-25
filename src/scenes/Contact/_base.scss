@@ -3,7 +3,7 @@
   flex-direction: column;
   height: calc(100vh - 116px);
   color: #222;
-  background-color: #f5fffa;
+  background-color: #fff;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=);
   .hero {
     display: flex;
@@ -38,7 +38,7 @@
     }
     .form-wrapper {
       padding: 15px 0px 30px 0px;
-      width: calc(100% / 1.5);
+      width: calc(100% / 1.35);
       margin: auto;
       display: flex;
       min-height: 100%;
@@ -56,7 +56,7 @@
       }
       .contact-input,
       .contact-button {
-        width: 75% !important;
+        width: 80% !important;
       }
 
       .contact-button {
@@ -76,12 +76,47 @@
         .social {
           margin-top: 10px;
         }
+      }
+      .other-content {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-top: 35px;
         h5 {
-          border-bottom: 1px dotted;
-          border-color: #222;
+          text-align: center;
+          font-size: 1.2em;
+          a {
+            border-bottom: 1px dotted;
+            border-color: #222;
+            display: inline-block;
+          }
           &:hover {
-            color: rgb(194, 77, 1);
-            border-color: rgb(194, 76, 0);
+            a {
+              color: rgb(194, 77, 1);
+              border-color: rgb(194, 76, 0);
+            }
+          }
+        }
+        .social {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          a {
+            background: #222;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            margin: 0px 5px;
+            &:hover {
+              background: rgb(194, 77, 1);
+            }
+            .icon {
+              font-size: 25px;
+              color: #F5FFFA;
+            }
           }
         }
       }
