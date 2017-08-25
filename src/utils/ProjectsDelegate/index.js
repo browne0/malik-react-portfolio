@@ -1,7 +1,7 @@
-import { projects } from "../../data/projects.json";
+import { projects as ProjectList } from "../../data/projects.json";
 
 class ProjectsDelegate {
-  projects = projects;
+  projects = ProjectList;
 
   getProjectIndex = project => {
     this.projects.findIndex(item => item.name === project.name);

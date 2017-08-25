@@ -11,7 +11,8 @@
       },
       "github_url": "https://github.com/browne0/Spotter",
       "live_url": "http://dev.beesdesign.net/spotter",
-      "path": "/spotter"
+      "path": "/spotter",
+      "background_color": "#074b88"
     },
     {
       "name": "Mood.gg",
@@ -73,7 +74,8 @@
       },
       "github_url": "https://github.com/browne0/myChef",
       "live_url": "http://dev.beesdesign.net/mychef",
-      "path": "/mychef"
+      "path": "/mychef",
+      "background_color": "#e75967"
     },
     {
       "name": "MedxPort",
@@ -113,7 +115,8 @@
       },
       "github_url": "https://github.com/browne0/browne0.github.io",
       "live_url": "https://browne0.github.io",
-      "path": "/old-portfolio"
+      "path": "/old-portfolio",
+      "background_color": "rgba(255, 132, 13, 1)"
     },
     {
       "name": "Bee's Design",

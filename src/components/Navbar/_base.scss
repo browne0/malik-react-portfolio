@@ -13,7 +13,8 @@ header {
     display: flex;
     align-items: center;
     color: #F5FFFA;
-    width: 250px;
+    // width: 250px;
+    height: 100%;
     .logo {
       max-width: 48px;
       width: 48px;
@@ -22,7 +23,7 @@ header {
     h1 {
       margin-left: 15px;
       font-size: 1em;
-      display: inline-block;
+      display: none;
     }
     h2 {
       font-size: .65em;
@@ -105,10 +106,6 @@ header {
     .navbar {
       height: 64px;
       padding-left: 20px !important;
-      > div:first-child {
-        height: 64px !important;
-        flex: none;
-      }
     }
     .logo-wrapper {
       cursor: pointer;
@@ -142,7 +139,7 @@ header {
     }
     .nav-items {
       > div:first-child {
-        width: 225px !important;
+        // width: 225px !important;
       }
     }
 
@@ -195,7 +192,7 @@ header {
       }
     }
     .nav-items {
-      width: auto !important;
+      width: 250px !important;
       .nav-item {
         color: #F5FFFA !important;
         div:first-child {

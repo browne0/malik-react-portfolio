@@ -1,0 +1,23 @@
+.project {
+  display: flex;
+  flex-direction: column;
+  font-family: Roboto;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=);  
+  .hero {
+    font-family: Lora;
+    margin-bottom: 15px;
+    h2 {
+      font-size: 4em;
+      text-align: center;
+    }
+    p {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+  .screenshot-big-picture {
+    height: 35vh;
+    background-position: 0px 610px;
+    background-size: cover;
+  }
+}
