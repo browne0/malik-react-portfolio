@@ -85,7 +85,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
-        padding-top: 15px;
         h5 {
           text-align: center;
           font-size: 1.2em;
@@ -213,7 +212,9 @@
           display: flex;
           justify-content: center;
           flex-direction: column;
-          padding-top: 15px;
+          .other-hero {
+            margin-bottom: 0px;
+          }
           h5 {
             text-align: center;
             font-size: 1.2em;
@@ -343,7 +344,9 @@
           display: flex;
           justify-content: center;
           flex-direction: column;
-          padding-top: 35px;
+          .other-hero {
+            margin-bottom: 17.5%;
+          }
           h5 {
             text-align: center;
             font-size: 1.2em;

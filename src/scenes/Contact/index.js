@@ -5,9 +5,9 @@ class Contact extends Component {
   constructor() {
     super();
     this.state = {
-      name: "hey",
-      email: "malik.browne3@gmail.com",
-      message: "hey"
+      name: "",
+      email: "",
+      message: ""
     };
 
     this.onChange = this.onChange.bind(this);
@@ -19,13 +19,13 @@ class Contact extends Component {
 
   submitForm() {
     if (this.state.name !== '' && this.state.email !== '' && this.state.message !== '') {
+      let formData = new FormData();
+      formData.append('name', this.state.name);
+      formData.append('email', this.state.email);
+      formData.append('message', this.state.message);
       fetch('http://malikbrowne.com/contact.php', {
         method: 'POST',
-        body: JSON.stringify({
-          name: this.state.name,
-          email: this.state.email,
-          message: this.state.message
-        })
+        body: formData
       })
       .then(response => {
         return response.json()
@@ -99,6 +99,7 @@ class Contact extends Component {
               <TextField
                 floatingLabelFixed
                 multiLine
+                rowsMax={3}
                 rows={3}
                 hintText="Enter your message"
                 floatingLabelText="Message"
@@ -121,11 +122,11 @@ class Contact extends Component {
           </div>
           <div className="other-contact">
             <div className="form-wrapper">
+            <div className="other-content">
               <div className="other-hero">
                 <h4>Prefer more modern methods?</h4>
                 <p>(I have those too.)</p>
               </div>
-              <div className="other-content">
                 <p>Email</p>
                 <h5>
                   <a href="mailto:malik@malikbrowne.com">
@@ -140,7 +141,7 @@ class Contact extends Component {
                   <a href="https://linkedin.com/in/malikbrowne"><i className="icon ion-social-linkedin"/></a>
                   <a href="https://instagram.com/milkstarz"><i className="icon ion-social-instagram"/></a>
                 </div>
-              </div>
+                </div>
             </div>
           </div>
         </div>

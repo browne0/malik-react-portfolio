@@ -1281,7 +1281,7 @@ svg {
       background-blend-mode: screen, overlay; }
       .blog-post .container .markdown-body {
         background-color: #fff;
-        width: calc(60vw - 30px);
+        width: 800px;
         padding: 20px;
         margin: 48px auto 5px auto;
         font-size: 1.2em;
@@ -1354,8 +1354,7 @@ svg {
       .contact .wrapper .other-contact .other-content {
         display: flex;
         justify-content: center;
-        flex-direction: column;
-        padding-top: 15px; }
+        flex-direction: column; }
         .contact .wrapper .other-contact .other-content h5 {
           text-align: center;
           font-size: 1.2em; }
@@ -1450,8 +1449,9 @@ svg {
         .contact .wrapper .other-contact .other-content {
           display: flex;
           justify-content: center;
-          flex-direction: column;
-          padding-top: 15px; }
+          flex-direction: column; }
+          .contact .wrapper .other-contact .other-content .other-hero {
+            margin-bottom: 0px; }
           .contact .wrapper .other-contact .other-content h5 {
             text-align: center;
             font-size: 1.2em; }
@@ -1547,8 +1547,9 @@ svg {
         .contact .wrapper .other-contact .other-content {
           display: flex;
           justify-content: center;
-          flex-direction: column;
-          padding-top: 35px; }
+          flex-direction: column; }
+          .contact .wrapper .other-contact .other-content .other-hero {
+            margin-bottom: 17.5%; }
           .contact .wrapper .other-contact .other-content h5 {
             text-align: center;
             font-size: 1.2em; }
@@ -1793,7 +1794,8 @@ body,
     body .site main,
     #root .site main {
       padding-top: 64px;
-      min-height: calc(100% - 52px); }
+      min-height: calc(100% - 52px);
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=); }
     body .site .no-select,
     #root .site .no-select {
       -webkit-touch-callout: none;
