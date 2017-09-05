@@ -3,25 +3,36 @@ import { RaisedButton } from "material-ui";
 import PropTypes from "prop-types";
 
 const ThemedButton = props => {
-  let styles = {
+  let style = {
     button: {
-      margin: "14px auto 0px auto"
+      minWidth: '94px'
+    },
+    label: {
+      fontSize: '1.1em'
+    },
+    buttonContainer: {
+      padding: '5px 0px',
+      height: 'auto'
     }
-  };
+  }
   return (
     <RaisedButton
+      style={style.button}
+      buttonStyle={style.buttonContainer}
+      containerElement="a"
       label={props.label}
-      style={styles.button}
+      labelStyle={style.label}
       backgroundColor="rgb(194, 77, 1)"
       labelColor="#fff"
-      onClick={props.onClick}
+      href={props.url}
+      target="_blank"
     />
   );
 };
 
 ThemedButton.propTypes = {
   label: PropTypes.string.isRequired,
-  onClick: PropTypes.func
+  url: PropTypes.string
 };
 
 ThemedButton.defaultProps = {

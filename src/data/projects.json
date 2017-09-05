@@ -15,24 +15,6 @@
       "background_color": "#074b88"
     },
     {
-      "name": "Mood.gg",
-      "description": "A popular gaming web app that plays thematic playlists based on the champion or hero a user is playing.",
-      "technologies": ["NodeJS", "React", "Bootstrap", "AWS", "Sass"],
-      "big_picture": false,
-      "image_urls": {
-        "logo": "http://malikbrowne.com/assets/logos/moodgg_logo.png",
-        "screenshots": [
-          "http://malikbrowne.com/assets/screenshots/moodgg_home.png",
-          "http://malikbrowne.com/assets/screenshots/moodgg_player.png",
-          "http://malikbrowne.com/assets/screenshots/moodgg_champ.png"
-        ]
-      },
-      "github_url": "https://github.com/TeamMoodGitHub",
-      "live_url": "http://mood.gg",
-      "background_color": "#444",
-      "path": "/moodgg"
-    },
-    {
       "name": "Spotify Mixmax Integration",
       "description": "A spotify mixmax slash command that allows you to search for a track, artist, or album to embed in an email.",
       "technologies": ["NodeJS", "HTML5/CSS3"],
@@ -47,6 +29,22 @@
       "github_url": "https://github.com/browne0/spotify-mixmax-slash-command",
       "background_color": "#2F2462",
       "path": "/mixmax"
+    },
+    {
+      "name": "Bee's Design",
+      "description": "A freelance web development company I started when I was seventeen.",
+      "technologies": ["HTML5/CSS3", "jQuery", "PHP"],
+      "big_picture": false,
+      "image_urls": {
+        "logo": "http://malikbrowne.com/assets/logos/beesdesign_logo.png",
+        "screenshots": [
+          "http://malikbrowne.com/assets/screenshots/beesdesign.png"
+        ]
+      },
+      "github_url": "",
+      "live_url": "http://beesdesign.net",
+      "background_color": "#52B702",
+      "path": "/beesdesign"
     },
     {
       "name": "AngularJS Shopping Cart",
@@ -102,8 +100,8 @@
       "path": "/medxport"
     },
     {
-      "name": "My Post Grad Website",
-      "description": "",
+      "name": "My Post Grad Portfolio",
+      "description": "A website used to display my completed projects during college.",
       "technologies": ["HTML5/CSS3", "AngularJS", "jQuery"],
       "big_picture": true,
       "image_urls": {
@@ -119,22 +117,6 @@
       "background_color": "rgba(255, 132, 13, 1)"
     },
     {
-      "name": "Bee's Design",
-      "description": "A freelance web development company I started when I was seventeen.",
-      "technologies": ["HTML5/CSS3", "jQuery", "PHP"],
-      "big_picture": false,
-      "image_urls": {
-        "logo": "http://malikbrowne.com/assets/logos/beesdesign_logo.png",
-        "screenshots": [
-          "http://malikbrowne.com/assets/screenshots/beesdesign.png"
-        ]
-      },
-      "github_url": "",
-      "live_url": "http://beesdesign.net",
-      "background_color": "#52B702",
-      "path": "/beesdesign"
-    },
-    {
       "name": "Milkstarz: My YouTube Channel",
       "description": "A small youtube channel dedicated to all things web development, and UI/UX.",
       "technologies": [],
@@ -146,6 +128,19 @@
       "github_url": "",
       "background_color": "#444",
       "path": "https://youtube.com/Milkstarz"
+    },
+    {
+      "name": "Got an idea for a project?",
+      "description": "",
+      "technologies": [],
+      "big_picture": false,
+      "image_urls": {
+        "logo": "http://cdn.shopify.com/s/files/1/1061/1924/products/Thinking_Face_Emoji_grande.png?v=1480481060",
+        "screenshots": []
+      },
+      "github_url": "",
+      "background_color": "#fdfdfd",
+      "path": "/contact"
     }
   ]
 }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectPage from '../../../components/ProjectPage';
+// import ProjectSection from '../../../components/ProjectSection';
 
 class Spotter extends Component {
   constructor(props) {
@@ -20,7 +21,6 @@ class Spotter extends Component {
         bgColor={this.state.project.background_color}
         bgImage={this.state.project.image_urls.screenshots[0]}
         bigPicture={this.state.project.big_picture}>
-
       </ProjectPage>
     );
   }

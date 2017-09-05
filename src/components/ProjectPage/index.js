@@ -26,23 +26,23 @@ class ProjectPage extends Component {
     liveUrl: undefined
   };
 
-  openInNewTab(url) {
-    let win = window.open(url, "_blank");
-    win.focus();
-  }
-
   render(props) {
-    // console.log(this.props);
+    const style = {
+      button: {
+        display: 'inline-block',
+        padding: '0px 15px 5px 0px'
+      }
+    }
     let githubButton = this.props.github
       ? <Button
           label="Github"
-          onClick={() => this.openInNewTab(this.props.github)}
+          url={this.props.github}
         />
       : null;
     let liveUrlButton = this.props.liveUrl
       ? <Button
           label="Live Demo"
-          onClick={() => this.openInNewTab(this.props.liveUrl)}
+          url={this.props.liveUrl}
         />
       : null;
     let screenshotClass = this.props.bigPicture 
@@ -61,8 +61,8 @@ class ProjectPage extends Component {
         <div className={screenshotClass} style={{backgroundImage: `url(${this.props.bgImage})`}}/>
         {this.props.children}
         <ProjectSection title="Available Links">
-          {githubButton}
-          {liveUrlButton}
+          <div style={style.button}>{githubButton}</div>
+          <div style={style.button}>{liveUrlButton}</div>
         </ProjectSection>
       </div>
     );

@@ -4,8 +4,9 @@
   font-family: Roboto;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=);  
   .hero {
-    font-family: Lora;
-    margin-bottom: 15px;
+    font-family: 'PT Sans', sans-serif;    
+    margin: 0px auto 20px auto;
+    width: 50vw;
     h2 {
       font-size: 4em;
       text-align: center;
@@ -17,7 +18,19 @@
   }
   .screenshot-big-picture {
     height: 35vh;
-    background-position: 0px 610px;
+    background-position-y: calc(50% + 30px);
     background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .project-section {
+    width: 50vw;
+    margin: 0px auto 20px auto;
+    h4 {
+      font-size: 2.25em;
+      padding: 10px 0px;
+    }
+    p {
+      font-size: 1.5em;
+    }
   }
 }
