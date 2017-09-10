@@ -12,7 +12,7 @@ header {
     cursor: pointer;
     display: flex;
     align-items: center;
-    color: #F5FFFA;
+    color: #f1f1f1;
     // width: 250px;
     height: 100%;
     .logo {
@@ -33,12 +33,11 @@ header {
   }
 }
 .nav-items {
-  width: 200px;
+  width: 250px;
   height: 100%;
   display: block;
   float: right;
   .nav-item {
-    color: #F5FFFA !important;
     div:first-child {
       display: flex;
       align-items: center;
@@ -62,7 +61,7 @@ header {
       cursor: pointer;
       display: flex;
       align-items: center;
-      color: #F5FFFA;
+      color: #f1f1f1;
       width: 370px;
       .logo {
         max-width: 48px;
@@ -88,7 +87,6 @@ header {
     float: right;
     overflow: hidden;
     .nav-item {
-      color: #F5FFFA !important;
       div:first-child {
         display: flex;
         align-items: center;
@@ -113,7 +111,7 @@ header {
       grid-template-columns: max-content 1fr;
       grid-template-rows: 32px 32px;
       align-items: center;
-      color: #F5FFFA;
+      color: #f1f1f1;
       width: auto;
       .logo {
         max-width: 36px;
@@ -166,7 +164,7 @@ header {
         grid-template-columns: max-content 1fr;
         grid-template-rows: 32px 32px;
         align-items: center;
-        color: #F5FFFA;
+        color: #f1f1f1;
         width: 370px;
         .logo {
           max-width: 48px;
@@ -194,7 +192,7 @@ header {
     .nav-items {
       width: 250px !important;
       .nav-item {
-        color: #F5FFFA !important;
+        color: #f1f1f1 !important;
         div:first-child {
           display: flex;
           align-items: center;

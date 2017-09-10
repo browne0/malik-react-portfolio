@@ -3,6 +3,7 @@ import { Link, Route, Switch, withRouter } from "react-router-dom";
 import BlogPost from "../BlogPost";
 import Moment from "react-moment";
 import { TextField } from "material-ui";
+import FlipMove from "react-flip-move";
 // eslint-disable-next-line import/no-webpack-loader-syntax
 const webpackRequireContext = require.context(
   "!markdown-with-front-matter-loader!../../_posts",
@@ -90,7 +91,11 @@ class blogList extends Component {
           : (blogLength / 275).toFixed() + " min read";
       return (
         <article key={blog.path} to={`/blog/${blog.path}`} className="post">
-          <img src="http://malikbrowne.com/assets/selfie/selfie.jpg" alt="" className="avatar" />
+          <img
+            src="http://malikbrowne.com/assets/selfie/selfie.jpg"
+            alt=""
+            className="avatar"
+          />
 
           <p className="author">{blog.postData.author}</p>
           <p className="date">
@@ -130,7 +135,9 @@ class blogList extends Component {
                 onChange={this.onFilterChange}
                 value={this.state.search}
               />
-              <div className="blog">{blogPosts}</div>
+              <FlipMove duration={400} easing="ease" className="blog">
+                {blogPosts}
+              </FlipMove>
             </div>
           )}
         />

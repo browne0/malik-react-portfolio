@@ -66,7 +66,7 @@ class BeesDesign extends Component {
           </p>
         </ProjectSection>
 
-        <ProjectSection title="Design Challenges">
+        <ProjectSection title="Requirements">
           <p>
             I wanted a website that was simple and straight to the point, almost
             like an online business card. At this point I had just learned about
@@ -86,7 +86,7 @@ class BeesDesign extends Component {
           </p>
 
           <p>
-            <b>(the good ol' days.)</b>
+            <b>(you know, the good ol' noobie days.)</b>
           </p>
         </ProjectSection>
 

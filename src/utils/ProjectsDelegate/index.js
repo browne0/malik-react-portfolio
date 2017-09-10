@@ -4,7 +4,8 @@ class ProjectsDelegate {
   projects = ProjectList;
 
   getProjectIndex = project => {
-    this.projects.findIndex(item => item.name === project.name);
+    let index = this.projects.findIndex(item => item.name === project);
+    return index;
   };
 
   getNextProject = project => {

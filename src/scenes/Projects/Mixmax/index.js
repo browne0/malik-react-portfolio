@@ -20,7 +20,7 @@ class Mixmax extends Component {
       liveUrl={this.state.project.live_url}
       bgColor={this.state.project.background_color}
       images={this.state.project.image_urls.screenshots}
-      bigPicture={this.state.project.big_picture}>></ProjectPage>
+      bigPicture={this.state.project.big_picture}></ProjectPage>
     );
   }
 }

@@ -3,6 +3,7 @@ import ProjectsDelegate from "../../utils/ProjectsDelegate";
 import PropTypes from "prop-types";
 import Button from "../../components/ThemedButton";
 import ProjectSection from "../../components/ProjectSection";
+import ProjectFooter from "../../components/ProjectFooter";
 
 class ProjectPage extends Component {
   constructor(props) {
@@ -28,6 +29,7 @@ class ProjectPage extends Component {
 
   componentDidMount() {
     document.title = this.props.title + ' | Malik Browne';
+    // console.log(this.state.nextProj)
   }
 
   render(props) {
@@ -68,6 +70,7 @@ class ProjectPage extends Component {
           <div style={style.button}>{githubButton}</div>
           <div style={style.button}>{liveUrlButton}</div>
         </ProjectSection>
+        <ProjectFooter currentProject={this.props} nextProject={this.state.nextProj}/>
       </div>
     ) : (
       <div className="wrapper">
@@ -85,6 +88,7 @@ class ProjectPage extends Component {
           {githubButton}
           {liveUrlButton}
         </ProjectSection>
+        <ProjectFooter currentProject={this.props} nextProject={this.state.nextProj}/>
       </div>
     );
 

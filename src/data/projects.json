@@ -70,7 +70,8 @@
         ]
       },
       "github_url": "https://github.com/browne0/MedxPort",
-      "background_color": "#fdfdfd",
+      "background_color": "#fff",
+      "color": "#333",
       "path": "/medxport"
     },
     {
