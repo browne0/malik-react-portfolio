@@ -2,18 +2,15 @@
   display: flex;
   flex-direction: column;
   font-family: Roboto;
-  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=);  
-  .hero {
-    font-family: 'PT Sans', sans-serif;    
+  .hero {   
     margin: 0px auto 20px auto;
     width: 50vw;
     h2 {
       font-size: 4em;
-      text-align: center;
     }
     p {
+      font-family: PT Serif, 'Times New Roman', Times, serif;
       font-size: 1.5em;
-      text-align: center;
     }
   }
   .screenshot-big-picture {
@@ -22,15 +19,60 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    .project-image {
+      min-height: 600px;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+    }
+  }
   .project-section {
     width: 50vw;
-    margin: 0px auto 20px auto;
+    margin: 20px auto 0px auto;
+    overflow: hidden;
     h4 {
       font-size: 2.25em;
       padding: 10px 0px;
     }
+    
+    hr {
+      margin-top: 0px;
+      opacity: .85;
+    }
+
+    h6 {
+      font-size: 1.7em;
+      padding: 5px 0px;
+    }
+
+    a {
+      font-family: PT Serif, 'Times New Roman', Times, serif;
+      color: rgb(194, 77, 1);
+    }
     p {
-      font-size: 1.5em;
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-size: 1.3em;
+      font-family: PT Serif, 'Times New Roman', Times, serif;
+    }
+
+    li {
+      font-family: PT Serif, 'Times New Roman', Times, serif;    
+      font-weight: normal;  
+    }
+    img {
+      width: 100%;
+      max-height: 500px;
+    }
+  }
+  .project-section-last {
+    margin-bottom: 20px;
+
+    hr {
+      margin-bottom: 20px;
     }
   }
 }

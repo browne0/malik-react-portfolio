@@ -12,7 +12,7 @@ const ThemedButton = props => {
     },
     buttonContainer: {
       padding: '5px 0px',
-      height: 'auto'
+      height: 'auto',
     }
   }
   return (

@@ -26,70 +26,36 @@ class Home extends Component {
             <div className="overlay">
               <div className="project-information">
                 <div className="description">
-                  <h2>
-                    {project.name}
-                  </h2>
-                  <p>
-                    {project.description}
-                  </p>
+                  <h2>{project.name}</h2>
+                  <p>{project.description}</p>
                 </div>
               </div>
             </div>
           </Link>
         );
       } else {
-        if (project.name === "Milkstarz: My YouTube Channel") {
-          projectList.push(
-            <a
-              key={i}
-              target="_blank"
-              href={project.path}
-              className="icon"
-              style={{ backgroundColor: project.background_color }}
-            >
-              <img src={project.image_urls.logo} alt={project.name} />
-              <div className="overlay">
-                <div className="project-information">
-                  <div className="description">
-                    <h2>
-                      {project.name}
-                    </h2>
-                    <p>
-                      {project.description}
-                    </p>
-                  </div>
+        let path = {
+          pathname: project.path,
+          state: project
+        };
+        projectList.push(
+          <Link
+            key={i}
+            to={path}
+            className="icon"
+            style={{ backgroundColor: project.background_color }}
+          >
+            <img src={project.image_urls.logo} alt={project.name} />
+            <div className="overlay">
+              <div className="project-information">
+                <div className="description">
+                  <h2>{project.name}</h2>
+                  <p>{project.description}</p>
                 </div>
               </div>
-            </a>
-          );
-        } else {
-          let path = {
-            pathname: project.path,
-            state: project
-          };
-          projectList.push(
-            <Link
-              key={i}
-              to={path}
-              className="icon"
-              style={{ backgroundColor: project.background_color }}
-            >
-              <img src={project.image_urls.logo} alt={project.name} />
-              <div className="overlay">
-                <div className="project-information">
-                  <div className="description">
-                    <h2>
-                      {project.name}
-                    </h2>
-                    <p>
-                      {project.description}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-          );
-        }
+            </div>
+          </Link>
+        );
       }
     }
     return (
@@ -100,9 +66,7 @@ class Home extends Component {
             applications.
           </h1>
         </div>
-        <div className="container">
-          {projectList}
-        </div>
+        <div className="container">{projectList}</div>
       </div>
     );
   }

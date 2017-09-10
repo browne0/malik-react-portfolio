@@ -38,42 +38,16 @@
       "image_urls": {
         "logo": "http://malikbrowne.com/assets/logos/beesdesign_logo.png",
         "screenshots": [
-          "http://malikbrowne.com/assets/screenshots/beesdesign.png"
+          "http://malikbrowne.com/assets/screenshots/beesdesign.png",
+          "http://malikbrowne.com/assets/screenshots/beesdesign2.png",
+          "http://malikbrowne.com/assets/screenshots/beesdesign3.png",
+          "http://malikbrowne.com/assets/screenshots/beesdesign4.png"
         ]
       },
       "github_url": "",
       "live_url": "http://beesdesign.net",
-      "background_color": "#52B702",
+      "background_color": "#21512A",
       "path": "/beesdesign"
-    },
-    {
-      "name": "AngularJS Shopping Cart",
-      "description": "A small online shopping cart webapp that includes an inventory, cart, and checkout.",
-      "technologies": ["HTML5/CSS3", "AngularJS"],
-      "big_picture": false,
-      "image_urls": {
-        "logo": "http://malikbrowne.com/assets/logos/shoppingCart_logo.png",
-        "screenshots": [
-          "http://malikbrowne.com/assets/screenshots/shoppingcart.png"
-        ]
-      },
-      "github_url": "https://github.com/browne0/shoppingCart",
-      "live_url": "http://malikbrowne.com/dev/shoppingCart",
-      "background_color": "#337ab7",
-      "path": "/shopping-cart"
-    },
-    {
-      "name": "myChef",
-      "description": "A simple application that finds local chefs in the nearby area.",
-      "technologies": ["HTML5/CSS3", "JavaScript", "jQuery", "PHP/MySQL"],
-      "big_picture": true,
-      "image_urls": {
-        "screenshots": ["http://malikbrowne.com/assets/screenshots/mychef.jpg"]
-      },
-      "github_url": "https://github.com/browne0/myChef",
-      "live_url": "http://dev.beesdesign.net/mychef",
-      "path": "/mychef",
-      "background_color": "#e75967"
     },
     {
       "name": "MedxPort",
@@ -100,10 +74,23 @@
       "path": "/medxport"
     },
     {
-      "name": "My Post Grad Portfolio",
+      "name": "myChef",
+      "description": "A simple application that finds local chefs in the nearby area.",
+      "technologies": ["HTML5/CSS3", "JavaScript", "jQuery", "PHP/MySQL"],
+      "big_picture": true,
+      "image_urls": {
+        "screenshots": ["http://malikbrowne.com/assets/screenshots/mychef.jpg"]
+      },
+      "github_url": "https://github.com/browne0/myChef",
+      "live_url": "http://dev.beesdesign.net/mychef",
+      "path": "/mychef",
+      "background_color": "#e75967"
+    },
+    {
+      "name": "Post Grad Portfolio",
       "description": "A website used to display my completed projects during college.",
       "technologies": ["HTML5/CSS3", "AngularJS", "jQuery"],
-      "big_picture": true,
+      "big_picture": false,
       "image_urls": {
         "logo": "http://malikbrowne.com/assets/logos/old_portfolio_logo.png",
         "screenshots": [
@@ -114,33 +101,7 @@
       "github_url": "https://github.com/browne0/browne0.github.io",
       "live_url": "https://browne0.github.io",
       "path": "/old-portfolio",
-      "background_color": "rgba(255, 132, 13, 1)"
-    },
-    {
-      "name": "Milkstarz: My YouTube Channel",
-      "description": "A small youtube channel dedicated to all things web development, and UI/UX.",
-      "technologies": [],
-      "big_picture": false,
-      "image_urls": {
-        "logo": "http://malikbrowne.com/assets/logos/youtube.png",
-        "screenshots": []
-      },
-      "github_url": "",
-      "background_color": "#444",
-      "path": "https://youtube.com/Milkstarz"
-    },
-    {
-      "name": "Got an idea for a project?",
-      "description": "",
-      "technologies": [],
-      "big_picture": false,
-      "image_urls": {
-        "logo": "http://cdn.shopify.com/s/files/1/1061/1924/products/Thinking_Face_Emoji_grande.png?v=1480481060",
-        "screenshots": []
-      },
-      "github_url": "",
-      "background_color": "#fdfdfd",
-      "path": "/contact"
+      "background_color": "#333"
     }
   ]
 }

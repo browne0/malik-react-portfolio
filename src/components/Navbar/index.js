@@ -30,7 +30,7 @@ class Navbar extends Component {
 		let { location } = this.props;
 		const styles = {
 			tabs: {
-				backgroundColor: '#2B2B2B',
+				backgroundColor: 'rgba(33,35,41,1)',
 				boxShadow: 'rgba(0, 0, 0, 0.24) 0px 1px 6px, rgba(0, 0, 0, 0.24) 0px 1px 4px',
 				display: 'grid',
 				gridTemplateColumns: 'min-content 1fr',
@@ -42,7 +42,7 @@ class Navbar extends Component {
 				tab: {
 					gridColumn: '',
 					height: '100%',
-					backgroundColor: '#2B2B2B'
+					backgroundColor: 'rgba(33,35,41,1)'
 				},
 				inkBar: {
 					backgroundColor: '#ff6000'

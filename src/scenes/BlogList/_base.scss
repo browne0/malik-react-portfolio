@@ -4,6 +4,8 @@
   align-items: center;
   width: 100%;
   margin: auto;
+  min-height: calc(100% - 52px);
+  padding-top: 64px;
   .blog-filter {
     width: 60% !important;
   }
@@ -18,11 +20,21 @@
       border-radius: 3px;
       padding: 15px;
       margin-bottom: 40px;
+      .post-header {
+        min-height: 175px;
+        margin: 15px 0px;
+        .post-header-image {
+          background-size: cover;
+          background-position: center;
+          min-height: 175px;
+        }
+      }
       .avatar {
         border-radius: 50%;
         margin-right: 10px;
         min-width: 40px;
         float: left;
+        height: 40px;
       }
       .author {
         display: block;
@@ -32,6 +44,7 @@
       .date {
         font-size: .8em;
         color: rgba(0, 0, 0, .44);
+        margin-bottom: 15px;
         span {
           display: inline-block;
           padding: 0px 4px;
@@ -50,6 +63,16 @@
         align-self: flex-end;
         font-size: 1em;
         font-weight: 300;
+        margin-bottom: 10px;
+      }
+      .read-more {
+        grid-column: span 2;
+        align-self: flex-end;
+        a {
+          padding: 15px 15px 15px 0px;
+          color: rgba(0, 0, 0, .44);
+          border-radius: 3px;
+        }
       }
     }
   }
@@ -61,6 +84,8 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    min-height: calc(100% - 52px);
+    padding-top: 64px;
     .blog-filter {
       width: 55vw !important;
     }
@@ -75,11 +100,21 @@
         border-radius: 3px;
         padding: 15px;
         margin-bottom: 25px;
+        .post-header {
+          min-height: 175px;
+          margin: 15px 0px;
+          .post-header-image {
+            background-size: cover;
+            background-position: center;
+            min-height: 175px;
+          }
+        }
         .avatar {
           border-radius: 50%;
           margin-right: 10px;
           min-width: 40px;
           float: left;
+          height: 40px;
         }
         .author {
           display: block;
@@ -89,6 +124,7 @@
         .date {
           font-size: .9em;
           color: rgba(0, 0, 0, .44);
+          margin-bottom: 15px;
           span {
             display: inline-block;
             padding: 0px 4px;
@@ -106,6 +142,16 @@
           align-self: flex-end;
           font-size: 1.3em;
           font-weight: 300;
+          margin-bottom: 10px;
+        }
+        .read-more {
+          grid-column: span 2;
+          align-self: flex-end;
+          a {
+            padding: 15px 15px 15px 0px;
+            color: rgba(0, 0, 0, .44);
+            border-radius: 3px;
+          }
         }
       }
     }
@@ -119,6 +165,8 @@
     align-items: center;
     width: calc(75vw - 50px);
     margin: auto;
+    padding-top: 64px;
+    min-height: calc(100% - 52px);
     .blog-filter {
       width: 60vw !important;
     }
@@ -135,10 +183,20 @@
         display: block;
         max-width: calc(50% - 30px);
         margin: 0px 20px;
+        .post-header {
+          min-height: 175px;
+          margin: 15px 0px;
+          .post-header-image {
+            background-size: cover;
+            background-position: center;
+            min-height: 175px;
+          }
+        }
         .avatar {
           float: left;
           border-radius: 50%;
           margin-right: 10px;
+          height: 40px;
         }
         .author {
           display: block;
@@ -148,6 +206,7 @@
         .date {
           font-size: .8em;
           color: rgba(0, 0, 0, .44);
+          margin-bottom: 15px;
           span {
             display: inline-block;
             padding: 0px 4px;
@@ -164,6 +223,16 @@
         .summary {
           font-size: 1.2em;
           font-weight: 300;
+          margin-bottom: 10px;
+        }
+        .read-more {
+          grid-column: span 2;
+          align-self: flex-end;
+          a {
+            padding: 15px 15px 15px 0px;
+            color: rgba(0, 0, 0, .44);
+            border-radius: 3px;
+          }
         }
       }
     }
@@ -177,6 +246,7 @@
     align-items: center;
     width: 100%;
     margin: auto;
+    padding-top: 0px;
     .blog-filter {
       width: 60% !important;
     }
@@ -194,13 +264,25 @@
         border-radius: 3px;
         margin-bottom: 0px;
         padding: 15px;
+        padding-bottom: 20px;
         display: grid;
         grid-template-columns: min-content 1fr;
         grid-template-rows: min-content min-content 1fr min-content;
+        .post-header {
+          min-height: 175px;
+          margin: 15px 0px;
+          grid-column: span 2;
+          .post-header-image {
+            background-size: cover;
+            background-position: center;
+            min-height: 175px;
+          }
+        }
         .avatar {
           grid-row: span 2;
           border-radius: 50%;
           margin-right: 10px;
+          height: 40px;
         }
         .author {
           grid-column: 2;
@@ -228,6 +310,16 @@
           align-self: flex-end;
           font-size: 1em;
           font-weight: 300;
+          margin-bottom: 10px;
+        }
+        .read-more {
+          grid-column: span 2;
+          align-self: flex-end;
+          a {
+            padding: 15px 15px 15px 0px;
+            color: rgba(0, 0, 0, .44);
+            border-radius: 3px;
+          }
         }
       }
     }
@@ -239,6 +331,7 @@
       flex-direction: column;
       align-items: center;
       width: 100vw;
+      padding-top: 0px;
       .blog-filter {
         width: 80vw !important;
       }
@@ -254,16 +347,27 @@
           box-shadow: 0 1px 4px rgba(0, 0, 0, .04);
           border: 1px solid rgba(0, 0, 0, .09);
           border-radius: 3px;
-          // min-height: 35vh;
           padding: 15px;
+          padding-bottom: 20px;
           display: grid;
           grid-template-columns: min-content 1fr;
           grid-template-rows: min-content min-content 1fr min-content;
+          .post-header {
+            min-height: 200px;
+            margin: 15px 0px;
+            grid-column: span 2;
+            .post-header-image {
+              background-size: cover;
+              background-position: center;
+              min-height: 200px;
+            }
+          }
           .avatar {
             grid-row: span 2;
             border-radius: 50%;
             margin-right: 10px;
             min-width: 40px;
+            height: 40px;
           }
           .author {
             grid-column: 2;
@@ -291,6 +395,16 @@
             align-self: flex-end;
             font-size: 1.2em;
             font-weight: 300;
+            margin-bottom: 10px;
+          }
+          .read-more {
+            grid-column: span 2;
+            align-self: flex-end;
+            a {
+              padding: 15px 15px 15px 0px;
+              color: rgba(0, 0, 0, .44);
+              border-radius: 3px;
+            }
           }
         }
       }
@@ -304,6 +418,7 @@
       align-items: center;
       width: calc(68vw - 50px);
       margin: auto;
+      padding-top: 0px;
       .blog-filter {
         width: 55vw !important;
       }
@@ -319,15 +434,27 @@
           border: 1px solid rgba(0, 0, 0, .09);
           border-radius: 3px;
           padding: 15px;
+          padding-bottom: 20px;
           margin: 0px;
           max-width: 100%;
           display: grid;
           grid-template-columns: min-content 1fr;
-          grid-template-rows: 19px 20px min-content min-content;
+          grid-template-rows: 19px 20px max-content min-content min-content;
+          .post-header {
+            min-height: 175px;
+            margin: 15px 0px;
+            grid-column: span 2;
+            .post-header-image {
+              background-size: cover;
+              background-position: center;
+              min-height: 175px;
+            }
+          }
           .avatar {
             grid-row: span 2;
             border-radius: 50%;
             margin-right: 10px;
+            height: 40px;
           }
           .author {
             grid-column: 2;
@@ -355,6 +482,16 @@
             align-self: flex-start;
             font-size: 1.1em;
             font-weight: 300;
+            margin-bottom: 10px;
+          }
+          .read-more {
+            grid-column: span 2;
+            align-self: flex-end;
+            a {
+              padding: 15px 15px 15px 0px;
+              color: rgba(0, 0, 0, .44);
+              border-radius: 3px;
+            }
           }
         }
       }

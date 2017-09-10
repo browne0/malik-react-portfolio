@@ -19,13 +19,13 @@ const blogs = webpackRequireContext.keys().reduce(
   []
 );
 
-const blogRoutes = blogs.map(blog =>
+const blogRoutes = blogs.map(blog => (
   <Route
     key={blog.path}
     path={"/blog/" + blog.path}
     component={() => <BlogPost blog={blog} />}
   />
-);
+));
 
 class blogList extends Component {
   constructor() {
@@ -60,15 +60,23 @@ class blogList extends Component {
       blogFilter: {
         margin: "auto",
         color: {
-          color: "#FF6600"
+          color: "#c24d01"
         },
         bgcolor: {
-          borderColor: "#FF6600"
+          borderColor: "#c24d01"
         }
       }
     };
 
     const blogPosts = this.state.filteredBlogs.map((blog, index) => {
+      let blogHeader = blog.postData.header ? (
+        <Link to={`/blog/${blog.path}`} className="post-header">
+          <div
+            className="post-header-image"
+            style={{ backgroundImage: `url(${blog.postData.header})` }}
+          />
+        </Link>
+      ) : null;
       let blogLength = blog.postData.__content
         .replace(/<[^>]*>/g, " ")
         .replace("/s+/g", " ")
@@ -82,11 +90,9 @@ class blogList extends Component {
           : (blogLength / 275).toFixed() + " min read";
       return (
         <article key={blog.path} to={`/blog/${blog.path}`} className="post">
-          <img src="http://placekitten.com/36" alt="" className="avatar" />
+          <img src="http://malikbrowne.com/assets/selfie/selfie.jpg" alt="" className="avatar" />
 
-          <p className="author">
-            {blog.postData.author}
-          </p>
+          <p className="author">{blog.postData.author}</p>
           <p className="date">
             <Moment parse="YYYY-MM-DD" format="MMM D">
               {blog.postData.date_published}
@@ -94,14 +100,16 @@ class blogList extends Component {
             <span>&middot;</span>
             {blogLengthString}
           </p>
+          {blogHeader}
           <Link to={`/blog/${blog.path}`} className="title">
-            <h2>
-              {blog.postData.title}
-            </h2>
+            <h2>{blog.postData.title}</h2>
           </Link>
-          <p className="summary">
-            {blog.postData.summary}
-          </p>
+          <p className="summary">{blog.postData.summary}</p>
+          <div className="read-more">
+            <Link to={`/blog/${blog.path}`} className="post-header">
+              Read more...
+            </Link>
+          </div>
         </article>
       );
     });
@@ -110,7 +118,7 @@ class blogList extends Component {
         <Route
           exact
           path={match.url}
-          render={() =>
+          render={() => (
             <div className="blog-wrapper">
               <TextField
                 hintText="Enter a blog post title"
@@ -122,10 +130,9 @@ class blogList extends Component {
                 onChange={this.onFilterChange}
                 value={this.state.search}
               />
-              <div className="blog">
-                {blogPosts}
-              </div>
-            </div>}
+              <div className="blog">{blogPosts}</div>
+            </div>
+          )}
         />
         {blogRoutes}
       </Switch>

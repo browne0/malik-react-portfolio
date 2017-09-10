@@ -3,11 +3,10 @@ title: Building a SEO friendly blog with React!
 author: Malik Browne
 date_published: 2017-08-15
 summary: Creating a blog can be a pretty complex task. In this post, I go over how I was able to use it using React, YAML, and Markdown.
+header: http://blog.rangle.io/content/images/2017/08/rangleio-blog-heres-why-you-want-to-use-react-vr-1.gif
 ---
 
-# Hello world
-
-```
+```javascript
 function helloWorld() {
 	console.log('Hello world');
 }

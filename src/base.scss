@@ -8,6 +8,7 @@
 @import "scenes/BlogList/base";
 @import "scenes/BlogPost/base";
 @import "scenes/Contact/base";
+@import "scenes/Projects/BeesDesign/base";
 
 // Import base stylesheets for all components
 @import "components/Navbar/base";
@@ -42,7 +43,6 @@ body,
     main {
       padding-top: 64px;
       min-height: calc(100% - 52px);
-      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=);      
     }
 
     .no-select {

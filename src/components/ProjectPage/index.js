@@ -26,46 +26,69 @@ class ProjectPage extends Component {
     liveUrl: undefined
   };
 
+  componentDidMount() {
+    document.title = this.props.title + ' | Malik Browne';
+  }
+
   render(props) {
+    const technologies = this.props.technologies.map(tech => {
+      return <li key={tech}>{tech}</li>
+    })
     const style = {
       button: {
-        display: 'inline-block',
-        padding: '0px 15px 5px 0px'
+        display: "inline-block",
+        padding: "0px 10px 5px 0px"
+      },
+      img: {
+        maxHeight: "500px"
       }
-    }
-    let githubButton = this.props.github
-      ? <Button
-          label="Github"
-          url={this.props.github}
-        />
+    };
+    let githubButton = this.props.github ? (
+      <div style={style.button}><Button label="Github" url={this.props.github} /></div>
+    ) : null;
+    let liveUrlButton = this.props.liveUrl ? (
+      <div style={style.button}><Button label="Live Demo" url={this.props.liveUrl} /></div>
+    ) : null;
+    let screenshotClass = this.props.bigPicture
+      ? "screenshot-big-picture"
       : null;
-    let liveUrlButton = this.props.liveUrl
-      ? <Button
-          label="Live Demo"
-          url={this.props.liveUrl}
-        />
-      : null;
-    let screenshotClass = this.props.bigPicture 
-    ? 'screenshot-big-picture'
-    : `screenshot-${this.props.name}`
-    return (
-      <div className={`project ${this.props.name}`}>
+
+    let content = this.props.bigPicture ? (
+      <div className="wrapper">
         <div className="hero">
-          <h2 style={{color: this.props.bgColor}}>
-            {this.props.name}
-          </h2>
-          <p>
-            {this.props.description}
-          </p>
+          <h2 style={{ color: this.props.color ? this.props.color : this.props.bgColor }}>{this.props.name}</h2>
+          <p>{this.props.description}</p>
         </div>
-        <div className={screenshotClass} style={{backgroundImage: `url(${this.props.bgImage})`}}/>
+        <div
+          className={screenshotClass}
+          style={{ backgroundImage: `url(${this.props.images[0]})` }}
+        />
         {this.props.children}
-        <ProjectSection title="Available Links">
+        <ProjectSection className="project-section-last" title="Available Links">
           <div style={style.button}>{githubButton}</div>
           <div style={style.button}>{liveUrlButton}</div>
         </ProjectSection>
       </div>
+    ) : (
+      <div className="wrapper">
+        <div className="hero">
+          <h2 style={{ color: this.props.color ? this.props.color : this.props.bgColor }}>{this.props.name}</h2>
+          <p>{this.props.description}</p>
+        </div>
+        {this.props.children}
+        <ProjectSection title="Technologies Used">
+          <ul>
+            {technologies}
+          </ul>
+        </ProjectSection>
+        <ProjectSection className="project-section-last" title="Available Links">
+          {githubButton}
+          {liveUrlButton}
+        </ProjectSection>
+      </div>
     );
+
+    return <div className={`project`}>{content}</div>;
   }
 }
 
