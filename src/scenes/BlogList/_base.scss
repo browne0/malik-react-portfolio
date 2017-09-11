@@ -3,15 +3,15 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  margin: auto;
-  min-height: calc(100% - 52px);
+  margin: 0px auto;
+  min-height: calc(100vh - 52px);
   padding-top: 64px;
   .blog-filter {
     width: 60% !important;
   }
   .blog {
     width: calc(90vw - 50px);
-    margin: auto;
+    margin: 0px auto;
     padding: 25px 0px;
     .post {
       background: #fcfcfc;
@@ -84,14 +84,14 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
-    min-height: calc(100% - 52px);
+    min-height: calc(100vh - 52px);
     padding-top: 64px;
     .blog-filter {
       width: 55vw !important;
     }
     .blog {
       width: 70vw;
-      margin: auto;
+      margin: 0px auto;
       padding: 25px 0px;
       .post {
         background: #fcfcfc;
@@ -164,9 +164,9 @@
     flex-direction: column;
     align-items: center;
     width: calc(75vw - 50px);
-    margin: auto;
+    margin: 0px auto;
     padding-top: 64px;
-    min-height: calc(100% - 52px);
+    min-height: calc(100vh - 52px);
     .blog-filter {
       width: 60vw !important;
     }
@@ -245,14 +245,15 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: auto;
+    margin: 0px auto;
+    min-height: calc(100vh - 116px);
     padding-top: 0px;
     .blog-filter {
       width: 75% !important;
     }
     .blog {
       width: calc(100vw - 50px);
-      margin: auto;
+      margin: 0px auto;
       padding: 25px 0px;
       display: grid;
       grid-template-columns: 1fr;
@@ -332,12 +333,13 @@
       align-items: center;
       width: 100vw;
       padding-top: 0px;
+      min-height: calc(100vh - 116px);
       .blog-filter {
         width: 80vw !important;
       }
       .blog {
         width: 90vw;
-        margin: auto;
+        margin: 0px auto;
         padding: 25px 0px;
         display: grid;
         grid-template-columns: 1fr;
@@ -417,10 +419,12 @@
       flex-direction: column;
       align-items: center;
       width: calc(68vw - 50px);
-      margin: auto;
+      min-height: calc(100vh - 116px);
+      margin: 0px auto;
       padding-top: 0px;
       .blog-filter {
         width: 55vw !important;
+        margin: 0px auto !important;
       }
       .blog {
         width: 100%;

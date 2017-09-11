@@ -1,19 +1,20 @@
 .About {
   background-color: #1c1c1c;
+  padding-top: 64px;
   .hero {
     background-image: url("../scenes/About/blurred_bg.jpg");
     filter: blur(10px);
-    background-position-x: -450px;
+    background-position-x: -400px;
+    background-size: cover;
     height: calc(100vh - 116px);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
     transition: filter 0.65s ease-out;
     .hero-text {
-      align-self: flex-end;
-      justify-self: center;
-      grid-row: 4;
-      padding-right: 7vw;
+      padding-right: 0px;
+      padding-bottom: 250px;
       color: rgba(255, 255, 255, 0.9);
       text-align: center;
     }
@@ -21,18 +22,18 @@
       color: #ff6000;
     }
     h1 {
-      font-size: 2.25em;
+      font-size: 2.1em;
       line-height: 1.25em;
     }
     h2 {
-      font-size: 1.8em;
+      font-size: 1.7em;
       &::last-child {
         display: none;
       }
     }
   }
 }
-@media (min-width: 381px) {
+@media (min-width: 481px) {
   .About {
     background-color: #1c1c1c;
     .hero {
@@ -41,17 +42,15 @@
       height: calc(100vh - 116px);
       background-position-x: -255px;
       background-size: cover;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
       transition: filter 0.65s ease-out;
       .hero-text {
-        align-self: flex-end;
-        justify-self: center;
-        grid-row: 2 / 4;
-        padding-right: 7vw;
+        padding-right: 0px;
+        padding-bottom: 200px;
         color: rgba(255, 255, 255, 0.9);
-        text-align: center;
       }
       span {
         color: #ff6000;
@@ -69,7 +68,7 @@
     }
   }
 }
-@media (min-width: 617px) {
+@media (min-width: 715px) {
   .About {
     background-color: #1c1c1c;
     .hero {
@@ -77,19 +76,18 @@
       filter: blur(10px);
       height: calc(100vh - 116px);
       background-position-x: -110px;
-      background-size: stretch;
+      background-size: cover;
       background-repeat: no-repeat;
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
       transition: filter 0.65s ease-out;
       .hero-text {
-        align-self: flex-end;
-        justify-self: center;
-        grid-row: 2 / 4;
-        padding-right: 7vw;
+        padding-right: 0px;
+        padding-bottom: 250px;
         color: rgba(255, 255, 255, 0.9);
-        text-align: center;
+        text-align: left;
       }
       span {
         color: #ff6000;
@@ -104,24 +102,24 @@
     }
   }
 }
-@media (min-width: 1054px) {
+@media (min-width: 960px) {
   .About {
     background-color: #1c1c1c;
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
       height: calc(100vh - 116px);
-      background-position-x: -150px;
-      background-size: stretch;
+      background-position-x: -250px;
+      background-size: cover;
       background-repeat: no-repeat;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr) max-content;
-      grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
       transition: filter 0.65s ease-out;
       .hero-text {
-        grid-column: 4;
-        grid-row: 2 / 4;
-        padding-right: 7vw;
+        padding-right: 50px;
+        padding-bottom: 400px;
         color: rgba(255, 255, 255, 0.9);
         text-align: left;
       }
@@ -138,7 +136,7 @@
     }
   }
 }
-@media (min-width: 1270px) {
+@media (min-width: 1140px) {
   .About {
     background-color: #1c1c1c;
     .hero {
@@ -146,16 +144,48 @@
       filter: blur(10px);
       height: calc(100vh - 116px);
       background-position-x: -150px;
-      background-size: stretch;
-      display: grid;
-      background-repeat: no-repeat;
-      grid-template-columns: repeat(3, 1fr) max-content;
-      grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
       transition: filter 0.65s ease-out;
       .hero-text {
-        grid-column: 4;
-        grid-row: 3 / 2;
-        padding-right: 7vw;
+        padding-right: 50px;
+        padding-bottom: 400px;
+        color: rgba(255, 255, 255, 0.9);
+        text-align: left;
+      }
+      span {
+        color: #ff6000;
+      }
+      h1 {
+        font-size: 4.75em;
+        line-height: 1.25em;
+      }
+      h2 {
+        font-size: 2.25em;
+      }
+    }
+  }
+}
+@media (min-width: 1380px) {
+  .About {
+    background-color: #1c1c1c;
+    .hero {
+      background-image: url("../scenes/About/blurred_bg.jpg");
+      filter: blur(10px);
+      height: calc(100vh - 116px);
+      background-size: cover;
+      background-position-x: 0px;
+      transition: filter 0.65s ease-out;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      .hero-text {
+        padding-right: 100px;
+        padding-bottom: 400px;
         color: rgba(255, 255, 255, 0.9);
         text-align: left;
       }
@@ -172,36 +202,211 @@
     }
   }
 }
-@media (min-width: 1358px) {
+
+@supports(object-fit: cover) {
   .About {
     background-color: #1c1c1c;
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
+      background-position-x: -400px;
+      background-size: cover;
       height: calc(100vh - 116px);
-      background-size: stretch;
-      background-position-x: 0px;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr) max-content;
-      grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: center;
       transition: filter 0.65s ease-out;
       .hero-text {
-        grid-column: 4;
-        grid-row: 3 / 2;
-        padding-right: 7vw;
+        padding-right: 0px;
+        padding-bottom: 250px;
         color: rgba(255, 255, 255, 0.9);
-        text-align: left;
+        text-align: center;
       }
       span {
         color: #ff6000;
       }
       h1 {
-        font-size: 5em;
+        font-size: 2.1em;
         line-height: 1.25em;
       }
       h2 {
-        font-size: 2.5em;
+        font-size: 1.7em;
+        &::last-child {
+          display: none;
+        }
       }
     }
   }
+  @media (min-width: 481px) {
+    .About {
+      background-color: #1c1c1c;
+      .hero {
+        background-image: url("../scenes/About/blurred_bg.jpg");
+        filter: blur(10px);
+        height: calc(100vh - 116px);
+        background-position-x: -255px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        transition: filter 0.65s ease-out;
+        .hero-text {
+          padding-right: 0px;
+          padding-bottom: 200px;
+          color: rgba(255, 255, 255, 0.9);
+        }
+        span {
+          color: #ff6000;
+        }
+        h1 {
+          font-size: 2.5em;
+          line-height: 1.25em;
+        }
+        h2 {
+          font-size: 2em;
+          &::last-child {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 715px) {
+    .About {
+      background-color: #1c1c1c;
+      .hero {
+        background-image: url("../scenes/About/blurred_bg.jpg");
+        filter: blur(10px);
+        height: calc(100vh - 116px);
+        background-position-x: -110px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        transition: filter 0.65s ease-out;
+        .hero-text {
+          padding-right: 0px;
+          padding-bottom: 250px;
+          color: rgba(255, 255, 255, 0.9);
+          text-align: left;
+        }
+        span {
+          color: #ff6000;
+        }
+        h1 {
+          font-size: 3.5em;
+          line-height: 1.25em;
+        }
+        h2 {
+          font-size: 1.75em;
+        }
+      }
+    }
+  }
+  @media (min-width: 960px) {
+    .About {
+      background-color: #1c1c1c;
+      .hero {
+        background-image: url("../scenes/About/blurred_bg.jpg");
+        filter: blur(10px);
+        height: calc(100vh - 116px);
+        background-position-x: -250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        transition: filter 0.65s ease-out;
+        .hero-text {
+          padding-right: 50px;
+          padding-bottom: 400px;
+          color: rgba(255, 255, 255, 0.9);
+          text-align: left;
+        }
+        span {
+          color: #ff6000;
+        }
+        h1 {
+          font-size: 3.6em;
+          line-height: 1.25em;
+        }
+        h2 {
+          font-size: 1.85em;
+        }
+      }
+    }
+  }
+  @media (min-width: 1140px) {
+    .About {
+      background-color: #1c1c1c;
+      .hero {
+        background-image: url("../scenes/About/blurred_bg.jpg");
+        filter: blur(10px);
+        height: calc(100vh - 116px);
+        background-position-x: -150px;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        transition: filter 0.65s ease-out;
+        .hero-text {
+          padding-right: 50px;
+          padding-bottom: 400px;
+          color: rgba(255, 255, 255, 0.9);
+          text-align: left;
+        }
+        span {
+          color: #ff6000;
+        }
+        h1 {
+          font-size: 4.75em;
+          line-height: 1.25em;
+        }
+        h2 {
+          font-size: 2.25em;
+        }
+      }
+    }
+  }
+  @media (min-width: 1380px) {
+    .About {
+      background-color: #1c1c1c;
+      padding-top: 0px;
+      .hero {
+        background-image: url("../scenes/About/blurred_bg.jpg");
+        filter: blur(10px);
+        height: calc(100vh - 116px);
+        background-size: cover;
+        background-position-x: 0px;
+        transition: filter 0.65s ease-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        .hero-text {
+          padding-right: 100px;
+          padding-bottom: 400px;
+          color: rgba(255, 255, 255, 0.9);
+          text-align: left;
+        }
+        span {
+          color: #ff6000;
+        }
+        h1 {
+          font-size: 5em;
+          line-height: 1.25em;
+        }
+        h2 {
+          font-size: 2.5em;
+        }
+      }
+    }
+  }
+  
 }
