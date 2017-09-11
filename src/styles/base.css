@@ -914,11 +914,12 @@ svg {
 
 @supports (object-fit: cover) {
   .About {
-    background-color: #1c1c1c; }
+    background-color: #1c1c1c;
+    padding-top: 0px; }
     .About .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
-      background-position-x: -400px;
+      background-position-x: -185px;
       background-size: cover;
       height: calc(100vh - 116px);
       display: flex;
@@ -927,8 +928,9 @@ svg {
       align-items: center;
       transition: filter 0.65s ease-out; }
       .About .hero .hero-text {
-        padding-right: 0px;
-        padding-bottom: 250px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
         color: rgba(255, 255, 255, 0.9);
         text-align: center; }
       .About .hero span {
@@ -986,7 +988,7 @@ svg {
           padding-right: 0px;
           padding-bottom: 250px;
           color: rgba(255, 255, 255, 0.9);
-          text-align: left; }
+          text-align: center; }
         .About .hero span {
           color: #ff6000; }
         .About .hero h1 {

@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const ProjectFooter = props => {
-  console.log(props);
   let style = {
     container: {
       backgroundColor: props.currentProject.color

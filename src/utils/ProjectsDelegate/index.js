@@ -17,27 +17,6 @@ class ProjectsDelegate {
 
     return this.projects[index + 1];
   };
-
-  getPrevProject = project => {
-    let index = this.getProjectIndex(project);
-
-    if (index - 1 < 0) {
-      return this.projects[this.projects.length - 1];
-    }
-
-    return this.projects[index - 1];
-  };
-
-  getProjectsMinusCurrent = project => {
-    let projects_copy = this.projects.slice();
-    let index = this.getProjectIndex(project);
-
-    if (index > -1) {
-      projects_copy.splice(index, 1);
-    }
-
-    return projects_copy;
-  };
 }
 
 export default ProjectsDelegate;

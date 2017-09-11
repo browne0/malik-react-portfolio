@@ -206,10 +206,11 @@
 @supports(object-fit: cover) {
   .About {
     background-color: #1c1c1c;
+    padding-top: 0px;
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
-      background-position-x: -400px;
+      background-position-x: -185px;
       background-size: cover;
       height: calc(100vh - 116px);
       display: flex;
@@ -218,8 +219,9 @@
       align-items: center;
       transition: filter 0.65s ease-out;
       .hero-text {
-        padding-right: 0px;
-        padding-bottom: 250px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
         color: rgba(255, 255, 255, 0.9);
         text-align: center;
       }
@@ -292,7 +294,7 @@
           padding-right: 0px;
           padding-bottom: 250px;
           color: rgba(255, 255, 255, 0.9);
-          text-align: left;
+          text-align: center;
         }
         span {
           color: #ff6000;
