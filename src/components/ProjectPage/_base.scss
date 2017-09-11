@@ -2,14 +2,14 @@
   display: flex;
   flex-direction: column;
   font-family: Roboto;
-  .hero {   
+  .hero {
     margin: 0px auto 20px auto;
     width: 90%;
     h2 {
       font-size: 3em;
     }
     p {
-      font-family: PT Serif, 'Times New Roman', Times, serif;
+      font-family: PT Serif, "Times New Roman", Times, serif;
       font-size: 1.15em;
     }
   }
@@ -38,10 +38,10 @@
       font-size: 2.25em;
       padding: 10px 0px;
     }
-    
+
     hr {
       margin-top: 0px;
-      opacity: .85;
+      opacity: 0.85;
     }
 
     h6 {
@@ -50,19 +50,19 @@
     }
 
     a {
-      font-family: PT Serif, 'Times New Roman', Times, serif;
+      font-family: PT Serif, "Times New Roman", Times, serif;
       color: rgb(194, 77, 1);
     }
     p {
       margin-top: 15px;
       margin-bottom: 10px;
       font-size: 1.3em;
-      font-family: PT Serif, 'Times New Roman', Times, serif;
+      font-family: PT Serif, "Times New Roman", Times, serif;
     }
 
     li {
-      font-family: PT Serif, 'Times New Roman', Times, serif;    
-      font-weight: normal;  
+      font-family: PT Serif, "Times New Roman", Times, serif;
+      font-weight: normal;
     }
     img {
       width: 100%;
@@ -100,13 +100,13 @@
         h3 {
           font-size: 1.5em;
           text-align: center;
-          font-family: PT Serif, 'Times New Roman', Times, serif;    
+          font-family: PT Serif, "Times New Roman", Times, serif;
         }
         h4 {
           font-size: 1.4em;
           text-align: center;
-          font-family: PT Serif, 'Times New Roman', Times, serif;    
-          font-weight: normal;  
+          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-weight: normal;
         }
       }
       .next-project-image {
@@ -122,20 +122,20 @@
           align-items: center;
           p {
             text-align: center;
-            font-size:1.6em;
+            font-size: 1.6em;
             font-weight: bold;
           }
           a {
             width: 70%;
             border-radius: 3px;
             border: 3px solid #fbfbfb;
-            overflow:hidden;
+            overflow: hidden;
           }
           img {
             padding: 3px;
             width: 100%;
             vertical-align: top;
-            transition: transform .25s ease;
+            transition: transform 0.25s ease;
           }
           &:hover {
             .pic {
@@ -147,19 +147,19 @@
     }
   }
 }
-@media(min-width: 320px) {
+@media (min-width: 320px) {
   .project {
     display: flex;
     flex-direction: column;
     font-family: Roboto;
-    .hero {   
+    .hero {
       margin: 0px auto 20px auto;
       width: 90%;
       h2 {
         font-size: 2.75em;
       }
       p {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-size: 1.15em;
       }
     }
@@ -188,31 +188,31 @@
         font-size: 1.75em;
         padding: 10px 0px;
       }
-      
+
       hr {
         margin-top: 0px;
-        opacity: .85;
+        opacity: 0.85;
       }
-  
+
       h6 {
         font-size: 1.7em;
         padding: 5px 0px;
       }
-  
+
       a {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         color: rgb(194, 77, 1);
       }
       p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
       }
-  
+
       li {
-        font-family: PT Serif, 'Times New Roman', Times, serif;    
-        font-weight: normal;  
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-weight: normal;
       }
       img {
         width: 100%;
@@ -221,7 +221,7 @@
     }
     .project-section-last {
       margin-bottom: 20px;
-  
+
       hr {
         margin-bottom: 20px;
       }
@@ -250,13 +250,13 @@
           h3 {
             font-size: 1.5em;
             text-align: center;
-            font-family: PT Serif, 'Times New Roman', Times, serif;    
+            font-family: PT Serif, "Times New Roman", Times, serif;
           }
           h4 {
             font-size: 1.4em;
             text-align: center;
-            font-family: PT Serif, 'Times New Roman', Times, serif;    
-            font-weight: normal;  
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-weight: normal;
           }
         }
         .next-project-image {
@@ -272,20 +272,20 @@
             align-items: center;
             p {
               text-align: center;
-              font-size:1.6em;
+              font-size: 1.6em;
               font-weight: bold;
             }
             a {
               width: 70%;
               border-radius: 3px;
               border: 3px solid #fbfbfb;
-              overflow:hidden;
+              overflow: hidden;
             }
             img {
               padding: 3px;
               width: 100%;
               vertical-align: top;
-              transition: transform .25s ease;
+              transition: transform 0.25s ease;
             }
             &:hover {
               .pic {
@@ -299,19 +299,19 @@
   }
 }
 
-@media(min-width:800px) {
+@media (min-width: 800px) {
   .project {
     display: flex;
     flex-direction: column;
     font-family: Roboto;
-    .hero {   
+    .hero {
       margin: 0px auto 20px auto;
       width: 90%;
       h2 {
         font-size: 3.5em;
       }
       p {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-size: 1.25em;
       }
     }
@@ -340,31 +340,31 @@
         font-size: 2.25em;
         padding: 10px 0px;
       }
-      
+
       hr {
         margin-top: 0px;
-        opacity: .85;
+        opacity: 0.85;
       }
-  
+
       h6 {
         font-size: 1.7em;
         padding: 5px 0px;
       }
-  
+
       a {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         color: rgb(194, 77, 1);
       }
       p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
       }
-  
+
       li {
-        font-family: PT Serif, 'Times New Roman', Times, serif;    
-        font-weight: normal;  
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-weight: normal;
       }
       img {
         width: 100%;
@@ -373,7 +373,7 @@
     }
     .project-section-last {
       margin-bottom: 20px;
-  
+
       hr {
         margin-bottom: 20px;
       }
@@ -400,13 +400,13 @@
           }
           h3 {
             font-size: 1.5em;
-            font-family: PT Serif, 'Times New Roman', Times, serif;
-            text-align: left;   
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            text-align: left;
           }
           h4 {
             font-size: 1.4em;
-            font-family: PT Serif, 'Times New Roman', Times, serif;    
-            font-weight: normal;  
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-weight: normal;
             text-align: left;
           }
         }
@@ -423,20 +423,20 @@
             align-items: center;
             p {
               text-align: center;
-              font-size:1.6em;
+              font-size: 1.6em;
               font-weight: bold;
             }
             a {
               width: 70%;
               border-radius: 3px;
               border: 3px solid #fbfbfb;
-              overflow:hidden;
+              overflow: hidden;
             }
             img {
               padding: 3px;
               width: 100%;
               vertical-align: top;
-              transition: transform .25s ease;
+              transition: transform 0.25s ease;
             }
             &:hover {
               .pic {
@@ -450,19 +450,19 @@
   }
 }
 
-@media(min-width: 1280px) {
+@media (min-width: 1280px) {
   .project {
     display: flex;
     flex-direction: column;
     font-family: Roboto;
-    .hero {   
+    .hero {
       margin: 0px auto 20px auto;
       width: 50vw;
       h2 {
         font-size: 4em;
       }
       p {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-size: 1.5em;
       }
     }
@@ -490,31 +490,31 @@
         font-size: 2.25em;
         padding: 10px 0px;
       }
-      
+
       hr {
         margin-top: 0px;
-        opacity: .85;
+        opacity: 0.85;
       }
-  
+
       h6 {
         font-size: 1.7em;
         padding: 5px 0px;
       }
-  
+
       a {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         color: rgb(194, 77, 1);
       }
       p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
       }
-  
+
       li {
-        font-family: PT Serif, 'Times New Roman', Times, serif;    
-        font-weight: normal;  
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-weight: normal;
       }
       img {
         width: 100%;
@@ -523,7 +523,7 @@
     }
     .project-section-last {
       margin-bottom: 20px;
-  
+
       hr {
         margin-bottom: 20px;
       }
@@ -549,12 +549,12 @@
           }
           h3 {
             font-size: 1.9em;
-            font-family: PT Serif, 'Times New Roman', Times, serif;    
+            font-family: PT Serif, "Times New Roman", Times, serif;
           }
           h4 {
             font-size: 1.6em;
-            font-family: PT Serif, 'Times New Roman', Times, serif;    
-            font-weight: normal;  
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-weight: normal;
           }
         }
         .next-project-image {
@@ -570,20 +570,20 @@
             align-items: center;
             p {
               text-align: center;
-              font-size:1.6em;
+              font-size: 1.6em;
               font-weight: bold;
             }
             a {
               width: 70%;
               border-radius: 3px;
               border: 3px solid #fbfbfb;
-              overflow:hidden;
+              overflow: hidden;
             }
             img {
               padding: 3px;
               width: 100%;
               vertical-align: top;
-              transition: transform .25s ease;
+              transition: transform 0.25s ease;
             }
             &:hover {
               .pic {

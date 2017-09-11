@@ -4,40 +4,50 @@ header {
   z-index: 2;
   .navbar {
     height: 64px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     > div:first-child {
-      display: inline-block;
+      flex: 0 1 auto !important;
     }
   }
   .logo-wrapper {
-    cursor: pointer;
     display: flex;
+    cursor: pointer;
+    flex-direction: row;
     align-items: center;
-    color: #f1f1f1;
-    // width: 250px;
     height: 100%;
+    color: #f1f1f1;
+    width: 48px;
     .logo {
       max-width: 48px;
       width: 48px;
       height: 48px;
     }
-    h1 {
-      margin-left: 15px;
-      font-size: 1em;
+    .title {
       display: none;
-    }
-    h2 {
-      font-size: .65em;
-      margin-bottom: 5px;
-      display: none;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      line-height: normal;
+      h1 {
+        font-size: 1em;
+        display: none;
+        margin-left: 12px;
+      }
+      h2 {
+        font-size: 0.65em;
+        display: none;
+        margin-left: 12px;
+      }
     }
   }
 }
 .nav-items {
-  width: 250px;
-  height: 100%;
-  display: block;
-  float: right;
+  width: 210px;
   .nav-item {
+    color: #f1f1f1 !important;
+    height: 64px;
     div:first-child {
       display: flex;
       align-items: center;
@@ -46,21 +56,26 @@ header {
   }
 }
 
-@media (min-width: 755px) {
+@media (min-width: 715px) {
   header {
     position: fixed;
     width: 100%;
     z-index: 2;
     .navbar {
       height: 64px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       > div:first-child {
-        display: inline-block;
+        flex: 0 1 auto !important;
       }
     }
     .logo-wrapper {
-      cursor: pointer;
       display: flex;
+      cursor: pointer;
+      flex-direction: row;
       align-items: center;
+      height: 100%;
       color: #f1f1f1;
       width: 370px;
       .logo {
@@ -68,136 +83,34 @@ header {
         width: 48px;
         height: 48px;
       }
-      h1 {
-        margin-left: 15px;
-        font-size: 1em;
-        display: inline-block;
-      }
-      h2 {
-        font-size: .65em;
-        margin-bottom: 5px;
-        display: none;
+      .title {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        line-height: normal;
+        h1 {
+          font-size: 1em;
+          display: block;
+          margin-left: 12px;
+        }
+        h2 {
+          font-size: 0.65em;
+          display: block;
+          margin-left: 12px;
+        }
       }
     }
   }
   .nav-items {
-    width: 300px;
-    height: 100%;
-    display: block;
-    float: right;
-    overflow: hidden;
+    width: 250px !important;
+    display: inline-block;
     .nav-item {
+      color: #f1f1f1 !important;
       div:first-child {
         display: flex;
         align-items: center;
         justify-content: center;
-      }
-    }
-  }
-}
-
-@supports (object-fit: cover) {
-  header {
-    position: fixed;
-    width: 100%;
-    z-index: 2;
-    .navbar {
-      height: 64px;
-      padding-left: 20px !important;
-    }
-    .logo-wrapper {
-      cursor: pointer;
-      display: grid;
-      grid-template-columns: max-content 1fr;
-      grid-template-rows: 32px 32px;
-      align-items: center;
-      color: #f1f1f1;
-      width: auto;
-      .logo {
-        max-width: 36px;
-        width: 36px;
-        height: 36px;
-        grid-row: span 2;
-      }
-      h1 {
-        font-size: .8em;
-        margin-top: 30px;
-        padding-left: 15px;
-        grid-column: 2;
-        display: none;
-        margin-left: 0px;
-      }
-      h2 {
-        font-size: .55em;
-        padding-left: 15px;
-        grid-column: 2;
-        margin-bottom: 4px;
-        display: none;
-      }
-    }
-    .nav-items {
-      > div:first-child {
-        // width: 225px !important;
-      }
-    }
-
-    .nav-item {
-      div:first-child {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-    }
-  }
-
-  @media (min-width: 715px) {
-    header {
-      position: fixed;
-      width: 100%;
-      z-index: 2;
-      .navbar {
-        height: 64px;
-      }
-      .logo-wrapper {
-        cursor: pointer;
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        grid-template-rows: 32px 32px;
-        align-items: center;
-        color: #f1f1f1;
-        width: 370px;
-        .logo {
-          max-width: 48px;
-          width: 48px;
-          height: 48px;
-          grid-row: span 2;
-        }
-        h1 {
-          font-size: 1em;
-          margin-top: 7.5px;
-          grid-column: 2;
-          display: block;
-          line-height: 1em;
-          margin-left: 0px;
-        }
-        h2 {
-          font-size: .65em;
-          grid-column: 2;
-          margin-bottom: 5px;
-          display: block;
-          line-height: 1em;
-        }
-      }
-    }
-    .nav-items {
-      width: 250px !important;
-      .nav-item {
-        color: #f1f1f1 !important;
-        div:first-child {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-        }
       }
     }
   }

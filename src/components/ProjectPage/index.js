@@ -28,14 +28,14 @@ class ProjectPage extends Component {
   };
 
   componentDidMount() {
-    document.title = this.props.title + ' | Malik Browne';
+    document.title = this.props.title + " | Malik Browne";
     // console.log(this.state.nextProj)
   }
 
   render(props) {
     const technologies = this.props.technologies.map(tech => {
-      return <li key={tech}>{tech}</li>
-    })
+      return <li key={tech}>{tech}</li>;
+    });
     const style = {
       button: {
         display: "inline-block",
@@ -46,10 +46,14 @@ class ProjectPage extends Component {
       }
     };
     let githubButton = this.props.github ? (
-      <div style={style.button}><Button label="Github" url={this.props.github} /></div>
+      <div style={style.button}>
+        <Button label="Github" url={this.props.github} />
+      </div>
     ) : null;
     let liveUrlButton = this.props.liveUrl ? (
-      <div style={style.button}><Button label="Live Demo" url={this.props.liveUrl} /></div>
+      <div style={style.button}>
+        <Button label="Live Demo" url={this.props.liveUrl} />
+      </div>
     ) : null;
     let screenshotClass = this.props.bigPicture
       ? "screenshot-big-picture"
@@ -58,7 +62,13 @@ class ProjectPage extends Component {
     let content = this.props.bigPicture ? (
       <div className="wrapper">
         <div className="hero">
-          <h2 style={{ color: this.props.color ? this.props.color : this.props.bgColor }}>{this.props.name}</h2>
+          <h2
+            style={{
+              color: this.props.color ? this.props.color : this.props.bgColor
+            }}
+          >
+            {this.props.name}
+          </h2>
           <p>{this.props.description}</p>
         </div>
         <div
@@ -66,29 +76,45 @@ class ProjectPage extends Component {
           style={{ backgroundImage: `url(${this.props.images[0]})` }}
         />
         {this.props.children}
-        <ProjectSection className="project-section-last" title="Available Links">
+        <ProjectSection
+          className="project-section-last"
+          title="Available Links"
+        >
           <div style={style.button}>{githubButton}</div>
           <div style={style.button}>{liveUrlButton}</div>
         </ProjectSection>
-        <ProjectFooter currentProject={this.props} nextProject={this.state.nextProj}/>
+        <ProjectFooter
+          currentProject={this.props}
+          nextProject={this.state.nextProj}
+        />
       </div>
     ) : (
       <div className="wrapper">
         <div className="hero">
-          <h2 style={{ color: this.props.color ? this.props.color : this.props.bgColor }}>{this.props.name}</h2>
+          <h2
+            style={{
+              color: this.props.color ? this.props.color : this.props.bgColor
+            }}
+          >
+            {this.props.name}
+          </h2>
           <p>{this.props.description}</p>
         </div>
         {this.props.children}
         <ProjectSection title="Technologies Used">
-          <ul>
-            {technologies}
-          </ul>
+          <ul>{technologies}</ul>
         </ProjectSection>
-        <ProjectSection className="project-section-last" title="Available Links">
+        <ProjectSection
+          className="project-section-last"
+          title="Available Links"
+        >
           {githubButton}
           {liveUrlButton}
         </ProjectSection>
-        <ProjectFooter currentProject={this.props} nextProject={this.state.nextProj}/>
+        <ProjectFooter
+          currentProject={this.props}
+          nextProject={this.state.nextProj}
+        />
       </div>
     );
 

@@ -755,7 +755,7 @@ svg {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    transition: filter .65s ease-out; }
+    transition: filter 0.65s ease-out; }
     .About .hero .hero-text {
       align-self: flex-end;
       justify-self: center;
@@ -785,7 +785,7 @@ svg {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
-      transition: filter .65s ease-out; }
+      transition: filter 0.65s ease-out; }
       .About .hero .hero-text {
         align-self: flex-end;
         justify-self: center;
@@ -816,7 +816,7 @@ svg {
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
-      transition: filter .65s ease-out; }
+      transition: filter 0.65s ease-out; }
       .About .hero .hero-text {
         align-self: flex-end;
         justify-self: center;
@@ -845,7 +845,7 @@ svg {
       display: grid;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
-      transition: filter .65s ease-out; }
+      transition: filter 0.65s ease-out; }
       .About .hero .hero-text {
         grid-column: 4;
         grid-row: 2 / 4;
@@ -873,7 +873,7 @@ svg {
       background-repeat: no-repeat;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
-      transition: filter .65s ease-out; }
+      transition: filter 0.65s ease-out; }
       .About .hero .hero-text {
         grid-column: 4;
         grid-row: 3 / 2;
@@ -900,7 +900,7 @@ svg {
       display: grid;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
-      transition: filter .65s ease-out; }
+      transition: filter 0.65s ease-out; }
       .About .hero .hero-text {
         grid-column: 4;
         grid-row: 3 / 2;
@@ -1121,9 +1121,9 @@ svg {
     margin: auto;
     padding-top: 0px; }
     .blog-wrapper .blog-filter {
-      width: 60% !important; }
+      width: 75% !important; }
     .blog-wrapper .blog {
-      width: calc(90vw - 50px);
+      width: calc(100vw - 50px);
       margin: auto;
       padding: 25px 0px;
       display: grid;
@@ -1392,6 +1392,9 @@ svg {
       font-family: PT Serif, 'Times New Roman', Times, serif; }
       .blog-post .container .markdown-body h1 {
         font-family: Roboto; }
+      .blog-post .container .markdown-body pre {
+        background-color: #272822;
+        color: #fbfbfb; }
 
 @media (min-width: 800px) {
   .blog-post {
@@ -1766,155 +1769,96 @@ header {
   width: 100%;
   z-index: 2; }
   header .navbar {
-    height: 64px; }
-    header .navbar > div:first-child {
-      display: inline-block; }
-  header .logo-wrapper {
-    cursor: pointer;
+    height: 64px;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    header .navbar > div:first-child {
+      flex: 0 1 auto !important; }
+  header .logo-wrapper {
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
     align-items: center;
+    height: 100%;
     color: #f1f1f1;
-    height: 100%; }
+    width: 48px; }
     header .logo-wrapper .logo {
       max-width: 48px;
       width: 48px;
       height: 48px; }
-    header .logo-wrapper h1 {
-      margin-left: 15px;
-      font-size: 1em;
-      display: none; }
-    header .logo-wrapper h2 {
-      font-size: .65em;
-      margin-bottom: 5px;
-      display: none; }
+    header .logo-wrapper .title {
+      display: none;
+      height: 100%;
+      flex-direction: column;
+      justify-content: center;
+      line-height: normal; }
+      header .logo-wrapper .title h1 {
+        font-size: 1em;
+        display: none;
+        margin-left: 12px; }
+      header .logo-wrapper .title h2 {
+        font-size: 0.65em;
+        display: none;
+        margin-left: 12px; }
 
 .nav-items {
-  width: 250px;
-  height: 100%;
-  display: block;
-  float: right; }
-  .nav-items .nav-item div:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-
-@media (min-width: 755px) {
-  header {
-    position: fixed;
-    width: 100%;
-    z-index: 2; }
-    header .navbar {
-      height: 64px; }
-      header .navbar > div:first-child {
-        display: inline-block; }
-    header .logo-wrapper {
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      color: #f1f1f1;
-      width: 370px; }
-      header .logo-wrapper .logo {
-        max-width: 48px;
-        width: 48px;
-        height: 48px; }
-      header .logo-wrapper h1 {
-        margin-left: 15px;
-        font-size: 1em;
-        display: inline-block; }
-      header .logo-wrapper h2 {
-        font-size: .65em;
-        margin-bottom: 5px;
-        display: none; }
-  .nav-items {
-    width: 300px;
-    height: 100%;
-    display: block;
-    float: right;
-    overflow: hidden; }
+  width: 210px; }
+  .nav-items .nav-item {
+    color: #f1f1f1 !important;
+    height: 64px; }
     .nav-items .nav-item div:first-child {
       display: flex;
       align-items: center;
-      justify-content: center; } }
+      justify-content: center; }
 
-@supports (object-fit: cover) {
+@media (min-width: 715px) {
   header {
     position: fixed;
     width: 100%;
     z-index: 2; }
     header .navbar {
       height: 64px;
-      padding-left: 20px !important; }
-    header .logo-wrapper {
-      cursor: pointer;
-      display: grid;
-      grid-template-columns: max-content 1fr;
-      grid-template-rows: 32px 32px;
-      align-items: center;
-      color: #f1f1f1;
-      width: auto; }
-      header .logo-wrapper .logo {
-        max-width: 36px;
-        width: 36px;
-        height: 36px;
-        grid-row: span 2; }
-      header .logo-wrapper h1 {
-        font-size: .8em;
-        margin-top: 30px;
-        padding-left: 15px;
-        grid-column: 2;
-        display: none;
-        margin-left: 0px; }
-      header .logo-wrapper h2 {
-        font-size: .55em;
-        padding-left: 15px;
-        grid-column: 2;
-        margin-bottom: 4px;
-        display: none; }
-    header .nav-item div:first-child {
       display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      header .navbar > div:first-child {
+        flex: 0 1 auto !important; }
+    header .logo-wrapper {
+      display: flex;
+      cursor: pointer;
+      flex-direction: row;
       align-items: center;
-      justify-content: center; }
-  @media (min-width: 715px) {
-    header {
-      position: fixed;
-      width: 100%;
-      z-index: 2; }
-      header .navbar {
-        height: 64px; }
-      header .logo-wrapper {
-        cursor: pointer;
-        display: grid;
-        grid-template-columns: max-content 1fr;
-        grid-template-rows: 32px 32px;
-        align-items: center;
-        color: #f1f1f1;
-        width: 370px; }
-        header .logo-wrapper .logo {
-          max-width: 48px;
-          width: 48px;
-          height: 48px;
-          grid-row: span 2; }
-        header .logo-wrapper h1 {
+      height: 100%;
+      color: #f1f1f1;
+      width: 370px; }
+      header .logo-wrapper .logo {
+        max-width: 48px;
+        width: 48px;
+        height: 48px; }
+      header .logo-wrapper .title {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        line-height: normal; }
+        header .logo-wrapper .title h1 {
           font-size: 1em;
-          margin-top: 7.5px;
-          grid-column: 2;
           display: block;
-          line-height: 1em;
-          margin-left: 0px; }
-        header .logo-wrapper h2 {
-          font-size: .65em;
-          grid-column: 2;
-          margin-bottom: 5px;
+          margin-left: 12px; }
+        header .logo-wrapper .title h2 {
+          font-size: 0.65em;
           display: block;
-          line-height: 1em; }
-    .nav-items {
-      width: 250px !important; }
-      .nav-items .nav-item {
-        color: #f1f1f1 !important; }
-        .nav-items .nav-item div:first-child {
-          display: flex;
-          align-items: center;
-          justify-content: center; } } }
+          margin-left: 12px; }
+  .nav-items {
+    width: 250px !important;
+    display: inline-block; }
+    .nav-items .nav-item {
+      color: #f1f1f1 !important; }
+      .nav-items .nav-item div:first-child {
+        display: flex;
+        align-items: center;
+        justify-content: center; } }
 
 .footer {
   position: relative;
@@ -1986,7 +1930,7 @@ header {
     .project .hero h2 {
       font-size: 3em; }
     .project .hero p {
-      font-family: PT Serif, 'Times New Roman', Times, serif;
+      font-family: PT Serif, "Times New Roman", Times, serif;
       font-size: 1.15em; }
   .project .screenshot-big-picture {
     height: 35vh;
@@ -2011,20 +1955,20 @@ header {
       padding: 10px 0px; }
     .project .project-section hr {
       margin-top: 0px;
-      opacity: .85; }
+      opacity: 0.85; }
     .project .project-section h6 {
       font-size: 1.7em;
       padding: 5px 0px; }
     .project .project-section a {
-      font-family: PT Serif, 'Times New Roman', Times, serif;
+      font-family: PT Serif, "Times New Roman", Times, serif;
       color: #c24d01; }
     .project .project-section p {
       margin-top: 15px;
       margin-bottom: 10px;
       font-size: 1.3em;
-      font-family: PT Serif, 'Times New Roman', Times, serif; }
+      font-family: PT Serif, "Times New Roman", Times, serif; }
     .project .project-section li {
-      font-family: PT Serif, 'Times New Roman', Times, serif;
+      font-family: PT Serif, "Times New Roman", Times, serif;
       font-weight: normal; }
     .project .project-section img {
       width: 100%;
@@ -2056,11 +2000,11 @@ header {
         .project .project-footer .footer-container .next-project-info h3 {
           font-size: 1.5em;
           text-align: center;
-          font-family: PT Serif, 'Times New Roman', Times, serif; }
+          font-family: PT Serif, "Times New Roman", Times, serif; }
         .project .project-footer .footer-container .next-project-info h4 {
           font-size: 1.4em;
           text-align: center;
-          font-family: PT Serif, 'Times New Roman', Times, serif;
+          font-family: PT Serif, "Times New Roman", Times, serif;
           font-weight: normal; }
       .project .project-footer .footer-container .next-project-image {
         display: flex;
@@ -2086,7 +2030,7 @@ header {
             padding: 3px;
             width: 100%;
             vertical-align: top;
-            transition: transform .25s ease; }
+            transition: transform 0.25s ease; }
           .project .project-footer .footer-container .next-project-image .inner:hover .pic {
             transform: scale(1.25); }
 
@@ -2101,7 +2045,7 @@ header {
       .project .hero h2 {
         font-size: 2.75em; }
       .project .hero p {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-size: 1.15em; }
     .project .screenshot-big-picture {
       height: 35vh;
@@ -2126,20 +2070,20 @@ header {
         padding: 10px 0px; }
       .project .project-section hr {
         margin-top: 0px;
-        opacity: .85; }
+        opacity: 0.85; }
       .project .project-section h6 {
         font-size: 1.7em;
         padding: 5px 0px; }
       .project .project-section a {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         color: #c24d01; }
       .project .project-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, 'Times New Roman', Times, serif; }
+        font-family: PT Serif, "Times New Roman", Times, serif; }
       .project .project-section li {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-weight: normal; }
       .project .project-section img {
         width: 100%;
@@ -2171,11 +2115,11 @@ header {
           .project .project-footer .footer-container .next-project-info h3 {
             font-size: 1.5em;
             text-align: center;
-            font-family: PT Serif, 'Times New Roman', Times, serif; }
+            font-family: PT Serif, "Times New Roman", Times, serif; }
           .project .project-footer .footer-container .next-project-info h4 {
             font-size: 1.4em;
             text-align: center;
-            font-family: PT Serif, 'Times New Roman', Times, serif;
+            font-family: PT Serif, "Times New Roman", Times, serif;
             font-weight: normal; }
         .project .project-footer .footer-container .next-project-image {
           display: flex;
@@ -2201,7 +2145,7 @@ header {
               padding: 3px;
               width: 100%;
               vertical-align: top;
-              transition: transform .25s ease; }
+              transition: transform 0.25s ease; }
             .project .project-footer .footer-container .next-project-image .inner:hover .pic {
               transform: scale(1.25); } }
 
@@ -2216,7 +2160,7 @@ header {
       .project .hero h2 {
         font-size: 3.5em; }
       .project .hero p {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-size: 1.25em; }
     .project .screenshot-big-picture {
       height: 35vh;
@@ -2241,20 +2185,20 @@ header {
         padding: 10px 0px; }
       .project .project-section hr {
         margin-top: 0px;
-        opacity: .85; }
+        opacity: 0.85; }
       .project .project-section h6 {
         font-size: 1.7em;
         padding: 5px 0px; }
       .project .project-section a {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         color: #c24d01; }
       .project .project-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, 'Times New Roman', Times, serif; }
+        font-family: PT Serif, "Times New Roman", Times, serif; }
       .project .project-section li {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-weight: normal; }
       .project .project-section img {
         width: 100%;
@@ -2284,11 +2228,11 @@ header {
             text-align: left; }
           .project .project-footer .footer-container .next-project-info h3 {
             font-size: 1.5em;
-            font-family: PT Serif, 'Times New Roman', Times, serif;
+            font-family: PT Serif, "Times New Roman", Times, serif;
             text-align: left; }
           .project .project-footer .footer-container .next-project-info h4 {
             font-size: 1.4em;
-            font-family: PT Serif, 'Times New Roman', Times, serif;
+            font-family: PT Serif, "Times New Roman", Times, serif;
             font-weight: normal;
             text-align: left; }
         .project .project-footer .footer-container .next-project-image {
@@ -2315,7 +2259,7 @@ header {
               padding: 3px;
               width: 100%;
               vertical-align: top;
-              transition: transform .25s ease; }
+              transition: transform 0.25s ease; }
             .project .project-footer .footer-container .next-project-image .inner:hover .pic {
               transform: scale(1.25); } }
 
@@ -2330,7 +2274,7 @@ header {
       .project .hero h2 {
         font-size: 4em; }
       .project .hero p {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-size: 1.5em; }
     .project .screenshot-big-picture {
       height: 35vh;
@@ -2354,20 +2298,20 @@ header {
         padding: 10px 0px; }
       .project .project-section hr {
         margin-top: 0px;
-        opacity: .85; }
+        opacity: 0.85; }
       .project .project-section h6 {
         font-size: 1.7em;
         padding: 5px 0px; }
       .project .project-section a {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         color: #c24d01; }
       .project .project-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, 'Times New Roman', Times, serif; }
+        font-family: PT Serif, "Times New Roman", Times, serif; }
       .project .project-section li {
-        font-family: PT Serif, 'Times New Roman', Times, serif;
+        font-family: PT Serif, "Times New Roman", Times, serif;
         font-weight: normal; }
       .project .project-section img {
         width: 100%;
@@ -2396,10 +2340,10 @@ header {
             margin-bottom: 15px; }
           .project .project-footer .footer-container .next-project-info h3 {
             font-size: 1.9em;
-            font-family: PT Serif, 'Times New Roman', Times, serif; }
+            font-family: PT Serif, "Times New Roman", Times, serif; }
           .project .project-footer .footer-container .next-project-info h4 {
             font-size: 1.6em;
-            font-family: PT Serif, 'Times New Roman', Times, serif;
+            font-family: PT Serif, "Times New Roman", Times, serif;
             font-weight: normal; }
         .project .project-footer .footer-container .next-project-image {
           display: flex;
@@ -2425,7 +2369,7 @@ header {
               padding: 3px;
               width: 100%;
               vertical-align: top;
-              transition: transform .25s ease; }
+              transition: transform 0.25s ease; }
             .project .project-footer .footer-container .next-project-image .inner:hover .pic {
               transform: scale(1.25); } }
 

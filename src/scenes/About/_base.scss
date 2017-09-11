@@ -1,20 +1,20 @@
 .About {
   background-color: #1c1c1c;
   .hero {
-    background-image: url('../scenes/About/blurred_bg.jpg');
+    background-image: url("../scenes/About/blurred_bg.jpg");
     filter: blur(10px);
     background-position-x: -450px;
     height: calc(100vh - 116px);
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr);
-    transition: filter .65s ease-out;
+    transition: filter 0.65s ease-out;
     .hero-text {
       align-self: flex-end;
       justify-self: center;
       grid-row: 4;
       padding-right: 7vw;
-      color: rgba(255, 255, 255, .9);
+      color: rgba(255, 255, 255, 0.9);
       text-align: center;
     }
     span {
@@ -36,7 +36,7 @@
   .About {
     background-color: #1c1c1c;
     .hero {
-      background-image: url('../scenes/About/blurred_bg.jpg');
+      background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
       height: calc(100vh - 116px);
       background-position-x: -255px;
@@ -44,13 +44,13 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
-      transition: filter .65s ease-out;
+      transition: filter 0.65s ease-out;
       .hero-text {
         align-self: flex-end;
         justify-self: center;
         grid-row: 2 / 4;
         padding-right: 7vw;
-        color: rgba(255, 255, 255, .9);
+        color: rgba(255, 255, 255, 0.9);
         text-align: center;
       }
       span {
@@ -73,7 +73,7 @@
   .About {
     background-color: #1c1c1c;
     .hero {
-      background-image: url('../scenes/About/blurred_bg.jpg');
+      background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
       height: calc(100vh - 116px);
       background-position-x: -110px;
@@ -82,13 +82,13 @@
       display: grid;
       grid-template-columns: 1fr;
       grid-template-rows: repeat(4, 1fr);
-      transition: filter .65s ease-out;
+      transition: filter 0.65s ease-out;
       .hero-text {
         align-self: flex-end;
         justify-self: center;
         grid-row: 2 / 4;
         padding-right: 7vw;
-        color: rgba(255, 255, 255, .9);
+        color: rgba(255, 255, 255, 0.9);
         text-align: center;
       }
       span {
@@ -108,7 +108,7 @@
   .About {
     background-color: #1c1c1c;
     .hero {
-      background-image: url('../scenes/About/blurred_bg.jpg');
+      background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
       height: calc(100vh - 116px);
       background-position-x: -150px;
@@ -117,12 +117,12 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
-      transition: filter .65s ease-out;
+      transition: filter 0.65s ease-out;
       .hero-text {
         grid-column: 4;
         grid-row: 2 / 4;
         padding-right: 7vw;
-        color: rgba(255, 255, 255, .9);
+        color: rgba(255, 255, 255, 0.9);
         text-align: left;
       }
       span {
@@ -142,7 +142,7 @@
   .About {
     background-color: #1c1c1c;
     .hero {
-      background-image: url('../scenes/About/blurred_bg.jpg');
+      background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
       height: calc(100vh - 116px);
       background-position-x: -150px;
@@ -151,12 +151,12 @@
       background-repeat: no-repeat;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
-      transition: filter .65s ease-out;
+      transition: filter 0.65s ease-out;
       .hero-text {
         grid-column: 4;
         grid-row: 3 / 2;
         padding-right: 7vw;
-        color: rgba(255, 255, 255, .9);
+        color: rgba(255, 255, 255, 0.9);
         text-align: left;
       }
       span {
@@ -176,7 +176,7 @@
   .About {
     background-color: #1c1c1c;
     .hero {
-      background-image: url('../scenes/About/blurred_bg.jpg');
+      background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
       height: calc(100vh - 116px);
       background-size: stretch;
@@ -184,12 +184,12 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr) max-content;
       grid-template-rows: 1fr max-content repeat(5, minmax(min-content, 1fr));
-      transition: filter .65s ease-out;
+      transition: filter 0.65s ease-out;
       .hero-text {
         grid-column: 4;
         grid-row: 3 / 2;
         padding-right: 7vw;
-        color: rgba(255, 255, 255, .9);
+        color: rgba(255, 255, 255, 0.9);
         text-align: left;
       }
       span {
