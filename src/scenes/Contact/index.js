@@ -14,28 +14,32 @@ class Contact extends Component {
     this.submitForm = this.submitForm.bind(this);
   }
   componentDidMount() {
-    document.title = "Contact | Malik Browne"
+    document.title = "Contact | Malik Browne";
   }
 
   submitForm() {
-    if (this.state.name !== '' && this.state.email !== '' && this.state.message !== '') {
+    if (
+      this.state.name !== "" &&
+      this.state.email !== "" &&
+      this.state.message !== ""
+    ) {
       let formData = new FormData();
-      formData.append('name', this.state.name);
-      formData.append('email', this.state.email);
-      formData.append('message', this.state.message);
-      fetch('http://malikbrowne.com/contact.php', {
-        method: 'POST',
+      formData.append("name", this.state.name);
+      formData.append("email", this.state.email);
+      formData.append("message", this.state.message);
+      fetch("http://malikbrowne.com/contact.php", {
+        method: "POST",
         body: formData
       })
-      .then(response => {
-        return response.json()
-      })
-      .then(result => {
-        console.log(result)
-      })
-      .catch(err => {
-        console.log(err);
-      })
+        .then(response => {
+          return response.json();
+        })
+        .then(result => {
+          console.log(result);
+        })
+        .catch(err => {
+          console.log(err);
+        });
     }
   }
 
@@ -122,11 +126,11 @@ class Contact extends Component {
           </div>
           <div className="other-contact">
             <div className="form-wrapper">
-            <div className="other-content">
-              <div className="other-hero">
-                <h4>Prefer more modern methods?</h4>
-                <p>(I have those too.)</p>
-              </div>
+              <div className="other-content">
+                <div className="other-hero">
+                  <h4>Prefer more modern methods?</h4>
+                  <p>(I have those too.)</p>
+                </div>
                 <p>Email</p>
                 <h5>
                   <a href="mailto:malik@malikbrowne.com">
@@ -135,13 +139,43 @@ class Contact extends Component {
                 </h5>
                 <p>Social</p>
                 <div className="social">
-                  <a href="https://github.com/browne0"><i className="icon ion-social-github"/></a>
-                  <a href="https://twitter.com/milkstarz"><i className="icon ion-social-twitter"/></a>
-                  <a href="https://youtube.com/milkstarz"><i className="icon ion-social-youtube"/></a>
-                  <a href="https://linkedin.com/in/malikbrowne"><i className="icon ion-social-linkedin"/></a>
-                  <a href="https://instagram.com/milkstarz"><i className="icon ion-social-instagram"/></a>
+                  <a
+                    href="https://github.com/browne0"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon ion-social-github" />
+                  </a>
+                  <a
+                    href="https://twitter.com/milkstarz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon ion-social-twitter" />
+                  </a>
+                  <a
+                    href="https://youtube.com/milkstarz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon ion-social-youtube" />
+                  </a>
+                  <a
+                    href="https://linkedin.com/in/malikbrowne"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon ion-social-linkedin" />
+                  </a>
+                  <a
+                    href="https://instagram.com/milkstarz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="icon ion-social-instagram" />
+                  </a>
                 </div>
-                </div>
+              </div>
             </div>
           </div>
         </div>

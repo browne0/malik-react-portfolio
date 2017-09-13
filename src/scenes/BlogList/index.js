@@ -4,37 +4,16 @@ import BlogPost from "../BlogPost";
 import Moment from "react-moment";
 import { TextField } from "material-ui";
 import FlipMove from "react-flip-move";
-// eslint-disable-next-line import/no-webpack-loader-syntax
-const webpackRequireContext = require.context(
-  "!markdown-with-front-matter-loader!../../_posts",
-  false,
-  /.md$/
-);
-
-const blogs = webpackRequireContext.keys().reduce(
-  (memo, fileName) =>
-    memo.concat({
-      path: fileName.match(/.\/([^.]+).*/)[1],
-      postData: webpackRequireContext(fileName)
-    }),
-  []
-);
-
-const blogRoutes = blogs.map(blog => (
-  <Route
-    key={blog.path}
-    path={"/blog/" + blog.path}
-    component={() => <BlogPost blog={blog} />}
-  />
-));
+import PortfolioDelegate from '../../utils/PortfolioDelegate';
 
 class blogList extends Component {
   constructor() {
     super();
-
+    
+    const delegate = new PortfolioDelegate();
     this.state = {
-      blogs: blogs,
-      filteredBlogs: blogs,
+      blogs: delegate.blogs,
+      filteredBlogs: delegate.blogs,
       search: ""
     };
     this.onFilterChange = this.onFilterChange.bind(this);
@@ -68,6 +47,14 @@ class blogList extends Component {
         }
       }
     };
+
+    const blogRoutes = this.state.blogs.map(blog => (
+      <Route
+        key={blog.path}
+        path={"/blog/" + blog.path}
+        component={() => <BlogPost blog={blog} />}
+      />
+    ));
 
     const blogPosts = this.state.filteredBlogs.map((blog, index) => {
       let blogHeader = blog.postData.header ? (

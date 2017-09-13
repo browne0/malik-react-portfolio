@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ProjectsDelegate from "../../utils/ProjectsDelegate";
+import PortfolioDelegate from "../../utils/PortfolioDelegate";
 import PropTypes from "prop-types";
 import Button from "../../components/ThemedButton";
 import ProjectSection from "../../components/ProjectSection";
@@ -9,7 +9,7 @@ class ProjectPage extends Component {
   constructor(props) {
     super(props);
 
-    const projects = new ProjectsDelegate();
+    const projects = new PortfolioDelegate();
 
     this.state = {
       nextProj: projects.getNextProject(this.props.name)
@@ -39,7 +39,7 @@ class ProjectPage extends Component {
     const style = {
       button: {
         display: "inline-block",
-        padding: "0px 10px 5px 0px"
+        padding: "10px 10px 5px 0px"
       },
       img: {
         maxHeight: "500px"

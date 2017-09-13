@@ -19,7 +19,6 @@ body {
 html {
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
-  text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-tap-highlight-color: transparent;
@@ -30,6 +29,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.47;
+  color: #333;
 }
 
 ul,
@@ -105,7 +105,6 @@ input,
 textarea {
   margin: 0;
   font: inherit;
-  appearance: none;
 }
 
 textarea {

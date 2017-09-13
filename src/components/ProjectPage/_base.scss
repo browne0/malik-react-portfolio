@@ -778,7 +778,7 @@
       flex-direction: column;
       font-family: Roboto;
       .hero {
-        margin: 0px auto 20px auto;
+        margin: 20px auto 20px auto;
         width: 90%;
         h2 {
           font-size: 2.75em;
@@ -796,7 +796,7 @@
       }
       .container {
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 40px auto;
         display: none;
         .project-image {
           min-height: 249px;
@@ -812,6 +812,7 @@
         h4 {
           font-size: 1.75em;
           padding: 10px 0px;
+          margin-top: 20px;
         }
   
         hr {
@@ -822,6 +823,7 @@
         h6 {
           font-size: 1.7em;
           padding: 5px 0px;
+          margin-top: 0px;
         }
   
         a {
@@ -842,10 +844,15 @@
         img {
           width: 100%;
           max-height: 500px;
+          margin: 30px 0px 10px 0px;
+          box-shadow: 2px 2px 1px #ccc;
+          + h6 {
+            margin-top: 10px;
+          }
         }
       }
       .project-section-last {
-        margin-bottom: 20px;
+        margin-bottom: 40px;
   
         hr {
           margin-bottom: 20px;
@@ -866,7 +873,6 @@
             width: 100%;
             flex-direction: column;
             justify-content: center;
-            overflow: hidden;
             h2 {
               font-size: 1.5em;
               margin-bottom: 15px;
@@ -926,14 +932,14 @@
     }
   }
   
-  @media (min-width: 800px) {
+  @media (min-width: 820px) {
     .project {
       display: flex;
       flex-direction: column;
       font-family: Roboto;
       .hero {
-        margin: 0px auto 20px auto;
-        width: 90%;
+        margin: 20px auto 20px auto;
+        width: 740px;
         h2 {
           font-size: 3.5em;
         }
@@ -950,7 +956,7 @@
       }
       .container {
         width: 90%;
-        margin: 0 auto;
+        margin: 0 auto 40px auto;
         display: block;
         .project-image {
           min-height: 600px;
@@ -968,14 +974,10 @@
           padding: 10px 0px;
         }
   
-        hr {
-          margin-top: 0px;
-          opacity: 0.85;
-        }
-  
         h6 {
           font-size: 1.7em;
           padding: 5px 0px;
+          margin-top: 20px;
         }
   
         a {
@@ -983,7 +985,7 @@
           color: rgb(194, 77, 1);
         }
         p {
-          margin-top: 15px;
+          margin-top: 30px;
           margin-bottom: 10px;
           font-size: 1.3em;
           font-family: PT Serif, "Times New Roman", Times, serif;
@@ -996,14 +998,15 @@
         img {
           width: 100%;
           max-height: 500px;
+          margin: 30px 0px 10px 0px;
+          box-shadow: 2px 2px 1px #ccc;
+          + h6 {
+            margin-top: 5px;
+          }
         }
       }
       .project-section-last {
         margin-bottom: 20px;
-  
-        hr {
-          margin-bottom: 20px;
-        }
       }
       .project-footer {
         color: #fbfbfb;
@@ -1086,7 +1089,7 @@
       font-family: Roboto;
       .hero {
         margin: 0px auto 20px auto;
-        width: 50vw;
+        width: 740px;
         h2 {
           font-size: 4em;
         }
@@ -1103,7 +1106,7 @@
       }
       .container {
         width: 60%;
-        margin: 0 auto;
+        margin: 0 auto 40px auto;
         .project-image {
           min-height: 600px;
           width: 100%;
@@ -1112,12 +1115,11 @@
         }
       }
       .project-section {
-        width: 50vw;
-        margin: 20px auto 0px auto;
-        overflow: hidden;
+        width: 740px;
+        margin: 0px auto;
         h4 {
           font-size: 2.25em;
-          padding: 10px 0px;
+          padding: 30px 0px 0px 0px;
         }
   
         hr {
@@ -1128,6 +1130,7 @@
         h6 {
           font-size: 1.7em;
           padding: 5px 0px;
+          margin-top: 20px;
         }
   
         a {
@@ -1135,9 +1138,9 @@
           color: rgb(194, 77, 1);
         }
         p {
-          margin-top: 15px;
-          margin-bottom: 10px;
-          font-size: 1.3em;
+          margin-top: 30px;
+          margin-bottom: 0px;
+          font-size: 1.325em;
           font-family: PT Serif, "Times New Roman", Times, serif;
         }
   
@@ -1148,10 +1151,15 @@
         img {
           width: 100%;
           max-height: 500px;
+          margin: 30px 0px 10px 0px;
+          box-shadow: 2px 2px 1px #ccc;
+          + h6 {
+            margin-top: 0px;
+          }
         }
       }
       .project-section-last {
-        margin-bottom: 20px;
+        margin-bottom: 100px;
   
         hr {
           margin-bottom: 20px;
@@ -1227,5 +1235,4 @@
       }
     }
   }
-  
 }

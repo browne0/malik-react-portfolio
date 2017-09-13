@@ -1,6 +1,8 @@
 .About {
-  background-color: #1c1c1c;
   padding-top: 64px;
+  .hero-wrapper {
+    background-color: rgb(33, 35, 41);
+  }
   .hero {
     background-image: url("../scenes/About/blurred_bg.jpg");
     filter: blur(10px);
@@ -35,7 +37,6 @@
 }
 @media (min-width: 481px) {
   .About {
-    background-color: #1c1c1c;
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
@@ -70,7 +71,6 @@
 }
 @media (min-width: 715px) {
   .About {
-    background-color: #1c1c1c;
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
@@ -104,7 +104,6 @@
 }
 @media (min-width: 960px) {
   .About {
-    background-color: #1c1c1c;
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
@@ -138,7 +137,6 @@
 }
 @media (min-width: 1140px) {
   .About {
-    background-color: #1c1c1c;
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
@@ -171,7 +169,6 @@
 }
 @media (min-width: 1380px) {
   .About {
-    background-color: #1c1c1c;
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
@@ -205,12 +202,14 @@
 
 @supports(object-fit: cover) {
   .About {
-    background-color: #1c1c1c;
     padding-top: 0px;
+    .hero-wrapper {
+      background-color: rgb(33, 35, 41);      
+    }
     .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
       filter: blur(10px);
-      background-position-x: -185px;
+      background-position-x: -375px;
       background-size: cover;
       height: calc(100vh - 116px);
       display: flex;
@@ -219,9 +218,9 @@
       align-items: center;
       transition: filter 0.65s ease-out;
       .hero-text {
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-bottom: 50px;
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-bottom: 150px;
         color: rgba(255, 255, 255, 0.9);
         text-align: center;
       }
@@ -240,9 +239,8 @@
       }
     }
   }
-  @media (min-width: 481px) {
+  @media (min-width: 620px) {
     .About {
-      background-color: #1c1c1c;
       .hero {
         background-image: url("../scenes/About/blurred_bg.jpg");
         filter: blur(10px);
@@ -275,14 +273,13 @@
       }
     }
   }
-  @media (min-width: 715px) {
+  @media (min-width: 800px) {
     .About {
-      background-color: #1c1c1c;
       .hero {
         background-image: url("../scenes/About/blurred_bg.jpg");
         filter: blur(10px);
-        height: calc(100vh - 116px);
-        background-position-x: -110px;
+        height: 60vh;
+        background-position-x: 0px;
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -292,7 +289,7 @@
         transition: filter 0.65s ease-out;
         .hero-text {
           padding-right: 0px;
-          padding-bottom: 250px;
+          padding-bottom: 100px;
           color: rgba(255, 255, 255, 0.9);
           text-align: center;
         }
@@ -300,23 +297,22 @@
           color: #ff6000;
         }
         h1 {
-          font-size: 3.5em;
+          font-size: 3em;
           line-height: 1.25em;
         }
         h2 {
-          font-size: 1.75em;
+          font-size: 1.5em;
         }
       }
     }
   }
   @media (min-width: 960px) {
     .About {
-      background-color: #1c1c1c;
       .hero {
         background-image: url("../scenes/About/blurred_bg.jpg");
         filter: blur(10px);
-        height: calc(100vh - 116px);
-        background-position-x: -250px;
+        height: 60vh;
+        background-position-x: -150px;
         background-size: cover;
         background-repeat: no-repeat;
         display: flex;
@@ -326,7 +322,7 @@
         transition: filter 0.65s ease-out;
         .hero-text {
           padding-right: 50px;
-          padding-bottom: 400px;
+          padding-bottom: 200px;
           color: rgba(255, 255, 255, 0.9);
           text-align: left;
         }
@@ -345,12 +341,11 @@
   }
   @media (min-width: 1140px) {
     .About {
-      background-color: #1c1c1c;
       .hero {
         background-image: url("../scenes/About/blurred_bg.jpg");
         filter: blur(10px);
-        height: calc(100vh - 116px);
-        background-position-x: -150px;
+        height: 60vh;
+        background-position-x: 0px;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -358,8 +353,8 @@
         align-items: flex-end;
         transition: filter 0.65s ease-out;
         .hero-text {
-          padding-right: 50px;
-          padding-bottom: 400px;
+          padding-right: 100px;
+          padding-bottom: 200px;
           color: rgba(255, 255, 255, 0.9);
           text-align: left;
         }
@@ -367,23 +362,22 @@
           color: #ff6000;
         }
         h1 {
-          font-size: 4.75em;
+          font-size: 3.75em;
           line-height: 1.25em;
         }
         h2 {
-          font-size: 2.25em;
+          font-size: 1.75em;
         }
       }
     }
   }
-  @media (min-width: 1380px) {
+  @media (min-width: 1620px) {
     .About {
-      background-color: #1c1c1c;
       padding-top: 0px;
       .hero {
         background-image: url("../scenes/About/blurred_bg.jpg");
         filter: blur(10px);
-        height: calc(100vh - 116px);
+        height: 60vh;
         background-size: cover;
         background-position-x: 0px;
         transition: filter 0.65s ease-out;
@@ -392,8 +386,8 @@
         justify-content: center;
         align-items: flex-end;
         .hero-text {
-          padding-right: 100px;
-          padding-bottom: 400px;
+          padding-right: 200px;
+          padding-bottom: 200px;
           color: rgba(255, 255, 255, 0.9);
           text-align: left;
         }
@@ -406,9 +400,126 @@
         }
         h2 {
           font-size: 2.5em;
+          span {
+            font-size: 1.5em;
+          }
+        }
+      }
+      .about-section {
+        width: 740px;
+        margin: 0px auto;
+        h4 {
+          font-size: 2.25em;
+          padding: 30px 0px 0px 0px;
+        }
+  
+        hr {
+          margin-top: 0px;
+          opacity: 0.85;
+        }
+  
+        h6 {
+          font-size: 1.7em;
+          padding: 5px 0px;
+          margin-top: 20px;
+        }
+  
+        a {
+          font-family: PT Serif, "Times New Roman", Times, serif;
+          color: rgb(194, 77, 1);
+        }
+        p {
+          margin-top: 30px;
+          margin-bottom: 0px;
+          font-size: 1.325em;
+          font-family: PT Serif, "Times New Roman", Times, serif;
+        }
+  
+        li {
+          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-weight: normal;
+        }
+        img {
+          width: 100%;
+          max-height: 500px;
+          margin: 30px 0px 10px 0px;
+          box-shadow: 2px 2px 1px #ccc;
+          + h6 {
+            margin-top: 0px;
+          }
+        }
+      }
+      .about-section-last {
+        margin-bottom: 100px;
+      }
+      .about-footer {
+        color: #fbfbfb;
+        padding: 20px 0px;
+        .footer-container {
+          display: flex;
+          flex-direction: row;
+          width: 75%;
+          justify-content: space-around;
+          margin: 0px auto;
+          .next-post-info {
+            display: flex;
+            width: 60%;
+            flex-direction: column;
+            justify-content: center;
+            h2 {
+              font-size: 2.25em;
+              margin-bottom: 15px;
+            }
+            h3 {
+              font-size: 1.9em;
+              font-family: PT Serif, "Times New Roman", Times, serif;
+            }
+            h4 {
+              font-size: 1.6em;
+              font-family: PT Serif, "Times New Roman", Times, serif;
+              font-weight: normal;
+            }
+          }
+          .next-post-image {
+            display: flex;
+            width: 450px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            .inner {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              overflow:hidden;
+              p {
+                text-align: center;
+                font-size: 1.6em;
+                font-weight: bold;
+                margin-bottom: 10px;
+              }
+              a {
+                width: 310px;
+                border-radius: 3px;
+                border: 3px solid #fbfbfb;
+                overflow: hidden;
+              }
+              img {
+                padding: 3px;
+                width: 100%;
+                vertical-align: top;
+                transition: transform 0.25s ease;
+              }
+              &:hover {
+                .pic {
+                  transform: scale(1.25);
+                }
+              }
+            }
+          }
         }
       }
     }
   }
-  
 }

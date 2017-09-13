@@ -1,9 +1,9 @@
 import React from "react";
 
-const ProjectSection = props => {
+const AboutSection = props => {
   let className = props.className
-    ? `project-section ${props.className}`
-    : "project-section";
+    ? `about-section ${props.className}`
+    : "about-section";
   return (
     <section className={className}>
       <h4>{props.title}</h4>
@@ -12,7 +12,7 @@ const ProjectSection = props => {
   );
 };
 
-ProjectSection.defaultProps = {
+AboutSection.defaultProps = {
   className: ""
 };
-export default ProjectSection;
+export default AboutSection;

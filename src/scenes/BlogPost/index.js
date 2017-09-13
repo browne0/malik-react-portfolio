@@ -1,17 +1,30 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Moment from "react-moment";
-import Prism from 'prismjs'
-
+import Prism from "prismjs";
 
 class blogPost extends Component {
-  componentDidMount(props) {
-    document.title = this.props.blog.postData.title + " | Malik Browne";
-    Prism.highlightAll()
+  constructor() {
+    super();
+
+    this.state = {
+      blog: {}
+    };
+  }
+  componentWillMount(props) {
+      this.setState({
+        blog: this.props.blog
+      });
+      document.title = this.props.blog.postData.title + " | Malik Browne";
+  }
+
+  componentDidMount() {
+    Prism.highlightAll();
   }
 
   render(props) {
-    let blogLength = this.props.blog.postData.__content
+    console.log(this.state.blog);
+    let blogLength = this.state.blog.postData.__content
       .replace(/<[^>]*>/g, " ")
       .replace("/s+/g", " ")
       .replace("/+/g")
@@ -38,7 +51,7 @@ class blogPost extends Component {
             }}
           />
           <div className="post-title">
-            <h1>{this.props.blog.postData.title}</h1>
+            <h1>{this.state.blog.postData.title}</h1>
           </div>
           <div className="post-author">
             <img
@@ -47,10 +60,10 @@ class blogPost extends Component {
               className="avatar"
             />
             <div className="avatar-info">
-              <p className="author-name">{this.props.blog.postData.author}</p>
+              <p className="author-name">{this.state.blog.postData.author}</p>
               <p className="date">
                 <Moment parse="YYYY-MM-DD" format="MMM D">
-                  {this.props.blog.postData.date_published}
+                  {this.state.blog.postData.date_published}
                 </Moment>
                 <span>&middot;</span>
                 {blogLengthString}
@@ -60,7 +73,7 @@ class blogPost extends Component {
           <div
             className="markdown-body"
             dangerouslySetInnerHTML={{
-              __html: this.props.blog.postData.__content
+              __html: this.state.blog.postData.__content
             }}
           />
         </div>
