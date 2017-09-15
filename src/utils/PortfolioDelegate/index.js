@@ -1,5 +1,11 @@
 import { projects as ProjectList } from "../../data/projects.json";
 
+/**
+ * See if we can import our posts from an outside folder so we don't have to recompile. How sick would that be?
+ */
+
+// console.log(process.env.PUBLIC_URL);
+
 const webpackRequireContext = require.context(
   "!markdown-with-front-matter-loader!../../_posts",
   false,
@@ -35,7 +41,6 @@ class PortfolioDelegate {
   };
 
   getLatestBlog = () => {
-    console.log(this.blogs)
     // once I write more blogs I'll get one of five of the latest blog posts. until then just get the latest blog
     let index = this.blogs.length - 1;
 

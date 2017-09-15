@@ -933,6 +933,100 @@ svg {
         font-size: 1.7em; }
         .About .hero h2::last-child {
           display: none; }
+    .About .about-section {
+      width: 90%;
+      margin: 0px auto; }
+      .About .about-section h4 {
+        font-size: 1.75em;
+        padding: 10px 0px 0px 0px;
+        margin-top: 10px; }
+      .About .about-section h6 {
+        font-size: 1.7em;
+        padding: 5px 0px;
+        margin-top: 0px; }
+      .About .about-section a {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        color: #c24d01; }
+      .About .about-section p {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+        font-family: PT Serif, "Times New Roman", Times, serif; }
+      .About .about-section li {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-weight: normal; }
+      .About .about-section img {
+        width: 100%;
+        max-height: 500px;
+        margin: 30px 0px 10px 0px;
+        box-shadow: 2px 2px 1px #ccc; }
+        .About .about-section img + h6 {
+          margin-top: 5px; }
+    .About .about-section-last {
+      margin-bottom: 40px; }
+    .About .about-footer {
+      color: #fbfbfb;
+      padding: 20px 0px;
+      display: flex;
+      justify-content: space-around; }
+      .About .about-footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0px auto; }
+        .About .about-footer .footer-container .next-post-info {
+          display: flex;
+          width: 90%;
+          margin: 0px auto;
+          flex-direction: column;
+          justify-content: center; }
+          .About .about-footer .footer-container .next-post-info h2 {
+            font-size: 1.75em;
+            margin-bottom: 15px;
+            text-align: left; }
+          .About .about-footer .footer-container .next-post-info h3 {
+            font-size: 1.5em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            text-align: left; }
+          .About .about-footer .footer-container .next-post-info h4 {
+            font-size: 1.4em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-weight: normal;
+            text-align: left; }
+        .About .about-footer .footer-container .next-post-image {
+          display: flex;
+          width: 90%;
+          margin: 0px auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden; }
+          .About .about-footer .footer-container .next-post-image .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner p {
+              text-align: center;
+              font-size: 1.6em;
+              font-weight: bold;
+              margin-bottom: 10px;
+              align-self: left;
+              margin-top: 15px; }
+            .About .about-footer .footer-container .next-post-image .inner a {
+              width: 100%;
+              border-radius: 3px;
+              border: 3px solid #fbfbfb;
+              overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner img {
+              padding: 3px;
+              width: 100%;
+              vertical-align: top;
+              transition: transform 0.25s ease; }
+            .About .about-footer .footer-container .next-post-image .inner:hover .pic {
+              transform: scale(1.25); }
   @media (min-width: 620px) {
     .About .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
@@ -957,7 +1051,101 @@ svg {
       .About .hero h2 {
         font-size: 2em; }
         .About .hero h2::last-child {
-          display: none; } }
+          display: none; }
+    .About .about-section {
+      width: 90%;
+      margin: 0px auto; }
+      .About .about-section h4 {
+        font-size: 1.75em;
+        padding: 10px 0px 0px 0px;
+        margin-top: 10px; }
+      .About .about-section h6 {
+        font-size: 1.7em;
+        padding: 5px 0px;
+        margin-top: 0px; }
+      .About .about-section a {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        color: #c24d01; }
+      .About .about-section p {
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+        font-family: PT Serif, "Times New Roman", Times, serif; }
+      .About .about-section li {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-weight: normal; }
+      .About .about-section img {
+        width: 100%;
+        max-height: 500px;
+        margin: 30px 0px 10px 0px;
+        box-shadow: 2px 2px 1px #ccc; }
+        .About .about-section img + h6 {
+          margin-top: 5px; }
+    .About .about-section-last {
+      margin-bottom: 40px; }
+    .About .about-footer {
+      color: #fbfbfb;
+      padding: 20px 0px;
+      display: flex;
+      justify-content: space-around; }
+      .About .about-footer .footer-container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0px auto; }
+        .About .about-footer .footer-container .next-post-info {
+          display: flex;
+          width: 90%;
+          margin: 0px auto;
+          flex-direction: column;
+          justify-content: center; }
+          .About .about-footer .footer-container .next-post-info h2 {
+            font-size: 1.75em;
+            margin-bottom: 15px;
+            text-align: left; }
+          .About .about-footer .footer-container .next-post-info h3 {
+            font-size: 1.5em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            text-align: left; }
+          .About .about-footer .footer-container .next-post-info h4 {
+            font-size: 1.4em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-weight: normal;
+            text-align: left; }
+        .About .about-footer .footer-container .next-post-image {
+          display: flex;
+          width: 90%;
+          margin: 0px auto;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden; }
+          .About .about-footer .footer-container .next-post-image .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner p {
+              text-align: center;
+              font-size: 1.6em;
+              font-weight: bold;
+              margin-bottom: 10px;
+              align-self: left;
+              margin-top: 15px; }
+            .About .about-footer .footer-container .next-post-image .inner a {
+              width: 100%;
+              border-radius: 3px;
+              border: 3px solid #fbfbfb;
+              overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner img {
+              padding: 3px;
+              width: 100%;
+              vertical-align: top;
+              transition: transform 0.25s ease; }
+            .About .about-footer .footer-container .next-post-image .inner:hover .pic {
+              transform: scale(1.25); } }
   @media (min-width: 800px) {
     .About .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
@@ -982,7 +1170,96 @@ svg {
         font-size: 3em;
         line-height: 1.25em; }
       .About .hero h2 {
-        font-size: 1.5em; } }
+        font-size: 1.5em; }
+    .About .about-section {
+      width: 740px;
+      margin: 0px auto; }
+      .About .about-section h4 {
+        font-size: 2.25em;
+        padding: 30px 0px 0px 0px; }
+      .About .about-section h6 {
+        font-size: 1.7em;
+        padding: 5px 0px;
+        margin-top: 20px; }
+      .About .about-section a {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        color: #c24d01; }
+      .About .about-section p {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        font-size: 1.3em;
+        font-family: PT Serif, "Times New Roman", Times, serif; }
+      .About .about-section li {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-weight: normal; }
+      .About .about-section img {
+        width: 100%;
+        max-height: 500px;
+        margin: 30px 0px 10px 0px;
+        box-shadow: 2px 2px 1px #ccc; }
+        .About .about-section img + h6 {
+          margin-top: 5px; }
+    .About .about-section-last {
+      margin-bottom: 100px; }
+    .About .about-footer {
+      color: #fbfbfb;
+      padding: 20px 0px;
+      display: flex;
+      justify-content: space-around; }
+      .About .about-footer .footer-container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0px auto; }
+        .About .about-footer .footer-container .next-post-info {
+          display: flex;
+          width: 60%;
+          flex-direction: column;
+          justify-content: center; }
+          .About .about-footer .footer-container .next-post-info h2 {
+            font-size: 1.75em;
+            margin-bottom: 15px;
+            text-align: left; }
+          .About .about-footer .footer-container .next-post-info h3 {
+            font-size: 1.5em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            text-align: left; }
+          .About .about-footer .footer-container .next-post-info h4 {
+            font-size: 1.4em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-weight: normal;
+            text-align: left; }
+        .About .about-footer .footer-container .next-post-image {
+          display: flex;
+          width: 450px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden; }
+          .About .about-footer .footer-container .next-post-image .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner p {
+              text-align: center;
+              font-size: 1.6em;
+              font-weight: bold;
+              margin-bottom: 10px; }
+            .About .about-footer .footer-container .next-post-image .inner a {
+              width: 310px;
+              border-radius: 3px;
+              border: 3px solid #fbfbfb;
+              overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner img {
+              padding: 3px;
+              width: 100%;
+              vertical-align: top;
+              transition: transform 0.25s ease; }
+            .About .about-footer .footer-container .next-post-image .inner:hover .pic {
+              transform: scale(1.25); } }
   @media (min-width: 960px) {
     .About .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
@@ -1007,7 +1284,99 @@ svg {
         font-size: 3.6em;
         line-height: 1.25em; }
       .About .hero h2 {
-        font-size: 1.85em; } }
+        font-size: 1.85em; }
+    .About .about-section {
+      width: 740px;
+      margin: 0px auto; }
+      .About .about-section h4 {
+        font-size: 2.25em;
+        padding: 30px 0px 0px 0px; }
+      .About .about-section hr {
+        margin-top: 0px;
+        opacity: 0.85; }
+      .About .about-section h6 {
+        font-size: 1.7em;
+        padding: 5px 0px;
+        margin-top: 20px; }
+      .About .about-section a {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        color: #c24d01; }
+      .About .about-section p {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        font-size: 1.325em;
+        font-family: PT Serif, "Times New Roman", Times, serif; }
+      .About .about-section li {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-weight: normal; }
+      .About .about-section img {
+        width: 100%;
+        max-height: 500px;
+        margin: 30px 0px 10px 0px;
+        box-shadow: 2px 2px 1px #ccc; }
+        .About .about-section img + h6 {
+          margin-top: 0px; }
+    .About .about-section-last {
+      margin-bottom: 100px; }
+    .About .about-footer {
+      color: #fbfbfb;
+      padding: 20px 0px;
+      display: flex;
+      justify-content: space-around; }
+      .About .about-footer .footer-container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0px auto; }
+        .About .about-footer .footer-container .next-post-info {
+          display: flex;
+          width: 60%;
+          flex-direction: column;
+          justify-content: center; }
+          .About .about-footer .footer-container .next-post-info h2 {
+            font-size: 1.75em;
+            margin-bottom: 15px;
+            text-align: left; }
+          .About .about-footer .footer-container .next-post-info h3 {
+            font-size: 1.5em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            text-align: left; }
+          .About .about-footer .footer-container .next-post-info h4 {
+            font-size: 1.4em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-weight: normal;
+            text-align: left; }
+        .About .about-footer .footer-container .next-post-image {
+          display: flex;
+          width: 450px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden; }
+          .About .about-footer .footer-container .next-post-image .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner p {
+              text-align: center;
+              font-size: 1.6em;
+              font-weight: bold;
+              margin-bottom: 10px; }
+            .About .about-footer .footer-container .next-post-image .inner a {
+              width: 310px;
+              border-radius: 3px;
+              border: 3px solid #fbfbfb;
+              overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner img {
+              padding: 3px;
+              width: 100%;
+              vertical-align: top;
+              transition: transform 0.25s ease; }
+            .About .about-footer .footer-container .next-post-image .inner:hover .pic {
+              transform: scale(1.25); } }
   @media (min-width: 1140px) {
     .About .hero {
       background-image: url("../scenes/About/blurred_bg.jpg");
@@ -1031,7 +1400,96 @@ svg {
         font-size: 3.75em;
         line-height: 1.25em; }
       .About .hero h2 {
-        font-size: 1.75em; } }
+        font-size: 1.75em; }
+    .About .about-section {
+      width: 740px;
+      margin: 0px auto; }
+      .About .about-section h4 {
+        font-size: 2.25em;
+        padding: 30px 0px 0px 0px; }
+      .About .about-section hr {
+        margin-top: 0px;
+        opacity: 0.85; }
+      .About .about-section h6 {
+        font-size: 1.7em;
+        padding: 5px 0px;
+        margin-top: 20px; }
+      .About .about-section a {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        color: #c24d01; }
+      .About .about-section p {
+        margin-top: 30px;
+        margin-bottom: 0px;
+        font-size: 1.325em;
+        font-family: PT Serif, "Times New Roman", Times, serif; }
+      .About .about-section li {
+        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-weight: normal; }
+      .About .about-section img {
+        width: 100%;
+        max-height: 500px;
+        margin: 30px 0px 10px 0px;
+        box-shadow: 2px 2px 1px #ccc; }
+        .About .about-section img + h6 {
+          margin-top: 0px; }
+    .About .about-section-last {
+      margin-bottom: 100px; }
+    .About .about-footer {
+      color: #fbfbfb;
+      padding: 20px 0px;
+      display: flex;
+      justify-content: space-around; }
+      .About .about-footer .footer-container {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        justify-content: space-around;
+        margin: 0px auto; }
+        .About .about-footer .footer-container .next-post-info {
+          display: flex;
+          width: 60%;
+          flex-direction: column;
+          justify-content: center; }
+          .About .about-footer .footer-container .next-post-info h2 {
+            font-size: 2.25em;
+            margin-bottom: 15px; }
+          .About .about-footer .footer-container .next-post-info h3 {
+            font-size: 1.9em;
+            font-family: PT Serif, "Times New Roman", Times, serif; }
+          .About .about-footer .footer-container .next-post-info h4 {
+            font-size: 1.6em;
+            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-weight: normal; }
+        .About .about-footer .footer-container .next-post-image {
+          display: flex;
+          width: 450px;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          overflow: hidden; }
+          .About .about-footer .footer-container .next-post-image .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner p {
+              text-align: center;
+              font-size: 1.6em;
+              font-weight: bold;
+              margin-bottom: 10px; }
+            .About .about-footer .footer-container .next-post-image .inner a {
+              width: 310px;
+              border-radius: 3px;
+              border: 3px solid #fbfbfb;
+              overflow: hidden; }
+            .About .about-footer .footer-container .next-post-image .inner img {
+              padding: 3px;
+              width: 100%;
+              vertical-align: top;
+              transition: transform 0.25s ease; }
+            .About .about-footer .footer-container .next-post-image .inner:hover .pic {
+              transform: scale(1.25); } }
   @media (min-width: 1620px) {
     .About {
       padding-top: 0px; }
@@ -1095,7 +1553,9 @@ svg {
         margin-bottom: 100px; }
       .About .about-footer {
         color: #fbfbfb;
-        padding: 20px 0px; }
+        padding: 20px 0px;
+        display: flex;
+        justify-content: space-around; }
         .About .about-footer .footer-container {
           display: flex;
           flex-direction: row;
@@ -1632,6 +2092,11 @@ svg {
       .blog-post .container .markdown-body pre {
         background-color: #272822;
         color: #fbfbfb; }
+    .blog-post .container .comments {
+      width: 90vw;
+      min-height: 347px;
+      padding-top: 20px;
+      margin: 0px auto; }
 
 @media (min-width: 800px) {
   .blog-post {
@@ -1707,7 +2172,12 @@ svg {
           color: #fbfbfb;
           font-size: 16px; }
         .blog-post .container .markdown-body p {
-          margin: 25px 0px 10px 0px; } }
+          margin: 25px 0px 10px 0px; }
+      .blog-post .container .comments {
+        width: 45vw;
+        padding: 20px 0px 0px 20px;
+        margin: 0px auto;
+        min-height: 347px; } }
 
 .contact {
   display: flex;
@@ -2953,14 +3423,16 @@ header {
       margin: 20px auto 0px auto;
       overflow: hidden; }
       .project .project-section h4 {
-        font-size: 2.25em;
-        padding: 10px 0px; }
+        font-size: 1.75em;
+        padding: 10px 0px;
+        margin-top: 20px; }
       .project .project-section hr {
         margin-top: 0px;
         opacity: 0.85; }
       .project .project-section h6 {
         font-size: 1.7em;
-        padding: 5px 0px; }
+        padding: 5px 0px;
+        margin-top: 0px; }
       .project .project-section a {
         font-family: PT Serif, "Times New Roman", Times, serif;
         color: #c24d01; }
@@ -2974,11 +3446,13 @@ header {
         font-weight: normal; }
       .project .project-section img {
         width: 100%;
-        max-height: 500px; }
+        max-height: 500px;
+        margin: 30px 0px 10px 0px;
+        box-shadow: 2px 2px 1px #ccc; }
+        .project .project-section img + h6 {
+          margin-top: 10px; }
     .project .project-section-last {
-      margin-bottom: 20px; }
-      .project .project-section-last hr {
-        margin-bottom: 20px; }
+      margin-bottom: 40px; }
     .project .project-footer {
       color: #fbfbfb;
       padding: 20px 0px; }
@@ -2991,26 +3465,27 @@ header {
         height: 100%; }
         .project .project-footer .footer-container .next-project-info {
           display: flex;
-          width: 100%;
+          width: 90%;
+          margin: 0px auto;
           flex-direction: column;
-          justify-content: center;
-          overflow: hidden; }
+          justify-content: center; }
           .project .project-footer .footer-container .next-project-info h2 {
             font-size: 1.5em;
             margin-bottom: 15px;
-            text-align: center; }
+            text-align: left; }
           .project .project-footer .footer-container .next-project-info h3 {
             font-size: 1.5em;
-            text-align: center;
+            text-align: left;
             font-family: PT Serif, "Times New Roman", Times, serif; }
           .project .project-footer .footer-container .next-project-info h4 {
             font-size: 1.4em;
-            text-align: center;
+            text-align: left;
             font-family: PT Serif, "Times New Roman", Times, serif;
             font-weight: normal; }
         .project .project-footer .footer-container .next-project-image {
           display: flex;
-          width: 100%;
+          width: 90%;
+          margin: 0px auto;
           flex-direction: column;
           justify-content: center;
           align-items: center; }
@@ -3024,9 +3499,11 @@ header {
               text-align: center;
               font-size: 1.6em;
               font-weight: bold;
-              margin-bottom: 10px; }
+              margin-bottom: 10px;
+              margin-top: 15px;
+              align-self: left; }
             .project .project-footer .footer-container .next-project-image .inner a {
-              width: 310px;
+              width: 100%;
               border-radius: 3px;
               border: 3px solid #fbfbfb;
               overflow: hidden; }
@@ -3099,8 +3576,6 @@ header {
             margin-top: 10px; }
       .project .project-section-last {
         margin-bottom: 40px; }
-        .project .project-section-last hr {
-          margin-bottom: 20px; }
       .project .project-footer {
         color: #fbfbfb;
         padding: 20px 0px; }
@@ -3113,25 +3588,27 @@ header {
           height: 100%; }
           .project .project-footer .footer-container .next-project-info {
             display: flex;
-            width: 100%;
+            width: 90%;
+            margin: 0px auto;
             flex-direction: column;
             justify-content: center; }
             .project .project-footer .footer-container .next-project-info h2 {
               font-size: 1.5em;
               margin-bottom: 15px;
-              text-align: center; }
+              text-align: left; }
             .project .project-footer .footer-container .next-project-info h3 {
               font-size: 1.5em;
-              text-align: center;
+              text-align: left;
               font-family: PT Serif, "Times New Roman", Times, serif; }
             .project .project-footer .footer-container .next-project-info h4 {
               font-size: 1.4em;
-              text-align: center;
+              text-align: left;
               font-family: PT Serif, "Times New Roman", Times, serif;
               font-weight: normal; }
           .project .project-footer .footer-container .next-project-image {
             display: flex;
-            width: 100%;
+            width: 90%;
+            margin: 0px auto;
             flex-direction: column;
             justify-content: center;
             align-items: center; }
@@ -3145,9 +3622,11 @@ header {
                 text-align: center;
                 font-size: 1.6em;
                 font-weight: bold;
-                margin-bottom: 10px; }
+                margin-bottom: 10px;
+                margin-top: 15px;
+                align-self: left; }
               .project .project-footer .footer-container .next-project-image .inner a {
-                width: 310px;
+                width: 100%;
                 border-radius: 3px;
                 border: 3px solid #fbfbfb;
                 overflow: hidden; }
@@ -3389,34 +3868,34 @@ header {
               .project .project-footer .footer-container .next-project-image .inner:hover .pic {
                 transform: scale(1.25); } } }
 
-html, body {
-  height: 100%; }
-  html #root, body #root {
-    height: 100%; }
-    html #root .fade-appear,
-    html #root .fade-enter, body #root .fade-appear,
-    body #root .fade-enter {
-      opacity: 0; }
-    html #root .fade-appear-active,
-    html #root .fade-enter-active, body #root .fade-appear-active,
-    body #root .fade-enter-active {
-      transition: opacity .2s ease-out;
-      opacity: 1; }
-    html #root .fade-exit, body #root .fade-exit {
-      transition: opacity .2s ease-out;
-      opacity: 1; }
-    html #root .fade-exit-active, body #root .fade-exit-active {
-      opacity: 0; }
-    html #root .site, body #root .site {
-      font-family: 'Roboto', sans-serif; }
-      html #root .site main, body #root .site main {
-        padding-top: 64px;
-        min-height: calc(100vh - 52px);
-        background-color: #fbfbfb; }
-      html #root .site .no-select, body #root .site .no-select {
-        -webkit-touch-callout: none;
-        -webkit-user-select: none;
-        -khtml-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none; }
+html #root .fade-appear,
+html #root .fade-enter, body #root .fade-appear,
+body #root .fade-enter {
+  opacity: 0; }
+
+html #root .fade-appear-active,
+html #root .fade-enter-active, body #root .fade-appear-active,
+body #root .fade-enter-active {
+  transition: opacity .2s ease-out;
+  opacity: 1; }
+
+html #root .fade-exit, body #root .fade-exit {
+  transition: opacity .2s ease-out;
+  opacity: 1; }
+
+html #root .fade-exit-active, body #root .fade-exit-active {
+  opacity: 0; }
+
+html #root .site, body #root .site {
+  font-family: 'Roboto', sans-serif; }
+  html #root .site main, body #root .site main {
+    padding-top: 64px;
+    min-height: calc(100vh - 52px);
+    background-color: #fbfbfb; }
+  html #root .site .no-select, body #root .site .no-select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }

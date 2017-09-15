@@ -658,20 +658,22 @@
       margin: 20px auto 0px auto;
       overflow: hidden;
       h4 {
-        font-size: 2.25em;
+        font-size: 1.75em;
         padding: 10px 0px;
+        margin-top: 20px;
       }
-  
+
       hr {
         margin-top: 0px;
         opacity: 0.85;
       }
-  
+
       h6 {
         font-size: 1.7em;
         padding: 5px 0px;
+        margin-top: 0px;
       }
-  
+
       a {
         font-family: PT Serif, "Times New Roman", Times, serif;
         color: rgb(194, 77, 1);
@@ -682,7 +684,7 @@
         font-size: 1.3em;
         font-family: PT Serif, "Times New Roman", Times, serif;
       }
-  
+
       li {
         font-family: PT Serif, "Times New Roman", Times, serif;
         font-weight: normal;
@@ -690,14 +692,15 @@
       img {
         width: 100%;
         max-height: 500px;
+        margin: 30px 0px 10px 0px;
+        box-shadow: 2px 2px 1px #ccc;
+        + h6 {
+          margin-top: 10px;
+        }
       }
     }
     .project-section-last {
-      margin-bottom: 20px;
-  
-      hr {
-        margin-bottom: 20px;
-      }
+      margin-bottom: 40px;
     }
     .project-footer {
       color: #fbfbfb;
@@ -711,30 +714,31 @@
         height: 100%;
         .next-project-info {
           display: flex;
-          width: 100%;
+          width: 90%;
+          margin: 0px auto;
           flex-direction: column;
           justify-content: center;
-          overflow: hidden;
           h2 {
             font-size: 1.5em;
             margin-bottom: 15px;
-            text-align: center;
+            text-align: left;
           }
           h3 {
             font-size: 1.5em;
-            text-align: center;
+            text-align: left;
             font-family: PT Serif, "Times New Roman", Times, serif;
           }
           h4 {
             font-size: 1.4em;
-            text-align: center;
+            text-align: left;
             font-family: PT Serif, "Times New Roman", Times, serif;
             font-weight: normal;
           }
         }
         .next-project-image {
           display: flex;
-          width: 100%;
+          width: 90%;
+          margin: 0px auto;
           flex-direction: column;
           justify-content: center;
           align-items: center;
@@ -749,9 +753,11 @@
               font-size: 1.6em;
               font-weight: bold;
               margin-bottom: 10px;
+              margin-top: 15px;
+              align-self: left;
             }
             a {
-              width: 310px;
+              width: 100%;
               border-radius: 3px;
               border: 3px solid #fbfbfb;
               overflow: hidden;
@@ -853,10 +859,6 @@
       }
       .project-section-last {
         margin-bottom: 40px;
-  
-        hr {
-          margin-bottom: 20px;
-        }
       }
       .project-footer {
         color: #fbfbfb;
@@ -870,29 +872,31 @@
           height: 100%;
           .next-project-info {
             display: flex;
-            width: 100%;
+            width: 90%;
+            margin: 0px auto;
             flex-direction: column;
             justify-content: center;
             h2 {
               font-size: 1.5em;
               margin-bottom: 15px;
-              text-align: center;
+              text-align: left;
             }
             h3 {
               font-size: 1.5em;
-              text-align: center;
+              text-align: left;
               font-family: PT Serif, "Times New Roman", Times, serif;
             }
             h4 {
               font-size: 1.4em;
-              text-align: center;
+              text-align: left;
               font-family: PT Serif, "Times New Roman", Times, serif;
               font-weight: normal;
             }
           }
           .next-project-image {
             display: flex;
-            width: 100%;
+            width: 90%;
+            margin: 0px auto;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -907,9 +911,11 @@
                 font-size: 1.6em;
                 font-weight: bold;
                 margin-bottom: 10px;
+                margin-top: 15px;
+                align-self: left;
               }
               a {
-                width: 310px;
+                width: 100%;
                 border-radius: 3px;
                 border: 3px solid #fbfbfb;
                 overflow: hidden;

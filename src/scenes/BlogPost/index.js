@@ -2,15 +2,9 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import Moment from "react-moment";
 import Prism from "prismjs";
+import DisqusThread from '../../components/DisqusThread'
 
 class blogPost extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      blog: {}
-    };
-  }
   componentWillMount(props) {
       this.setState({
         blog: this.props.blog
@@ -23,7 +17,6 @@ class blogPost extends Component {
   }
 
   render(props) {
-    console.log(this.state.blog);
     let blogLength = this.state.blog.postData.__content
       .replace(/<[^>]*>/g, " ")
       .replace("/s+/g", " ")
@@ -76,6 +69,13 @@ class blogPost extends Component {
               __html: this.state.blog.postData.__content
             }}
           />
+          <DisqusThread 
+            basename="http://malikbrowne.com/blog"
+            shortname="malik-browne"
+            title={this.state.blog.postData.title}
+            identifier={`/${this.state.blog.path}`}
+            className="comments"
+            />
         </div>
       </div>
     );
