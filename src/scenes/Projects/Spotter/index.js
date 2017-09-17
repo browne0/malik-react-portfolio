@@ -11,7 +11,6 @@ class Spotter extends Component {
     }
   }
   render() {
-    console.log(this.state.project);
     return (
       <ProjectPage
         name={this.state.project.name}

@@ -19,20 +19,25 @@ const ThemedButton = props => {
     <RaisedButton
       style={style.button}
       buttonStyle={style.buttonContainer}
-      containerElement="a"
+      containerElement={props.containerElement}
       label={props.label}
+      className={props.className}
       labelStyle={style.label}
       backgroundColor="rgb(194, 77, 1)"
       labelColor="#fff"
       href={props.url}
-      target="_blank"
-    />
+      target={props.target}
+      disabled={props.disabled}
+    >
+      {props.children}
+    </RaisedButton>
   );
 };
 
 ThemedButton.propTypes = {
-  label: PropTypes.string.isRequired,
-  url: PropTypes.string
+  label: PropTypes.string,
+  url: PropTypes.string,
+  disabled: PropTypes.bool
 };
 
 ThemedButton.defaultProps = {

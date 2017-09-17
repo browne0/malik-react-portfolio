@@ -19,7 +19,7 @@ class Home extends Component {
               <div
                 className="img"
                 style={{
-                  backgroundImage: `url(${project.image_urls.screenshots[0]})`
+                  backgroundImage: `url('${project.image_urls.screenshots[0]}')`
                 }}
               />
             </div>

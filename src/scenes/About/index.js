@@ -40,7 +40,7 @@ class About extends Component {
             </div>
           </div>
         </div>
-        <Section title={`"Creativity is a breed of combination and perspective."`}>
+        <Section title={`"Creativity is a breed of history and perspective."`}>
           <p>
             Awesome to see that you made it this far.
           </p>

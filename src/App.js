@@ -18,7 +18,7 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import withTracker from './components/withTracker';
+import withTracker from "./components/withTracker";
 
 class App extends Component {
   render() {
@@ -34,13 +34,16 @@ class App extends Component {
             exit={false}
             classNames="fade"
           >
-            <Switch location={location}>
+            <Switch>
               <Route exact path="/" component={withTracker(Home)} />
               <Route path="/blog" component={withTracker(BlogList)} />
               <Route path="/about" component={withTracker(About)} />
               <Route path="/contact" component={withTracker(Contact)} />
               <Route path="/spotter" component={withTracker(Spotter)} />
-              <Route path="/old-portfolio" component={withTracker(OldPortfolio)} />
+              <Route
+                path="/old-portfolio"
+                component={withTracker(OldPortfolio)}
+              />
               <Route path="/mychef" component={withTracker(MyChef)} />
               <Route path="/mixmax" component={withTracker(Mixmax)} />
               <Route path="/medxport" component={withTracker(MedXPort)} />

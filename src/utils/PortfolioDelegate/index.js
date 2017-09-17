@@ -1,32 +1,33 @@
 import { projects as ProjectList } from "../../data/projects.json";
 
-/**
- * See if we can import our posts from an outside folder so we don't have to recompile. How sick would that be?
- */
-
-// console.log(process.env.PUBLIC_URL);
-
 const webpackRequireContext = require.context(
-  "!markdown-with-front-matter-loader!../../_posts",
-  false,
+  `!markdown-with-front-matter-loader!../../_posts`,
+  true,
   /.md$/
 );
 
 class PortfolioDelegate {
   projects = ProjectList;
-  blogs = webpackRequireContext.keys().reduce(
-    (memo, fileName) =>
-      memo.concat({
-        path: fileName.match(/.\/([^.]+).*/)[1],
-        postData: webpackRequireContext(fileName)
-      }),
-    []
-  ).sort((a, b) => {
-    return a.postData.date_published > b.postData.date_published
-  });
+  blogs = webpackRequireContext
+    .keys()
+    .reduce(
+      (memo, fileName) =>
+        memo.concat({
+          path: fileName.match(/.\/([^.]+).*/)[1],
+          postData: webpackRequireContext(fileName)
+        }),
+      []
+    )
+    .map(blog => {
+      blog.path = blog.path.split("/")[1];
+      return blog;
+    })
+    .sort((a, b) => {
+      return a.postData.date_published > b.postData.date_published;
+    });
 
-  getProjectIndex = project => {
-    let index = this.projects.findIndex(item => item.name === project);
+  getProjectIndex = name => {
+    let index = this.projects.findIndex(item => item.name === name);
     return index;
   };
 
@@ -45,7 +46,33 @@ class PortfolioDelegate {
     let index = this.blogs.length - 1;
 
     return this.blogs[index];
-  }
+  };
+
+  getBlogIndex = title => {
+    let index = this.blogs.findIndex(blog => blog.postData.title === title);
+
+    return index;
+  };
+
+  getNextBlog = blog => {
+    let index = this.getBlogIndex(blog);
+
+    if (index + 1 > this.blogs.length - 1) {
+      return null;
+    }
+
+    return this.blogs[index + 1];
+  };
+
+  getPreviousBlog = blog => {
+    let index = this.getBlogIndex(blog);
+
+    if (index - 1 < 0) {
+      return null;
+    }
+
+    return this.blogs[index - 1];
+  };
 }
 
 export default PortfolioDelegate;

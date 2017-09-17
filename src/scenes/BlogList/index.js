@@ -4,12 +4,13 @@ import BlogPost from "../BlogPost";
 import Moment from "react-moment";
 import { TextField } from "material-ui";
 import FlipMove from "react-flip-move";
-import PortfolioDelegate from '../../utils/PortfolioDelegate';
+import PortfolioDelegate from "../../utils/PortfolioDelegate";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 class blogList extends Component {
   constructor() {
     super();
-    
+
     const delegate = new PortfolioDelegate();
     this.state = {
       blogs: delegate.blogs,
@@ -35,7 +36,7 @@ class blogList extends Component {
     this.setState({ search }, () => this.filterBlogs());
   }
   render() {
-    let { match } = this.props;
+    let { match, location } = this.props;
     let style = {
       blogFilter: {
         margin: "auto",
@@ -105,31 +106,41 @@ class blogList extends Component {
         </article>
       );
     });
+    const timeout = { enter: 300, exit: 200 };
     return (
-      <Switch>
-        <Route
-          exact
-          path={match.url}
-          render={() => (
-            <div className="blog-wrapper">
-              <TextField
-                hintText="Enter a blog post title"
-                floatingLabelText="Search my blog"
-                className="blog-filter"
-                style={style.blogFilter}
-                floatingLabelFocusStyle={style.blogFilter.color}
-                underlineFocusStyle={style.blogFilter.bgcolor}
-                onChange={this.onFilterChange}
-                value={this.state.search}
-              />
-              <FlipMove duration={400} easing="ease" className="blog">
-                {blogPosts}
-              </FlipMove>
-            </div>
-          )}
-        />
-        {blogRoutes}
-      </Switch>
+      <TransitionGroup>
+        <CSSTransition
+          key={location.pathname}
+          timeout={timeout}
+          exit={false}
+          classNames="fade"
+        >
+          <Switch>
+            <Route
+              exact
+              path={match.url}
+              render={() => (
+                <div className="blog-wrapper">
+                  <TextField
+                    hintText="Enter a blog post title"
+                    floatingLabelText="Search my blog"
+                    className="blog-filter"
+                    style={style.blogFilter}
+                    floatingLabelFocusStyle={style.blogFilter.color}
+                    underlineFocusStyle={style.blogFilter.bgcolor}
+                    onChange={this.onFilterChange}
+                    value={this.state.search}
+                  />
+                  <FlipMove duration={400} easing="ease" className="blog">
+                    {blogPosts}
+                  </FlipMove>
+                </div>
+              )}
+            />
+            {blogRoutes}
+          </Switch>
+        </CSSTransition>
+      </TransitionGroup>
     );
   }
 }

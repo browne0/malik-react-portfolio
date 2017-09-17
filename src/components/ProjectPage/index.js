@@ -47,12 +47,12 @@ class ProjectPage extends Component {
     };
     let githubButton = this.props.github ? (
       <div style={style.button}>
-        <Button label="Github" url={this.props.github} />
+        <Button target="_blank" label="Github" url={this.props.github} />
       </div>
     ) : null;
     let liveUrlButton = this.props.liveUrl ? (
       <div style={style.button}>
-        <Button label="Live Demo" url={this.props.liveUrl} />
+        <Button target="_blank" label="Live Demo" url={this.props.liveUrl} />
       </div>
     ) : null;
     let screenshotClass = this.props.bigPicture

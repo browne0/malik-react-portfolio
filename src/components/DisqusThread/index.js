@@ -5,6 +5,10 @@ class DisqusThread extends Component {
   constructor() {
     super()
 
+    this.state = {
+      flag: false
+    }
+
     this.handleScroll = this.handleScroll.bind(this)
   }
   static propTypes = {
@@ -81,12 +85,13 @@ class DisqusThread extends Component {
   
 
   handleScroll(event) {
-    let rootHeight = document.getElementById('root').scrollHeight;
-    let scrollTop = document.body.scrollTop + event.srcElement.body.clientHeight;
-    
-    if (scrollTop > rootHeight - 347) {
+    let rootHeight = document.getElementById('root').scrollHeight - document.body.clientHeight;
+    let windowHeight = window.pageYOffset;
+    if (this.state.flag === false && windowHeight > rootHeight - 427) {
       this.renderDisqus();
-      window.removeEventListener('scroll', this.handleScroll)
+      this.setState({
+        flag: true
+      })
     }
   }
 
