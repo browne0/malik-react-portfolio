@@ -56,7 +56,7 @@ class Navbar extends Component {
         />
         <div className="title">
           <h1>MALIK BROWNE</h1>
-          <h2>FRONT END ENGINEER</h2>
+          <h2>FRONT END ENGINEER & UX ENTHUSIAST</h2>
         </div>
       </div>
     );

@@ -5,6 +5,7 @@ import Prism from "prismjs";
 import DisqusThread from "../../components/DisqusThread";
 import PortfolioDelegate from "../../utils/PortfolioDelegate/index";
 import Button from "../../components/ThemedButton";
+import ProgressBar from '../../components/ReadingProgressBar';
 
 class blogPost extends Component {
   componentWillMount(props) {
@@ -54,11 +55,13 @@ class blogPost extends Component {
         : (blogLength / 275).toFixed() + " min read";
     return (
       <div className="blog-post">
+        <ProgressBar targetEl='.blog-post' />
         <div className="back-to-blog">
           <Link to="/blog">
             <i className="material-icons">arrow_back</i>
             <span>Back to blog</span>
           </Link>
+          <p>{this.state.blog.postData.title}</p>
         </div>
         <div className="container">
             <div
@@ -67,7 +70,7 @@ class blogPost extends Component {
                 backgroundImage: `url(${this.state.blog.postData.header})`
               }}
             />
-          <div className="wrapper">
+          <article className="wrapper" id="blog-article">
             <div className="post-title">
               <h1>{this.state.blog.postData.title}</h1>
             </div>
@@ -98,7 +101,7 @@ class blogPost extends Component {
               {prevButton}
               {nextButton}
             </div>
-          </div>
+          </article>
           <DisqusThread
             basename="http://malikbrowne.com/blog"
             shortname="malik-browne"

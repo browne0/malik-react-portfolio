@@ -261,7 +261,14 @@
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
+        line-height: 1.75;
         font-family: PT Serif, "Times New Roman", Times, serif;
+      }
+
+      iframe {
+        margin-top: 30px;
+        width: 100%;
+        height: 452px;
       }
 
       li {
@@ -275,6 +282,13 @@
         box-shadow: 2px 2px 1px #ccc;
         + h6 {
           margin-top: 5px;
+        }
+        &.gif {
+          width: 40%;
+          height: auto;
+          display: block;
+          margin: 30px auto 10px auto;
+          box-shadow: 2px 2px 1px #ccc;
         }
       }
     }

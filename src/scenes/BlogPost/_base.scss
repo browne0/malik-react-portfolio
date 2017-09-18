@@ -4,16 +4,44 @@
     position: fixed;
     background-color: #fafafa;
     width: 100%;
-    padding: 10px 0px 10px 10px;
+    padding: 10px;
     border-bottom: 1px solid rgba(34, 34, 34, 0.25);
     box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
     height: 43px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     a {
       display: grid;
       grid-template-columns: min-content max-content;
       grid-gap: 5px;
       width: 125px;
       align-items: center;
+    }
+    p {
+      display: none;
+    }
+  }
+  progress {
+    appearance: none;
+    display: block;
+    border: 0;
+    position: fixed;
+    // top: 0;
+    width: 100vw;
+    height: 0.4rem;
+    border: 0;
+    background-color: transparent;
+    color: rgb(194, 77, 1);
+    z-index: 1;
+    &::-webkit-progress-bar {
+      background: #FFF;
+    }
+    &::-webkit-progress-value {
+      background: rgb(194, 77, 1);
+    }
+    &::-moz-progress-bar {
+      background-color: rgb(194, 77, 1);
     }
   }
   a {
@@ -131,20 +159,51 @@
 @media (min-width: 800px) {
   .blog-post {
     position: relative;
+    progress {
+      appearance: none;
+      display: block;
+      border: 0;
+      position: fixed;
+      // top: 0;
+      width: 100vw;
+      height: 0.4rem;
+      border: 0;
+      background-color: transparent;
+      color: rgb(194, 77, 1);
+      z-index: 1;
+      &::-webkit-progress-bar {
+        background: #FFF;
+      }
+      &::-webkit-progress-value {
+        background: rgb(194, 77, 1);
+      }
+      &::-moz-progress-bar {
+        background-color: rgb(194, 77, 1);
+      }
+    }
     .back-to-blog {
       position: fixed;
       background-color: #fafafa;
       width: 100%;
-      padding: 10px 0px 10px 10px;
+      padding: 10px;
       border-bottom: 1px solid rgba(34, 34, 34, 0.25);
       box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
       height: 43px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
       a {
-        display: grid;
-        grid-template-columns: min-content max-content;
-        grid-gap: 5px;
+        display: flex;
+        flex-direction: row;
         width: 125px;
         align-items: center;
+        i {
+          padding-right: 5px;
+        }
+      }
+      p {
+        font-weight: bold;
+        display: block;
       }
     }
     a {
@@ -156,7 +215,7 @@
     }
     .container {
       width: 100%;
-      background-color: #fafafa;
+      background-color: #F8F8F8;
       padding: 43px 0px;
       .post-title {
         background-color: #fff;
@@ -231,7 +290,7 @@
         width: 800px;
         padding: 20px 0px 0px 20px;
         margin: 0px auto;
-        min-height: 347px;
+        min-height: 409px;
       }
       .blog-guide {
         background-color: #fff;

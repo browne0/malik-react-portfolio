@@ -21,6 +21,11 @@ class blogList extends Component {
     this.filterBlogs = this.filterBlogs.bind(this);
   }
 
+  componentWillMount() {
+    document.title = "Blog | Malik Browne";
+  }
+  
+
   filterBlogs() {
     let blogs = this.state.blogs;
     let query = this.state.search;

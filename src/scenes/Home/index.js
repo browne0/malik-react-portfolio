@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 import { projects } from "../../data/projects.json";
 
 class Home extends Component {
+  componentWillMount() {
+    document.title = "Home | Malik Browne";
+  }
   render() {
     let projectList = [];
     for (var i = 0; i < projects.length; i++) {
