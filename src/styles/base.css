@@ -3507,7 +3507,7 @@ header {
   .project {
     display: flex;
     flex-direction: column;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
     .project .hero {
       font-family: Roboto;
       margin: 0px auto 20px auto;
@@ -3552,6 +3552,7 @@ header {
       .project .project-section p {
         margin-top: 15px;
         margin-bottom: 10px;
+        line-height: 1.8;
         font-size: 1.3em;
         font-family: PT Serif, "Times New Roman", Times, serif; }
       .project .project-section li {
@@ -3631,7 +3632,7 @@ header {
     .project {
       display: flex;
       flex-direction: column;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
       .project .hero {
         font-family: Roboto;
         margin: 20px auto 20px auto;
@@ -3676,6 +3677,7 @@ header {
         .project .project-section p {
           margin-top: 15px;
           margin-bottom: 10px;
+          line-height: 1.8;
           font-size: 1.3em;
           font-family: PT Serif, "Times New Roman", Times, serif; }
         .project .project-section li {
@@ -3755,7 +3757,7 @@ header {
     .project {
       display: flex;
       flex-direction: column;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
       .project .hero {
         font-family: Roboto;
         margin: 20px auto 20px auto;
@@ -3797,6 +3799,7 @@ header {
           margin-top: 30px;
           margin-bottom: 10px;
           font-size: 1.3em;
+          line-height: 1.8;
           font-family: PT Serif, "Times New Roman", Times, serif; }
         .project .project-section li {
           font-family: PT Serif, "Times New Roman", Times, serif;
@@ -3871,7 +3874,7 @@ header {
     .project {
       display: flex;
       flex-direction: column;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
       .project .hero {
         font-family: Roboto;
         margin: 0px auto 20px auto;
@@ -3914,6 +3917,7 @@ header {
           margin-top: 30px;
           margin-bottom: 0px;
           font-size: 1.325em;
+          line-height: 1.8;
           font-family: PT Serif, "Times New Roman", Times, serif; }
         .project .project-section li {
           font-family: PT Serif, "Times New Roman", Times, serif;

@@ -124,7 +124,7 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          overflow:hidden;
+          overflow: hidden;
           p {
             text-align: center;
             font-size: 1.6em;
@@ -280,7 +280,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow:hidden;
+            overflow: hidden;
             p {
               text-align: center;
               font-size: 1.6em;
@@ -437,7 +437,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow:hidden;
+            overflow: hidden;
             p {
               text-align: center;
               font-size: 1.6em;
@@ -589,7 +589,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow:hidden;
+            overflow: hidden;
             p {
               text-align: center;
               font-size: 1.6em;
@@ -620,11 +620,12 @@
   }
 }
 
-@supports(object-fit:cover) {
+@supports (object-fit: cover) {
   .project {
     display: flex;
     flex-direction: column;
-    font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+      Roboto, "Helvetica Neue", Arial, sans-serif;
     .hero {
       font-family: Roboto;
       margin: 0px auto 20px auto;
@@ -682,6 +683,7 @@
       p {
         margin-top: 15px;
         margin-bottom: 10px;
+        line-height: 1.8;
         font-size: 1.3em;
         font-family: PT Serif, "Times New Roman", Times, serif;
       }
@@ -748,7 +750,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow:hidden;
+            overflow: hidden;
             p {
               text-align: center;
               font-size: 1.6em;
@@ -783,7 +785,8 @@
     .project {
       display: flex;
       flex-direction: column;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
       .hero {
         font-family: Roboto;
         margin: 20px auto 20px auto;
@@ -822,18 +825,18 @@
           padding: 10px 0px;
           margin-top: 20px;
         }
-  
+
         hr {
           margin-top: 0px;
           opacity: 0.85;
         }
-  
+
         h6 {
           font-size: 1.7em;
           padding: 5px 0px;
           margin-top: 0px;
         }
-  
+
         a {
           font-family: PT Serif, "Times New Roman", Times, serif;
           color: rgb(194, 77, 1);
@@ -841,10 +844,11 @@
         p {
           margin-top: 15px;
           margin-bottom: 10px;
+          line-height: 1.8;
           font-size: 1.3em;
           font-family: PT Serif, "Times New Roman", Times, serif;
         }
-  
+
         li {
           font-family: PT Serif, "Times New Roman", Times, serif;
           font-weight: normal;
@@ -907,7 +911,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              overflow:hidden;
+              overflow: hidden;
               p {
                 text-align: center;
                 font-size: 1.6em;
@@ -939,12 +943,13 @@
       }
     }
   }
-  
+
   @media (min-width: 820px) {
     .project {
       display: flex;
       flex-direction: column;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
       .hero {
         font-family: Roboto;
         margin: 20px auto 20px auto;
@@ -982,13 +987,13 @@
           font-size: 2.25em;
           padding: 10px 0px;
         }
-  
+
         h6 {
           font-size: 1.7em;
           padding: 5px 0px;
           margin-top: 20px;
         }
-  
+
         a {
           font-family: PT Serif, "Times New Roman", Times, serif;
           color: rgb(194, 77, 1);
@@ -997,9 +1002,10 @@
           margin-top: 30px;
           margin-bottom: 10px;
           font-size: 1.3em;
+          line-height: 1.8;
           font-family: PT Serif, "Times New Roman", Times, serif;
         }
-  
+
         li {
           font-family: PT Serif, "Times New Roman", Times, serif;
           font-weight: normal;
@@ -1060,7 +1066,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              overflow:hidden;
+              overflow: hidden;
               p {
                 text-align: center;
                 font-size: 1.6em;
@@ -1090,12 +1096,13 @@
       }
     }
   }
-  
+
   @media (min-width: 1280px) {
     .project {
       display: flex;
       flex-direction: column;
-      font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+        Roboto, "Helvetica Neue", Arial, sans-serif;
       .hero {
         font-family: Roboto;
         margin: 0px auto 20px auto;
@@ -1131,18 +1138,18 @@
           font-size: 2.25em;
           padding: 0px;
         }
-  
+
         hr {
           margin-top: 0px;
           opacity: 0.85;
         }
-  
+
         h6 {
           font-size: 1.7em;
           padding: 5px 0px;
           margin-top: 20px;
         }
-  
+
         a {
           font-family: PT Serif, "Times New Roman", Times, serif;
           color: rgb(194, 77, 1);
@@ -1151,9 +1158,10 @@
           margin-top: 30px;
           margin-bottom: 0px;
           font-size: 1.325em;
+          line-height: 1.8;
           font-family: PT Serif, "Times New Roman", Times, serif;
         }
-  
+
         li {
           font-family: PT Serif, "Times New Roman", Times, serif;
           font-weight: normal;
@@ -1170,7 +1178,7 @@
       }
       .project-section-last {
         margin-bottom: 100px;
-  
+
         hr {
           margin-bottom: 20px;
         }
@@ -1215,7 +1223,7 @@
               flex-direction: column;
               justify-content: center;
               align-items: center;
-              overflow:hidden;
+              overflow: hidden;
               p {
                 text-align: center;
                 font-size: 1.6em;
