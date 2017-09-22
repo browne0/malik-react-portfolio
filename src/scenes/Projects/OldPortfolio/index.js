@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import ProjectPage from '../../../components/ProjectPage/index';
+import React, { Component } from "react";
+import ProjectPage from "../../../components/ProjectPage/index";
+import ProjectSection from "../../../components/ProjectSection/index";
 
 class OldPortfolio extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class OldPortfolio extends Component {
 
     this.state = {
       project: this.props.location.state
-    }
+    };
   }
   render() {
     return (
@@ -20,9 +21,13 @@ class OldPortfolio extends Component {
         liveUrl={this.state.project.live_url}
         bgColor={this.state.project.background_color}
         images={this.state.project.image_urls.screenshots}
-        bigPicture={this.state.project.big_picture}>
-
-    </ProjectPage>
+        bigPicture={this.state.project.big_picture}
+      >
+        <ProjectSection title="Background" />
+        <ProjectSection title="Requirements" />
+        <ProjectSection title="Implementation" />
+        <ProjectSection title="Project Challenges" />
+      </ProjectPage>
     );
   }
 }

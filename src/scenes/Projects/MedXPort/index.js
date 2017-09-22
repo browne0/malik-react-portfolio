@@ -1,5 +1,6 @@
-import React, { Component } from 'react';
-import ProjectPage from '../../../components/ProjectPage/index';
+import React, { Component } from "react";
+import ProjectPage from "../../../components/ProjectPage/index";
+import ProjectSection from "../../../components/ProjectSection/index";
 
 class MedxPort extends Component {
   constructor(props) {
@@ -22,7 +23,12 @@ class MedxPort extends Component {
         bgColor={this.state.project.background_color}
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
-      />
+      >
+        <ProjectSection title="Background" />
+        <ProjectSection title="Requirements" />
+        <ProjectSection title="Implementation" />
+        <ProjectSection title="Project Challenges" />
+      </ProjectPage>
     );
   }
 }

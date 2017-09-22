@@ -33,21 +33,38 @@ class Spotter extends Component {
           <p>
             During my time in college, I helped create landing pages for several
             different groups, businesses, and people. One of the more
-            interesting projects was the landing page for a fitness startup
-            called <span style={style.title}>Spotter.</span>
+            interesting projects I worked on was the landing page for a fitness
+            startup called <span style={style.title}>Spotter.</span>
           </p>
 
           <p>
             <span style={style.title}>Spotter</span> provides a fitness tracking
-            device that anyone from the everyday bodybuilder to the novice can
-            utilize fully.
-          </p>
-          <p>
-            Since the team had earned the opportunity to present at TechCrunch
-            in New York City, they needed a landing page for them to grow an
-            email list and show off their fully functional bluetooth fitness tracker.
+            device that any person from the everyday bodybuilder to the novice
+            can utilize fully.
           </p>
         </ProjectSection>
+        <ProjectSection title="Requirements">
+          <p>
+            Since the team had earned the opportunity to present at TechCrunch
+            in New York City, they needed a landing page for them to do perform
+            the following tasks:
+          </p>
+          <ol>
+            <li>Show off their awesome product</li>
+            <li>Provide an option to join their email list for updates</li>
+            <li>
+              Link their social media to provide live updates from the team
+            </li>
+          </ol>
+
+          <p>
+            I also wanted to learn more about parallax scrolling and using{" "}
+            <a href="http://imakewebthings.com/waypoints/">Waypoints</a> in
+            websites, so I added those as requirements as well.
+          </p>
+        </ProjectSection>
+        <ProjectSection title="Implementation" />
+        <ProjectSection title="Project Challenges" />
       </ProjectPage>
     );
   }

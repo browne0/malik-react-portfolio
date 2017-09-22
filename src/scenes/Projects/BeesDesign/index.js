@@ -70,8 +70,8 @@ class BeesDesign extends Component {
           <p>
             I wanted a website that was simple and straight to the point, almost
             like an online business card. At this point I had just learned about
-            Bootstrap, and was interested in making the website mobile-friendly as
-            well.
+            Bootstrap, and was interested in making the website mobile-friendly
+            as well.
           </p>
 
           <p>
@@ -148,8 +148,8 @@ class BeesDesign extends Component {
           <h6>Contact Page</h6>
           <p>
             The contact page was probably the hardest part of the project for
-            me. I needed to learn how to sanitize input properly, and learn how to use
-            the Google Map API to display a map of my business's general
+            me. I needed to learn how to sanitize input properly, and learn how
+            to use the Google Map API to display a map of my business's general
             location.
           </p>
 

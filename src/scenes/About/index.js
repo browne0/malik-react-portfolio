@@ -17,7 +17,7 @@ class About extends Component {
   componentWillMount() {
     document.title = "About | Malik Browne";
   }
-  
+
   componentDidMount() {
     let hero = this.blurredEl;
 
@@ -147,9 +147,9 @@ class About extends Component {
 
           <p>
             Create designs that are simple and replicate the world you live in,
-            and visitors will feel a sense of calamity, and maybe even amazement
-            about why your website is so pleasing to use. Google talks about
-            this extensively in their Material Design guidelinse,{" "}
+            and visitors will feel a sense of serenity, and maybe even a sense
+            of amazement about why your website is so pleasing to use. Google
+            talks about this extensively in their Material Design guidelinse,{" "}
             <a
               target="_blank"
               rel="noopener noreferrer"

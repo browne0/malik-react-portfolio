@@ -76,6 +76,9 @@ class ProjectPage extends Component {
           style={{ backgroundImage: `url(${this.props.images[0]})` }}
         />
         {this.props.children}
+        <ProjectSection title="Technologies Used">
+          <ul>{technologies}</ul>
+        </ProjectSection>
         <ProjectSection
           className="project-section-last"
           title="Available Links"

@@ -647,7 +647,7 @@ svg {
       background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
       background-blend-mode: multiply; }
       .Home .hero h1 {
-        font-size: 2.25em;
+        font-size: 2em;
         color: rgba(255, 255, 255, 0.8); }
         .Home .hero h1 span {
           color: #ff6600; }
@@ -3082,7 +3082,8 @@ header {
       font-family: PT Serif, "Times New Roman", Times, serif; }
     .project .project-section li {
       font-family: PT Serif, "Times New Roman", Times, serif;
-      font-weight: normal; }
+      font-weight: normal;
+      padding-left: 7.5px; }
     .project .project-section img {
       width: 100%;
       max-height: 500px; }
@@ -3202,7 +3203,8 @@ header {
         font-family: PT Serif, "Times New Roman", Times, serif; }
       .project .project-section li {
         font-family: PT Serif, "Times New Roman", Times, serif;
-        font-weight: normal; }
+        font-weight: normal;
+        padding-left: 7.5px; }
       .project .project-section img {
         width: 100%;
         max-height: 500px; }
@@ -3322,7 +3324,8 @@ header {
         font-family: PT Serif, "Times New Roman", Times, serif; }
       .project .project-section li {
         font-family: PT Serif, "Times New Roman", Times, serif;
-        font-weight: normal; }
+        font-weight: normal;
+        padding-left: 7.5px; }
       .project .project-section img {
         width: 100%;
         max-height: 500px; }
@@ -3440,7 +3443,8 @@ header {
         font-family: PT Serif, "Times New Roman", Times, serif; }
       .project .project-section li {
         font-family: PT Serif, "Times New Roman", Times, serif;
-        font-weight: normal; }
+        font-weight: normal;
+        padding-left: 7.5px; }
       .project .project-section img {
         width: 100%;
         max-height: 500px; }
@@ -3557,7 +3561,9 @@ header {
         font-family: PT Serif, "Times New Roman", Times, serif; }
       .project .project-section li {
         font-family: PT Serif, "Times New Roman", Times, serif;
-        font-weight: normal; }
+        font-weight: normal;
+        padding-left: 7.5px;
+        line-height: 1.6; }
       .project .project-section img {
         width: 100%;
         max-height: 500px;
@@ -3682,7 +3688,8 @@ header {
           font-family: PT Serif, "Times New Roman", Times, serif; }
         .project .project-section li {
           font-family: PT Serif, "Times New Roman", Times, serif;
-          font-weight: normal; }
+          font-weight: normal;
+          padding-left: 7.5px; }
         .project .project-section img {
           width: 100%;
           max-height: 500px;
@@ -3803,7 +3810,8 @@ header {
           font-family: PT Serif, "Times New Roman", Times, serif; }
         .project .project-section li {
           font-family: PT Serif, "Times New Roman", Times, serif;
-          font-weight: normal; }
+          font-weight: normal;
+          padding-left: 7.5px; }
         .project .project-section img {
           width: 100%;
           max-height: 500px;
@@ -3921,7 +3929,8 @@ header {
           font-family: PT Serif, "Times New Roman", Times, serif; }
         .project .project-section li {
           font-family: PT Serif, "Times New Roman", Times, serif;
-          font-weight: normal; }
+          font-weight: normal;
+          padding-left: 7.5px; }
         .project .project-section img {
           width: 100%;
           max-height: 500px;
