@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ProjectPage from "../../../components/ProjectPage";
 import ProjectSection from "../../../components/ProjectSection";
 
+
 class Spotter extends Component {
   constructor(props) {
     super(props);
@@ -58,13 +59,141 @@ class Spotter extends Component {
           </ol>
 
           <p>
-            I also wanted to learn more about parallax scrolling and using{" "}
+            I also wanted to learn more about parallax scrolling in single page
+            websites as well as using{" "}
             <a href="http://imakewebthings.com/waypoints/">Waypoints</a> in
-            websites, so I added those as requirements as well.
+            websites to trigger animations.
           </p>
         </ProjectSection>
-        <ProjectSection title="Implementation" />
-        <ProjectSection title="Project Challenges" />
+        <ProjectSection title="Implementation">
+          <p>
+            The <span style={style.title}>Spotter</span> team came to me with a
+            base template that they had found on ThemeForest. However, the theme
+            had a lot of things that needed to be redone. This includes:
+          </p>
+          <ol>
+            <li>
+              Fixing hacky solutions created by the original template creator
+            </li>
+            <li>Redoing animations</li>
+            <li>I wanted to use a video for the background</li>
+            <li>Use Twitter API to get recent tweets</li>
+          </ol>
+
+          <h6>Home Page</h6>
+          <p>
+            I wanted something that would look unique, and would portray a vibe
+            for the startup. I looked on YouTube to find appropriate videos to
+            use, and found this awesome{" "}
+            <a href="http://youtu.be/kn-1D5z3-Cs">
+              stock video of New York City.
+            </a>
+          </p>
+          <p>
+            Since they were presenting in New York, I thought this would
+            definitely portray an awesome vibe for Tech Crunch. I added the
+            title of the company, as well as thier slogan, and a{" "}
+            <a href="http://www.hongkiat.com/blog/call-to-action-buttons-guidelines-best-practices-and-examples/">
+              call to action.
+            </a>
+          </p>
+          <p>
+            To offer some UX guidance, I added a little mouse icon with a bounce
+            animation. This is a common technique to indicate to the user that
+            they should continue to scroll down the page.
+          </p>
+          <img
+            className="pic"
+            src={this.state.project.image_urls.screenshots[0]}
+            alt="Home Page"
+          />
+          <h6>Features</h6>
+          <p>
+            This section was used to describe the capabilities the application
+            offered. Using Waypoints, I triggered an animation to make the mock
+            screenshots slide in from the left and right when the user hits the
+            top of the Features section.
+          </p>
+          <p>
+            In order to make things look nicer, I also added hover animations
+            over the four "bullet points".
+          </p>
+          <p>
+            The final result ended up looking very smooth, and impressed a lot
+            of people.
+          </p>
+          <img
+            className="pic"
+            src={this.state.project.image_urls.screenshots[4]}
+            alt="Slide-In"
+          />
+          <h6>Newsletter &amp; Gallery</h6>
+          <p>
+            The newsletter was straight forward – it uses AJAX to submit the
+            email to a PHP file. The file will then validate the email, and then
+            send it off to MailChimp.
+          </p>
+          <p>
+            For the gallery, I pulled the four most recent pictures from{" "}
+            <span style={style.title}>Spotter's</span> Instagram. Once the
+            photos were retrieved I created hover animations over each photo,
+            and added a lightbox in order to see a larger version of the image.
+          </p>
+          <p>
+            Using{" "}
+            <a href="https://github.com/webmandesign/jquery.hoverdir">
+              jQuery HoverDir
+            </a>, I was also able to get the hover animation to track which side
+            of the image the user enters. This allows me to then and transition
+            from that side. You can see the final result below:
+          </p>
+          <img
+            className="pic"
+            src={this.state.project.image_urls.screenshots[3]}
+            alt="Newsletter and Gallery"
+          />
+          <h6>Contact Form</h6>
+          <p>
+            The final thing that needed to be done was to add a contact form.
+            When the person hits the bottom of the page, the form animates in
+            using waypoints. I added in a wobble animation as it transitioned in
+            to get the user's attention.
+          </p>
+          <p>
+            The form submitted via AJAX to a contact.php file. That file parses
+            all the fields, and if valid sends it over to the Spotter team. The
+            final result can be seen below:
+          </p>
+          <img
+            src={this.state.project.image_urls.screenshots[2]}
+            alt="Contact Form"
+            className="pic"
+          />
+        </ProjectSection>
+        <ProjectSection title="Project Challenges">
+          <p>
+            I spent a lot of time trying to make this website look perfect. The
+            first part that I struggled with was creating the smooth animations
+            on the Features page. Since there was a lot going on, I had to
+            utilize the ":after" properties on some of the elements.
+          </p>
+          <p>
+            The next part I had trouble with was the video background. Instead
+            of only being in the top section, I wanted it to stay in the background, and
+            swap between transparent and white sections as the user scrolls down
+            the page. I ended up having to use a combination of CSS and
+            JavaScript, since the video is initially loaded via video plugin.
+          </p>
+          <p>Some things that I learned from this project were:</p>
+
+          <ul>
+            <li>Parallax Scrolling</li>
+            <li>Advanced CSS3 Animations</li>
+            <li>AJAX submissions to prevent client-side refreshing on submit</li>
+            <li>Branding and setting color schemes for websites</li>
+            <li>Basic UX Principles</li>
+          </ul>
+        </ProjectSection>
       </ProjectPage>
     );
   }

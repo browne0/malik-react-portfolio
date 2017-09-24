@@ -2160,7 +2160,7 @@ svg {
         margin-right: 11px;
         margin-left: 0px; }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .blog-post {
     position: relative; }
     .blog-post progress {
@@ -2212,13 +2212,13 @@ svg {
       padding: 43px 0px; }
       .blog-post .container .post-title {
         background-color: #fff;
-        width: 800px;
+        width: 900px;
         padding: 20px 0px 0px 20px;
         margin: 0px auto;
         font-size: 2.5em; }
       .blog-post .container .post-author {
         background-color: #fff;
-        width: 800px;
+        width: 900px;
         padding: 5px 0px 0px 20px;
         margin: 0px auto;
         display: flex;
@@ -2247,12 +2247,12 @@ svg {
         background-size: cover;
         background-position: center; }
       .blog-post .container .wrapper {
-        width: 800px;
+        width: 900px;
         margin: 40px auto 0px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, 0.22); }
       .blog-post .container .markdown-body {
         background-color: #fff;
-        width: 800px;
+        width: 900px;
         padding: 20px;
         margin: 0px auto;
         color: #333;
@@ -2267,13 +2267,13 @@ svg {
         .blog-post .container .markdown-body p {
           margin: 25px 0px 10px 0px; }
       .blog-post .container .comments {
-        width: 800px;
+        width: 900px;
         padding: 20px 0px 0px 20px;
         margin: 0px auto;
         min-height: 409px; }
       .blog-post .container .blog-guide {
         background-color: #fff;
-        width: 800px;
+        width: 900px;
         margin: 0px auto;
         padding: 20px;
         overflow: auto; }
@@ -2810,6 +2810,7 @@ svg {
           min-height: 100%;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
           background-color: #fafafa;
           border: 1px solid rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12); }
@@ -2836,9 +2837,10 @@ svg {
           .contact .wrapper .other-contact .other-content {
             display: flex;
             justify-content: center;
-            flex-direction: column; }
+            flex-direction: column;
+            height: 100%; }
             .contact .wrapper .other-contact .other-content .other-hero {
-              margin-bottom: 17.5%; }
+              margin-bottom: 7.5%; }
             .contact .wrapper .other-contact .other-content h5 {
               text-align: center;
               font-size: 1.2em; }
@@ -3050,10 +3052,19 @@ header {
     background-position-y: calc(50% + 30px);
     background-size: cover;
     background-repeat: no-repeat; }
-  .project .container {
+  .project .container-bd {
     width: 90%;
     margin: 0 auto;
     display: none; }
+    .project .container-bd .project-image {
+      min-height: 249px;
+      width: 100%;
+      background-size: cover;
+      background-position: center; }
+  .project .container {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
     .project .container .project-image {
       min-height: 249px;
       width: 100%;
@@ -3061,8 +3072,7 @@ header {
       background-position: center; }
   .project .project-section {
     width: 90%;
-    margin: 20px auto 0px auto;
-    overflow: hidden; }
+    margin: 20px auto 0px auto; }
     .project .project-section h4 {
       font-size: 2.25em;
       padding: 10px 0px; }
@@ -3174,16 +3184,25 @@ header {
     .project .container {
       width: 90%;
       margin: 0 auto;
-      display: none; }
+      text-align: center; }
       .project .container .project-image {
+        min-height: 249px;
+        width: 100%;
+        background-size: cover;
+        background-position: center; }
+    .project .container-bd {
+      width: 90%;
+      margin: 0 auto;
+      display: none;
+      text-align: center; }
+      .project .container-bd .project-image {
         min-height: 249px;
         width: 100%;
         background-size: cover;
         background-position: center; }
     .project .project-section {
       width: 90%;
-      margin: 20px auto 0px auto;
-      overflow: hidden; }
+      margin: 20px auto 0px auto; }
       .project .project-section h4 {
         font-size: 1.75em;
         padding: 10px 0px; }
@@ -3303,8 +3322,7 @@ header {
         background-position: center; }
     .project .project-section {
       width: 90%;
-      margin: 20px auto 0px auto;
-      overflow: hidden; }
+      margin: 20px auto 0px auto; }
       .project .project-section h4 {
         font-size: 2.25em;
         padding: 10px 0px; }
@@ -3422,8 +3440,7 @@ header {
         background-position: center; }
     .project .project-section {
       width: 50vw;
-      margin: 20px auto 0px auto;
-      overflow: hidden; }
+      margin: 20px auto 0px auto; }
       .project .project-section h4 {
         font-size: 2.25em;
         padding: 10px 0px; }
@@ -3523,22 +3540,34 @@ header {
         font-size: 1.15em; }
     .project .screenshot-big-picture {
       height: 35vh;
-      background-position-y: calc(50% + 30px);
+      background-position-y: center;
+      background-position-x: center;
       background-size: cover;
       background-repeat: no-repeat; }
     .project .container {
       width: 90%;
+      margin: 0 auto; }
+      .project .container img {
+        width: 90%;
+        margin: 30px 0px 10px 0px;
+        box-shadow: 3px 3px 1px rgba(153, 153, 153, 0.25); }
+      .project .container .project-image {
+        min-height: 249px;
+        width: 100%;
+        background-size: cover;
+        background-position: center; }
+    .project .container-bd {
+      width: 90%;
       margin: 0 auto;
       display: none; }
-      .project .container .project-image {
+      .project .container-bd .project-image {
         min-height: 249px;
         width: 100%;
         background-size: cover;
         background-position: center; }
     .project .project-section {
       width: 90%;
-      margin: 20px auto 0px auto;
-      overflow: hidden; }
+      margin: 20px auto 0px auto; }
       .project .project-section h4 {
         font-size: 1.75em;
         padding: 10px 0px;
@@ -3564,12 +3593,12 @@ header {
         font-weight: normal;
         padding-left: 7.5px;
         line-height: 1.6; }
-      .project .project-section img {
+      .project .project-section img.pic {
         width: 100%;
         max-height: 500px;
         margin: 30px 0px 10px 0px;
-        box-shadow: 2px 2px 1px #ccc; }
-        .project .project-section img + h6 {
+        box-shadow: 3px 3px 1px rgba(153, 153, 153, 0.25); }
+        .project .project-section img.pic + h6 {
           margin-top: 10px; }
     .project .project-section-last {
       margin-bottom: 40px; }
@@ -3653,10 +3682,20 @@ header {
         background-position-y: calc(50% + 30px);
         background-size: cover;
         background-repeat: no-repeat; }
-      .project .container {
+      .project .container-bd {
         width: 90%;
         margin: 0 auto 40px auto;
         display: none; }
+        .project .container-bd .project-image {
+          min-height: 249px;
+          width: 100%;
+          background-size: cover;
+          background-position: center; }
+      .project .container {
+        width: 90%;
+        margin: 0 auto 40px auto; }
+        .project .container img {
+          width: 90%; }
         .project .container .project-image {
           min-height: 249px;
           width: 100%;
@@ -3664,8 +3703,7 @@ header {
           background-position: center; }
       .project .project-section {
         width: 90%;
-        margin: 20px auto 0px auto;
-        overflow: hidden; }
+        margin: 20px auto 0px auto; }
         .project .project-section h4 {
           font-size: 1.75em;
           padding: 10px 0px;
@@ -3684,18 +3722,18 @@ header {
           margin-top: 15px;
           margin-bottom: 10px;
           line-height: 1.8;
-          font-size: 1.3em;
+          font-size: 1.2em;
           font-family: PT Serif, "Times New Roman", Times, serif; }
         .project .project-section li {
           font-family: PT Serif, "Times New Roman", Times, serif;
           font-weight: normal;
           padding-left: 7.5px; }
-        .project .project-section img {
+        .project .project-section img.pic {
           width: 100%;
           max-height: 500px;
           margin: 30px 0px 10px 0px;
-          box-shadow: 2px 2px 1px #ccc; }
-          .project .project-section img + h6 {
+          box-shadow: 3px 3px 1px rgba(153, 153, 153, 0.25); }
+          .project .project-section img.pic + h6 {
             margin-top: 10px; }
       .project .project-section-last {
         margin-bottom: 40px; }
@@ -3760,125 +3798,7 @@ header {
                 transition: transform 0.25s ease; }
               .project .project-footer .footer-container .next-project-image .inner:hover .pic {
                 transform: scale(1.25); } }
-  @media (min-width: 820px) {
-    .project {
-      display: flex;
-      flex-direction: column;
-      font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
-      .project .hero {
-        font-family: Roboto;
-        margin: 20px auto 20px auto;
-        width: 740px; }
-        .project .hero h2 {
-          font-size: 3.5em; }
-        .project .hero p {
-          font-family: PT Serif, "Times New Roman", Times, serif;
-          font-size: 1.25em; }
-      .project .screenshot-big-picture {
-        height: 35vh;
-        background-position-y: calc(50% + 30px);
-        background-size: cover;
-        background-repeat: no-repeat; }
-      .project .container {
-        width: 90%;
-        margin: 0 auto 40px auto;
-        display: block; }
-        .project .container .project-image {
-          min-height: 600px;
-          width: 100%;
-          background-size: cover;
-          background-position: center; }
-      .project .project-section {
-        width: 90%;
-        margin: 20px auto 0px auto;
-        overflow: hidden; }
-        .project .project-section h4 {
-          font-size: 2.25em;
-          padding: 10px 0px; }
-        .project .project-section h6 {
-          font-size: 1.7em;
-          padding: 5px 0px;
-          margin-top: 20px; }
-        .project .project-section a {
-          font-family: PT Serif, "Times New Roman", Times, serif;
-          color: #c24d01; }
-        .project .project-section p {
-          margin-top: 30px;
-          margin-bottom: 10px;
-          font-size: 1.3em;
-          line-height: 1.8;
-          font-family: PT Serif, "Times New Roman", Times, serif; }
-        .project .project-section li {
-          font-family: PT Serif, "Times New Roman", Times, serif;
-          font-weight: normal;
-          padding-left: 7.5px; }
-        .project .project-section img {
-          width: 100%;
-          max-height: 500px;
-          margin: 30px 0px 10px 0px;
-          box-shadow: 2px 2px 1px #ccc; }
-          .project .project-section img + h6 {
-            margin-top: 5px; }
-      .project .project-section-last {
-        margin-bottom: 20px; }
-      .project .project-footer {
-        color: #fafafa;
-        padding: 20px 0px; }
-        .project .project-footer .footer-container {
-          display: flex;
-          flex-direction: row;
-          width: 90%;
-          justify-content: space-around;
-          margin: 0px auto;
-          height: 100%; }
-          .project .project-footer .footer-container .next-project-info {
-            display: flex;
-            width: 60%;
-            flex-direction: column;
-            justify-content: center; }
-            .project .project-footer .footer-container .next-project-info h2 {
-              font-size: 1.75em;
-              margin-bottom: 15px;
-              text-align: left; }
-            .project .project-footer .footer-container .next-project-info h3 {
-              font-size: 1.5em;
-              font-family: PT Serif, "Times New Roman", Times, serif;
-              text-align: left; }
-            .project .project-footer .footer-container .next-project-info h4 {
-              font-size: 1.4em;
-              font-family: PT Serif, "Times New Roman", Times, serif;
-              font-weight: normal;
-              text-align: left; }
-          .project .project-footer .footer-container .next-project-image {
-            display: flex;
-            width: 450px;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-            .project .project-footer .footer-container .next-project-image .inner {
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-              overflow: hidden; }
-              .project .project-footer .footer-container .next-project-image .inner p {
-                text-align: center;
-                font-size: 1.6em;
-                font-weight: bold;
-                margin-bottom: 10px; }
-              .project .project-footer .footer-container .next-project-image .inner a {
-                width: 310px;
-                border-radius: 3px;
-                border: 3px solid #fafafa;
-                overflow: hidden; }
-              .project .project-footer .footer-container .next-project-image .inner img {
-                padding: 3px;
-                width: 100%;
-                vertical-align: top;
-                transition: transform 0.25s ease; }
-              .project .project-footer .footer-container .next-project-image .inner:hover .pic {
-                transform: scale(1.25); } }
-  @media (min-width: 1280px) {
+  @media (min-width: 800px) {
     .project {
       display: flex;
       flex-direction: column;
@@ -3886,7 +3806,7 @@ header {
       .project .hero {
         font-family: Roboto;
         margin: 0px auto 20px auto;
-        width: 740px; }
+        width: 800px; }
         .project .hero h2 {
           font-size: 4em; }
         .project .hero p {
@@ -3898,15 +3818,19 @@ header {
         background-size: cover;
         background-repeat: no-repeat; }
       .project .container {
-        width: 60%;
+        width: 800px;
         margin: 0 auto 40px auto; }
+        .project .container img {
+          width: auto; }
         .project .container .project-image {
           min-height: 600px;
           width: 100%;
           background-size: cover;
           background-position: center; }
+      .project .container-bd {
+        display: block; }
       .project .project-section {
-        width: 740px;
+        width: 800px;
         margin: 0px auto; }
         .project .project-section h4 {
           font-size: 2.25em;
@@ -3931,12 +3855,12 @@ header {
           font-family: PT Serif, "Times New Roman", Times, serif;
           font-weight: normal;
           padding-left: 7.5px; }
-        .project .project-section img {
+        .project .project-section img.pic {
           width: 100%;
           max-height: 500px;
           margin: 30px 0px 10px 0px;
-          box-shadow: 2px 2px 1px #ccc; }
-          .project .project-section img + h6 {
+          box-shadow: 3px 3px 1px rgba(153, 153, 153, 0.25); }
+          .project .project-section img.pic + h6 {
             margin-top: 0px; }
       .project .project-section-last {
         margin-bottom: 100px; }

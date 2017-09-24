@@ -149,7 +149,10 @@ class About extends Component {
             Create designs that are simple and replicate the world you live in,
             and visitors will feel a sense of serenity, and maybe even a sense
             of amazement about why your website is so pleasing to use. Google
-            talks about this extensively in their Material Design guidelinse,{" "}
+            talks about this extensively in their Material Design guidelines.
+          </p>
+
+          <p>
             <a
               target="_blank"
               rel="noopener noreferrer"

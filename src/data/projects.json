@@ -2,12 +2,19 @@
   "projects": [
     {
       "name": "Spotter",
-      "description": "A landing page crafted for an Indiana based startup called Spotter.",
+      "description":
+        "A landing page crafted for an Indiana based startup called Spotter.",
       "technologies": ["HTML5/CSS3", "JavaScript", "jQuery", "PHP"],
       "big_picture": true,
       "image_urls": {
         "logo": "http://malikbrowne.com/assets/logos/spotter.png",
-        "screenshots": ["http://malikbrowne.com/assets/screenshots/spotter.jpg"]
+        "screenshots": [
+          "http://malikbrowne.com/assets/screenshots/spotter.jpg",
+          "http://malikbrowne.com/assets/screenshots/spotter1.jpg",
+          "http://malikbrowne.com/assets/screenshots/spotter2.png",
+          "http://malikbrowne.com/assets/project_gifs/spotter-info.gif",
+          "http://malikbrowne.com/assets/project_gifs/spotter-slide-in.gif"
+        ]
       },
       "github_url": "https://github.com/browne0/Spotter",
       "live_url": "http://dev.beesdesign.net/spotter",
@@ -16,14 +23,16 @@
     },
     {
       "name": "Spotify Mixmax Integration",
-      "description": "A spotify mixmax slash command that allows you to search for a track, artist, or album to embed in an email.",
+      "description":
+        "A spotify mixmax slash command that allows you to search for a track, artist, or album to embed in an email.",
       "technologies": ["NodeJS", "HTML5/CSS3"],
       "big_picture": false,
       "image_urls": {
         "logo": "http://malikbrowne.com/assets/logos/mixmax_logo.png",
         "screenshots": [
           "http://malikbrowne.com/assets/project_gifs/mixmax_typeahead.gif",
-          "http://malikbrowne.com/assets/project_gifs/mixmax_resolver.gif"
+          "http://malikbrowne.com/assets/project_gifs/mixmax_resolver.gif",
+          "http://malikbrowne.com/assets/screenshots/mixmax_final.png"
         ]
       },
       "github_url": "https://github.com/browne0/spotify-mixmax-slash-command",
@@ -32,7 +41,8 @@
     },
     {
       "name": "Bee's Design",
-      "description": "A freelance web development company I started when I was seventeen.",
+      "description":
+        "A freelance web development company I started when I was seventeen.",
       "technologies": ["HTML5/CSS3", "jQuery", "PHP"],
       "big_picture": false,
       "image_urls": {
@@ -51,7 +61,8 @@
     },
     {
       "name": "MedxPort",
-      "description": "An iOS application to provide an easy way for people to check in to the doctor.",
+      "description":
+        "An iOS application to provide an easy way for people to check in to the doctor.",
       "technologies": [
         "Swift",
         "Objective-C",
@@ -76,7 +87,8 @@
     },
     {
       "name": "myChef",
-      "description": "A simple application that finds local chefs in the nearby area.",
+      "description":
+        "A simple application that finds local chefs in the nearby area.",
       "technologies": ["HTML5/CSS3", "JavaScript", "jQuery", "PHP/MySQL"],
       "big_picture": true,
       "image_urls": {
@@ -89,7 +101,8 @@
     },
     {
       "name": "Post Grad Portfolio",
-      "description": "A website used to display my completed projects during college.",
+      "description":
+        "A website used to display my completed projects during college.",
       "technologies": ["HTML5/CSS3", "AngularJS", "jQuery"],
       "big_picture": false,
       "image_urls": {

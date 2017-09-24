@@ -109,6 +109,7 @@ class BeesDesign extends Component {
             and how media queries tie into responsive designs.
           </p>
           <img
+            className="pic"
             src={this.state.project.image_urls.screenshots[0]}
             alt="Home Page"
           />
@@ -141,6 +142,7 @@ class BeesDesign extends Component {
             how it looked.
           </p>
           <img
+            className="pic"
             src={this.state.project.image_urls.screenshots[1]}
             alt="Home Page"
           />
@@ -159,7 +161,11 @@ class BeesDesign extends Component {
             that list. The first part of this function does exactly that:
           </p>
 
-          <SyntaxHighlighter showLineNumbers style={obsidian}>
+          <SyntaxHighlighter
+            language="javascript"
+            showLineNumbers
+            style={obsidian}
+          >
             {`
 function processInput() {
   // Timestamp for later
@@ -195,7 +201,12 @@ function processInput() {
             a log file.
           </p>
 
-          <SyntaxHighlighter showLineNumbers style={obsidian} wrapLines={true}>
+          <SyntaxHighlighter
+            language="javascript"
+            showLineNumbers
+            style={obsidian}
+            wrapLines={true}
+          >
             {`// ...
 
 // If input wasn't OK, error out. If it was, sent an email.

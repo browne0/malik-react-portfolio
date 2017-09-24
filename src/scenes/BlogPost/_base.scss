@@ -156,7 +156,7 @@
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
   .blog-post {
     position: relative;
     progress {
@@ -219,14 +219,14 @@
       padding: 43px 0px;
       .post-title {
         background-color: #fff;
-        width: 800px;
+        width: 900px;
         padding: 20px 0px 0px 20px;
         margin: 0px auto;
         font-size: 2.5em;
       }
       .post-author {
         background-color: #fff;
-        width: 800px;
+        width: 900px;
         padding: 5px 0px 0px 20px;
         margin: 0px auto;
         display: flex;
@@ -262,13 +262,13 @@
         background-position: center;
       }
       .wrapper {
-        width: 800px;
+        width: 900px;
         margin: 40px auto 0px;
         box-shadow: 0 1px 4px rgba(0, 0, 0, .22);        
       }
       .markdown-body {
         background-color: #fff;
-        width: 800px;
+        width: 900px;
         padding: 20px;
         margin: 0px auto;
         color: #333;
@@ -287,14 +287,14 @@
         }
       }
       .comments {
-        width: 800px;
+        width: 900px;
         padding: 20px 0px 0px 20px;
         margin: 0px auto;
         min-height: 409px;
       }
       .blog-guide {
         background-color: #fff;
-        width: 800px;
+        width: 900px;
         margin: 0px auto;
         padding: 20px;
         overflow: auto;

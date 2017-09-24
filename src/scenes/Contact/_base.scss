@@ -700,6 +700,7 @@
           min-height: 100%;
           flex-direction: column;
           align-items: center;
+          justify-content: center;
           background-color: #fafafa;
           border: 1px solid rgba(0, 0, 0, 0.1);
           box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.12);
@@ -738,8 +739,9 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+            height:100%;
             .other-hero {
-              margin-bottom: 17.5%;
+              margin-bottom: 7.5%;
             }
             h5 {
               text-align: center;
