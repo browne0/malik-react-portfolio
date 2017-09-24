@@ -11,7 +11,7 @@ import Spotter from "./scenes/Projects/Spotter";
 import OldPortfolio from "./scenes/Projects/OldPortfolio";
 import MyChef from "./scenes/Projects/MyChef";
 import Mixmax from "./scenes/Projects/Mixmax";
-import MedXPort from "./scenes/Projects/MedXPort";
+import FactsOfToday from "./scenes/Projects/FactsOfToday";
 import BeesDesign from "./scenes/Projects/BeesDesign";
 
 import { TransitionGroup, CSSTransition } from "react-transition-group";
@@ -46,7 +46,7 @@ class App extends Component {
               />
               <Route path="/mychef" component={withTracker(MyChef)} />
               <Route path="/mixmax" component={withTracker(Mixmax)} />
-              <Route path="/medxport" component={withTracker(MedXPort)} />
+              <Route path="/factsoftoday" component={withTracker(FactsOfToday)} />
               <Route path="/beesdesign" component={withTracker(BeesDesign)} />
               <Route component={NotFound} />
             </Switch>

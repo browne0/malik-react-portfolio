@@ -60,35 +60,39 @@
       "path": "/beesdesign"
     },
     {
-      "name": "MedxPort",
+      "name": "Facts of Today",
       "description":
-        "An iOS application to provide an easy way for people to check in to the doctor.",
+        "An iOS app that given a date, returns different information that happened on the same day in history.",
       "technologies": [
         "Swift",
         "Objective-C",
-        "Firebase",
-        "AngularJS",
-        "Bootstrap"
+        "Photoshop"
       ],
       "big_picture": false,
       "image_urls": {
-        "logo": "http://malikbrowne.com/assets/logos/medxport.jpg",
+        "logo": "http://malikbrowne.com/assets/logos/factsoftoday_logo.png",
         "screenshots": [
-          "http://malikbrowne.com/assets/screenshots/medxport1.png",
-          "http://malikbrowne.com/assets/screenshots/medxport2.png",
-          "http://malikbrowne.com/assets/screenshots/medxport3.png",
-          "http://malikbrowne.com/assets/project_gifs/medxport.gif"
+          "http://malikbrowne.com/assets/project_gifs/factsoftoday.gif",
+          "http://is3.mzstatic.com/image/thumb/Purple30/v4/fa/e8/95/fae895bd-287e-3a62-0050-828ac31a348f/source/392x696bb.jpg",
+          "http://is4.mzstatic.com/image/thumb/Purple18/v4/b6/80/b0/b680b058-c5ec-98b0-d47d-252b72eba4e9/source/392x696bb.jpg",
+          "https://github.com/browne0/FactsOfToday/blob/master/wireframe.png?raw=true",
+          "https://github.com/browne0/FactsOfToday/raw/master/factsoftoday-demo.gif",
+          "https://github.com/browne0/FactsOfToday/raw/master/factsoftoday-demo-66%25.gif",
+          "https://github.com/browne0/FactsOfToday/raw/master/factsOfToday-demo2.gif",
+          "http://is5.mzstatic.com/image/thumb/Purple20/v4/7a/50/ef/7a50efab-e4f9-dcfd-dfd8-0302c2c3b383/source/392x696bb.jpg",
+          "http://is2.mzstatic.com/image/thumb/Purple30/v4/c0/89/88/c089881f-c065-d6ef-9ff2-32d15f07a304/source/392x696bb.jpg"
         ]
       },
-      "github_url": "https://github.com/browne0/MedxPort",
+      "github_url": "https://github.com/browne0/FactsOfToday",
+      "live_url": "https://itunes.apple.com/us/app/facts-of-today/id1118574083?mt=8",
       "background_color": "#fff",
       "color": "#333",
-      "path": "/medxport"
+      "path": "/factsoftoday"
     },
     {
       "name": "myChef",
       "description":
-        "A simple application that finds local chefs in the nearby area.",
+        "A web application that matches you with local chefs in the nearby area to receive a personalized home cooked meal.",
       "technologies": ["HTML5/CSS3", "JavaScript", "jQuery", "PHP/MySQL"],
       "big_picture": true,
       "image_urls": {

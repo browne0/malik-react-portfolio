@@ -3095,8 +3095,7 @@ header {
       font-weight: normal;
       padding-left: 7.5px; }
     .project .project-section img {
-      width: 100%;
-      max-height: 500px; }
+      width: 100%; }
   .project .project-section-last {
     margin-bottom: 20px; }
     .project .project-section-last hr {
@@ -3225,8 +3224,7 @@ header {
         font-weight: normal;
         padding-left: 7.5px; }
       .project .project-section img {
-        width: 100%;
-        max-height: 500px; }
+        width: 100%; }
     .project .project-section-last {
       margin-bottom: 20px; }
       .project .project-section-last hr {
@@ -3345,8 +3343,7 @@ header {
         font-weight: normal;
         padding-left: 7.5px; }
       .project .project-section img {
-        width: 100%;
-        max-height: 500px; }
+        width: 100%; }
     .project .project-section-last {
       margin-bottom: 20px; }
       .project .project-section-last hr {
@@ -3463,8 +3460,7 @@ header {
         font-weight: normal;
         padding-left: 7.5px; }
       .project .project-section img {
-        width: 100%;
-        max-height: 500px; }
+        width: 100%; }
     .project .project-section-last {
       margin-bottom: 20px; }
       .project .project-section-last hr {
@@ -3588,6 +3584,8 @@ header {
         line-height: 1.8;
         font-size: 1.3em;
         font-family: PT Serif, "Times New Roman", Times, serif; }
+      .project .project-section pre {
+        margin-top: 30px; }
       .project .project-section li {
         font-family: PT Serif, "Times New Roman", Times, serif;
         font-weight: normal;
@@ -3595,7 +3593,6 @@ header {
         line-height: 1.6; }
       .project .project-section img.pic {
         width: 100%;
-        max-height: 500px;
         margin: 30px 0px 10px 0px;
         box-shadow: 3px 3px 1px rgba(153, 153, 153, 0.25); }
         .project .project-section img.pic + h6 {
@@ -3730,7 +3727,6 @@ header {
           padding-left: 7.5px; }
         .project .project-section img.pic {
           width: 100%;
-          max-height: 500px;
           margin: 30px 0px 10px 0px;
           box-shadow: 3px 3px 1px rgba(153, 153, 153, 0.25); }
           .project .project-section img.pic + h6 {
@@ -3857,7 +3853,6 @@ header {
           padding-left: 7.5px; }
         .project .project-section img.pic {
           width: 100%;
-          max-height: 500px;
           margin: 30px 0px 10px 0px;
           box-shadow: 3px 3px 1px rgba(153, 153, 153, 0.25); }
           .project .project-section img.pic + h6 {

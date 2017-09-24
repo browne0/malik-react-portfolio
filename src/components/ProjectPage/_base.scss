@@ -80,7 +80,6 @@
     }
     img {
       width: 100%;
-      max-height: 500px;
     }
   }
   .project-section-last {
@@ -248,7 +247,6 @@
       }
       img {
         width: 100%;
-        max-height: 500px;
       }
     }
     .project-section-last {
@@ -406,7 +404,6 @@
       }
       img {
         width: 100%;
-        max-height: 500px;
       }
     }
     .project-section-last {
@@ -562,7 +559,6 @@
       }
       img {
         width: 100%;
-        max-height: 500px;
       }
     }
     .project-section-last {
@@ -726,6 +722,10 @@
         font-family: PT Serif, "Times New Roman", Times, serif;
       }
 
+      pre {
+        margin-top: 30px;
+      }
+
       li {
         font-family: PT Serif, "Times New Roman", Times, serif;
         font-weight: normal;
@@ -734,7 +734,6 @@
       }
       img.pic {
         width: 100%;
-        max-height: 500px;
         margin: 30px 0px 10px 0px;
         box-shadow: 3px 3px 1px rgba(153, 153, 153, .25);
         + h6 {
@@ -908,7 +907,6 @@
         }
         img.pic {
           width: 100%;
-          max-height: 500px;
           margin: 30px 0px 10px 0px;
           box-shadow: 3px 3px 1px rgba(153, 153, 153, .25);
           + h6 {
@@ -1075,7 +1073,6 @@
         }
         img.pic {
           width: 100%;
-          max-height: 500px;
           margin: 30px 0px 10px 0px;
           box-shadow: 3px 3px 1px rgba(153, 153, 153, .25);
           + h6 {
