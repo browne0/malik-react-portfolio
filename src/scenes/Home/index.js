@@ -1,12 +1,10 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import Helmet from "react-helmet";
 
 import { projects } from "../../data/projects.json";
 
 class Home extends Component {
-  componentWillMount() {
-    document.title = "Home | Malik Browne";
-  }
   render() {
     let projectList = [];
     for (var i = 0; i < projects.length; i++) {
@@ -63,6 +61,29 @@ class Home extends Component {
     }
     return (
       <div className="Home">
+        <Helmet title="Home">
+          <meta
+            name="description"
+            content="Front End Engineer &amp; UX Enthusiast with a strong desire to produce high quality websites and online tools, bundled with an exceptional user experience."
+          />
+          <meta
+            name="keywords"
+            content="front end developer, front end development, ui/ux, web development, full stack development"
+          />
+          <meta
+            property="og:title"
+            content="Malik Browne | Front End Engineer &amp; UX Enthusiast"
+          />
+          <meta
+            property="og:description"
+            content="Front End Engineer &amp; UX Enthusiast with a strong desire to produce high quality websites and online tools, bundled with an exceptional user experience."
+          />
+          <meta property="og:url" content="https://malikbrowne.com/" />
+          <meta
+            property="og:image"
+            content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
+          />
+        </Helmet>
         <div className="hero">
           <h1>
             I create <span>simple</span> and <span>intuitive</span> websites and

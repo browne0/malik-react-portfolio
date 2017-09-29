@@ -7,9 +7,10 @@ import PortfolioDelegate from "../../utils/PortfolioDelegate/index";
 import Button from "../../components/ThemedButton";
 import ProgressBar from "../../components/ReadingProgressBar";
 import Markdown from "react-markdown";
+import Helmet from "react-helmet";
 
 class blogPost extends Component {
-  componentWillMount(props) {
+  componentWillMount() {
     let delegate = new PortfolioDelegate();
     this.setState({
       blog: this.props.blog,
@@ -68,8 +69,36 @@ class blogPost extends Component {
       blogLength / 275 < 1
         ? (blogLength / 275 * 60).toFixed() + " sec read"
         : (blogLength / 275).toFixed() + " min read";
+
+    let keywords =
+      "web development blogs, blog, coding blogs, front end development, ui/ux, web development, full stack development, malik browne, malik";
     return (
       <div className="blog-post">
+        <Helmet titleTemplate="%s" title={this.state.blog.fields.title}>
+          <meta
+            name="description"
+            content={this.state.blog.fields.description}
+          />
+          <meta
+            name="keywords"
+            content={
+              this.state.blog.fields.keywords ? this.state.blog.fields.keywords : keywords
+            }
+          />
+          <meta property="og:title" content={`${this.state.blog.fields.title} | Malik Browne`} />
+          <meta
+            property="og:description"
+            content={this.state.blog.fields.description}
+          />
+          <meta
+            property="og:url"
+            content={`https://malikbrowne.com/${this.state.blog.fields.slug}`}
+          />
+          <meta
+            property="og:image"
+            content={this.state.blog.fields.featuredImage.fields.file.url}
+          />
+        </Helmet>
         <ProgressBar targetEl=".blog-post" />
         <div className="back-to-blog">
           <Link to="/blog">

@@ -3,29 +3,19 @@ import Section from "../../components/AboutSection";
 import Footer from "../../components/AboutFooter";
 import PortfolioDelegate from "../../utils/PortfolioDelegate";
 import { Link } from "react-router-dom";
+import Helmet from "react-helmet";
 
 class About extends Component {
   constructor() {
     super();
 
-    this.state = {
-    };
+    this.state = {};
   }
 
-  componentWillMount() {
-    document.title = "About | Malik Browne";
-
-    const delegate = new PortfolioDelegate();
-
-    // once I write more blogs I'll get one of five of the latest blog posts. until then just get the latest blog
-
-    delegate.getBlogs().then(response => {
-      let latestBlogIndex = response.items.length - 1;
-      this.setState({
-        blog: response.items[latestBlogIndex]
-      });
-    });
+  componentWillUnmount() {
+    this.unmounted = true;
   }
+  
 
   componentDidMount() {
     let hero = this.blurredEl;
@@ -39,11 +29,42 @@ class About extends Component {
       hero.style.backgroundImage = `url(${fullResImg})`;
       hero.style.filter = "none";
     };
+
+    const delegate = new PortfolioDelegate();
+
+    // once I write more blogs I'll get one of five of the latest blog posts. until then just get the latest blog
+    delegate.getBlogs().then(response => {
+      if (this.unmounted) return;
+      let latestBlogIndex = response.items.length - 1;
+      this.setState({
+        blog: response.items[latestBlogIndex]
+      });
+    });
   }
 
   render() {
     return (
       <div className="About">
+        <Helmet title="About">
+          <meta
+            name="description"
+            content="Find out more about Malik Browne, a front end engineer with a strong desire to produce high quality websites and online tools, bundled with an exceptional user experience."
+          />
+          <meta
+            name="keywords"
+            content="front end developer, front end development, ui/ux, web development, full stack development, malik browne, malik"
+          />
+          <meta property="og:title" content="About | Malik Browne" />
+          <meta
+            property="og:description"
+            content="Find out more about Malik Browne, a front end engineer with a strong desire to produce high quality websites and online tools, bundled with an exceptional user experience."
+          />
+          <meta property="og:url" content="https://malikbrowne.com/about" />
+          <meta
+            property="og:image"
+            content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
+          />
+        </Helmet>
         <div className="hero-wrapper">
           <div className="hero" ref={elem => (this.blurredEl = elem)}>
             <div className="hero-text">

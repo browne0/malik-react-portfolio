@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Route, Switch, withRouter } from "react-router-dom";
+import Helmet from "react-helmet";
 
 import About from "./scenes/About";
 import BlogList from "./scenes/BlogList";
@@ -27,6 +28,10 @@ class App extends Component {
     return (
       <div className="site">
         <Navbar />
+        <Helmet
+          titleTemplate="%s | Malik Browne"
+          defaultTitle="Malik Browne | Front End Engineer &amp; UX Enthusiast"
+        />
         <TransitionGroup component="main">
           <CSSTransition
             key={location.pathname}
@@ -46,7 +51,10 @@ class App extends Component {
               />
               <Route path="/mychef" component={withTracker(MyChef)} />
               <Route path="/mixmax" component={withTracker(Mixmax)} />
-              <Route path="/factsoftoday" component={withTracker(FactsOfToday)} />
+              <Route
+                path="/factsoftoday"
+                component={withTracker(FactsOfToday)}
+              />
               <Route path="/beesdesign" component={withTracker(BeesDesign)} />
               <Route component={NotFound} />
             </Switch>

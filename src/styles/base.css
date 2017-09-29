@@ -133,7 +133,7 @@ svg {
       background-size: cover;
       background-position: top;
       transform: scale(1.01);
-      transition: transform .55s ease;
+      transition: transform 0.55s ease;
       background-repeat: no-repeat; }
     .Home .container .bigPicture .overlay {
       background: rgba(0, 0, 0, 0.25);
@@ -142,7 +142,7 @@ svg {
       position: absolute;
       height: 100%;
       width: 100%;
-      transition: background .25s ease, opacity .25s ease; }
+      transition: background 0.25s ease, opacity 0.25s ease; }
       .Home .container .bigPicture .overlay .project-information {
         position: absolute;
         bottom: 0px;
@@ -151,7 +151,7 @@ svg {
         width: 100%;
         align-items: end;
         transform: translateY(59px);
-        transition: transform .55s ease;
+        transition: transform 0.55s ease;
         background: rgba(0, 0, 0, 0.55);
         padding-top: 10px; }
         .Home .container .bigPicture .overlay .project-information .description {
@@ -176,14 +176,14 @@ svg {
       transform: translate(-50%, -50%);
       max-width: 175px;
       width: auto;
-      transition: transform .45s ease; }
+      transition: transform 0.45s ease; }
     .Home .container .icon .overlay {
       background: rgba(0, 0, 0, 0.25);
       opacity: 0;
       position: absolute;
       height: 100%;
       width: 100%;
-      transition: background .25s ease, opacity .25s ease; }
+      transition: background 0.25s ease, opacity 0.25s ease; }
       .Home .container .icon .overlay .project-information {
         position: absolute;
         bottom: 0px;
@@ -194,7 +194,7 @@ svg {
         width: 100%;
         align-items: end;
         transform: translateY(100px);
-        transition: transform .55s ease;
+        transition: transform 0.55s ease;
         background: rgba(0, 0, 0, 0.55);
         padding-top: 10px; }
         .Home .container .icon .overlay .project-information .description {
@@ -244,7 +244,7 @@ svg {
         background-size: cover;
         background-position: top;
         transform: scale(1.01);
-        transition: transform .55s ease;
+        transition: transform 0.55s ease;
         background-repeat: no-repeat; }
       .Home .container .bigPicture .overlay {
         background: rgba(0, 0, 0, 0.25);
@@ -252,7 +252,7 @@ svg {
         position: absolute;
         height: 100%;
         width: 100%;
-        transition: background .25s ease, opacity .25s ease; }
+        transition: background 0.25s ease, opacity 0.25s ease; }
         .Home .container .bigPicture .overlay .project-information {
           position: absolute;
           bottom: 0px;
@@ -263,7 +263,7 @@ svg {
           width: 100%;
           align-items: end;
           transform: translateY(59px);
-          transition: transform .55s ease;
+          transition: transform 0.55s ease;
           background: rgba(0, 0, 0, 0.55);
           padding-top: 10px; }
           .Home .container .bigPicture .overlay .project-information .description {
@@ -288,14 +288,14 @@ svg {
         transform: translate(-50%, -50%);
         max-width: 175px;
         width: auto;
-        transition: transform .45s ease; }
+        transition: transform 0.45s ease; }
       .Home .container .icon .overlay {
         background: rgba(0, 0, 0, 0.25);
         opacity: 0;
         position: absolute;
         height: 100%;
         width: 100%;
-        transition: background .25s ease, opacity .25s ease; }
+        transition: background 0.25s ease, opacity 0.25s ease; }
         .Home .container .icon .overlay .project-information {
           position: absolute;
           bottom: 0px;
@@ -306,7 +306,7 @@ svg {
           width: 100%;
           align-items: end;
           transform: translateY(100px);
-          transition: transform .55s ease;
+          transition: transform 0.55s ease;
           background: rgba(0, 0, 0, 0.55);
           padding-top: 10px; }
           .Home .container .icon .overlay .project-information .description {
@@ -356,7 +356,7 @@ svg {
         background-size: cover;
         background-position: top;
         transform: scale(1.01);
-        transition: transform .55s ease;
+        transition: transform 0.55s ease;
         background-repeat: no-repeat; }
       .Home .container .bigPicture .overlay {
         background: rgba(0, 0, 0, 0.25);
@@ -364,7 +364,7 @@ svg {
         position: absolute;
         height: 100%;
         width: 100%;
-        transition: background .25s ease, opacity .25s ease; }
+        transition: background 0.25s ease, opacity 0.25s ease; }
         .Home .container .bigPicture .overlay .project-information {
           position: absolute;
           bottom: 0px;
@@ -375,7 +375,7 @@ svg {
           width: 100%;
           align-items: end;
           transform: translateY(59px);
-          transition: transform .55s ease;
+          transition: transform 0.55s ease;
           background: rgba(0, 0, 0, 0.55);
           padding-top: 10px; }
           .Home .container .bigPicture .overlay .project-information .description {
@@ -400,14 +400,14 @@ svg {
         transform: translate(-50%, -50%);
         max-width: 200px;
         width: auto;
-        transition: transform .45s ease; }
+        transition: transform 0.45s ease; }
       .Home .container .icon .overlay {
         background: rgba(0, 0, 0, 0.25);
         opacity: 0;
         position: absolute;
         height: 100%;
         width: 100%;
-        transition: background .25s ease, opacity .25s ease; }
+        transition: background 0.25s ease, opacity 0.25s ease; }
         .Home .container .icon .overlay .project-information {
           position: absolute;
           bottom: 0px;
@@ -418,7 +418,7 @@ svg {
           width: 100%;
           align-items: end;
           transform: translateY(100px);
-          transition: transform .55s ease;
+          transition: transform 0.55s ease;
           background: rgba(0, 0, 0, 0.55);
           padding-top: 10px; }
           .Home .container .icon .overlay .project-information .description {
@@ -439,7 +439,7 @@ svg {
     justify-content: space-around;
     background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
     background-blend-mode: multiply;
-    min-height: 25vh; }
+    min-height: 100px; }
     .Home .hero h1 {
       font-size: 1.5em;
       padding: 0px 25px;
@@ -455,15 +455,16 @@ svg {
       display: flex;
       align-items: center;
       position: relative;
-      height: 40vh; }
+      height: 40vh;
+      min-height: 300px; }
       .Home .container .bigPicture > div .img {
         width: 100%;
         height: 100%;
         background-size: cover;
         background-position: top;
         transform: scale(1.01);
-        transition: transform .55s ease;
-        min-height: 40vh; }
+        transition: transform 0.55s ease;
+        min-height: 300px; }
       .Home .container .bigPicture .overlay {
         background: rgba(0, 0, 0, 0.25);
         opacity: 0;
@@ -472,7 +473,7 @@ svg {
         left: 0;
         height: 100%;
         width: 100%;
-        transition: background .25s ease, opacity .25s ease; }
+        transition: background 0.25s ease, opacity 0.25s ease; }
         .Home .container .bigPicture .overlay .project-information {
           position: absolute;
           bottom: 0px;
@@ -483,7 +484,7 @@ svg {
           width: 100%;
           align-items: end;
           transform: translateY(59px);
-          transition: transform .55s ease;
+          transition: transform 0.55s ease;
           background: rgba(0, 0, 0, 0.55); }
           .Home .container .bigPicture .overlay .project-information .description {
             grid-column: span 2;
@@ -501,11 +502,11 @@ svg {
       justify-content: space-around;
       overflow: hidden;
       position: relative;
-      min-height: 40vh; }
+      min-height: 300px; }
       .Home .container .icon > img {
         max-width: 150px;
         width: auto;
-        transition: transform .45s ease; }
+        transition: transform 0.45s ease; }
       .Home .container .icon .overlay {
         background: rgba(0, 0, 0, 0.25);
         opacity: 0;
@@ -514,7 +515,7 @@ svg {
         position: absolute;
         height: 100%;
         width: 100%;
-        transition: background .25s ease, opacity .25s ease; }
+        transition: background 0.25s ease, opacity 0.25s ease; }
         .Home .container .icon .overlay .project-information {
           position: absolute;
           bottom: 0px;
@@ -525,7 +526,7 @@ svg {
           width: 100%;
           align-items: end;
           transform: translateY(100px);
-          transition: transform .55s ease;
+          transition: transform 0.55s ease;
           background: rgba(0, 0, 0, 0.55); }
           .Home .container .icon .overlay .project-information .description {
             grid-column: span 2;
@@ -567,7 +568,7 @@ svg {
           height: 100%;
           background-size: cover;
           transform: scale(1.01);
-          transition: transform .55s ease;
+          transition: transform 0.55s ease;
           background-position: top; }
         .Home .container .bigPicture .overlay {
           background: rgba(0, 0, 0, 0.25);
@@ -575,7 +576,7 @@ svg {
           position: absolute;
           height: 100%;
           width: 100%;
-          transition: background .25s ease, opacity .25s ease; }
+          transition: background 0.25s ease, opacity 0.25s ease; }
           .Home .container .bigPicture .overlay .project-information {
             position: absolute;
             bottom: 0px;
@@ -586,7 +587,7 @@ svg {
             width: 100%;
             align-items: end;
             transform: translateY(59px);
-            transition: transform .55s ease;
+            transition: transform 0.55s ease;
             background: rgba(0, 0, 0, 0.55); }
             .Home .container .bigPicture .overlay .project-information .description {
               grid-column: span 2;
@@ -608,14 +609,14 @@ svg {
         .Home .container .icon > img {
           max-width: 150px;
           width: auto;
-          transition: transform .45s ease; }
+          transition: transform 0.45s ease; }
         .Home .container .icon .overlay {
           background: rgba(0, 0, 0, 0.25);
           opacity: 0;
           position: absolute;
           height: 100%;
           width: 100%;
-          transition: background .25s ease, opacity .25s ease; }
+          transition: background 0.25s ease, opacity 0.25s ease; }
           .Home .container .icon .overlay .project-information {
             position: absolute;
             bottom: 0px;
@@ -626,7 +627,7 @@ svg {
             width: 100%;
             align-items: end;
             transform: translateY(100px);
-            transition: transform .55s ease;
+            transition: transform 0.55s ease;
             background: rgba(0, 0, 0, 0.55); }
             .Home .container .icon .overlay .project-information .description {
               grid-column: span 2;
@@ -643,7 +644,8 @@ svg {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      min-height: 30vh;
+      min-height: 150px;
+      height: 30vh;
       background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
       background-blend-mode: multiply; }
       .Home .hero h1 {
@@ -665,7 +667,7 @@ svg {
         display: flex;
         align-items: center;
         position: relative;
-        min-height: auto;
+        min-height: 300px;
         height: auto; }
         .Home .container .bigPicture > div .img {
           width: 100%;
@@ -673,7 +675,7 @@ svg {
           background-size: cover;
           background-position: top;
           transform: scale(1.01);
-          transition: transform .55s ease;
+          transition: transform 0.55s ease;
           background-repeat: no-repeat; }
         .Home .container .bigPicture .overlay {
           background: rgba(0, 0, 0, 0.25);
@@ -681,7 +683,7 @@ svg {
           position: absolute;
           height: 100%;
           width: 100%;
-          transition: background .25s ease, opacity .25s ease; }
+          transition: background 0.25s ease, opacity 0.25s ease; }
           .Home .container .bigPicture .overlay .project-information {
             position: absolute;
             bottom: 0px;
@@ -692,7 +694,7 @@ svg {
             width: 100%;
             align-items: end;
             transform: translateY(59px);
-            transition: transform .55s ease;
+            transition: transform 0.55s ease;
             background: rgba(0, 0, 0, 0.55);
             padding-top: 10px; }
             .Home .container .bigPicture .overlay .project-information .description {
@@ -711,18 +713,18 @@ svg {
         justify-content: space-around;
         overflow: hidden;
         position: relative;
-        min-height: 33vh; }
+        min-height: 300px; }
         .Home .container .icon > img {
           max-width: 150px;
           width: auto;
-          transition: transform .45s ease; }
+          transition: transform 0.45s ease; }
         .Home .container .icon .overlay {
           background: rgba(0, 0, 0, 0.25);
           opacity: 0;
           position: absolute;
           height: 100%;
           width: 100%;
-          transition: background .25s ease, opacity .25s ease; }
+          transition: background 0.25s ease, opacity 0.25s ease; }
           .Home .container .icon .overlay .project-information {
             position: absolute;
             bottom: 0px;
@@ -733,7 +735,7 @@ svg {
             width: 100%;
             align-items: end;
             transform: translateY(100px);
-            transition: transform .55s ease;
+            transition: transform 0.55s ease;
             background: rgba(0, 0, 0, 0.55);
             padding-top: 10px; }
             .Home .container .icon .overlay .project-information .description {

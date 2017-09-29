@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ProjectPage from "../../../components/ProjectPage";
 import ProjectSection from "../../../components/ProjectSection";
 
+import Helmet from 'react-helmet';
 
 class Spotter extends Component {
   constructor(props) {
@@ -30,6 +31,26 @@ class Spotter extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
+      <Helmet title={this.state.project.name}>
+          <meta
+            name="description"
+            content={this.state.project.description}
+          />
+          <meta
+            name="keywords"
+            content="spotter, front end development, ui/ux, web development, full stack development, malik browne, malik"
+          />
+          <meta property="og:title" content="Spotter | Malik Browne" />
+          <meta
+            property="og:description"
+            content={this.state.project.description}
+          />
+          <meta property="og:url" content="https://malikbrowne.com/spotter" />
+          <meta
+            property="og:image"
+            content={this.state.project.image_urls.screenshots[0]}
+          />
+        </Helmet>
         <ProjectSection title="Background">
           <p>
             During my time in college, I helped create landing pages for several

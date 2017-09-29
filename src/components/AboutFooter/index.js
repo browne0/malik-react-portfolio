@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const AboutFooter = props => {
-  console.log(props)
   let style = {
     container: {
       backgroundColor: 'rgb(194, 77, 1)',

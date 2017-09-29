@@ -3,6 +3,7 @@ import ProjectPage from "../../../components/ProjectPage/index";
 import ProjectSection from "../../../components/ProjectSection/index";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
+import Helmet from "react-helmet";
 
 class FactsOfToday extends Component {
   constructor(props) {
@@ -32,6 +33,26 @@ class FactsOfToday extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
+        <Helmet title={this.state.project.name}>
+          <meta name="description" content={this.state.project.description} />
+          <meta
+            name="keywords"
+            content="facts of today, front end development, ui/ux, web development, full stack development, malik browne, malik"
+          />
+          <meta
+            property="og:title"
+            content="Facts of Today | Malik Browne"
+          />
+          <meta
+            property="og:description"
+            content={this.state.project.description}
+          />
+          <meta property="og:url" content="https://malikbrowne.com/factsoftoday" />
+          <meta
+            property="og:image"
+            content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
+          />
+        </Helmet>
         <div className="container">
           <img
             src={this.state.project.image_urls.screenshots[0]}
@@ -169,9 +190,9 @@ class FactsOfToday extends Component {
 
           <p>
             We needed to figure out how we could get this information. Our first
-            thought was to use an encyclopedia website API, as that would contain
-            the most accurate information we could find. Unforunately we couldn't
-            find anything like that.
+            thought was to use an encyclopedia website API, as that would
+            contain the most accurate information we could find. Unforunately we
+            couldn't find anything like that.
           </p>
 
           <p>
@@ -192,7 +213,8 @@ class FactsOfToday extends Component {
 
           <p>
             This model had two functions: getEventsByDate, and a cache function
-            to persist data across app refreshes. The important function was getEventsbyDate:
+            to persist data across app refreshes. The important function was
+            getEventsbyDate:
           </p>
 
           <SyntaxHighlighter language="swift" showLineNumbers style={obsidian}>

@@ -6,6 +6,7 @@ import { TextField } from "material-ui";
 import FlipMove from "react-flip-move";
 import PortfolioDelegate from "../../utils/PortfolioDelegate";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
+import Helmet from "react-helmet";
 
 class blogList extends Component {
   constructor() {
@@ -19,24 +20,23 @@ class blogList extends Component {
     this.onFilterChange = this.onFilterChange.bind(this);
     this.filterBlogs = this.filterBlogs.bind(this);
   }
-
-  componentWillMount() {
-    document.title = "Blog | Malik Browne";
+  componentWillUnmount() {
+    this.unmounted = true;
   }
 
   componentDidMount() {
     const delegate = new PortfolioDelegate();
     delegate.getBlogs().then(response => {
-      console.log(response.items)
+      if (this.unmounted) return;
+
       this.setState({
         blogs: response.items,
         filteredBlogs: response.items.sort((a, b) => {
-          return a.fields.date < b.fields.date
+          return a.fields.date < b.fields.date;
         })
       });
     });
   }
-  
 
   filterBlogs() {
     let blogs = this.state.blogs;
@@ -80,8 +80,8 @@ class blogList extends Component {
           <div
             className="post-header-image"
             style={{
-              backgroundImage: `url(${blog.fields.featuredImage.fields
-                .file.url})`
+              backgroundImage: `url(${blog.fields.featuredImage.fields.file
+                .url})`
             }}
           />
         </Link>
@@ -146,9 +146,35 @@ class blogList extends Component {
           <Switch>
             <Route
               exact
-              path={match.url}
+              path={match.path}
               render={() => (
                 <div className="blog-wrapper">
+                  <Helmet title="Blog">
+                    <meta
+                      name="description"
+                      content="Check out the latest blog posts from front end developer, Malik Browne."
+                    />
+                    <meta
+                      name="keywords"
+                      content="web development blogs, blog, coding blogs, front end development, ui/ux, web development, full stack development, malik browne, malik"
+                    />
+                    <meta
+                      property="og:title"
+                      content="Blog | Malik Browne"
+                    />
+                    <meta
+                      property="og:description"
+                      content="Check out the latest blog posts from front end developer, Malik Browne."
+                    />
+                    <meta
+                      property="og:url"
+                      content="https://malikbrowne.com/old-portfolio"
+                    />
+                    <meta
+                      property="og:image"
+                      content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
+                    />
+                  </Helmet>
                   <TextField
                     hintText="Enter a blog post title"
                     floatingLabelText="Search my blog"

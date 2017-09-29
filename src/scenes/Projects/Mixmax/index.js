@@ -3,6 +3,7 @@ import ProjectPage from "../../../components/ProjectPage/index";
 import ProjectSection from "../../../components/ProjectSection/index";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
+import Helmet from 'react-helmet';
 
 class Mixmax extends Component {
   constructor(props) {
@@ -31,6 +32,26 @@ class Mixmax extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
+      <Helmet title={this.state.project.name}>
+          <meta
+            name="description"
+            content={this.state.project.description}
+          />
+          <meta
+            name="keywords"
+            content="mixmax, front end development, ui/ux, web development, full stack development, malik browne, malik"
+          />
+          <meta property="og:title" content="Spotify Mixmax Integration | Malik Browne" />
+          <meta
+            property="og:description"
+            content={this.state.project.description}
+          />
+          <meta property="og:url" content="https://malikbrowne.com/mixmax" />
+          <meta
+            property="og:image"
+            content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
+          />
+        </Helmet>
         <div className="container">
           <img
             src={this.state.project.image_urls.screenshots[2]}
