@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
 const AboutFooter = props => {
+  console.log(props)
   let style = {
     container: {
       backgroundColor: 'rgb(194, 77, 1)',
@@ -11,7 +12,7 @@ const AboutFooter = props => {
   };
   let className = "pic";
   let path = {
-    pathname: `/blog/${props.blog.path}`,
+    pathname: `/blog/${props.blog.fields.slug}`,
     state: props.blog
   };
   return (
@@ -19,8 +20,8 @@ const AboutFooter = props => {
       <div className="footer-container">
         <div className="next-post-info">
           <h2>Check out my latest blog post:</h2>
-          <h3>{props.blog.postData.title}</h3>
-          <h4>{props.blog.postData.summary}</h4>
+          <h3>{props.blog.fields.title}</h3>
+          <h4>{props.blog.fields.description}</h4>
         </div>
         <div className="next-post-image">
           <div className="inner">
@@ -28,8 +29,9 @@ const AboutFooter = props => {
             <Link to={path}>
               <img
                 className={className}
-                src={props.blog.postData.header}
-                alt={props.blog.postData.title}
+                src={props.blog.fields.featuredImage.fields
+                .file.url}
+                alt={props.blog.fields.title}
               />
             </Link>
           </div>

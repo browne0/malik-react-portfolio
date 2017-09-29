@@ -1,30 +1,19 @@
 import { projects as ProjectList } from "../../data/projects.json";
-
-const webpackRequireContext = require.context(
-  `!markdown-with-front-matter-loader!../../_posts`,
-  true,
-  /.md$/
-);
+import {createClient} from 'contentful';
 
 class PortfolioDelegate {
   projects = ProjectList;
-  blogs = webpackRequireContext
-    .keys()
-    .reduce(
-      (memo, fileName) =>
-        memo.concat({
-          path: fileName.match(/.\/([^.]+).*/)[1],
-          postData: webpackRequireContext(fileName)
-        }),
-      []
-    )
-    .map(blog => {
-      blog.path = blog.path.split("/")[1];
-      return blog;
+
+  getBlogs = () => {
+    let client = createClient({
+      space: 'vr1jne1k56yv',
+      accessToken: 'e54141f9d445d4c967173c8ae71f27ee05777a67ee45eef8be8b44ca487831dc'
     })
-    .sort((a, b) => {
-      return a.postData.date_published > b.postData.date_published;
-    });
+
+    return client.getEntries({
+      content_type: '2wKn6yEnZewu2SCCkus4as'
+    })
+  }
 
   getProjectIndex = name => {
     let index = this.projects.findIndex(item => item.name === name);
@@ -42,36 +31,30 @@ class PortfolioDelegate {
   };
 
   getLatestBlog = () => {
-    // once I write more blogs I'll get one of five of the latest blog posts. until then just get the latest blog
+    
     let index = this.blogs.length - 1;
 
     return this.blogs[index];
   };
 
-  getBlogIndex = title => {
-    let index = this.blogs.findIndex(blog => blog.postData.title === title);
+  getNextBlog = (blogArray, title) => {
+    let index = blogArray.findIndex(blog => blog.fields.title === title);
 
-    return index;
-  };
-
-  getNextBlog = blog => {
-    let index = this.getBlogIndex(blog);
-
-    if (index + 1 > this.blogs.length - 1) {
+    if (index + 1 > blogArray.length - 1) {
       return null;
     }
 
-    return this.blogs[index + 1];
+    return blogArray[index + 1];
   };
 
-  getPreviousBlog = blog => {
-    let index = this.getBlogIndex(blog);
+  getPreviousBlog = (blogArray, title) => {
+    let index = blogArray.findIndex(blog => blog.fields.title === title);    
 
     if (index - 1 < 0) {
       return null;
     }
 
-    return this.blogs[index - 1];
+    return blogArray[index - 1];
   };
 }
 

@@ -8,14 +8,23 @@ class About extends Component {
   constructor() {
     super();
 
-    const delegate = new PortfolioDelegate();
     this.state = {
-      blog: delegate.getLatestBlog()
     };
   }
 
   componentWillMount() {
     document.title = "About | Malik Browne";
+
+    const delegate = new PortfolioDelegate();
+
+    // once I write more blogs I'll get one of five of the latest blog posts. until then just get the latest blog
+
+    delegate.getBlogs().then(response => {
+      let latestBlogIndex = response.items.length - 1;
+      this.setState({
+        blog: response.items[latestBlogIndex]
+      });
+    });
   }
 
   componentDidMount() {
@@ -181,7 +190,7 @@ class About extends Component {
             finance.
           </p>
         </Section>
-        <Footer blog={this.state.blog} />
+        {this.state.blog ? <Footer blog={this.state.blog} /> : null}
       </div>
     );
   }

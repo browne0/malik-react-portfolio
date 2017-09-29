@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import ProjectPage from "../../../components/ProjectPage";
 import ProjectSection from "../../../components/ProjectSection/index";
+import SyntaxHighlighter from "react-syntax-highlighter";
+import { obsidian } from "react-syntax-highlighter/dist/styles";
 
 class myChef extends Component {
   constructor(props) {
@@ -11,6 +13,12 @@ class myChef extends Component {
     };
   }
   render() {
+    let style = {
+      title: {
+        color: this.state.project.background_color,
+        fontWeight: "bold"
+      }
+    };
     return (
       <ProjectPage
         name={this.state.project.name}
@@ -23,7 +31,12 @@ class myChef extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
-        <ProjectSection title="Background" />
+        <ProjectSection title="Background">
+          <p>
+            When I was in college, a friend of mine reached out to me about an
+            idea for a company.{" "}
+          </p>
+        </ProjectSection>
         <ProjectSection title="Requirements" />
         <ProjectSection title="Implementation" />
         <ProjectSection title="Project Challenges" />

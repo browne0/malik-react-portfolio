@@ -11,10 +11,9 @@ class blogList extends Component {
   constructor() {
     super();
 
-    const delegate = new PortfolioDelegate();
     this.state = {
-      blogs: delegate.blogs,
-      filteredBlogs: delegate.blogs,
+      blogs: [],
+      filteredBlogs: [],
       search: ""
     };
     this.onFilterChange = this.onFilterChange.bind(this);
@@ -24,6 +23,19 @@ class blogList extends Component {
   componentWillMount() {
     document.title = "Blog | Malik Browne";
   }
+
+  componentDidMount() {
+    const delegate = new PortfolioDelegate();
+    delegate.getBlogs().then(response => {
+      console.log(response.items)
+      this.setState({
+        blogs: response.items,
+        filteredBlogs: response.items.sort((a, b) => {
+          return a.fields.date < b.fields.date
+        })
+      });
+    });
+  }
   
 
   filterBlogs() {
@@ -31,7 +43,7 @@ class blogList extends Component {
     let query = this.state.search;
 
     blogs = blogs.filter(blog => {
-      return blog.postData.title.toLowerCase().includes(query);
+      return blog.fields.title.toLowerCase().includes(query);
     });
     this.setState({ filteredBlogs: blogs });
   }
@@ -56,55 +68,66 @@ class blogList extends Component {
 
     const blogRoutes = this.state.blogs.map(blog => (
       <Route
-        key={blog.path}
-        path={"/blog/" + blog.path}
-        component={() => <BlogPost blog={blog} />}
+        key={blog.fields.slug}
+        path={"/blog/" + blog.fields.slug}
+        component={() => <BlogPost blog={blog} data={this.state.blogs} />}
       />
     ));
 
     const blogPosts = this.state.filteredBlogs.map((blog, index) => {
-      let blogHeader = blog.postData.header ? (
-        <Link to={`/blog/${blog.path}`} className="post-header">
+      let blogHeader = blog.fields.featuredImage ? (
+        <Link to={`/blog/${blog.fields.slug}`} className="post-header">
           <div
             className="post-header-image"
-            style={{ backgroundImage: `url(${blog.postData.header})` }}
+            style={{
+              backgroundImage: `url(${blog.fields.featuredImage.fields
+                .file.url})`
+            }}
           />
         </Link>
       ) : null;
-      let blogLength = blog.postData.__content
+      let blogLength = blog.fields.body
         .replace(/<[^>]*>/g, " ")
         .replace("/s+/g", " ")
         .replace("/+/g")
         .trim()
         .split(" ").length;
 
+      let blogAuthors = blog.fields.author.map(author => {
+        return author.fields.name;
+      });
+
       let blogLengthString =
         blogLength / 275 < 1
           ? (blogLength / 275 * 60).toFixed() + " sec read"
           : (blogLength / 275).toFixed() + " min read";
       return (
-        <article key={blog.path} to={`/blog/${blog.path}`} className="post">
+        <article
+          key={blog.fields.slug}
+          to={`/blog/${blog.fields.slug}`}
+          className="post"
+        >
           <img
-            src="http://malikbrowne.com/assets/selfie/selfie.jpg"
+            src={blog.fields.author[0].fields.profilePhoto.fields.file.url}
             alt=""
             className="avatar"
           />
 
-          <p className="author">{blog.postData.author}</p>
+          <p className="author">{blogAuthors.join(", ")}</p>
           <p className="date">
             <Moment parse="YYYY-MM-DD" format="MMM D">
-              {blog.postData.date_published}
+              {blog.fields.date}
             </Moment>
             <span>&middot;</span>
             {blogLengthString}
           </p>
           {blogHeader}
-          <Link to={`/blog/${blog.path}`} className="title">
-            <h2>{blog.postData.title}</h2>
+          <Link to={`/blog/${blog.fields.slug}`} className="title">
+            <h2>{blog.fields.title}</h2>
           </Link>
-          <p className="summary">{blog.postData.summary}</p>
+          <p className="summary">{blog.fields.description}</p>
           <div className="read-more">
-            <Link to={`/blog/${blog.path}`} className="post-header">
+            <Link to={`/blog/${blog.fields.slug}`} className="post-header">
               Read more...
             </Link>
           </div>
@@ -136,7 +159,13 @@ class blogList extends Component {
                     onChange={this.onFilterChange}
                     value={this.state.search}
                   />
-                  <FlipMove duration={400} easing="ease" className="blog">
+                  <FlipMove
+                    duration={400}
+                    easing="ease"
+                    className="blog"
+                    enterAnimation="fade"
+                    leaveAnimation="fade"
+                  >
                     {blogPosts}
                   </FlipMove>
                 </div>
