@@ -179,7 +179,7 @@ class myChef extends Component {
 
           <p>
             To prevent SQL injections, I made sure to use prepared statements
-            and bound paramters in my PHP code. In order to do this, I used the{" "}
+            and bound parameters in my PHP code. In order to do this, I used the{" "}
             <a href="http://php.net/manual/en/class.pdo.php">
               PDO Library
             </a>{" "}
@@ -260,7 +260,7 @@ if(!empty($_POST))
       }
     }
 
-    // If user logged in successfully, then send them to private members-only page.
+    // If user logged in successfully, then send them to the private members-only page.
     if($goodlogin)
     {
       unset($row['salt']);
@@ -298,8 +298,8 @@ if(!empty($_POST))
           </p>
 
           <p>
-            I also ran into trouble changing what was showed on the home page. I
-            learned about PHP sessions, and with the use of an htaccess file on
+            I also ran into trouble changing what was shown on the home page. I
+            learned about PHP sessions, and with the use of an .htaccess file on
             the server I was able to get it to redirect based on a cookie that
             is set by the server.
           </p>
@@ -309,7 +309,7 @@ if(!empty($_POST))
           <ul>
             <li>The PDO Library</li>
             <li>Prepared Statements</li>
-            <li>MySQL & PHPmyAdmin</li>
+            <li>MySQL & PHPMyAdmin</li>
           </ul>
         </ProjectSection>
       </ProjectPage>

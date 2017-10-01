@@ -39,15 +39,15 @@ class FactsOfToday extends Component {
             name="keywords"
             content="facts of today, front end development, ui/ux, web development, full stack development, malik browne, malik"
           />
-          <meta
-            property="og:title"
-            content="Facts of Today | Malik Browne"
-          />
+          <meta property="og:title" content="Facts of Today | Malik Browne" />
           <meta
             property="og:description"
             content={this.state.project.description}
           />
-          <meta property="og:url" content="https://malikbrowne.com/factsoftoday" />
+          <meta
+            property="og:url"
+            content="https://malikbrowne.com/factsoftoday"
+          />
           <meta
             property="og:image"
             content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
@@ -191,8 +191,8 @@ class FactsOfToday extends Component {
           <p>
             We needed to figure out how we could get this information. Our first
             thought was to use an encyclopedia website API, as that would
-            contain the most accurate information we could find. Unforunately we
-            couldn't find anything like that.
+            contain the most accurate information we could find. Unfortunately
+            we couldn't find anything like that.
           </p>
 
           <p>
@@ -283,7 +283,7 @@ task.resume()
           </p>
 
           <p>
-            This component would also have to pass in the data for the calendar,
+            This component would also have to pass in the data for the calendar
             and load different data based on the day the user is on.
           </p>
 
@@ -306,7 +306,7 @@ task.resume()
           </div>
 
           <h6>
-            Sprint #2: Adding Local App Notfications, and a Web View to
+            Sprint #2: Adding Local App Notifications, and a Web View to
             Wikipedia
           </h6>
 
@@ -314,13 +314,13 @@ task.resume()
             This sprint was the most challenging part of the project. We quickly
             found out that you can't implement automatic push notifications
             without a pre-configured web server. To work around this, we
-            implemented the solution via iOS's Local Notifcation System.
+            implemented the solution via iOS's Local Notification System.
           </p>
 
           <p>
             In order to get the notifications working, we needed to make sure
             that our AppDelegate (our class to handle all application states)
-            was notified whenever somone changed the notification settings.
+            was notified whenever someone changed the notification settings.
           </p>
 
           <p>
@@ -338,7 +338,7 @@ task.resume()
             <a href="https://developer.apple.com/documentation/uikit/uilocalnotification">
               UILocalNotification
             </a>{" "}
-            needs to create the notfication:
+            needs to create the notification:
           </p>
 
           <SyntaxHighlighter language="swift" showLineNumbers style={obsidian}>
@@ -408,7 +408,7 @@ if defaults.objectForKey(SettingsViewController.notificationKey) != nil &&
           </SyntaxHighlighter>
 
           <p>
-            Now all we have to do is declare the actual notification that would
+            Now, all we have to do is declare the actual notification that would
             be sent to the user. We thought it'd be cute to send personalized
             little messages like:
           </p>
@@ -432,13 +432,13 @@ if defaults.objectForKey(SettingsViewController.notificationKey) != nil &&
               <span style={style.title}>Facts of Today!</span>
             </li>
             <li>
-              Come and expand your knowledge on what happened today in history
+              Come and expand your knowledge of what happened today in history
               on <span style={style.title}>Facts of Today!</span>
             </li>
           </ul>
 
           <p>
-            Loading the webview is as simple as passing the wikipedia url from
+            Loading the webview is as simple as passing the Wikipedia URL from
             our HistoryClient to iOS's web view. One of my teammates decided to
             work on adding the view for the calendar as well. Here's the result
             after our second sprint:
@@ -473,9 +473,9 @@ if defaults.objectForKey(SettingsViewController.notificationKey) != nil &&
 
           <p>
             We defined 6 basic colors that{" "}
-            <span style={style.title}>Facts of Today</span> could use, and
-            passed in the associated colors for that color scheme depending on
-            which color the user chose.
+            <span style={style.title}>Facts of Today</span> could use and passed
+            in the associated colors for that color scheme depending on which
+            color the user chose.
           </p>
 
           <p>
@@ -572,7 +572,7 @@ extension UIColor {
               </a>
             </li>
             <li>
-              Update our WebView if a wikipedia url had a location provided
+              Update our WebView if a Wikipedia URL had a location provided
             </li>
             <li>Place a pin at the coordinates of the location</li>
           </ol>
@@ -608,7 +608,7 @@ extension UIColor {
           </div>
 
           <p>
-            We successfully deployed our application to the App Store as well,
+            We successfully deployed our application to the App Store as well
             and got a bunch of downloads.
           </p>
 

@@ -1,7 +1,7 @@
 {
   "name": "malik-react-portfolio",
   "version": "0.1.0",
-  "homepage": "http://dev.beesdesign.net/malikbrowne",
+  "homepage": "http://malikbrowne.com",
   "private": true,
   "devDependencies": {
     "react-scripts": "1.0.11"

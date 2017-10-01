@@ -3,7 +3,7 @@ import ProjectPage from "../../../components/ProjectPage/index";
 import ProjectSection from "../../../components/ProjectSection/index";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
-import Helmet from 'react-helmet';
+import Helmet from "react-helmet";
 
 class Mixmax extends Component {
   constructor(props) {
@@ -32,16 +32,16 @@ class Mixmax extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
-      <Helmet title={this.state.project.name}>
-          <meta
-            name="description"
-            content={this.state.project.description}
-          />
+        <Helmet title={this.state.project.name}>
+          <meta name="description" content={this.state.project.description} />
           <meta
             name="keywords"
             content="mixmax, front end development, ui/ux, web development, full stack development, malik browne, malik"
           />
-          <meta property="og:title" content="Spotify Mixmax Integration | Malik Browne" />
+          <meta
+            property="og:title"
+            content="Spotify Mixmax Integration | Malik Browne"
+          />
           <meta
             property="og:description"
             content={this.state.project.description}
@@ -62,9 +62,9 @@ class Mixmax extends Component {
           <p>
             <span style={style.title}>Mixmax</span> is an awesome startup that
             provides powerful analytics, automation, and enhancements for Gmail.
-            I thought this service was awesome, and wanted to see if I could
+            I thought this service was awesome and wanted to see if I could
             create a <span style={style.title}>Mixmax</span> integration that I
-            could see myself using, since I use the service a lot myself.
+            could see myself using since I use the service a lot myself.
           </p>
 
           <p>
@@ -89,9 +89,8 @@ class Mixmax extends Component {
             </li>
           </ol>
           <p>
-            Since the integration I use the most is the slash command, I decided
-            that I was going to make a slash command that creates a rich media
-            link to Spotify for a specific song, artist, or album.
+            I decided that I was going to make a slash command that creates a
+            rich media link to Spotify for a specific song, artist, or album.
           </p>
         </ProjectSection>
         <ProjectSection title="Requirements">
@@ -105,15 +104,15 @@ class Mixmax extends Component {
           </ol>
 
           <p>
-            Once these two things are implemented in your slash command, it will
-            be able to resolve the URL you provide, and generate a rich preview
-            from a template you can set.
+            Once those two things are implemented in your slash command, it will
+            be able to resolve the URL you provide and generate a rich preview
+            of a template you can set.
           </p>
 
           <p>
             Since email templating is years behind normal web templating, and
             not all email providers render emails the same, we will need to make
-            our templates use backwards-compatible HTML elements and CSS
+            sure our templates use backward-compatible HTML elements and CSS
             properties.
           </p>
 
@@ -151,7 +150,7 @@ class Mixmax extends Component {
           <p>
             Once that was done, I got started on the actual logic for the
             typeahead, since it would be the hardest component to do. The first
-            thing we did was define all of our constants,
+            thing we did was define all of our constants:
           </p>
 
           <SyntaxHighlighter
@@ -180,7 +179,7 @@ let access_token;
           </SyntaxHighlighter>
 
           <p>
-            The first thing we need to do is get the users option, and find the
+            The first thing we need to do is get the users option and find the
             matching hash key for that input. We can do that using two of
             Lodash's helper functions: _.keys, and _.find
           </p>
@@ -202,9 +201,9 @@ let access_token;
 
           <p>
             Now that we have gotten their input we can now figure out which
-            options to return. The options are then filtered based off the users
-            input, as long as they haven't submitted. We can then start querying
-            Spotify now that we know which option the user is looking for.
+            options to return. The options are filtered based on the user's
+            input, as long as they haven't submitted an option. We can then set
+            the first parameter for our Spotify query.
           </p>
 
           <SyntaxHighlighter
@@ -256,10 +255,10 @@ var valueToSearch = input.slice((selectedOption + ': ').length)
             {`// if they haven't started entering a value, ask them what they're searching for
 if (valueToSearch === "") {
   // user hasn't typed in an option yet
-		res.json([{
-			title: "What " + options[selectedOption] + " are you looking for?",
-			text: ''
-		}])
+  res.json([{
+    title: "What " + options[selectedOption] + " are you looking for?",
+    text: ''
+  }])
 }
 `}
           </SyntaxHighlighter>
@@ -384,7 +383,7 @@ request({
           <h6>What is the resolver?</h6>
 
           <p>
-            When a user selects a result from the list, Mixmax neeeds the slash
+            When a user selects a result from the list, Mixmax needs the slash
             command to provide content to put in the email. THe resolver will
             take our search string, and resolve it against Spotify's API.
           </p>
@@ -456,7 +455,7 @@ request({
 `}
           </SyntaxHighlighter>
           <p>
-            Next, we pass in our access token, and set a results object to be
+            Next, we pass in our access token, and set the resulting object to be
             provided to the templates each containing different information
             depending on the result:
           </p>
@@ -558,12 +557,26 @@ request({
           </div>
         </ProjectSection>
         <ProjectSection title="Project Challenges">
-          <p>This was one of the more technically challenging projects I've worked on. There was a lot that I didn't understand at first. Some of the things that I learned a lot about from this project include:</p>
+          <p>
+            This was one of the more technically challenging projects I've
+            worked on. There was a lot that I didn't understand at first and
+            realized I needed to find some other implementations.
+          </p>
+
+          <p>
+            Some of the things that I learned a lot about from this project
+            include:
+          </p>
           <ul>
-            <li><a href="https://lodash.com/">Lodash</a></li>
+            <li>
+              <a href="https://lodash.com/">Lodash</a>
+            </li>
             <li>Using a response to resolve another response</li>
             <li>Creating a web application with only NodeJS and HTML</li>
-            <li>Algorithmic thinking: It challenged me to think in order of logical steps rather than how do I get from point A to point B</li>
+            <li>
+              Algorithmic thinking: It challenged me to think in order of
+              logical steps rather than how do I get from point A to point B
+            </li>
             <li>base64 encoding</li>
           </ul>
         </ProjectSection>

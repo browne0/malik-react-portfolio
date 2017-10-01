@@ -14,7 +14,7 @@ import ThemeProvider from "material-ui/styles/MuiThemeProvider";
 injectTapEventPlugin();
 
 render(
-  <Router basename="/malikbrowne">
+  <Router>
     <ThemeProvider>
       <ScrollToTop>
         <App />

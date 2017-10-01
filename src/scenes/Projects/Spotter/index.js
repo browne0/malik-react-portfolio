@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ProjectPage from "../../../components/ProjectPage";
 import ProjectSection from "../../../components/ProjectSection";
 
-import Helmet from 'react-helmet';
+import Helmet from "react-helmet";
 
 class Spotter extends Component {
   constructor(props) {
@@ -31,11 +31,8 @@ class Spotter extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
-      <Helmet title={this.state.project.name}>
-          <meta
-            name="description"
-            content={this.state.project.description}
-          />
+        <Helmet title={this.state.project.name}>
+          <meta name="description" content={this.state.project.description} />
           <meta
             name="keywords"
             content="spotter, front end development, ui/ux, web development, full stack development, malik browne, malik"
@@ -62,14 +59,14 @@ class Spotter extends Component {
           <p>
             <span style={style.title}>Spotter</span> provides a fitness tracking
             device that any person from the everyday bodybuilder to the novice
-            can utilize fully.
+            can fully utilize.
           </p>
         </ProjectSection>
         <ProjectSection title="Requirements">
           <p>
             Since the team had earned the opportunity to present at TechCrunch
-            in New York City, they needed a landing page for them to do perform
-            the following tasks:
+            in New York City, they needed a landing page to perform the
+            following tasks:
           </p>
           <ol>
             <li>Show off their awesome product</li>
@@ -89,23 +86,24 @@ class Spotter extends Component {
         <ProjectSection title="Implementation">
           <p>
             The <span style={style.title}>Spotter</span> team came to me with a
-            base template that they had found on ThemeForest. However, the theme
-            had a lot of things that needed to be redone. This includes:
+            base template that they had found on{" "}
+            <a href="https://themeforest.net/">ThemeForest.</a> However, the
+            theme had a lot of things that needed to be redone. This includes:
           </p>
           <ol>
             <li>
               Fixing hacky solutions created by the original template creator
             </li>
             <li>Redoing animations</li>
-            <li>I wanted to use a video for the background</li>
-            <li>Use Twitter API to get recent tweets</li>
+            <li>Implementing background video on landing page</li>
+            <li>Using Twitter API to get recent tweets</li>
           </ol>
 
           <h6>Home Page</h6>
           <p>
-            I wanted something that would look unique, and would portray a vibe
-            for the startup. I looked on YouTube to find appropriate videos to
-            use, and found this awesome{" "}
+            I wanted something that would look unique and would portray an
+            urban vibe for the startup. I looked on YouTube to find appropriate
+            videos to use and found this awesome{" "}
             <a href="http://youtu.be/kn-1D5z3-Cs">
               stock video of New York City.
             </a>
@@ -113,7 +111,7 @@ class Spotter extends Component {
           <p>
             Since they were presenting in New York, I thought this would
             definitely portray an awesome vibe for Tech Crunch. I added the
-            title of the company, as well as thier slogan, and a{" "}
+            title of the company, as well as their slogan, and a{" "}
             <a href="http://www.hongkiat.com/blog/call-to-action-buttons-guidelines-best-practices-and-examples/">
               call to action.
             </a>
@@ -141,7 +139,7 @@ class Spotter extends Component {
           </p>
           <p>
             The final result ended up looking very smooth, and impressed a lot
-            of people.
+            of people:
           </p>
           <img
             className="pic"
@@ -150,14 +148,14 @@ class Spotter extends Component {
           />
           <h6>Newsletter &amp; Gallery</h6>
           <p>
-            The newsletter was straight forward – it uses AJAX to submit the
-            email to a PHP file. The file will then validate the email, and then
-            send it off to MailChimp.
+            The newsletter was straightforward – it uses AJAX to submit the
+            email address to a PHP file. The file will then validate the email,
+            and then send it off to MailChimp.
           </p>
           <p>
             For the gallery, I pulled the four most recent pictures from{" "}
             <span style={style.title}>Spotter's</span> Instagram. Once the
-            photos were retrieved I created hover animations over each photo,
+            photos were retrieved I created hover animations over each photo
             and added a lightbox in order to see a larger version of the image.
           </p>
           <p>
@@ -181,9 +179,9 @@ class Spotter extends Component {
             to get the user's attention.
           </p>
           <p>
-            The form submitted via AJAX to a contact.php file. That file parses
-            all the fields, and if valid sends it over to the Spotter team. The
-            final result can be seen below:
+            Like I said before, the form is submitted via AJAX to a contact.php
+            file. The file parses all the provided fields, and if valid will send it over to
+            the Spotter team. The final result can be seen below:
           </p>
           <img
             src={this.state.project.image_urls.screenshots[2]}
@@ -196,21 +194,24 @@ class Spotter extends Component {
             I spent a lot of time trying to make this website look perfect. The
             first part that I struggled with was creating the smooth animations
             on the Features page. Since there was a lot going on, I had to
-            utilize the ":after" properties on some of the elements.
+            utilize the ":after" and ":before" properties on some of the elements.
           </p>
           <p>
             The next part I had trouble with was the video background. Instead
-            of only being in the top section, I wanted it to stay in the background, and
-            swap between transparent and white sections as the user scrolls down
-            the page. I ended up having to use a combination of CSS and
-            JavaScript, since the video is initially loaded via video plugin.
+            of only being in the top section, I wanted it to stay in the
+            background, and swap between transparent and white sections as the
+            user scrolls down the page. I ended up having to use a combination
+            of CSS and JavaScript since the video is initially loaded via video
+            plugin.
           </p>
           <p>Some things that I learned from this project were:</p>
 
           <ul>
             <li>Parallax Scrolling</li>
             <li>Advanced CSS3 Animations</li>
-            <li>AJAX submissions to prevent client-side refreshing on submit</li>
+            <li>
+              AJAX submissions to prevent client-side refresh upon submitting
+            </li>
             <li>Branding and setting color schemes for websites</li>
             <li>Basic UX Principles</li>
           </ul>

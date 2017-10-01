@@ -64,7 +64,7 @@ class OldPortfolio extends Component {
           <p>
             I thought it was really cool how she had the screen split up into
             two separate parts, and had one side scroll along with the content.
-            I took that effect, and made it my own for the portfolio
+            I took that effect and made it my own for the portfolio.
           </p>
         </ProjectSection>
         <ProjectSection title="Requirements">
@@ -73,7 +73,7 @@ class OldPortfolio extends Component {
             wanted to learn how to create single page applications.
           </p>
           <p>
-            <b>Two way data binding blew my mind.</b>
+            <b>Two-way data binding blew my mind.</b>
           </p>
           <p>I knew I wanted my portfolio to have three things:</p>
 
@@ -184,7 +184,7 @@ $('.animated').waypoint(function() {
           </p>
 
           <p>
-            This is pretty simple to do with jQuery, and a little bit of Regex:
+            This is pretty simple to do with jQuery and a little bit of Regex:
           </p>
 
           <SyntaxHighlighter
@@ -218,7 +218,7 @@ $('.animated').waypoint(function() {
           </p>
 
           <p>
-            This project was an awesome precursor into Angular, and helped me
+            This project was an awesome precursor into Angular and it helped me
             learn how powerful JavaScript can be if used correctly.
           </p>
 

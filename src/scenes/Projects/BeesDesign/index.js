@@ -80,7 +80,7 @@ class BeesDesign extends Component {
           <p>
             My first exploration into web development started{" "}
             <b>way back in 2010.</b> I started developing an interest in coding
-            when I was fifteen, and after three years of practice I realized
+            when I was fifteen, and after three years of practice, I realized
             that I could work for small businesses and make a profit.
           </p>
           <p>
@@ -92,15 +92,15 @@ class BeesDesign extends Component {
         <ProjectSection title="Requirements">
           <p>
             I wanted a website that was simple and straight to the point, almost
-            like an online business card. At this point I had just learned about
-            Bootstrap, and was interested in making the website mobile-friendly
+            like an online business card. At this point, I had just learned about
+            Bootstrap and was interested in making the website mobile-friendly
             as well.
           </p>
 
           <p>
             I also wanted to add a contact form for the first time. I had
             recently learned PHP, but I had not learned any type of input
-            sanitization, or other things related to security server side.
+            sanitization or other things related to security on the server side.
           </p>
 
           <p>
@@ -124,11 +124,11 @@ class BeesDesign extends Component {
           </p>
           <h6>Home Page</h6>
           <p>
-            Using Bootstrap I was able to create a home page using the{" "}
+            Using Bootstrap I was able to create a homepage using the{" "}
             <a href="http://getbootstrap.com/docs/4.0/examples/jumbotron/">
               Jumbotron
             </a>{" "}
-            template, and learned a lot on how Bootstrap's grid system worked,
+            template and learned a lot about how Bootstrap's grid system worked,
             and how media queries tie into responsive designs.
           </p>
           <img
@@ -160,8 +160,8 @@ class BeesDesign extends Component {
           </ol>
           <p>
             The template would then scale down to a one column layout, similar
-            to the home page for mobile devices and tablets. At this point I was
-            very happy with the final result, and received many compliments on
+            to the home page for mobile devices and tablets. At this point, I was
+            very happy with the final result and received many compliments on
             how it looked.
           </p>
           <img
@@ -264,7 +264,7 @@ if (!$isInputOK) {
           <ul>
             <li>Vendor Prefixes</li>
             <li>Sanitizing User Input</li>
-            <li>Dealing with Cross Site Scripting</li>
+            <li>Dealing with Cross-Site Scripting</li>
             <li>Media Queries</li>
           </ul>
         </ProjectSection>

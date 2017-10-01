@@ -24,7 +24,7 @@
     {
       "name": "Spotify Mixmax Integration",
       "description":
-        "A spotify mixmax slash command that allows you to search for a track, artist, or album to embed in an email.",
+        "A Spotify Mixmax slash command that allows you to search for a track, artist, or album to embed in an email.",
       "technologies": ["NodeJS", "HTML5/CSS3"],
       "big_picture": false,
       "image_urls": {
