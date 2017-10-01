@@ -113,7 +113,7 @@ class blogList extends Component {
             className="avatar"
           />
 
-          <p className="author">{blogAuthors.join(", ")}</p>
+          <p className="author"><a href={blog.fields.author[0].fields.twitter}>{blogAuthors.join(", ")}</a></p>
           <p className="date">
             <Moment parse="YYYY-MM-DD" format="MMM D">
               {blog.fields.date}

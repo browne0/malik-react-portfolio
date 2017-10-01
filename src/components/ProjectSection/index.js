@@ -5,8 +5,8 @@ const ProjectSection = props => {
     ? `project-section ${props.className}`
     : "project-section";
   return (
-    <section className={className}>
-      <h4>{props.title}</h4>
+    <section className={className} style={props.style}>
+      {props.title ? <h4>{props.title}</h4> : null}
       <div className="section-content">{props.children}</div>
     </section>
   );

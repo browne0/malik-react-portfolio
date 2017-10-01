@@ -16,7 +16,7 @@ class FactsOfToday extends Component {
   render() {
     let style = {
       title: {
-        color: "#5599D7",
+        color: this.state.project.color,
         fontWeight: "bold"
       }
     };
@@ -24,7 +24,7 @@ class FactsOfToday extends Component {
       <ProjectPage
         name={this.state.project.name}
         title={this.state.project.name}
-        color="#333"
+        color={this.state.project.color}
         technologies={this.state.project.technologies}
         description={this.state.project.description}
         github={this.state.project.github_url}

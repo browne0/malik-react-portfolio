@@ -86,7 +86,7 @@
       "github_url": "https://github.com/browne0/FactsOfToday",
       "live_url": "https://itunes.apple.com/us/app/facts-of-today/id1118574083?mt=8",
       "background_color": "#fff",
-      "color": "#333",
+      "color": "#5599D7",
       "path": "/factsoftoday"
     },
     {
@@ -113,13 +113,15 @@
         "logo": "http://malikbrowne.com/assets/logos/old_portfolio_logo.png",
         "screenshots": [
           "http://malikbrowne.com/assets/screenshots/old_portfolio.jpg",
-          "http://malikbrowne.com/assets/screenshots/old_portfolio_halfandhalf.png"
+          "http://malikbrowne.com/assets/screenshots/old_portfolio_halfandhalf.png",
+          "http://malikbrowne.com/assets/project_gifs/oldportfolio_halfandhalf.gif"
         ]
       },
       "github_url": "https://github.com/browne0/browne0.github.io",
       "live_url": "https://browne0.github.io",
       "path": "/old-portfolio",
-      "background_color": "#333"
+      "background_color": "#333",
+      "color": "rgb(194, 77, 1)"
     }
   ]
 }

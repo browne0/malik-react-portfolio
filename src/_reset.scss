@@ -11,11 +11,6 @@
   outline: 0;
 }
 
-html,
-body {
-  height: 100%;
-}
-
 html {
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
@@ -29,7 +24,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.47;
-  color: #333;
+  color: rgba(0,0,0,.84);
 }
 
 ul,

@@ -22,28 +22,6 @@
       display: none;
     }
   }
-  progress {
-    appearance: none;
-    display: block;
-    border: 0;
-    position: fixed;
-    // top: 0;
-    width: 100vw;
-    height: 0.4rem;
-    border: 0;
-    background-color: transparent;
-    color: rgb(194, 77, 1);
-    z-index: 1;
-    &::-webkit-progress-bar {
-      background: #FFF;
-    }
-    &::-webkit-progress-value {
-      background: rgb(194, 77, 1);
-    }
-    &::-moz-progress-bar {
-      background-color: rgb(194, 77, 1);
-    }
-  }
   a {
     display: inline-block;
     transition: color .25s ease;
@@ -109,11 +87,10 @@
       background-color: #fff;
       width: 90vw;
       padding: 20px;
-      padding-bottom: 0px;
       margin: 0px auto;
       font-size: 1.2em;
       color: #333;
-      font-family: PT Serif, 'Times New Roman', Times, serif;      
+      font-family: Average, 'Times New Roman', Times, serif;      
       h1 {
         font-family: Roboto;
       }
@@ -121,10 +98,27 @@
         background-color: #272822;
         color: #fafafa;
       }
+      p {
+        margin-bottom: 15px;
+        img {
+          display: block;
+          margin: auto;
+        }
+      }
+      ul, ol {
+        font-size: 18px;
+        font-weight: normal;
+      }
+      a {
+        color: rgb(194, 77, 1);
+        text-decoration: none;
+        display: inline;
+      }
     }
     .comments {
       width: 90vw;
       min-height: 347px;
+      padding: 20px 0px 0px 20px;
       padding-top: 20px;
       margin: 0px auto;
     }
@@ -159,28 +153,6 @@
 @media (min-width: 900px) {
   .blog-post {
     position: relative;
-    progress {
-      appearance: none;
-      display: block;
-      border: 0;
-      position: fixed;
-      // top: 0;
-      width: 100vw;
-      height: 0.4rem;
-      border: 0;
-      background-color: transparent;
-      color: rgb(194, 77, 1);
-      z-index: 1;
-      &::-webkit-progress-bar {
-        background: #FFF;
-      }
-      &::-webkit-progress-value {
-        background: rgb(194, 77, 1);
-      }
-      &::-moz-progress-bar {
-        background-color: rgb(194, 77, 1);
-      }
-    }
     .back-to-blog {
       position: fixed;
       background-color: #fafafa;
@@ -271,9 +243,10 @@
         width: 900px;
         padding: 20px;
         margin: 0px auto;
-        color: #333;
+        color: rgba(0,0,0,.84);
         font-size: 21px;
-        font-family: PT Serif, 'Times New Roman', Times, serif;        
+        line-height: 1.58;
+        font-family: Average, 'Times New Roman', Times, serif;        
         h1 {
           font-family: Roboto;
         }
@@ -283,14 +256,28 @@
           font-size: 16px;
         }
         p {
-          margin: 25px 0px 10px 0px;
+          margin: 30px auto;
+          font-size: 1em;
+          img {
+            display: block;
+            margin: 20px auto;
+          }
+        }
+        ul, ol {
+          font-size: 1em;
+          font-weight: normal;
+        }
+        a {
+          color: rgb(194, 77, 1);
+          text-decoration: none;
+          display: inline;
         }
       }
       .comments {
         width: 900px;
         padding: 20px 0px 0px 20px;
         margin: 0px auto;
-        min-height: 409px;
+        min-height: 404px;
       }
       .blog-guide {
         background-color: #fff;

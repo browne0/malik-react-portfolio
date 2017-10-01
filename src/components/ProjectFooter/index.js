@@ -21,7 +21,7 @@ const ProjectFooter = props => {
     <div className="project-footer" style={style.container}>
       <div className="footer-container">
         <div className="next-project-info">
-          <h2>Enjoyed the case study? Check out my next project:</h2>
+          <h2>Enjoyed the case study? Check out this project:</h2>
           <h3>{props.nextProject.name}</h3>
           <h4>{props.nextProject.description}</h4>
         </div>

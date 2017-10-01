@@ -36,7 +36,7 @@
     "watch-css": "npm run build-css && node-sass src/base.scss -o src/styles/ --watch --recursive",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
-    "build": "npm run build-css && react-scripts build && react-snapshot",
+    "build": "npm run build-css && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

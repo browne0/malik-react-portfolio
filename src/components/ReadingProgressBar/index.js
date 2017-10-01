@@ -1,81 +1,90 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
-import throttle from './throttle'
+import React, { Component } from "react";
+import PropTypes from "prop-types";
+import throttle from "./throttle";
 
 export default class ProgressBar extends Component {
-
   static propTypes = {
-      targetEl: PropTypes.string.isRequired
-  }
+    targetEl: PropTypes.string
+  };
 
   static defaultProps = {
-  }
+    color: "rgb(194, 77, 1)",
+    targetEl: "body"
+  };
 
   constructor(props) {
-    super(props)
+    super(props);
 
-    this.targetEl = null
-    this.rootEl = null
-    this.max = 0
-    this.viewportH = 0
-    this.targetHeight = 0
+    this.max = 0;
 
     this.state = {
-      value: 0,
-    }
+      width: 0
+    };
+    this.update = this.update.bind(this);
+    this.handleScroll = this.handleScroll.bind(this);
+    this.handleResize = this.handleResize.bind(this);
   }
 
   componentDidMount() {
-    const { props } = this
-
-    this.targetEl = props.targetEl ? document.querySelector(props.targetEl) : document.body
-    this.rootEl = props.rootEl ? document.querySelector(props.rootEl) : window
-
-    this.measure()
-    this.rootEl.addEventListener('scroll', this.handleScroll)
-    window.addEventListener('resize', this.handleResize)
+    this.timeout = setTimeout(() => {
+      if (this.unmounted) return;
+      this.measure();
+      window.addEventListener("scroll", this.handleScroll);
+      window.addEventListener("resize", this.handleResize);
+    }, 150);
   }
 
   componentWillUnmount() {
-    this.rootEl.removeEventListener('scroll', this.handleScroll)
-    window.removeEventListener('resize', this.handleResize)
+    if (this.timeout) clearTimeout(this.timeout);
+    this.unmounted = true;
+    window.removeEventListener("scroll", this.handleScroll);
+    window.removeEventListener("resize", this.handleResize);
   }
 
-  measureViewportHeight() {
-    return !this.props.rootEl ?
-      Math.max(document.documentElement.clientHeight, window.innerHeight || 0)
-      :
-      this.rootEl.clientHeight
+  handleResize() {
+    throttle(this.measure(), 100);
+  }
+
+  handleScroll() {
+    throttle(this.update(), 100);
   }
 
   measure() {
-    this.targetHeight = this.targetEl.getBoundingClientRect().height
-    this.viewportH = this.measureViewportHeight()
-    this.max = this.targetHeight - this.viewportH + this.targetEl.offsetTop
+    this.max =
+      document.scrollingElement.scrollHeight -
+      document.scrollingElement.clientHeight;
+    this.update();
   }
 
-  handleResize = () => {
-    throttle(this.measure(), 100)
-  }
+  update() {
+    this.max = Math.max(this.max, document.scrollingElement.scrollTop);
 
-  handleScroll = () => {
-    throttle(this.update(), 100)
-  }
-
-  update = () => {
-    const value = !this.props.rootEl ?
-      window.pageYOffset || document.documentElement.scrollTop
-      :
-      this.rootEl.scrollTop
+    const value = document.scrollingElement.scrollTop / this.max * 100;
 
     this.setState({
-      value,
-    })
+      width: value
+    });
   }
 
   render() {
+    let style = {
+      progressWrapper: {
+        width: "100%",
+        height: "0.4rem",
+        position: "fixed",
+        zIndex: '9999',
+        backgroundColor: "transparent"
+      },
+      progressBar: {
+        height: "0.4rem",
+        width: `${this.state.width}%`,
+        backgroundColor: this.props.color
+      }
+    };
     return (
-      <progress value={ this.state.value } max={ this.max } className={ this.props.className }></progress>
-    )
+      <div className="progress-wrapper" style={style.progressWrapper}>
+        <div className="progress" style={style.progressBar} />
+      </div>
+    );
   }
 }

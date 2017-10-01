@@ -402,6 +402,7 @@
     .hero {
       display: flex;
       height: 20vh;
+      min-height: 150px;
       flex-direction: column;
       justify-content: center;
       align-items: center;
@@ -659,10 +660,10 @@
       height: calc(100vh - 116px);
       color: #222;
       background-color: #fafafa;
-      // background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAICAYAAADA+m62AAAAPklEQVQoU2NkQAOvX79uEBUVbUAXZ0QWgCnCphiuEF0SnQ9WiMs6ZHFGXIpgToLJo7gR3QPIiolSCNJAtEIAt5YnSnQvmLAAAAAASUVORK5CYII=);
       .hero {
         display: flex;
-        height: 25vh;
+        min-height: 150px;
+        height: 25%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -676,7 +677,7 @@
       .wrapper {
         display: flex;
         flex-direction: row;
-    
+        margin-bottom: 80px;
         h4 {
           font-size: 1.3em;
         }
@@ -688,7 +689,7 @@
         .contact-form,
         .other-contact {
           width: 50%;
-          min-height: 100%;
+          min-height: 400px;
           display: flex;
           flex-direction: column;
         }

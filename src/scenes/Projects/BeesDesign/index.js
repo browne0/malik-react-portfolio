@@ -22,12 +22,14 @@ class BeesDesign extends Component {
       }
     };
     let settings = {
-      dots: true,
+      dots: false,
+      arrows: false,
       infinite: true,
-      speed: 250,
-      draggable: true,
-      slidesToShow: 1,
-      slidesToScroll: 1
+      speed: 1000,
+      fade: true,
+      autoplaySpeed: 4000,
+      draggable: false,
+      autoplay: true
     };
 
     const screenshots = this.state.project.image_urls.screenshots.map(img => {

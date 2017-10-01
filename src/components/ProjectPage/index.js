@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import Button from "../../components/ThemedButton";
 import ProjectSection from "../../components/ProjectSection";
 import ProjectFooter from "../../components/ProjectFooter";
+import ProgressBar from '../../components/ReadingProgressBar'
 
 class ProjectPage extends Component {
   constructor(props) {
@@ -29,7 +30,6 @@ class ProjectPage extends Component {
 
   componentDidMount() {
     document.title = this.props.title + " | Malik Browne";
-    // console.log(this.state.nextProj)
   }
 
   render(props) {
@@ -39,7 +39,7 @@ class ProjectPage extends Component {
     const style = {
       button: {
         display: "inline-block",
-        padding: "10px 10px 5px 0px"
+        padding: "10px 10px 10px 0px"
       },
       img: {
         maxHeight: "500px"
@@ -58,70 +58,49 @@ class ProjectPage extends Component {
     let screenshotClass = this.props.bigPicture
       ? "screenshot-big-picture"
       : null;
+    
+    let color = this.props.color !== undefined ? this.props.color : this.props.bgColor;
 
-    let content = this.props.bigPicture ? (
-      <div className="wrapper">
-        <div className="hero">
-          <h2
-            style={{
-              color: this.props.color ? this.props.color : this.props.bgColor
-            }}
+    return (
+      <div className={`project`}>
+        <ProgressBar targetEl=".project" color={color} />
+        <div className="wrapper">
+          <div className="hero">
+            <h2
+              style={{
+                color: this.props.color ? this.props.color : this.props.bgColor
+              }}
+            >
+              {this.props.name}
+            </h2>
+            <p>{this.props.description}</p>
+          </div>
+          <ProjectSection style={{ margin: "0px auto 20px auto" }}>
+            {githubButton}
+            {liveUrlButton}
+          </ProjectSection>
+          {this.props.bigPicture && <div
+            className={screenshotClass}
+            style={{ backgroundImage: `url(${this.props.images[0]})` }}
+          />}
+          {this.props.children}
+          <ProjectSection title="Technologies Used">
+            <ul>{technologies}</ul>
+          </ProjectSection>
+          <ProjectSection
+            className="project-section-last"
+            title="Available Links"
           >
-            {this.props.name}
-          </h2>
-          <p>{this.props.description}</p>
+            <div style={style.button}>{githubButton}</div>
+            <div style={style.button}>{liveUrlButton}</div>
+          </ProjectSection>
+          <ProjectFooter
+            currentProject={this.props}
+            nextProject={this.state.nextProj}
+          />
         </div>
-        <div
-          className={screenshotClass}
-          style={{ backgroundImage: `url(${this.props.images[0]})` }}
-        />
-        {this.props.children}
-        <ProjectSection title="Technologies Used">
-          <ul>{technologies}</ul>
-        </ProjectSection>
-        <ProjectSection
-          className="project-section-last"
-          title="Available Links"
-        >
-          <div style={style.button}>{githubButton}</div>
-          <div style={style.button}>{liveUrlButton}</div>
-        </ProjectSection>
-        <ProjectFooter
-          currentProject={this.props}
-          nextProject={this.state.nextProj}
-        />
-      </div>
-    ) : (
-      <div className="wrapper">
-        <div className="hero">
-          <h2
-            style={{
-              color: this.props.color ? this.props.color : this.props.bgColor
-            }}
-          >
-            {this.props.name}
-          </h2>
-          <p>{this.props.description}</p>
-        </div>
-        {this.props.children}
-        <ProjectSection title="Technologies Used">
-          <ul>{technologies}</ul>
-        </ProjectSection>
-        <ProjectSection
-          className="project-section-last"
-          title="Available Links"
-        >
-          {githubButton}
-          {liveUrlButton}
-        </ProjectSection>
-        <ProjectFooter
-          currentProject={this.props}
-          nextProject={this.state.nextProj}
-        />
       </div>
     );
-
-    return <div className={`project`}>{content}</div>;
   }
 }
 

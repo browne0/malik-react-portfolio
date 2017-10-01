@@ -8,10 +8,6 @@
 :focus {
   outline: 0; }
 
-html,
-body {
-  height: 100%; }
-
 html {
   font-size: 62.5%;
   text-rendering: optimizeLegibility;
@@ -24,7 +20,7 @@ body {
   font-family: Arial, sans-serif;
   font-size: 1.5rem;
   line-height: 1.47;
-  color: #333; }
+  color: rgba(0, 0, 0, 0.84); }
 
 ul,
 ol {
@@ -942,7 +938,7 @@ svg {
       width: 90%;
       margin: 0px auto; }
       .About .about-section h4 {
-        font-size: 1.25em;
+        font-size: 1.75em;
         padding: 10px 0px 0px 0px;
         margin-top: 10px; }
       .About .about-section h6 {
@@ -950,20 +946,20 @@ svg {
         padding: 5px 0px;
         margin-top: 0px; }
       .About .about-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .About .about-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
         line-height: 1.75;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .About .about-section iframe {
         margin-top: 30px;
         width: 100%;
         height: 452px; }
       .About .about-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal; }
       .About .about-section img {
         width: 100%;
@@ -1003,11 +999,11 @@ svg {
             text-align: left; }
           .About .about-footer .footer-container .next-post-info h3 {
             font-size: 1.5em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             text-align: left; }
           .About .about-footer .footer-container .next-post-info h4 {
             font-size: 1.4em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal;
             text-align: left; }
         .About .about-footer .footer-container .next-post-image {
@@ -1080,15 +1076,15 @@ svg {
         padding: 5px 0px;
         margin-top: 0px; }
       .About .about-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .About .about-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .About .about-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal; }
       .About .about-section img {
         width: 100%;
@@ -1122,11 +1118,11 @@ svg {
             text-align: left; }
           .About .about-footer .footer-container .next-post-info h3 {
             font-size: 1.5em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             text-align: left; }
           .About .about-footer .footer-container .next-post-info h4 {
             font-size: 1.4em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal;
             text-align: left; }
         .About .about-footer .footer-container .next-post-image {
@@ -1198,15 +1194,15 @@ svg {
         padding: 5px 0px;
         margin-top: 20px; }
       .About .about-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .About .about-section p {
         margin-top: 30px;
         margin-bottom: 0px;
         font-size: 1.3em;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .About .about-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal; }
       .About .about-section img {
         width: 100%;
@@ -1239,11 +1235,11 @@ svg {
             text-align: left; }
           .About .about-footer .footer-container .next-post-info h3 {
             font-size: 1.5em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             text-align: left; }
           .About .about-footer .footer-container .next-post-info h4 {
             font-size: 1.4em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal;
             text-align: left; }
         .About .about-footer .footer-container .next-post-image {
@@ -1315,15 +1311,15 @@ svg {
         padding: 5px 0px;
         margin-top: 20px; }
       .About .about-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .About .about-section p {
         margin-top: 30px;
         margin-bottom: 0px;
         font-size: 1.325em;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .About .about-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal; }
       .About .about-section img {
         width: 100%;
@@ -1356,11 +1352,11 @@ svg {
             text-align: left; }
           .About .about-footer .footer-container .next-post-info h3 {
             font-size: 1.5em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             text-align: left; }
           .About .about-footer .footer-container .next-post-info h4 {
             font-size: 1.4em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal;
             text-align: left; }
         .About .about-footer .footer-container .next-post-image {
@@ -1431,15 +1427,15 @@ svg {
         padding: 5px 0px;
         margin-top: 20px; }
       .About .about-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .About .about-section p {
         margin-top: 30px;
         margin-bottom: 0px;
         font-size: 1.325em;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .About .about-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal; }
       .About .about-section img {
         width: 100%;
@@ -1471,10 +1467,10 @@ svg {
             margin-bottom: 15px; }
           .About .about-footer .footer-container .next-post-info h3 {
             font-size: 1.9em;
-            font-family: PT Serif, "Times New Roman", Times, serif; }
+            font-family: Average, "Times New Roman", Times, serif; }
           .About .about-footer .footer-container .next-post-info h4 {
             font-size: 1.6em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal; }
         .About .about-footer .footer-container .next-post-image {
           display: flex;
@@ -1545,15 +1541,15 @@ svg {
           padding: 5px 0px;
           margin-top: 20px; }
         .About .about-section a {
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: Average, "Times New Roman", Times, serif;
           color: #c24d01; }
         .About .about-section p {
           margin-top: 30px;
           margin-bottom: 0px;
           font-size: 1.325em;
-          font-family: PT Serif, "Times New Roman", Times, serif; }
+          font-family: Average, "Times New Roman", Times, serif; }
         .About .about-section li {
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: Average, "Times New Roman", Times, serif;
           font-weight: normal; }
         .About .about-section img {
           width: 100%;
@@ -1585,10 +1581,10 @@ svg {
               margin-bottom: 15px; }
             .About .about-footer .footer-container .next-post-info h3 {
               font-size: 1.9em;
-              font-family: PT Serif, "Times New Roman", Times, serif; }
+              font-family: Average, "Times New Roman", Times, serif; }
             .About .about-footer .footer-container .next-post-info h4 {
               font-size: 1.6em;
-              font-family: PT Serif, "Times New Roman", Times, serif;
+              font-family: Average, "Times New Roman", Times, serif;
               font-weight: normal; }
           .About .about-footer .footer-container .next-post-image {
             display: flex;
@@ -1824,7 +1820,7 @@ svg {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0px auto;
+    margin: 0px auto 30px auto;
     min-height: calc(100vh - 116px);
     padding-top: 0px; }
     .blog-wrapper .blog-filter {
@@ -1897,7 +1893,8 @@ svg {
       align-items: center;
       width: 100vw;
       padding-top: 0px;
-      min-height: calc(100vh - 116px); }
+      min-height: calc(100vh - 116px);
+      margin: 15px auto 30px auto; }
       .blog-wrapper .blog-filter {
         width: 80vw !important; }
       .blog-wrapper .blog {
@@ -1968,7 +1965,7 @@ svg {
       align-items: center;
       width: calc(68vw - 50px);
       min-height: calc(100vh - 116px);
-      margin: 0px auto;
+      margin: 15px auto 30px auto;
       padding-top: 0px; }
       .blog-wrapper .blog-filter {
         width: 55vw !important;
@@ -2056,23 +2053,6 @@ svg {
       align-items: center; }
     .blog-post .back-to-blog p {
       display: none; }
-  .blog-post progress {
-    appearance: none;
-    display: block;
-    border: 0;
-    position: fixed;
-    width: 100vw;
-    height: 0.4rem;
-    border: 0;
-    background-color: transparent;
-    color: #c24d01;
-    z-index: 1; }
-    .blog-post progress::-webkit-progress-bar {
-      background: #FFF; }
-    .blog-post progress::-webkit-progress-value {
-      background: #c24d01; }
-    .blog-post progress::-moz-progress-bar {
-      background-color: #c24d01; }
   .blog-post a {
     display: inline-block;
     transition: color .25s ease; }
@@ -2127,19 +2107,31 @@ svg {
       background-color: #fff;
       width: 90vw;
       padding: 20px;
-      padding-bottom: 0px;
       margin: 0px auto;
       font-size: 1.2em;
       color: #333;
-      font-family: PT Serif, 'Times New Roman', Times, serif; }
+      font-family: Average, 'Times New Roman', Times, serif; }
       .blog-post .container .markdown-body h1 {
         font-family: Roboto; }
       .blog-post .container .markdown-body pre {
         background-color: #272822;
         color: #fafafa; }
+      .blog-post .container .markdown-body p {
+        margin-bottom: 15px; }
+        .blog-post .container .markdown-body p img {
+          display: block;
+          margin: auto; }
+      .blog-post .container .markdown-body ul, .blog-post .container .markdown-body ol {
+        font-size: 18px;
+        font-weight: normal; }
+      .blog-post .container .markdown-body a {
+        color: #c24d01;
+        text-decoration: none;
+        display: inline; }
     .blog-post .container .comments {
       width: 90vw;
       min-height: 347px;
+      padding: 20px 0px 0px 20px;
       padding-top: 20px;
       margin: 0px auto; }
     .blog-post .container .blog-guide {
@@ -2165,23 +2157,6 @@ svg {
 @media (min-width: 900px) {
   .blog-post {
     position: relative; }
-    .blog-post progress {
-      appearance: none;
-      display: block;
-      border: 0;
-      position: fixed;
-      width: 100vw;
-      height: 0.4rem;
-      border: 0;
-      background-color: transparent;
-      color: #c24d01;
-      z-index: 1; }
-      .blog-post progress::-webkit-progress-bar {
-        background: #FFF; }
-      .blog-post progress::-webkit-progress-value {
-        background: #c24d01; }
-      .blog-post progress::-moz-progress-bar {
-        background-color: #c24d01; }
     .blog-post .back-to-blog {
       position: fixed;
       background-color: #fafafa;
@@ -2257,9 +2232,10 @@ svg {
         width: 900px;
         padding: 20px;
         margin: 0px auto;
-        color: #333;
+        color: rgba(0, 0, 0, 0.84);
         font-size: 21px;
-        font-family: PT Serif, 'Times New Roman', Times, serif; }
+        line-height: 1.58;
+        font-family: Average, 'Times New Roman', Times, serif; }
         .blog-post .container .markdown-body h1 {
           font-family: Roboto; }
         .blog-post .container .markdown-body pre {
@@ -2267,12 +2243,23 @@ svg {
           color: #fafafa;
           font-size: 16px; }
         .blog-post .container .markdown-body p {
-          margin: 25px 0px 10px 0px; }
+          margin: 30px auto;
+          font-size: 1em; }
+          .blog-post .container .markdown-body p img {
+            display: block;
+            margin: 20px auto; }
+        .blog-post .container .markdown-body ul, .blog-post .container .markdown-body ol {
+          font-size: 1em;
+          font-weight: normal; }
+        .blog-post .container .markdown-body a {
+          color: #c24d01;
+          text-decoration: none;
+          display: inline; }
       .blog-post .container .comments {
         width: 900px;
         padding: 20px 0px 0px 20px;
         margin: 0px auto;
-        min-height: 409px; }
+        min-height: 404px; }
       .blog-post .container .blog-guide {
         background-color: #fff;
         width: 900px;
@@ -2593,6 +2580,7 @@ svg {
     .contact .hero {
       display: flex;
       height: 20vh;
+      min-height: 150px;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
@@ -2782,7 +2770,8 @@ svg {
       background-color: #fafafa; }
       .contact .hero {
         display: flex;
-        height: 25vh;
+        min-height: 150px;
+        height: 25%;
         flex-direction: column;
         justify-content: center;
         align-items: center; }
@@ -2792,7 +2781,8 @@ svg {
           font-size: 1.5em; }
       .contact .wrapper {
         display: flex;
-        flex-direction: row; }
+        flex-direction: row;
+        margin-bottom: 80px; }
         .contact .wrapper h4 {
           font-size: 1.3em; }
         .contact .wrapper p {
@@ -2801,7 +2791,7 @@ svg {
         .contact .wrapper .contact-form,
         .contact .wrapper .other-contact {
           width: 50%;
-          min-height: 100%;
+          min-height: 400px;
           display: flex;
           flex-direction: column; }
         .contact .wrapper .form-wrapper {
@@ -3013,7 +3003,8 @@ header {
     bottom: 0px;
     width: 100%;
     color: rgba(255, 255, 255, 0.7);
-    background-color: #212329; }
+    background-color: #212329;
+    z-index: 9999; }
     .footer p {
       padding: 15px; }
     .footer .social {
@@ -3047,7 +3038,7 @@ header {
     .project .hero h2 {
       font-size: 3em; }
     .project .hero p {
-      font-family: PT Serif, "Times New Roman", Times, serif;
+      font-family: Average, "Times New Roman", Times, serif;
       font-size: 1.15em; }
   .project .screenshot-big-picture {
     height: 35vh;
@@ -3085,15 +3076,15 @@ header {
       font-size: 1.7em;
       padding: 5px 0px; }
     .project .project-section a {
-      font-family: PT Serif, "Times New Roman", Times, serif;
+      font-family: Average, "Times New Roman", Times, serif;
       color: #c24d01; }
     .project .project-section p {
       margin-top: 15px;
       margin-bottom: 10px;
       font-size: 1.3em;
-      font-family: PT Serif, "Times New Roman", Times, serif; }
+      font-family: Average, "Times New Roman", Times, serif; }
     .project .project-section li {
-      font-family: PT Serif, "Times New Roman", Times, serif;
+      font-family: Average, "Times New Roman", Times, serif;
       font-weight: normal;
       padding-left: 7.5px; }
     .project .project-section img {
@@ -3125,11 +3116,11 @@ header {
         .project .project-footer .footer-container .next-project-info h3 {
           font-size: 1.5em;
           text-align: center;
-          font-family: PT Serif, "Times New Roman", Times, serif; }
+          font-family: Average, "Times New Roman", Times, serif; }
         .project .project-footer .footer-container .next-project-info h4 {
           font-size: 1.4em;
           text-align: center;
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: Average, "Times New Roman", Times, serif;
           font-weight: normal; }
       .project .project-footer .footer-container .next-project-image {
         display: flex;
@@ -3160,7 +3151,7 @@ header {
             vertical-align: top;
             transition: transform 0.25s ease; }
           .project .project-footer .footer-container .next-project-image .inner:hover .pic {
-            transform: scale(1.25); }
+            transform: scale(1.1); }
 
 @media (min-width: 320px) {
   .project {
@@ -3175,7 +3166,7 @@ header {
       .project .hero h2 {
         font-size: 2.75em; }
       .project .hero p {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-size: 1.15em; }
     .project .screenshot-big-picture {
       height: 35vh;
@@ -3214,15 +3205,15 @@ header {
         font-size: 1.7em;
         padding: 5px 0px; }
       .project .project-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .project .project-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .project .project-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal;
         padding-left: 7.5px; }
       .project .project-section img {
@@ -3254,11 +3245,11 @@ header {
           .project .project-footer .footer-container .next-project-info h3 {
             font-size: 1.5em;
             text-align: center;
-            font-family: PT Serif, "Times New Roman", Times, serif; }
+            font-family: Average, "Times New Roman", Times, serif; }
           .project .project-footer .footer-container .next-project-info h4 {
             font-size: 1.4em;
             text-align: center;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal; }
         .project .project-footer .footer-container .next-project-image {
           display: flex;
@@ -3289,7 +3280,7 @@ header {
               vertical-align: top;
               transition: transform 0.25s ease; }
             .project .project-footer .footer-container .next-project-image .inner:hover .pic {
-              transform: scale(1.25); } }
+              transform: scale(1.1); } }
 
 @media (min-width: 800px) {
   .project {
@@ -3304,7 +3295,7 @@ header {
       .project .hero h2 {
         font-size: 3.5em; }
       .project .hero p {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-size: 1.25em; }
     .project .screenshot-big-picture {
       height: 35vh;
@@ -3333,15 +3324,15 @@ header {
         font-size: 1.7em;
         padding: 5px 0px; }
       .project .project-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .project .project-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .project .project-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal;
         padding-left: 7.5px; }
       .project .project-section img {
@@ -3371,11 +3362,11 @@ header {
             text-align: left; }
           .project .project-footer .footer-container .next-project-info h3 {
             font-size: 1.5em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             text-align: left; }
           .project .project-footer .footer-container .next-project-info h4 {
             font-size: 1.4em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal;
             text-align: left; }
         .project .project-footer .footer-container .next-project-image {
@@ -3407,7 +3398,7 @@ header {
               vertical-align: top;
               transition: transform 0.25s ease; }
             .project .project-footer .footer-container .next-project-image .inner:hover .pic {
-              transform: scale(1.25); } }
+              transform: scale(1.1); } }
 
 @media (min-width: 1280px) {
   .project {
@@ -3422,7 +3413,7 @@ header {
       .project .hero h2 {
         font-size: 4em; }
       .project .hero p {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-size: 1.5em; }
     .project .screenshot-big-picture {
       height: 35vh;
@@ -3450,15 +3441,15 @@ header {
         font-size: 1.7em;
         padding: 5px 0px; }
       .project .project-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .project .project-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         font-size: 1.3em;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .project .project-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal;
         padding-left: 7.5px; }
       .project .project-section img {
@@ -3486,10 +3477,10 @@ header {
             margin-bottom: 15px; }
           .project .project-footer .footer-container .next-project-info h3 {
             font-size: 1.9em;
-            font-family: PT Serif, "Times New Roman", Times, serif; }
+            font-family: Average, "Times New Roman", Times, serif; }
           .project .project-footer .footer-container .next-project-info h4 {
             font-size: 1.6em;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal; }
         .project .project-footer .footer-container .next-project-image {
           display: flex;
@@ -3520,7 +3511,7 @@ header {
               vertical-align: top;
               transition: transform 0.25s ease; }
             .project .project-footer .footer-container .next-project-image .inner:hover .pic {
-              transform: scale(1.25); } }
+              transform: scale(1.1); } }
 
 @supports (object-fit: cover) {
   .project {
@@ -3534,7 +3525,7 @@ header {
       .project .hero h2 {
         font-size: 3em; }
       .project .hero p {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-size: 1.15em; }
     .project .screenshot-big-picture {
       height: 35vh;
@@ -3578,18 +3569,18 @@ header {
         padding: 5px 0px;
         margin-top: 0px; }
       .project .project-section a {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         color: #c24d01; }
       .project .project-section p {
         margin-top: 15px;
         margin-bottom: 10px;
         line-height: 1.8;
         font-size: 1.3em;
-        font-family: PT Serif, "Times New Roman", Times, serif; }
+        font-family: Average, "Times New Roman", Times, serif; }
       .project .project-section pre {
         margin-top: 30px; }
       .project .project-section li {
-        font-family: PT Serif, "Times New Roman", Times, serif;
+        font-family: Average, "Times New Roman", Times, serif;
         font-weight: normal;
         padding-left: 7.5px;
         line-height: 1.6; }
@@ -3624,11 +3615,11 @@ header {
           .project .project-footer .footer-container .next-project-info h3 {
             font-size: 1.5em;
             text-align: left;
-            font-family: PT Serif, "Times New Roman", Times, serif; }
+            font-family: Average, "Times New Roman", Times, serif; }
           .project .project-footer .footer-container .next-project-info h4 {
             font-size: 1.4em;
             text-align: left;
-            font-family: PT Serif, "Times New Roman", Times, serif;
+            font-family: Average, "Times New Roman", Times, serif;
             font-weight: normal; }
         .project .project-footer .footer-container .next-project-image {
           display: flex;
@@ -3661,7 +3652,7 @@ header {
               vertical-align: top;
               transition: transform 0.25s ease; }
             .project .project-footer .footer-container .next-project-image .inner:hover .pic {
-              transform: scale(1.25); }
+              transform: scale(1.1); }
   @media (min-width: 320px) {
     .project {
       display: flex;
@@ -3674,7 +3665,7 @@ header {
         .project .hero h2 {
           font-size: 2.75em; }
         .project .hero p {
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
           font-size: 1.15em; }
       .project .screenshot-big-picture {
         height: 35vh;
@@ -3715,16 +3706,16 @@ header {
           padding: 5px 0px;
           margin-top: 0px; }
         .project .project-section a {
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: Average, "Times New Roman", Times, serif;
           color: #c24d01; }
         .project .project-section p {
           margin-top: 15px;
           margin-bottom: 10px;
           line-height: 1.8;
           font-size: 1.2em;
-          font-family: PT Serif, "Times New Roman", Times, serif; }
+          font-family: Average, "Times New Roman", Times, serif; }
         .project .project-section li {
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: Average, "Times New Roman", Times, serif;
           font-weight: normal;
           padding-left: 7.5px; }
         .project .project-section img.pic {
@@ -3758,11 +3749,11 @@ header {
             .project .project-footer .footer-container .next-project-info h3 {
               font-size: 1.5em;
               text-align: left;
-              font-family: PT Serif, "Times New Roman", Times, serif; }
+              font-family: Average, "Times New Roman", Times, serif; }
             .project .project-footer .footer-container .next-project-info h4 {
               font-size: 1.4em;
               text-align: left;
-              font-family: PT Serif, "Times New Roman", Times, serif;
+              font-family: Average, "Times New Roman", Times, serif;
               font-weight: normal; }
           .project .project-footer .footer-container .next-project-image {
             display: flex;
@@ -3795,7 +3786,7 @@ header {
                 vertical-align: top;
                 transition: transform 0.25s ease; }
               .project .project-footer .footer-container .next-project-image .inner:hover .pic {
-                transform: scale(1.25); } }
+                transform: scale(1.1); } }
   @media (min-width: 800px) {
     .project {
       display: flex;
@@ -3803,12 +3794,12 @@ header {
       font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
       .project .hero {
         font-family: Roboto;
-        margin: 0px auto 20px auto;
+        margin: 20px auto 10px auto;
         width: 800px; }
         .project .hero h2 {
           font-size: 4em; }
         .project .hero p {
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
           font-size: 1.5em; }
       .project .screenshot-big-picture {
         height: 35vh;
@@ -3817,9 +3808,11 @@ header {
         background-repeat: no-repeat; }
       .project .container {
         width: 800px;
-        margin: 0 auto 40px auto; }
+        margin: 20px auto 40px auto; }
         .project .container img {
-          width: auto; }
+          max-width: 100%;
+          width: auto;
+          margin: 10px auto; }
         .project .container .project-image {
           min-height: 600px;
           width: 100%;
@@ -3841,16 +3834,16 @@ header {
           padding: 5px 0px;
           margin-top: 20px; }
         .project .project-section a {
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: Average, "Times New Roman", Times, serif;
           color: #c24d01; }
         .project .project-section p {
           margin-top: 30px;
           margin-bottom: 0px;
-          font-size: 1.325em;
+          font-size: 21px;
           line-height: 1.8;
-          font-family: PT Serif, "Times New Roman", Times, serif; }
+          font-family: Average, "Times New Roman", Times, serif; }
         .project .project-section li {
-          font-family: PT Serif, "Times New Roman", Times, serif;
+          font-family: Average, "Times New Roman", Times, serif;
           font-weight: normal;
           padding-left: 7.5px; }
         .project .project-section img.pic {
@@ -3882,10 +3875,10 @@ header {
               margin-bottom: 15px; }
             .project .project-footer .footer-container .next-project-info h3 {
               font-size: 1.9em;
-              font-family: PT Serif, "Times New Roman", Times, serif; }
+              font-family: Average, "Times New Roman", Times, serif; }
             .project .project-footer .footer-container .next-project-info h4 {
               font-size: 1.6em;
-              font-family: PT Serif, "Times New Roman", Times, serif;
+              font-family: Average, "Times New Roman", Times, serif;
               font-weight: normal; }
           .project .project-footer .footer-container .next-project-image {
             display: flex;
@@ -3916,7 +3909,7 @@ header {
                 vertical-align: top;
                 transition: transform 0.25s ease; }
               .project .project-footer .footer-container .next-project-image .inner:hover .pic {
-                transform: scale(1.25); } } }
+                transform: scale(1.1); } } }
 
 html #root .fade-appear,
 html #root .fade-enter, body #root .fade-appear,
@@ -3949,3 +3942,7 @@ html #root .site, body #root .site {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none; }
+
+@media (max-width: 800px) {
+  .progress-wrapper {
+    display: none; } }

@@ -82,10 +82,17 @@ class blogPost extends Component {
           <meta
             name="keywords"
             content={
-              this.state.blog.fields.keywords ? this.state.blog.fields.keywords : keywords
+              this.state.blog.fields.keywords ? (
+                this.state.blog.fields.keywords
+              ) : (
+                keywords
+              )
             }
           />
-          <meta property="og:title" content={`${this.state.blog.fields.title} | Malik Browne`} />
+          <meta
+            property="og:title"
+            content={`${this.state.blog.fields.title} | Malik Browne`}
+          />
           <meta
             property="og:description"
             content={this.state.blog.fields.description}
@@ -129,7 +136,7 @@ class blogPost extends Component {
                 className="avatar"
               />
               <div className="avatar-info">
-                <p className="author-name">{blogAuthors.join(", ")}</p>
+                <p className="author-name"><a href={this.state.blog.fields.author[0].fields.twitter}>{blogAuthors.join(", ")}</a></p>
                 <p className="date">
                   <Moment parse="YYYY-MM-DD" format="MMM D">
                     {this.state.blog.fields.date}
@@ -143,18 +150,22 @@ class blogPost extends Component {
               className="markdown-body"
               source={this.state.blog.fields.body}
             />
-            <div className="blog-guide">
-              {prevButton}
-              {nextButton}
-            </div>
+            {(prevButton || nextButton) && (
+              <div className="blog-guide">
+                {prevButton}
+                {nextButton}
+              </div>
+            )}
           </article>
-          <DisqusThread
-            basename="http://malikbrowne.com/blog"
-            shortname="malik-browne"
-            title={this.state.blog.fields.title}
-            identifier={`/${this.state.blog.fields.slug}`}
-            className="comments"
-          />
+          {this.props.blog.fields.comments && (
+            <DisqusThread
+              basename="http://malikbrowne.com/blog"
+              shortname="malik-browne"
+              title={this.state.blog.fields.title}
+              identifier={`/${this.state.blog.fields.slug}`}
+              className="comments"
+            />
+          )}
         </div>
       </div>
     );

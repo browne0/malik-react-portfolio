@@ -1,0 +1,9 @@
+.container-mc {
+  .slick-prev {
+    left: -32px;
+  }
+  .slick-prev:before, .slick-next:before {
+    color: rgb(231, 89, 103);
+    font-size: 30px;
+  }
+}

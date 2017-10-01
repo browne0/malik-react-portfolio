@@ -55,3 +55,9 @@ html, body {
     }
   }  
 }
+
+@media(max-width: 800px) {
+  .progress-wrapper {
+    display: none;
+  }
+}

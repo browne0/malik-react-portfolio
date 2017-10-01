@@ -245,7 +245,7 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin: 0px auto;
+    margin: 0px auto 30px auto;
     min-height: calc(100vh - 116px);
     padding-top: 0px;
     .blog-filter {
@@ -334,6 +334,7 @@
       width: 100vw;
       padding-top: 0px;
       min-height: calc(100vh - 116px);
+      margin: 15px auto 30px auto;
       .blog-filter {
         width: 80vw !important;
       }
@@ -420,7 +421,7 @@
       align-items: center;
       width: calc(68vw - 50px);
       min-height: calc(100vh - 116px);
-      margin: 0px auto;
+      margin: 15px auto 30px auto;
       padding-top: 0px;
       .blog-filter {
         width: 55vw !important;
