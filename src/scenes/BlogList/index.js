@@ -113,7 +113,11 @@ class blogList extends Component {
             className="avatar"
           />
 
-          <p className="author"><a href={blog.fields.author[0].fields.twitter}>{blogAuthors.join(", ")}</a></p>
+          <p className="author">
+            <a href={blog.fields.author[0].fields.twitter}>
+              {blogAuthors.join(", ")}
+            </a>
+          </p>
           <p className="date">
             <Moment parse="YYYY-MM-DD" format="MMM D">
               {blog.fields.date}
@@ -158,10 +162,7 @@ class blogList extends Component {
                       name="keywords"
                       content="web development blogs, blog, coding blogs, front end development, ui/ux, web development, full stack development, malik browne, malik"
                     />
-                    <meta
-                      property="og:title"
-                      content="Blog | Malik Browne"
-                    />
+                    <meta property="og:title" content="Blog | Malik Browne" />
                     <meta
                       property="og:description"
                       content="Check out the latest blog posts from front end developer, Malik Browne."
@@ -185,15 +186,17 @@ class blogList extends Component {
                     onChange={this.onFilterChange}
                     value={this.state.search}
                   />
-                  <FlipMove
-                    duration={400}
-                    easing="ease"
-                    className="blog"
-                    enterAnimation="fade"
-                    leaveAnimation="fade"
-                  >
-                    {blogPosts}
-                  </FlipMove>
+                  {this.state.blogs.length !== 0 && !this.unmounted && (
+                    <FlipMove
+                      duration={400}
+                      easing="ease"
+                      className="blog"
+                      enterAnimation="fade"
+                      leaveAnimation="fade"
+                    >
+                      {blogPosts}
+                    </FlipMove>
+                  )}
                 </div>
               )}
             />

@@ -2034,6 +2034,23 @@ svg {
 
 .blog-post {
   position: relative; }
+  .blog-post progress {
+    appearance: none;
+    display: none;
+    border: 0;
+    position: fixed;
+    width: 100vw;
+    height: 0.4rem;
+    border: 0;
+    background-color: transparent;
+    color: #c24d01;
+    z-index: 1; }
+    .blog-post progress::-webkit-progress-bar {
+      background: #FFF; }
+    .blog-post progress::-webkit-progress-value {
+      background: #c24d01; }
+    .blog-post progress::-moz-progress-bar {
+      background-color: #c24d01; }
   .blog-post .back-to-blog {
     position: fixed;
     background-color: #fafafa;
@@ -2157,6 +2174,23 @@ svg {
 @media (min-width: 900px) {
   .blog-post {
     position: relative; }
+    .blog-post progress {
+      appearance: none;
+      display: block;
+      border: 0;
+      position: fixed;
+      width: 100vw;
+      height: 0.4rem;
+      border: 0;
+      background-color: transparent;
+      color: #c24d01;
+      z-index: 1; }
+      .blog-post progress::-webkit-progress-bar {
+        background: #FFF; }
+      .blog-post progress::-webkit-progress-value {
+        background: #c24d01; }
+      .blog-post progress::-moz-progress-bar {
+        background-color: #c24d01; }
     .blog-post .back-to-blog {
       position: fixed;
       background-color: #fafafa;
@@ -3518,6 +3552,23 @@ header {
     display: flex;
     flex-direction: column;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+    .project progress {
+      appearance: none;
+      display: none;
+      border: 0;
+      position: fixed;
+      width: 100vw;
+      height: 0.4rem;
+      border: 0;
+      background-color: transparent;
+      color: #c24d01;
+      z-index: 1; }
+      .project progress::-webkit-progress-bar {
+        background: #FFF; }
+      .project progress::-webkit-progress-value {
+        background: #c24d01; }
+      .project progress::-moz-progress-bar {
+        background-color: #c24d01; }
     .project .hero {
       font-family: Roboto;
       margin: 0px auto 20px auto;
@@ -3658,6 +3709,23 @@ header {
       display: flex;
       flex-direction: column;
       font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .project progress {
+        appearance: none;
+        display: none;
+        border: 0;
+        position: fixed;
+        width: 100vw;
+        height: 0.4rem;
+        border: 0;
+        background-color: transparent;
+        color: #c24d01;
+        z-index: 1; }
+        .project progress::-webkit-progress-bar {
+          background: #FFF; }
+        .project progress::-webkit-progress-value {
+          background: #c24d01; }
+        .project progress::-moz-progress-bar {
+          background-color: #c24d01; }
       .project .hero {
         font-family: Roboto;
         margin: 20px auto 20px auto;
@@ -3792,6 +3860,23 @@ header {
       display: flex;
       flex-direction: column;
       font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+      .project progress {
+        appearance: none;
+        display: block;
+        border: 0;
+        position: fixed;
+        width: 100vw;
+        height: 0.4rem;
+        border: 0;
+        background-color: transparent;
+        color: #c24d01;
+        z-index: 1; }
+        .project progress::-webkit-progress-bar {
+          background: #FFF; }
+        .project progress::-webkit-progress-value {
+          background: #c24d01; }
+        .project progress::-moz-progress-bar {
+          background-color: #c24d01; }
       .project .hero {
         font-family: Roboto;
         margin: 20px auto 10px auto;
@@ -3911,23 +3996,13 @@ header {
               .project .project-footer .footer-container .next-project-image .inner:hover .pic {
                 transform: scale(1.1); } } }
 
-html #root .fade-appear,
-html #root .fade-enter, body #root .fade-appear,
-body #root .fade-enter {
-  opacity: 0; }
+html #root .fade-enter, body #root .fade-enter {
+  opacity: 0;
+  z-index: 1; }
 
-html #root .fade-appear-active,
-html #root .fade-enter-active, body #root .fade-appear-active,
-body #root .fade-enter-active {
-  transition: opacity .3s ease;
-  opacity: 1; }
-
-html #root .fade-exit, body #root .fade-exit {
-  transition: opacity .3s ease;
-  opacity: 1; }
-
-html #root .fade-exit-active, body #root .fade-exit-active {
-  opacity: 0; }
+html #root .fade-enter.fade-enter-active, body #root .fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 250ms ease-in; }
 
 html #root .site, body #root .site {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }
