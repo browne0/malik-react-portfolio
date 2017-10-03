@@ -15,7 +15,6 @@ class About extends Component {
   componentWillUnmount() {
     this.unmounted = true;
   }
-  
 
   componentDidMount() {
     let hero = this.blurredEl;
@@ -81,21 +80,20 @@ class About extends Component {
             I've realized that anything innovative has stemmed from an original
             idea that someone else had. Taking something that is great, and
             remaking into something that is your own is an amazing feeling, and
-            that's why I've fell in love with web development.
+            that's why I've fallen in love with web development.
           </p>
         </Section>
         <Section title="A little about me">
           <p>
-            If you didn't see it at the top, I'm currently a{" "}
-            <b>Full Stack Engineer at AT&T</b>, where I work on a team that
-            creates tools and services for developers to use across our
-            organization internally.
+            I am currently a <b>Full Stack Engineer at AT&T</b>. I work on a
+            team that creates tools and services to support developers inside
+            our organization.
           </p>
           <p>
-            The story of how I came across web development is actually quite the
-            interesting story. It began all the way back when I was fifteen,
-            when I first learned about it at a computer camp in New York. If you
-            want the full story, check out the video below.
+            The story of how I came across web development is actually quite
+            interesting. It began all the way back when I was fifteen when I
+            first learned about it at a computer camp in New York. If you want
+            the full story, check out the video below.
           </p>
 
           <iframe
@@ -121,23 +119,23 @@ class About extends Component {
             >
               TeamMood
             </a>, a small mentorship group that takes students from all over the
-            world, and places them under the guidance of big tech companies such
-            as Google, Twitch, AT&T, Apple and many more. If you're interested
-            in hearing more about the program, or maybe you're interested in
-            becoming a mentor yourself, feel free to{" "}
+            world, and places them under the guidance of software engineers in
+            big tech companies such as Google, Twitch, AT&T, Apple and much
+            more. If you're interested in hearing more about the program, or
+            maybe you're interested in becoming a mentor yourself, feel free to{" "}
             <Link to="/contact">shoot me a message.</Link>
           </p>
         </Section>
         <Section title="Technologies and Mantra">
           <p>
-            My expertise and interests lie mostly in front-end technolgies,
-            including HTML5, CSS3, and JavaScript (as well as popular JavaScript
-            libraries such as React and NodeJS, as well as frameworks like
-            Angular and Ember).
+            My expertise and interests lie mostly in front-end technologies,
+            including HTML5, CSS3, and JavaScript as well as popular JavaScript
+            libraries such as React and NodeJS, and frameworks like Angular and
+            Ember.
           </p>
 
           <p>
-            Most of my intial server side skills stemmed from PHP, but after
+            Most of my initial server side skills stemmed from PHP, but after
             using NodeJS for a bit, and after a ton of time growing as a
             developer I've started to appreciate{" "}
             <a
@@ -147,22 +145,20 @@ class About extends Component {
             >
               functional programming
             </a>{" "}
-            even more which has led me to explore languages like Python and
-            Elixir deeper.
+            even more which has led me to explore languages like Haskell and
+            Elixir.
           </p>
 
           <p>
-            If you've seen my YouTube videos, my mantra is{" "}
-            <b>K.I.S.S (Keep it Sleek, but Simple)</b> . Human nature leads us
+            My mantra is <b>Keep it Sleek, but Simple</b>. Human nature leads us
             as consumers to take the path of least resistance. This is why
-            finding motivation to go the gym, sticking to a diet, or learning a
-            new technology can seem like such an <b>arduous task</b>.{" "}
+            finding the motivation to go the gym, sticking to a diet, or
+            learning a new technology can seem like such an <b>arduous task</b>.{" "}
           </p>
 
           <p>
-            The key to creating awesome user experiences does not lie with{" "}
-            <del>the flashiness or the "glam" a website provides</del>, but
-            rather{" "}
+            The key to creating awesome user experiences does not lie with the
+            flashiness or the "glam" a website provides, but rather{" "}
             <b>
               the ease of access to your site for someone who's never visited
               before
@@ -177,7 +173,7 @@ class About extends Component {
 
           <p>
             Create designs that are simple and replicate the world you live in,
-            and visitors will feel a sense of serenity, and maybe even a sense
+            and visitors will feel a sense of serenity. and maybe even a sense
             of amazement about why your website is so pleasing to use. Google
             talks about this extensively in their Material Design guidelines.
           </p>
@@ -194,7 +190,7 @@ class About extends Component {
         </Section>
         <Section className="about-section-last" title="Contact Me">
           <p>
-            I'd like to think that I'm pretty easy to reach, I mean,{" "}
+            If you want to contact me, I'm pretty easy to reach, I mean,{" "}
             <Link to="/contact">there is a contact page after all.</Link>
           </p>
           <p>
@@ -207,7 +203,7 @@ class About extends Component {
               follow me on Twitter
             </a>{" "}
             for updates on projects I'm working on and my opinions on things
-            going on with web development, entrepeneurship, and sometimes even
+            going on with web development, entrepreneurship, and sometimes even
             finance.
           </p>
         </Section>

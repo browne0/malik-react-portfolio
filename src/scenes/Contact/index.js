@@ -1,6 +1,10 @@
 import React, { Component } from "react";
-import { TextField, RaisedButton } from "material-ui";
-import Helmet from 'react-helmet';
+import TextField from "material-ui/TextField";
+import RaisedButton from "material-ui/RaisedButton";
+import Helmet from "react-helmet";
+import { ToastContainer, ToastMessage } from "react-toastr";
+
+let ToastMessageFactory = React.createFactory(ToastMessage.animation);
 
 class Contact extends Component {
   constructor() {
@@ -33,10 +37,43 @@ class Contact extends Component {
           return response.json();
         })
         .then(result => {
-          console.log(result);
+          if (result.inputOK) {
+            this.container.success(result.message, "Success!", {
+              timeOut: 5000,
+              extendedTimeOut: 5000,
+              preventDuplicates: true,
+              positionClass: "toast-bottom-right",
+              showMethod: "fadeIn",
+              hideMethod: "fadeOut"
+            });
+            this.setState({
+              name: "",
+              email: "",
+              message: ""
+            });
+          } else {
+            this.container.error(result.message, "Error!", {
+              timeOut: 5000,
+              extendedTimeOut: 5000,
+              preventDuplicates: true,
+              positionClass: "toast-bottom-right",
+              showMethod: "fadeIn",
+              hideMethod: "fadeOut"
+            });
+            this.setState({
+              message: ""
+            });
+          }
         })
         .catch(err => {
-          console.log(err);
+          this.container.error(err, "Error!", {
+            timeOut: 5000,
+            extendedTimeOut: 5000,
+            preventDuplicates: true,
+            positionClass: "toast-bottom-right",
+            showMethod: "fadeIn",
+            hideMethod: "fadeOut"
+          });
         });
     }
   }
@@ -63,10 +100,7 @@ class Contact extends Component {
     return (
       <div className="contact">
         <Helmet title="Contact">
-          <meta
-            name="description"
-            content="Get in contact with Malik."
-          />
+          <meta name="description" content="Get in contact with Malik." />
           <meta
             name="keywords"
             content="front end developer, front end development, ui/ux, web development, full stack development, malik browne, malik"
@@ -197,6 +231,11 @@ class Contact extends Component {
             </div>
           </div>
         </div>
+        <ToastContainer
+          ref={container => (this.container = container)}
+          toastMessageFactory={ToastMessageFactory}
+          className="toast-bottom-right"
+        />
       </div>
     );
   }

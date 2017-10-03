@@ -1,5 +1,5 @@
 import React from "react";
-import { RaisedButton } from "material-ui";
+import RaisedButton from "material-ui/RaisedButton";
 import PropTypes from "prop-types";
 
 const ThemedButton = props => {

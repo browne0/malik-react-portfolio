@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Link, Route, Switch, withRouter } from "react-router-dom";
 import BlogPost from "../BlogPost";
 import Moment from "react-moment";
-import { TextField } from "material-ui";
+import TextField from "material-ui/TextField";
 import FlipMove from "react-flip-move";
 import PortfolioDelegate from "../../utils/PortfolioDelegate";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
