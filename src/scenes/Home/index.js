@@ -11,8 +11,7 @@ class Home extends Component {
       let project = projects[i];
       if (project.big_picture) {
         let path = {
-          pathname: project.path,
-          state: project
+          pathname: project.path
         };
         projectList.push(
           <Link key={i} to={path} className="bigPicture">
@@ -36,8 +35,7 @@ class Home extends Component {
         );
       } else {
         let path = {
-          pathname: project.path,
-          state: project
+          pathname: project.path
         };
         projectList.push(
           <Link

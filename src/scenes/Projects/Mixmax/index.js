@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ProjectPage from "../../../components/ProjectPage/index";
 import ProjectSection from "../../../components/ProjectSection/index";
 import SyntaxHighlighter from "react-syntax-highlighter";
+import PortfolioDelegate from "../../../utils/PortfolioDelegate";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
 import Helmet from "react-helmet";
 
@@ -9,8 +10,12 @@ class Mixmax extends Component {
   constructor(props) {
     super(props);
 
+    const delegate = new PortfolioDelegate();
+
+    let index = delegate.getProjectIndex("Spotify Mixmax Integration");
+
     this.state = {
-      project: this.props.location.state
+      project: delegate.projects[index]
     };
   }
   render() {
@@ -455,8 +460,8 @@ request({
 `}
           </SyntaxHighlighter>
           <p>
-            Next, we pass in our access token, and set the resulting object to be
-            provided to the templates each containing different information
+            Next, we pass in our access token, and set the resulting object to
+            be provided to the templates each containing different information
             depending on the result:
           </p>
 

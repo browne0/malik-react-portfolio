@@ -4,13 +4,18 @@ import ProjectSection from "../../../components/ProjectSection/index";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
 import Helmet from "react-helmet";
+import PortfolioDelegate from "../../../utils/PortfolioDelegate";
 
 class FactsOfToday extends Component {
   constructor(props) {
     super(props);
 
+    const delegate = new PortfolioDelegate();
+
+    let index = delegate.getProjectIndex("Facts of Today");
+
     this.state = {
-      project: this.props.location.state
+      project: delegate.projects[index]
     };
   }
   render() {
