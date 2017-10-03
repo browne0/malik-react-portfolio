@@ -1,15 +1,19 @@
 import React, { Component } from "react";
 import ProjectPage from "../../../components/ProjectPage";
 import ProjectSection from "../../../components/ProjectSection";
-
+import PortfolioDelegate from "../../../utils/PortfolioDelegate"
 import Helmet from "react-helmet";
 
 class Spotter extends Component {
   constructor(props) {
     super(props);
 
+    const delegate = new PortfolioDelegate();
+
+    let index = delegate.getProjectIndex("Spotter");
+
     this.state = {
-      project: this.props.location.state
+      project: delegate.projects[index]
     };
   }
   render() {

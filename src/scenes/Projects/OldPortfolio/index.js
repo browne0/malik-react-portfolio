@@ -4,13 +4,18 @@ import ProjectSection from "../../../components/ProjectSection/index";
 import Helmet from "react-helmet";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
+import PortfolioDelegate from "../../../utils/PortfolioDelegate";
 
 class OldPortfolio extends Component {
   constructor(props) {
     super(props);
 
+    const delegate = new PortfolioDelegate();
+
+    let index = delegate.getProjectIndex("Post Grad Portfolio");
+
     this.state = {
-      project: this.props.location.state
+      project: delegate.projects[index]
     };
   }
   render() {

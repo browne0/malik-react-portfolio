@@ -4,14 +4,19 @@ import Slider from "react-slick";
 import ProjectSection from "../../../components/ProjectSection/index";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
-import Helmet from 'react-helmet';
+import Helmet from "react-helmet";
+import PortfolioDelegate from '../../../utils/PortfolioDelegate';
 
 class BeesDesign extends Component {
   constructor(props) {
     super(props);
 
+    const delegate = new PortfolioDelegate();
+
+    let index = delegate.getProjectIndex("Bee's Design");
+
     this.state = {
-      project: this.props.location.state
+      project: delegate.projects[index]
     };
   }
   render() {
@@ -53,11 +58,8 @@ class BeesDesign extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
-      <Helmet title={this.state.project.name}>
-          <meta
-            name="description"
-            content={this.state.project.description}
-          />
+        <Helmet title={this.state.project.name}>
+          <meta name="description" content={this.state.project.description} />
           <meta
             name="keywords"
             content="bee's design, bees design front end development, ui/ux, web development, full stack development, malik browne, malik"
@@ -67,7 +69,10 @@ class BeesDesign extends Component {
             property="og:description"
             content={this.state.project.description}
           />
-          <meta property="og:url" content="https://malikbrowne.com/beesdesign" />
+          <meta
+            property="og:url"
+            content="https://malikbrowne.com/beesdesign"
+          />
           <meta
             property="og:image"
             content={this.state.project.image_urls.screenshots[0]}
@@ -92,9 +97,9 @@ class BeesDesign extends Component {
         <ProjectSection title="Requirements">
           <p>
             I wanted a website that was simple and straight to the point, almost
-            like an online business card. At this point, I had just learned about
-            Bootstrap and was interested in making the website mobile-friendly
-            as well.
+            like an online business card. At this point, I had just learned
+            about Bootstrap and was interested in making the website
+            mobile-friendly as well.
           </p>
 
           <p>
@@ -160,9 +165,9 @@ class BeesDesign extends Component {
           </ol>
           <p>
             The template would then scale down to a one column layout, similar
-            to the home page for mobile devices and tablets. At this point, I was
-            very happy with the final result and received many compliments on
-            how it looked.
+            to the home page for mobile devices and tablets. At this point, I
+            was very happy with the final result and received many compliments
+            on how it looked.
           </p>
           <img
             className="pic"

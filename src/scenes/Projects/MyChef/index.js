@@ -5,13 +5,18 @@ import SyntaxHighlighter from "react-syntax-highlighter";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
 import Helmet from "react-helmet";
 import Slider from "react-slick";
+import PortfolioDelegate from "../../../utils/PortfolioDelegate";
 
 class myChef extends Component {
   constructor(props) {
     super(props);
 
+    const delegate = new PortfolioDelegate();
+
+    let index = delegate.getProjectIndex("myChef");
+
     this.state = {
-      project: this.props.location.state
+      project: delegate.projects[index]
     };
   }
   render() {
@@ -164,7 +169,7 @@ class myChef extends Component {
             height="460"
             scrolling="no"
             title="rGzarX"
-            src="//codepen.io/browne0/embed/rGzarX/?height=460&theme-id=dark&default-tab=result&embed-version=2"
+            src="https://codepen.io/browne0/embed/rGzarX/?height=460&theme-id=dark&default-tab=result&embed-version=2"
             frameBorder="no"
             allowTransparency="true"
             allowFullScreen="true"
