@@ -44,26 +44,32 @@ class About extends Component {
   render() {
     return (
       <div className="About">
-        <Helmet title="About">
-          <meta
-            name="description"
-            content="Find out more about Malik Browne, a front end engineer with a strong desire to produce high quality websites and online tools, bundled with an exceptional user experience."
-          />
-          <meta
-            name="keywords"
-            content="front end developer, front end development, ui/ux, web development, full stack development, malik browne, malik"
-          />
-          <meta property="og:title" content="About | Malik Browne" />
-          <meta
-            property="og:description"
-            content="Find out more about Malik Browne, a front end engineer with a strong desire to produce high quality websites and online tools, bundled with an exceptional user experience."
-          />
-          <meta property="og:url" content="https://malikbrowne.com/about" />
-          <meta
-            property="og:image"
-            content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
-          />
-        </Helmet>
+        <Helmet
+          title="About"
+          meta={[
+            {
+              name: "description",
+              content:
+                "Find out more about Malik Browne, a front end engineer with a strong desire to produce high quality websites and online tools, bundled with an exceptional user experience."
+            },
+            {
+              name: "keywords",
+              content:
+                "about malik browne, front end developer, front end development, ui/ux, web development, full stack development, malik browne, malik"
+            },
+            {
+              property: "og:title",
+              content: "About | Malik Browne"
+            },
+            {
+              property: "og:description",
+              content:
+                "Find out more about Malik Browne, a front end engineer with a strong desire to produce high quality websites and online tools, bundled with an exceptional user experience."
+            },
+            { property: "og:url", content: "https://malikbrowne.com/about" },
+            { property: "og:image", content: "http://malikbrowne.com/assets/selfie/about_bg3.jpg" },
+          ]}
+        />
         <div className="hero-wrapper">
           <div className="hero" ref={elem => (this.blurredEl = elem)}>
             <div className="hero-text">

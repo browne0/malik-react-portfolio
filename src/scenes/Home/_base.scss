@@ -2,20 +2,8 @@
   .hero {
     display: block;
     position: relative;
-    background-color: #2a2a2a;
+    background: #2a2a2a;
     min-height: 40vh;
-    background: linear-gradient(
-        to bottom,
-        #323232 0%,
-        #3f3f3f 40%,
-        #1c1c1c 150%
-      ),
-      linear-gradient(
-        to top,
-        rgba(255, 255, 255, 0.4) 0%,
-        rgba(0, 0, 0, 0.25) 200%
-      );
-    background-blend-mode: multiply;
     h1 {
       position: absolute;
       top: 50%;
@@ -152,20 +140,8 @@
     .hero {
       display: block;
       position: relative;
-      background-color: #2a2a2a;
       min-height: 40vh;
-      background: linear-gradient(
-          to bottom,
-          #323232 0%,
-          #3f3f3f 40%,
-          #1c1c1c 150%
-        ),
-        linear-gradient(
-          to top,
-          rgba(255, 255, 255, 0.4) 0%,
-          rgba(0, 0, 0, 0.25) 200%
-        );
-      background-blend-mode: multiply;
+      background: #2a2a2a;
       h1 {
         position: absolute;
         top: 50%;
@@ -302,20 +278,8 @@
     .hero {
       display: block;
       position: relative;
-      background-color: #2a2a2a;
+      background: #2a2a2a;
       min-height: 30vh;
-      background: linear-gradient(
-          to bottom,
-          #323232 0%,
-          #3f3f3f 40%,
-          #1c1c1c 150%
-        ),
-        linear-gradient(
-          to top,
-          rgba(255, 255, 255, 0.4) 0%,
-          rgba(0, 0, 0, 0.25) 200%
-        );
-      background-blend-mode: multiply;
       h1 {
         position: absolute;
         top: 50%;
@@ -453,19 +417,8 @@
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background: linear-gradient(
-          to bottom,
-          #323232 0%,
-          #3f3f3f 40%,
-          #1c1c1c 150%
-        ),
-        linear-gradient(
-          to top,
-          rgba(255, 255, 255, 0.4) 0%,
-          rgba(0, 0, 0, 0.25) 200%
-        );
-      background-blend-mode: multiply;
       min-height: 100px;
+      background: #2a2a2a;
       h1 {
         font-size: 1.5em;
         padding: 0px 25px;
@@ -595,19 +548,8 @@
         display: flex;
         align-items: center;
         justify-content: space-around;
-        background: linear-gradient(
-            to bottom,
-            #323232 0%,
-            #3f3f3f 40%,
-            #1c1c1c 150%
-          ),
-          linear-gradient(
-            to top,
-            rgba(255, 255, 255, 0.4) 0%,
-            rgba(0, 0, 0, 0.25) 200%
-          );
-        background-blend-mode: multiply;
         min-height: 30vh;
+        background: #2a2a2a;
         h1 {
           font-size: 1.75em;
           color: rgba(255, 255, 255, 0.8);
@@ -737,18 +679,7 @@
         justify-content: space-around;
         min-height: 150px;
         height: 30vh;
-        background: linear-gradient(
-            to bottom,
-            #323232 0%,
-            #3f3f3f 40%,
-            #1c1c1c 150%
-          ),
-          linear-gradient(
-            to top,
-            rgba(255, 255, 255, 0.4) 0%,
-            rgba(0, 0, 0, 0.25) 200%
-          );
-        background-blend-mode: multiply;
+        background: #2a2a2a;
         h1 {
           font-size: 2em;
           color: rgba(255, 255, 255, 0.8);

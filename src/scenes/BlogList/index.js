@@ -7,6 +7,7 @@ import FlipMove from "react-flip-move";
 import PortfolioDelegate from "../../utils/PortfolioDelegate";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Helmet from "react-helmet";
+import NotFound from "../../scenes/NotFound"
 
 class blogList extends Component {
   constructor() {
@@ -28,7 +29,6 @@ class blogList extends Component {
     const delegate = new PortfolioDelegate();
     delegate.getBlogs().then(response => {
       if (this.unmounted) return;
-
       this.setState({
         blogs: response.items,
         filteredBlogs: response.items.sort((a, b) => {
@@ -92,11 +92,6 @@ class blogList extends Component {
         .replace("/+/g")
         .trim()
         .split(" ").length;
-
-      let blogAuthors = blog.fields.author.map(author => {
-        return author.fields.name;
-      });
-
       let blogLengthString =
         blogLength / 275 < 1
           ? (blogLength / 275 * 60).toFixed() + " sec read"
@@ -108,14 +103,14 @@ class blogList extends Component {
           className="post"
         >
           <img
-            src={blog.fields.author[0].fields.profilePhoto.fields.file.url}
+            src={blog.fields.author.fields.profilePhoto.fields.file.url}
             alt=""
             className="avatar"
           />
 
           <p className="author">
-            <a href={blog.fields.author[0].fields.twitter}>
-              {blogAuthors.join(", ")}
+            <a href={blog.fields.author.fields.twitter}>
+              {blog.fields.author.fields.name}
             </a>
           </p>
           <p className="date">
@@ -153,29 +148,39 @@ class blogList extends Component {
               path={match.path}
               render={() => (
                 <div className="blog-wrapper">
-                  <Helmet title="Blog">
-                    <meta
-                      name="description"
-                      content="Check out the latest blog posts from front end developer, Malik Browne."
-                    />
-                    <meta
-                      name="keywords"
-                      content="web development blogs, blog, coding blogs, front end development, ui/ux, web development, full stack development, malik browne, malik"
-                    />
-                    <meta property="og:title" content="Blog | Malik Browne" />
-                    <meta
-                      property="og:description"
-                      content="Check out the latest blog posts from front end developer, Malik Browne."
-                    />
-                    <meta
-                      property="og:url"
-                      content="https://malikbrowne.com/old-portfolio"
-                    />
-                    <meta
-                      property="og:image"
-                      content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
-                    />
-                  </Helmet>
+                  <Helmet
+                    title="Blog"
+                    meta={[
+                      {
+                        name: "description",
+                        content:
+                          "Check out the latest blog posts from front end developer, Malik Browne."
+                      },
+                      {
+                        name: "keywords",
+                        content:
+                          "web development blogs, blog, coding blogs, front end development, ui/ux, web development, full stack development, malik browne, malik"
+                      },
+                      {
+                        property: "og:title",
+                        content: "Blog | Malik Browne"
+                      },
+                      {
+                        property: "og:description",
+                        content:
+                          "Check out the latest blog posts from front end developer, Malik Browne."
+                      },
+                      {
+                        property: "og:url",
+                        content: "https://malikbrowne.com/blog"
+                      },
+                      {
+                        property: "og:image",
+                        content:
+                          "http://malikbrowne.com/assets/selfie/about_bg3.jpg"
+                      }
+                    ]}
+                  />
                   <TextField
                     hintText="Enter a blog post title"
                     floatingLabelText="Search my blog"
@@ -186,7 +191,8 @@ class blogList extends Component {
                     onChange={this.onFilterChange}
                     value={this.state.search}
                   />
-                  {this.state.blogs.length !== 0 && !this.unmounted && (
+                  {this.state.blogs.length !== 0 &&
+                  !this.unmounted && (
                     <FlipMove
                       duration={400}
                       easing="ease"
@@ -201,6 +207,7 @@ class blogList extends Component {
               )}
             />
             {blogRoutes}
+            <Route component={NotFound} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

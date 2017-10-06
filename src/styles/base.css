@@ -94,10 +94,8 @@ svg {
 .Home .hero {
   display: block;
   position: relative;
-  background-color: #2a2a2a;
-  min-height: 40vh;
-  background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-  background-blend-mode: multiply; }
+  background: #2a2a2a;
+  min-height: 40vh; }
   .Home .hero h1 {
     position: absolute;
     top: 50%;
@@ -208,10 +206,8 @@ svg {
   .Home .hero {
     display: block;
     position: relative;
-    background-color: #2a2a2a;
     min-height: 40vh;
-    background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-    background-blend-mode: multiply; }
+    background: #2a2a2a; }
     .Home .hero h1 {
       position: absolute;
       top: 50%;
@@ -320,10 +316,8 @@ svg {
   .Home .hero {
     display: block;
     position: relative;
-    background-color: #2a2a2a;
-    min-height: 30vh;
-    background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-    background-blend-mode: multiply; }
+    background: #2a2a2a;
+    min-height: 30vh; }
     .Home .hero h1 {
       position: absolute;
       top: 50%;
@@ -433,9 +427,8 @@ svg {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-    background-blend-mode: multiply;
-    min-height: 100px; }
+    min-height: 100px;
+    background: #2a2a2a; }
     .Home .hero h1 {
       font-size: 1.5em;
       padding: 0px 25px;
@@ -539,9 +532,8 @@ svg {
       display: flex;
       align-items: center;
       justify-content: space-around;
-      background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-      background-blend-mode: multiply;
-      min-height: 30vh; }
+      min-height: 30vh;
+      background: #2a2a2a; }
       .Home .hero h1 {
         font-size: 1.75em;
         color: rgba(255, 255, 255, 0.8); }
@@ -642,8 +634,7 @@ svg {
       justify-content: space-around;
       min-height: 150px;
       height: 30vh;
-      background: linear-gradient(to bottom, #323232 0%, #3f3f3f 40%, #1c1c1c 150%), linear-gradient(to top, rgba(255, 255, 255, 0.4) 0%, rgba(0, 0, 0, 0.25) 200%);
-      background-blend-mode: multiply; }
+      background: #2a2a2a; }
       .Home .hero h1 {
         font-size: 2em;
         color: rgba(255, 255, 255, 0.8); }
@@ -1617,6 +1608,47 @@ svg {
               .About .about-footer .footer-container .next-post-image .inner:hover .pic {
                 transform: scale(1.25); } } }
 
+.NotFound {
+  display: flex;
+  background-color: #444444;
+  height: calc(100vh - 116px);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+  padding: 0px;
+  min-height: 100%;
+  font-family: Roboto, Arial, sans-serif; }
+  .NotFound h1 {
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+    color: inherit;
+    font-size: 36px;
+    margin-bottom: 15px; }
+  .NotFound h1 small {
+    font-size: 68%;
+    font-weight: 400;
+    line-height: 1;
+    color: #777777; }
+  .NotFound a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: inherit;
+    border-bottom: dotted 1px #707070; }
+  .NotFound .lead {
+    color: #c0c0c0;
+    font-size: 21px;
+    line-height: 1.4; }
+  .NotFound .cover {
+    vertical-align: middle;
+    padding: 0 20px; }
+  .NotFound img {
+    margin: 20px auto;
+    width: 100%; }
+
 .blog-wrapper {
   display: flex;
   flex-direction: column;
@@ -2224,13 +2256,13 @@ svg {
       .blog-post .container .post-title {
         background-color: #fff;
         width: 900px;
-        padding: 20px 20px 0px 20px;
+        padding: 20px 30px 0px 30px;
         margin: 0px auto;
         font-size: 2.1em; }
       .blog-post .container .post-author {
         background-color: #fff;
         width: 900px;
-        padding: 10px 0px 0px 20px;
+        padding: 10px 30px 0px 30px;
         margin: 0px auto;
         display: flex;
         flex-direction: row; }
@@ -2264,7 +2296,8 @@ svg {
       .blog-post .container .markdown-body {
         background-color: #fff;
         width: 900px;
-        padding: 20px;
+        padding: 30px;
+        padding-top: 15px;
         margin: 0px auto;
         color: rgba(0, 0, 0, 0.84);
         font-size: 21px;
@@ -4005,7 +4038,7 @@ html #root .fade-enter, body #root .fade-enter {
 
 html #root .fade-enter.fade-enter-active, body #root .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 250ms ease-in; }
+  transition: opacity 150ms ease; }
 
 html #root .site, body #root .site {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }

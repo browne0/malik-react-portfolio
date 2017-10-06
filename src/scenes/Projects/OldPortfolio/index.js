@@ -32,26 +32,37 @@ class OldPortfolio extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
-        <Helmet title={this.state.project.name}>
-          <meta name="description" content={this.state.project.description} />
-          <meta
-            name="keywords"
-            content="old portfolio, front end development, ui/ux, web development, full stack development, malik browne, malik"
-          />
-          <meta property="og:title" content="Old Portfolio | Malik Browne" />
-          <meta
-            property="og:description"
-            content={this.state.project.description}
-          />
-          <meta
-            property="og:url"
-            content="https://malikbrowne.com/old-portfolio"
-          />
-          <meta
-            property="og:image"
-            content={this.state.project.image_urls.screenshots[1]}
-          />
-        </Helmet>
+        <Helmet
+          title={this.state.project.name}
+          meta={[
+            {
+              name: "description",
+              content: this.state.project.description
+            },
+            {
+              name: "keywords",
+              content: `${this.state.project.name.toLowerCase()}, front end development, ui/ux, web development, full stack development, malik browne, malik`
+            },
+            {
+              property: "og:title",
+              content: `${this.state.project.name} | Malik Browne`
+            },
+            {
+              property: "og:description",
+              content: this.state.project.description
+            },
+            {
+              property: "og:url",
+              content: `https://malikbrowne.com/${this.state.project.path.substr(
+                1
+              )}`
+            },
+            {
+              property: "og:image",
+              content: this.state.project.image_urls.screenshots[0]
+            }
+          ]}
+        />
         <div className="container">
           <img
             src={this.state.project.image_urls.screenshots[1]}

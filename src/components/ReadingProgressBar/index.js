@@ -36,9 +36,9 @@ export default class ProgressBar extends Component {
         : window;
 
       this.measure();
-      this.rootEl.addEventListener("scroll", this.handleScroll);
+      window.addEventListener("scroll", this.handleScroll);
       window.addEventListener("resize", this.handleResize);
-    }, 0);
+    }, 101);
   }
 
   componentWillUnmount() {

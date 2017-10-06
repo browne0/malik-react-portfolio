@@ -61,10 +61,6 @@ class blogPost extends Component {
       .trim()
       .split(" ").length;
 
-    let blogAuthors = this.state.blog.fields.author.map(author => {
-      return author.fields.name;
-    });
-
     let blogLengthString =
       blogLength / 275 < 1
         ? (blogLength / 275 * 60).toFixed() + " sec read"
@@ -74,38 +70,57 @@ class blogPost extends Component {
       "web development blogs, blog, coding blogs, front end development, ui/ux, web development, full stack development, malik browne, malik";
     return (
       <div className="blog-post">
-        <Helmet titleTemplate="%s" title={this.state.blog.fields.title}>
-          <meta
-            name="description"
-            content={this.state.blog.fields.description}
-          />
-          <meta
-            name="keywords"
-            content={
-              this.state.blog.fields.keywords ? (
-                this.state.blog.fields.keywords
-              ) : (
-                keywords
-              )
-            }
-          />
-          <meta
-            property="og:title"
-            content={`${this.state.blog.fields.title} | Malik Browne`}
-          />
-          <meta
-            property="og:description"
-            content={this.state.blog.fields.description}
-          />
-          <meta
-            property="og:url"
-            content={`https://malikbrowne.com/${this.state.blog.fields.slug}`}
-          />
-          <meta
-            property="og:image"
-            content={this.state.blog.fields.featuredImage.fields.file.url}
-          />
-        </Helmet>
+        <Helmet
+          titleTemplate="%s"
+          title={this.state.blog.fields.title}
+          meta={[
+            {
+              name: "description",
+              content: this.state.blog.fields.description
+            },
+            {
+              name: "keywords",
+              content: this.state.blog.fields.keywords ? this.state.blog.fields.keywords : keywords
+            },
+            {
+              property: "og:title",
+              content: `${this.state.blog.fields.title} | Malik Browne`
+            },
+            {
+              property: "og:description",
+              content: this.state.blog.fields.description
+            },
+            { property: "og:url", content: `https://malikbrowne.com/${this.state.blog.fields.slug}` },
+            {
+              property: "og:image",
+              content: `https:${this.state.blog.fields.featuredImage.fields.file.url}`
+            },
+            {
+              name: "twitter:card",
+              content: this.state.blog.fields.description
+            },
+            {
+              name: "twitter:site",
+              content: "@milkstarz"
+            },
+            {
+              name: "twitter:title",
+              content: this.state.blog.fields.title
+            },
+            {
+              name: "twitter:description",
+              content: this.state.blog.fields.description
+            },
+            {
+              name: "twitter:creator",
+              content: "@milkstarz"
+            },
+            {
+              name: "twitter:image",
+              content: `https:${this.state.blog.fields.featuredImage.fields.file.url}`
+            },
+          ]}
+        />
         <ProgressBar targetEl=".blog-post" />
         <div className="back-to-blog">
           <Link to="/blog">
@@ -129,14 +144,18 @@ class blogPost extends Component {
             <div className="post-author">
               <img
                 src={
-                  this.state.blog.fields.author[0].fields.profilePhoto.fields
-                    .file.url
+                  this.state.blog.fields.author.fields.profilePhoto.fields.file
+                    .url
                 }
-                alt={this.state.blog.fields.author[0].fields.name}
+                alt={this.state.blog.fields.author.fields.name}
                 className="avatar"
               />
               <div className="avatar-info">
-                <p className="author-name"><a href={this.state.blog.fields.author[0].fields.twitter}>{blogAuthors.join(", ")}</a></p>
+                <p className="author-name">
+                  <a href={this.state.blog.fields.author.fields.twitter}>
+                    {this.state.blog.fields.author.fields.name}
+                  </a>
+                </p>
                 <p className="date">
                   <Moment parse="YYYY-MM-DD" format="MMM D">
                     {this.state.blog.fields.date}

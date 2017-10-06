@@ -5,7 +5,7 @@ import ProjectSection from "../../../components/ProjectSection/index";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { obsidian } from "react-syntax-highlighter/dist/styles";
 import Helmet from "react-helmet";
-import PortfolioDelegate from '../../../utils/PortfolioDelegate';
+import PortfolioDelegate from "../../../utils/PortfolioDelegate";
 
 class BeesDesign extends Component {
   constructor(props) {
@@ -58,26 +58,37 @@ class BeesDesign extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
-        <Helmet title={this.state.project.name}>
-          <meta name="description" content={this.state.project.description} />
-          <meta
-            name="keywords"
-            content="bee's design, bees design front end development, ui/ux, web development, full stack development, malik browne, malik"
-          />
-          <meta property="og:title" content="Bee's Design | Malik Browne" />
-          <meta
-            property="og:description"
-            content={this.state.project.description}
-          />
-          <meta
-            property="og:url"
-            content="https://malikbrowne.com/beesdesign"
-          />
-          <meta
-            property="og:image"
-            content={this.state.project.image_urls.screenshots[0]}
-          />
-        </Helmet>
+        <Helmet
+          title={this.state.project.name}
+          meta={[
+            {
+              name: "description",
+              content: this.state.project.description
+            },
+            {
+              name: "keywords",
+              content: `${this.state.project.name.toLowerCase()}, front end development, ui/ux, web development, full stack development, malik browne, malik`
+            },
+            {
+              property: "og:title",
+              content: `${this.state.project.name} | Malik Browne`
+            },
+            {
+              property: "og:description",
+              content: this.state.project.description
+            },
+            {
+              property: "og:url",
+              content: `https://malikbrowne.com/${this.state.project.path.substr(
+                1
+              )}`
+            },
+            {
+              property: "og:image",
+              content: this.state.project.image_urls.screenshots[0]
+            }
+          ]}
+        />
         <div className="container container-bd">
           <Slider {...settings}>{screenshots}</Slider>
         </div>

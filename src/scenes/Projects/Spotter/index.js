@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ProjectPage from "../../../components/ProjectPage";
 import ProjectSection from "../../../components/ProjectSection";
-import PortfolioDelegate from "../../../utils/PortfolioDelegate"
+import PortfolioDelegate from "../../../utils/PortfolioDelegate";
 import Helmet from "react-helmet";
 
 class Spotter extends Component {
@@ -35,23 +35,35 @@ class Spotter extends Component {
         images={this.state.project.image_urls.screenshots}
         bigPicture={this.state.project.big_picture}
       >
-        <Helmet title={this.state.project.name}>
-          <meta name="description" content={this.state.project.description} />
-          <meta
-            name="keywords"
-            content="spotter, front end development, ui/ux, web development, full stack development, malik browne, malik"
-          />
-          <meta property="og:title" content="Spotter | Malik Browne" />
-          <meta
-            property="og:description"
-            content={this.state.project.description}
-          />
-          <meta property="og:url" content="https://malikbrowne.com/spotter" />
-          <meta
-            property="og:image"
-            content={this.state.project.image_urls.screenshots[0]}
-          />
-        </Helmet>
+        <Helmet
+          title={this.state.project.name}
+          meta={[
+            {
+              name: "description",
+              content: this.state.project.description
+            },
+            {
+              name: "keywords",
+              content: `${this.state.project.name.toLowerCase()}, front end development, ui/ux, web development, full stack development, malik browne, malik`
+            },
+            {
+              property: "og:title",
+              content: `${this.state.project.name} | Malik Browne`
+            },
+            {
+              property: "og:description",
+              content: this.state.project.description
+            },
+            {
+              property: "og:url",
+              content: `https://malikbrowne.com/${this.state.project.path.substr(1)}`
+            },
+            {
+              property: "og:image",
+              content: this.state.project.image_urls.screenshots[0]
+            }
+          ]}
+        />
         <ProjectSection title="Background">
           <p>
             During my time in college, I helped create landing pages for several
@@ -105,9 +117,9 @@ class Spotter extends Component {
 
           <h6>Home Page</h6>
           <p>
-            I wanted something that would look unique and would portray an
-            urban vibe for the startup. I looked on YouTube to find appropriate
-            videos to use and found this awesome{" "}
+            I wanted something that would look unique and would portray an urban
+            vibe for the startup. I looked on YouTube to find appropriate videos
+            to use and found this awesome{" "}
             <a href="http://youtu.be/kn-1D5z3-Cs">
               stock video of New York City.
             </a>
@@ -159,8 +171,8 @@ class Spotter extends Component {
           <p>
             For the gallery, I pulled the four most recent pictures from{" "}
             <span style={style.title}>Spotter's</span> Instagram. Once the
-            photos were retrieved I created hover animations over each photo
-            and added a lightbox in order to see a larger version of the image.
+            photos were retrieved I created hover animations over each photo and
+            added a lightbox in order to see a larger version of the image.
           </p>
           <p>
             Using{" "}
@@ -184,8 +196,9 @@ class Spotter extends Component {
           </p>
           <p>
             Like I said before, the form is submitted via AJAX to a contact.php
-            file. The file parses all the provided fields, and if valid will send it over to
-            the Spotter team. The final result can be seen below:
+            file. The file parses all the provided fields, and if valid will
+            send it over to the Spotter team. The final result can be seen
+            below:
           </p>
           <img
             src={this.state.project.image_urls.screenshots[2]}
@@ -198,7 +211,8 @@ class Spotter extends Component {
             I spent a lot of time trying to make this website look perfect. The
             first part that I struggled with was creating the smooth animations
             on the Features page. Since there was a lot going on, I had to
-            utilize the ":after" and ":before" properties on some of the elements.
+            utilize the ":after" and ":before" properties on some of the
+            elements.
           </p>
           <p>
             The next part I had trouble with was the video background. Instead

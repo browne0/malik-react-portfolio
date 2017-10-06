@@ -99,23 +99,33 @@ class Contact extends Component {
     };
     return (
       <div className="contact">
-        <Helmet title="Contact">
-          <meta name="description" content="Get in contact with Malik." />
-          <meta
-            name="keywords"
-            content="front end developer, front end development, ui/ux, web development, full stack development, malik browne, malik"
-          />
-          <meta property="og:title" content="About | Malik Browne" />
-          <meta
-            property="og:description"
-            content="Get in contact with Malik."
-          />
-          <meta property="og:url" content="https://malikbrowne.com/contact" />
-          <meta
-            property="og:image"
-            content="http://malikbrowne.com/assets/selfie/about_bg3.jpg"
-          />
-        </Helmet>
+        <Helmet
+          title="Contact"
+          meta={[
+            {
+              name: "description",
+              content: "Get in contact with Malik."
+            },
+            {
+              name: "keywords",
+              content:
+                "contact malik, front end developer, front end development, ui/ux, web development, full stack development, malik browne, malik"
+            },
+            {
+              property: "og:title",
+              content: "Contact | Malik Browne"
+            },
+            {
+              property: "og:description",
+              content: "Get in contact with Malik."
+            },
+            { property: "og:url", content: "https://malikbrowne.com/contact" },
+            {
+              property: "og:image",
+              content: "http://malikbrowne.com/assets/selfie/about_bg3.jpg"
+            }
+          ]}
+        />
         <div className="hero">
           <h2>Want to get in contact?</h2>
           <h3>Here are a few ways to get a hold of me.</h3>
