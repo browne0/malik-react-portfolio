@@ -7,7 +7,7 @@ import FlipMove from "react-flip-move";
 import PortfolioDelegate from "../../utils/PortfolioDelegate";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Helmet from "react-helmet";
-import NotFound from "../../scenes/NotFound"
+import NotFound from "../../scenes/NotFound";
 
 class blogList extends Component {
   constructor() {
@@ -25,7 +25,7 @@ class blogList extends Component {
     this.unmounted = true;
   }
 
-  componentDidMount() {
+  componentWillMount() {
     const delegate = new PortfolioDelegate();
     delegate.getBlogs().then(response => {
       if (this.unmounted) return;
@@ -87,9 +87,7 @@ class blogList extends Component {
         </Link>
       ) : null;
       let blogLength = blog.fields.body
-        .replace(/<[^>]*>/g, " ")
-        .replace("/s+/g", " ")
-        .replace("/+/g")
+        .replace(/[^a-zA-Z0-9']+/g, " ")
         .trim()
         .split(" ").length;
       let blogLengthString =
@@ -146,7 +144,7 @@ class blogList extends Component {
             <Route
               exact
               path={match.path}
-              render={() => (
+              component={() => (
                 <div className="blog-wrapper">
                   <Helmet
                     title="Blog"
@@ -192,22 +190,22 @@ class blogList extends Component {
                     value={this.state.search}
                   />
                   {this.state.blogs.length !== 0 &&
-                  !this.unmounted && (
-                    <FlipMove
-                      duration={400}
-                      easing="ease"
-                      className="blog"
-                      enterAnimation="fade"
-                      leaveAnimation="fade"
-                    >
-                      {blogPosts}
-                    </FlipMove>
-                  )}
+                    !this.unmounted && (
+                      <FlipMove
+                        duration={400}
+                        easing="ease"
+                        className="blog"
+                        enterAnimation="fade"
+                        leaveAnimation="fade"
+                      >
+                        {blogPosts}
+                      </FlipMove>
+                    )}
                 </div>
               )}
             />
             {blogRoutes}
-            <Route component={NotFound} />
+            <Route path="/blog/*" render={() => <NotFound />} />
           </Switch>
         </CSSTransition>
       </TransitionGroup>

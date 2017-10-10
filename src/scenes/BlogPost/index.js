@@ -23,7 +23,6 @@ class blogPost extends Component {
         this.props.blog.fields.title
       )
     });
-    document.title = this.props.blog.fields.title + " | Malik Browne";
   }
 
   componentDidMount() {
@@ -55,9 +54,7 @@ class blogPost extends Component {
       </Button>
     ) : null;
     let blogLength = this.state.blog.fields.body
-      .replace(/<[^>]*>/g, " ")
-      .replace("/s+/g", " ")
-      .replace("/+/g")
+      .replace(/[^a-zA-Z0-9']+/g, " ")
       .trim()
       .split(" ").length;
 
@@ -80,7 +77,9 @@ class blogPost extends Component {
             },
             {
               name: "keywords",
-              content: this.state.blog.fields.keywords ? this.state.blog.fields.keywords : keywords
+              content: this.state.blog.fields.keywords
+                ? this.state.blog.fields.keywords
+                : keywords
             },
             {
               property: "og:title",
@@ -90,10 +89,14 @@ class blogPost extends Component {
               property: "og:description",
               content: this.state.blog.fields.description
             },
-            { property: "og:url", content: `https://malikbrowne.com/${this.state.blog.fields.slug}` },
+            {
+              property: "og:url",
+              content: `https://malikbrowne.com/${this.state.blog.fields.slug}`
+            },
             {
               property: "og:image",
-              content: `https:${this.state.blog.fields.featuredImage.fields.file.url}`
+              content: `https:${this.state.blog.fields.featuredImage.fields.file
+                .url}`
             },
             {
               name: "twitter:card",
@@ -117,8 +120,9 @@ class blogPost extends Component {
             },
             {
               name: "twitter:image",
-              content: `https:${this.state.blog.fields.featuredImage.fields.file.url}`
-            },
+              content: `https:${this.state.blog.fields.featuredImage.fields.file
+                .url}`
+            }
           ]}
         />
         <ProgressBar targetEl=".blog-post" />

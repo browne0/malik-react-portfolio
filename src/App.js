@@ -42,20 +42,20 @@ class App extends Component {
             <Switch>
               <Route exact path="/" component={withTracker(Home)} />
               <Route path="/blog" component={withTracker(BlogList)} />
-              <Route path="/about" component={withTracker(About)} />
-              <Route path="/contact" component={withTracker(Contact)} />
-              <Route path="/spotter" component={withTracker(Spotter)} />
+              <Route exact path="/about" component={withTracker(About)} />
+              <Route exact path="/contact" component={withTracker(Contact)} />
+              <Route exact path="/spotter" component={withTracker(Spotter)} />
               <Route
-                path="/old-portfolio"
+                exact path="/old-portfolio"
                 component={withTracker(OldPortfolio)}
               />
-              <Route path="/mychef" component={withTracker(MyChef)} />
-              <Route path="/mixmax" component={withTracker(Mixmax)} />
+              <Route exact path="/mychef" component={withTracker(MyChef)} />
+              <Route exact path="/mixmax" component={withTracker(Mixmax)} />
               <Route
-                path="/factsoftoday"
+                exact path="/factsoftoday"
                 component={withTracker(FactsOfToday)}
               />
-              <Route path="/beesdesign" component={withTracker(BeesDesign)} />
+              <Route exact path="/beesdesign" component={withTracker(BeesDesign)} />
               <Route component={NotFound} />
             </Switch>
           </CSSTransition>

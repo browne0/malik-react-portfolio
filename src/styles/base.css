@@ -2180,7 +2180,7 @@ svg {
     .blog-post .container .comments {
       width: 90vw;
       min-height: 347px;
-      padding: 20px 0px 0px 20px;
+      padding: 20px 20px 0px 20px;
       padding-top: 20px;
       margin: 0px auto; }
     .blog-post .container .blog-guide {
@@ -2984,7 +2984,7 @@ header {
       align-items: center;
       justify-content: center; }
 
-@media (min-width: 715px) {
+@media (min-width: 737px) {
   header {
     position: fixed;
     width: 100%;
@@ -4038,7 +4038,7 @@ html #root .fade-enter, body #root .fade-enter {
 
 html #root .fade-enter.fade-enter-active, body #root .fade-enter.fade-enter-active {
   opacity: 1;
-  transition: opacity 150ms ease; }
+  transition: opacity 250ms ease; }
 
 html #root .site, body #root .site {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif; }

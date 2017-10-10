@@ -34,9 +34,9 @@ class About extends Component {
     // once I write more blogs I'll get one of five of the latest blog posts. until then just get the latest blog
     delegate.getBlogs().then(response => {
       if (this.unmounted) return;
-      let latestBlogIndex = response.items.length - 1;
+      console.log(response)
       this.setState({
-        blog: response.items[latestBlogIndex]
+        blog: response.items[0]
       });
     });
   }
